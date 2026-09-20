@@ -1,6 +1,6 @@
-# FGV CLEAR · Policy Lab
+# FGV Policy Lab
 
-Site institucional com as ferramentas abertas do **FGV CLEAR** (Centro de Aprendizado em Avaliação e Resultados, FGV EESP) para monitoramento e avaliação de políticas públicas.
+Site com as ferramentas abertas do **FGV Policy Lab**, centro de pesquisa aplicada da FGV EESP dedicado ao desenho, à avaliação e ao debate sobre políticas públicas no Brasil. O **FGV CLEAR** é uma das iniciativas do centro.
 
 🌐 **No ar:** https://policy-lab.github.io/
 
@@ -89,7 +89,7 @@ Sites estáticos em HTML + CSS + JavaScript puro — sem frameworks, sem servido
 
 As estatísticas vêm de fontes oficiais brasileiras, com referência completa em cada estatística (produtor, periodicidade, última atualização, URL). Alguns recortes específicos (por UF, raça, etc.) usam valores aproximados quando o dado oficial detalhado não está publicamente disponível — essas aproximações estão sinalizadas nas notas metodológicas.
 
-> ⚠️ **Antes da divulgação institucional**: a equipe CLEAR deve auditar os valores aproximados contra as fontes primárias.
+> ⚠️ **Antes da divulgação institucional**: a equipe do centro deve auditar os valores aproximados contra as fontes primárias.
 
 ## Versão atual do painel
 
@@ -103,9 +103,10 @@ Histórico de versões disponível em [Releases](https://github.com/policy-lab/p
 
 ## Licença
 
-Este site é parte do projeto do FGV CLEAR. Os dados são públicos e provenientes de fontes oficiais brasileiras. Para uso institucional ou citação, mencione: *FGV CLEAR — Painel de Estatísticas para Avaliação de Políticas Públicas, [ano].*
+Este site é do FGV Policy Lab (FGV EESP). Os dados são públicos e provenientes de fontes oficiais brasileiras. Para uso institucional ou citação, mencione: *FGV Policy Lab — Painel de Estatísticas para Avaliação de Políticas Públicas, [ano].*
 
 ## Contato
 
+- **FGV Policy Lab** — https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab
 - **FGV CLEAR** — https://fgvclear.org
 - **Repositório** — https://github.com/policy-lab/policy-lab.github.io

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FGV CLEAR · Policy Lab</title>
-<meta name="description" content="Ferramentas e materiais do FGV CLEAR para avaliação e monitoramento de políticas públicas no Brasil.">
+<title>FGV Policy Lab</title>
+<meta name="description" content="Ferramentas abertas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP em políticas públicas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -20,7 +20,6 @@
   --ink-soft: #4A4A50;
   --ink-mute: #8A8A90;
   --line: rgba(1, 53, 74, 0.12);
-  --line-soft: rgba(1, 53, 74, 0.06);
   --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
   --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --mono: 'JetBrains Mono', 'Courier New', monospace;
@@ -103,15 +102,36 @@ a { color: inherit; }
 .subtitle {
   font-size: 17px;
   color: rgba(255,255,255,0.85);
-  max-width: 680px;
+  max-width: 68ch;
   line-height: 1.55;
 }
 
-/* PROJETOS */
+/* FERRAMENTAS */
+.section-head {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 56px 48px 0;
+}
+.section-head h2 {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  line-height: 1.18;
+}
+.section-head p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  max-width: 68ch;
+  margin-top: 10px;
+}
+
 .projects {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 56px 48px 72px;
+  padding: 24px 48px 72px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1px;
@@ -213,14 +233,15 @@ a.project:hover .project-cta .arrow { transform: translateX(4px); }
 .about p {
   font-size: 16px;
   color: rgba(255,255,255,0.82);
-  max-width: 62ch;
+  max-width: 64ch;
   line-height: 1.6;
+  margin-bottom: 14px;
 }
 .about-link {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin-top: 28px;
+  margin-top: 16px;
   padding: 13px 22px;
   border: 1px solid rgba(255,255,255,0.28);
   color: white;
@@ -284,7 +305,8 @@ a.project:hover .project-cta .arrow { transform: translateX(4px); }
   .header { padding: 40px 24px 48px; }
   .clear-logo img { height: 36px; }
   .header-meta-top { display: none; }
-  .projects { padding: 36px 24px 48px; }
+  .section-head { padding: 40px 24px 0; }
+  .projects { padding: 20px 24px 48px; }
   .project { padding: 28px 24px 26px; min-height: 0; }
   .about { padding: 44px 24px 48px; }
   .about h2 { font-size: 27px; }
@@ -305,14 +327,19 @@ a.project:hover .project-cta .arrow { transform: translateX(4px); }
         <img src="assets/img/clear-policy-lab-branco.png" alt="FGV CLEAR · FGV Policy Lab" />
       </a>
       <div class="header-actions">
-        <div class="header-meta-top">FGV EESP · Centro de Aprendizado<br/>em Avaliação e Resultados</div>
-        <a href="https://fgvclear.org" class="top-link" target="_blank" rel="noopener">fgvclear.org →</a>
+        <div class="header-meta-top">FGV EESP · Escola de Economia<br/>de São Paulo</div>
+        <a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" class="top-link" target="_blank" rel="noopener">Sobre o centro →</a>
       </div>
     </div>
-    <h1 class="title">Ferramentas para avaliação de políticas públicas</h1>
-    <p class="subtitle">Recursos abertos do FGV CLEAR para quem monitora, avalia e decide sobre políticas públicas no Brasil.</p>
+    <h1 class="title">Evidências para decidir políticas públicas</h1>
+    <p class="subtitle">Ferramentas abertas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP, para quem formula, implementa e acompanha políticas públicas no Brasil.</p>
   </div>
 </header>
+
+<div class="section-head">
+  <h2>Ferramentas</h2>
+  <p>Recursos de uso livre, desenvolvidos pelo centro e suas iniciativas.</p>
+</div>
 
 <main class="projects">
 
@@ -335,9 +362,10 @@ a.project:hover .project-cta .arrow { transform: translateX(4px); }
 
 <section class="about">
   <div class="about-inner">
-    <h2>FGV CLEAR · Policy Lab</h2>
-    <p>O FGV CLEAR é o Centro de Aprendizado em Avaliação e Resultados da FGV EESP, parte da rede CLEAR para a África Lusófona e o Brasil. Trabalha com formação, pesquisa aplicada e apoio técnico a governos em monitoramento e avaliação de políticas públicas.</p>
-    <a href="https://fgvclear.org" class="about-link" target="_blank" rel="noopener">Conheça o FGV CLEAR <span aria-hidden="true">→</span></a>
+    <h2>FGV Policy Lab</h2>
+    <p>Centro de pesquisa aplicada da Escola de Economia de São Paulo, dedicado a qualificar o desenho, a avaliação e o debate sobre políticas públicas no Brasil. Atua em três frentes: produção e disseminação de evidências, desenvolvimento de capacidades e articulação de redes e parcerias.</p>
+    <p>Entre suas iniciativas está o FGV CLEAR, Centro de Aprendizagem em Avaliação e Resultados para a África Lusófona e o Brasil, que desde 2015 integra a rede internacional CLEAR e trabalha com formação, assistência técnica e cooperação em monitoramento e avaliação.</p>
+    <a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" class="about-link" target="_blank" rel="noopener">Conheça o FGV Policy Lab <span aria-hidden="true">→</span></a>
   </div>
 </section>
 
@@ -348,13 +376,13 @@ a.project:hover .project-cta .arrow { transform: translateX(4px); }
         <a href="/" class="footer-logo" aria-label="FGV CLEAR e FGV Policy Lab">
           <img src="assets/img/clear-policy-lab-branco.png" alt="FGV CLEAR · FGV Policy Lab" />
         </a>
-        <p class="footer-tag">Ferramentas abertas do FGV CLEAR para avaliação e monitoramento de políticas públicas brasileiras.</p>
+        <p class="footer-tag">Ferramentas abertas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP em políticas públicas.</p>
       </div>
       <div class="footer-col">
-        <div class="footer-col-label">CLEAR</div>
-        <a href="https://fgvclear.org" target="_blank" rel="noopener">fgvclear.org</a>
-        <a href="https://fgvclear.org/publicacoes/" target="_blank" rel="noopener">Publicações</a>
-        <a href="https://fgvclear.org/cursos/" target="_blank" rel="noopener">Cursos</a>
+        <div class="footer-col-label">FGV Policy Lab</div>
+        <a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" target="_blank" rel="noopener">Sobre o centro</a>
+        <a href="https://fgvclear.org" target="_blank" rel="noopener">FGV CLEAR</a>
+        <a href="https://eesp.fgv.br/" target="_blank" rel="noopener">FGV EESP</a>
       </div>
       <div class="footer-col">
         <div class="footer-col-label">Este site</div>
@@ -363,7 +391,7 @@ a.project:hover .project-cta .arrow { transform: translateX(4px); }
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 FGV CLEAR · FGV EESP</span>
+      <span>© 2026 FGV Policy Lab · FGV EESP</span>
       <span>policy-lab.github.io</span>
     </div>
   </div>
