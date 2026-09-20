@@ -1,12 +1,23 @@
-# Painel CLEAR — Estatísticas para Avaliação de Políticas Públicas
+# FGV CLEAR · Policy Lab
 
-Painel institucional do **FGV CLEAR** (Centro de Aprendizado e Pesquisa em Avaliação e Resultados) que reúne estatísticas-chave de fontes oficiais brasileiras em segurança, educação, saúde, assistência social, saneamento, mercado de trabalho, meio ambiente, habitação e finanças municipais.
+Site institucional com as ferramentas abertas do **FGV CLEAR** (Centro de Aprendizado em Avaliação e Resultados, FGV EESP) para monitoramento e avaliação de políticas públicas.
 
-🌐 **Site no ar:** https://policy-lab.github.io/
+🌐 **No ar:** https://policy-lab.github.io/
 
-📘 Acompanha o *Guia de Fontes de Dados para Avaliação de Políticas Públicas* — 7º volume da série **Avaliação na Prática**.
+## O que tem aqui
+
+| Projeto | Endereço | Estado |
+|---|---|---|
+| Painel de estatísticas | https://policy-lab.github.io/painel/ | No ar |
+| Checklists de avaliação | — | Em construção |
 
 ---
+
+# Painel de estatísticas
+
+Reúne estatísticas-chave de fontes oficiais brasileiras em segurança, educação, saúde, assistência social, saneamento, mercado de trabalho, meio ambiente, habitação e finanças municipais.
+
+📘 Acompanha o *Guia de Fontes de Dados para Avaliação de Políticas Públicas* — 7º volume da série **Avaliação na Prática**.
 
 ## O que tem no painel
 
@@ -20,46 +31,59 @@ Painel institucional do **FGV CLEAR** (Centro de Aprendizado e Pesquisa em Avali
 
 ## Como o painel é organizado
 
-Área (9) → Tema (30) → Estatística (45)
-───────────── ────────────────────── ─────────────────
-Saúde → Mortalidade infantil → TMI Brasil
-→ Imunização → Cobertura BCG
-→ Atenção Primária → Cobertura ESF
-→ Pré-natal adequado
+```
+Área (9)        →   Tema (30)              →   Estatística (45)
+─────────────       ──────────────────────     ─────────────────
+Saúde           →   Mortalidade infantil   →   TMI Brasil
+                →   Imunização             →   Cobertura BCG
+                →   Atenção Primária       →   Cobertura ESF
+                                            →   Pré-natal adequado
+```
 
-
-Cada área = 1 arquivo JSON dentro da pasta `data/`.
+Cada área = 1 arquivo JSON dentro da pasta `painel/data/`.
 
 ## Como atualizar o painel
 
-Veja o **[Manual de Manutenção](MANUTENCAO.md)** — explica passo a passo como atualizar estatísticas, adicionar dados, mover o painel para outra conta GitHub, e resolver erros comuns. Escrito para quem nunca usou GitHub.
+Veja o **[Manual de Manutenção](MANUTENCAO.md)** — explica passo a passo como atualizar estatísticas, adicionar dados e resolver erros comuns. Escrito para quem nunca usou GitHub.
 
 ## Estrutura do repositório
 
+```
 policy-lab.github.io/
-├── index.html ← o site
-├── README.md ← este arquivo
-├── MANUTENCAO.md ← manual de atualização
-├── MAPAS-E-APIS.md ← mapas por UF e suas fontes/APIs
-├── CALENDARIO.md ← quando revisar cada fonte (ritmo trimestral)
-├── PROMPTS-IA.md ← prompts prontos para atualizar com ajuda de IA
-├── CONTRIBUTING.md ← regras de contribuição
-└── data/ ← dados do painel
-├── manifesto.json ← lista de áreas + metadados
-├── seguranca.json
-├── educacao.json
-├── saude.json
-├── assistencia.json
-├── saneamento.json
-├── trabalho.json
-├── ambiente.json
-├── habitacao.json
-└── financas.json
+├── index.html              ← portal (página inicial do site)
+├── README.md               ← este arquivo
+├── MANUTENCAO.md           ← manual de atualização
+├── MAPAS-E-APIS.md         ← mapas por UF e suas fontes/APIs
+├── CALENDARIO.md           ← quando revisar cada fonte (ritmo trimestral)
+├── PROMPTS-IA.md           ← prompts prontos para atualizar com ajuda de IA
+├── CONTRIBUTING.md         ← regras de contribuição
+├── assets/                 ← logos e imagens, compartilhados pelo site
+│   └── img/
+└── painel/                 ← painel de estatísticas
+    ├── index.html          ← o painel
+    └── data/               ← dados do painel
+        ├── manifesto.json  ← lista de áreas + metadados
+        ├── seguranca.json
+        ├── educacao.json
+        ├── saude.json
+        ├── assistencia.json
+        ├── saneamento.json
+        ├── trabalho.json
+        ├── ambiente.json
+        ├── habitacao.json
+        └── financas.json
+```
 
+## Como adicionar um projeto novo ao site
+
+1. Crie uma pasta na raiz com o nome curto do projeto (`checklists/`, por exemplo).
+2. Coloque o `index.html` dele dentro dessa pasta. Ele fica em `policy-lab.github.io/checklists/`.
+3. Para usar os logos compartilhados, referencie `../assets/img/`.
+4. Adicione um bloco `.project` no `index.html` da raiz, com o link para a pasta nova.
 
 ## Tecnologia
 
-Site estático em HTML + CSS + JavaScript puro — sem frameworks, sem servidor, sem banco de dados. Hospedado via GitHub Pages. Atualizações são feitas editando arquivos JSON diretamente no GitHub.
+Sites estáticos em HTML + CSS + JavaScript puro — sem frameworks, sem servidor, sem banco de dados. Hospedado via GitHub Pages. Atualizações são feitas editando arquivos diretamente no GitHub.
 
 ## Sobre os dados
 
@@ -67,7 +91,7 @@ As estatísticas vêm de fontes oficiais brasileiras, com referência completa e
 
 > ⚠️ **Antes da divulgação institucional**: a equipe CLEAR deve auditar os valores aproximados contra as fontes primárias.
 
-## Versão atual
+## Versão atual do painel
 
 **v4.3** — Junho de 2026
 
@@ -79,7 +103,7 @@ Histórico de versões disponível em [Releases](https://github.com/policy-lab/p
 
 ## Licença
 
-Este painel é parte do projeto do FGV CLEAR. Os dados são públicos e provenientes de fontes oficiais brasileiras. Para uso institucional ou citação, mencione: *FGV CLEAR — Painel de Estatísticas para Avaliação de Políticas Públicas, [ano].*
+Este site é parte do projeto do FGV CLEAR. Os dados são públicos e provenientes de fontes oficiais brasileiras. Para uso institucional ou citação, mencione: *FGV CLEAR — Painel de Estatísticas para Avaliação de Políticas Públicas, [ano].*
 
 ## Contato
 
