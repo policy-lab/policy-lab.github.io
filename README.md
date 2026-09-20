@@ -2,7 +2,7 @@
 
 Painel institucional do **FGV CLEAR** (Centro de Aprendizado e Pesquisa em Avaliação e Resultados) que reúne estatísticas-chave de fontes oficiais brasileiras em segurança, educação, saúde, assistência social, saneamento, mercado de trabalho, meio ambiente, habitação e finanças municipais.
 
-🌐 **Site no ar:** https://caiodesouzacastro.github.io/painel-clear/
+🌐 **Site no ar:** https://policy-lab.github.io/
 
 📘 Acompanha o *Guia de Fontes de Dados para Avaliação de Políticas Públicas* — 7º volume da série **Avaliação na Prática**.
 
@@ -20,14 +20,13 @@ Painel institucional do **FGV CLEAR** (Centro de Aprendizado e Pesquisa em Avali
 
 ## Como o painel é organizado
 
-```
-Área (9)        →   Tema (30)              →   Indicador (45)
-─────────────       ──────────────────────     ─────────────────
-Saúde           →   Mortalidade infantil   →   TMI Brasil
-                →   Imunização             →   Cobertura BCG
-                →   Atenção Primária       →   Cobertura ESF
-                                            →   Pré-natal adequado
-```
+Área (9) → Tema (30) → Estatística (45)
+───────────── ────────────────────── ─────────────────
+Saúde → Mortalidade infantil → TMI Brasil
+→ Imunização → Cobertura BCG
+→ Atenção Primária → Cobertura ESF
+→ Pré-natal adequado
+
 
 Cada área = 1 arquivo JSON dentro da pasta `data/`.
 
@@ -37,27 +36,26 @@ Veja o **[Manual de Manutenção](MANUTENCAO.md)** — explica passo a passo com
 
 ## Estrutura do repositório
 
-```
-painel-clear/
-├── index.html              ← o site
-├── README.md               ← este arquivo
-├── MANUTENCAO.md           ← manual de atualização
-├── MAPAS-E-APIS.md         ← mapas por UF e suas fontes/APIs
-├── CALENDARIO.md           ← quando revisar cada fonte (ritmo trimestral)
-├── PROMPTS-IA.md           ← prompts prontos para atualizar com ajuda de IA
-├── CONTRIBUTING.md         ← regras de contribuição
-└── data/                   ← dados do painel
-    ├── manifesto.json      ← lista de áreas + metadados
-    ├── seguranca.json
-    ├── educacao.json
-    ├── saude.json
-    ├── assistencia.json
-    ├── saneamento.json
-    ├── trabalho.json
-    ├── ambiente.json
-    ├── habitacao.json
-    └── financas.json
-```
+policy-lab.github.io/
+├── index.html ← o site
+├── README.md ← este arquivo
+├── MANUTENCAO.md ← manual de atualização
+├── MAPAS-E-APIS.md ← mapas por UF e suas fontes/APIs
+├── CALENDARIO.md ← quando revisar cada fonte (ritmo trimestral)
+├── PROMPTS-IA.md ← prompts prontos para atualizar com ajuda de IA
+├── CONTRIBUTING.md ← regras de contribuição
+└── data/ ← dados do painel
+├── manifesto.json ← lista de áreas + metadados
+├── seguranca.json
+├── educacao.json
+├── saude.json
+├── assistencia.json
+├── saneamento.json
+├── trabalho.json
+├── ambiente.json
+├── habitacao.json
+└── financas.json
+
 
 ## Tecnologia
 
@@ -77,7 +75,7 @@ Novidades desta versão: mapas coropléticos por UF em 8 das 9 áreas, vários c
 coleta automática via APIs oficiais (IBGE/SIDRA e SICONFI/Tesouro). Habitação
 segue sem mapa à espera de dado por UF do Censo 2022 no SIDRA (ver MAPAS-E-APIS.md).
 
-Histórico de versões disponível em [Releases](https://github.com/caiodesouzacastro/painel-clear/releases) e na lista de commits.
+Histórico de versões disponível em [Releases](https://github.com/policy-lab/policy-lab.github.io/releases) e na lista de commits.
 
 ## Licença
 
@@ -86,4 +84,4 @@ Este painel é parte do projeto do FGV CLEAR. Os dados são públicos e provenie
 ## Contato
 
 - **FGV CLEAR** — https://fgvclear.org
-- **Repositório** — https://github.com/caiodesouzacastro/painel-clear
+- **Repositório** — https://github.com/policy-lab/policy-lab.github.io
