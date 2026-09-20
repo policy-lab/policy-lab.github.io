@@ -69,6 +69,8 @@ a { color: inherit; }
 .brand-row { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 44px; flex-wrap: wrap; gap: 16px; }
 .clear-logo { display: block; }
 .clear-logo img { height: 44px; width: auto; display: block; }
+.header-meta-top a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 1px; transition: color .2s, border-color .2s; }
+.header-meta-top a:hover { color: var(--accent-green); border-color: var(--accent-green); }
 .header-meta-top {
   font-family: var(--mono);
   font-size: 11px;
@@ -304,7 +306,9 @@ a.project:hover .project-cta .arrow { transform: translateX(4px); }
 @media (max-width: 768px) {
   .header { padding: 40px 24px 48px; }
   .clear-logo img { height: 36px; }
-  .header-meta-top { display: none; }
+  .header-meta-top a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 1px; transition: color .2s, border-color .2s; }
+.header-meta-top a:hover { color: var(--accent-green); border-color: var(--accent-green); }
+.header-meta-top { display: none; }
   .section-head { padding: 40px 24px 0; }
   .projects { padding: 20px 24px 48px; }
   .project { padding: 28px 24px 26px; min-height: 0; }
@@ -327,8 +331,7 @@ a.project:hover .project-cta .arrow { transform: translateX(4px); }
         <img src="assets/img/clear-policy-lab-branco.png" alt="FGV CLEAR · FGV Policy Lab" />
       </a>
       <div class="header-actions">
-        <div class="header-meta-top">FGV Policy Lab<br/>FGV CLEAR</div>
-        <a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" class="top-link" target="_blank" rel="noopener">Sobre o centro →</a>
+        <div class="header-meta-top"><a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" target="_blank" rel="noopener">FGV Policy Lab</a><br/><a href="https://fgvclear.org" target="_blank" rel="noopener">FGV CLEAR</a></div>
       </div>
     </div>
     <h1 class="title">Evidências para decidir políticas públicas</h1>
