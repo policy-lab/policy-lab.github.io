@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FGV Policy Lab</title>
-<meta name="description" content="Ferramentas abertas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP em políticas públicas.">
+<meta name="description" content="Ferramentas gratuitas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP em políticas públicas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -69,8 +69,6 @@ a { color: inherit; }
 .brand-row { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 44px; flex-wrap: wrap; gap: 16px; }
 .clear-logo { display: block; }
 .clear-logo img { height: 44px; width: auto; display: block; }
-.header-meta-top a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 1px; transition: color .2s, border-color .2s; }
-.header-meta-top a:hover { color: var(--accent-green); border-color: var(--accent-green); }
 .header-meta-top {
   font-family: var(--mono);
   font-size: 11px;
@@ -79,6 +77,8 @@ a { color: inherit; }
   text-align: right;
   line-height: 1.5;
 }
+.header-meta-top a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 1px; transition: color .2s, border-color .2s; }
+.header-meta-top a:hover { color: var(--accent-green); border-color: var(--accent-green); }
 .top-link {
   font-size: 12px;
   color: rgba(255,255,255,0.75);
@@ -152,8 +152,14 @@ a { color: inherit; }
   color: var(--ink);
   transition: background 0.2s ease;
 }
-a.project:hover { background: var(--paper-warm); }
-a.project:hover .project-cta .arrow { transform: translateX(4px); }
+.project-titulo a { color: inherit; text-decoration: none; }
+.project-titulo a:hover { color: var(--accent-blue); }
+.inline-link { color: var(--navy); font-weight: 600; text-decoration: underline; text-decoration-color: var(--accent-blue); text-underline-offset: 3px; }
+.inline-link:hover { color: var(--accent-blue); }
+.project-ctas { margin-top: auto; padding-top: 24px; display: flex; gap: 28px; flex-wrap: wrap; }
+.project-ctas .project-cta { margin-top: 0; padding-top: 0; text-decoration: none; }
+.project-cta.secondary { color: var(--ink-soft); }
+.project-cta:hover .arrow { transform: translateX(4px); }
 
 .project-status {
   font-family: var(--mono);
@@ -306,9 +312,7 @@ a.project:hover .project-cta .arrow { transform: translateX(4px); }
 @media (max-width: 768px) {
   .header { padding: 40px 24px 48px; }
   .clear-logo img { height: 36px; }
-  .header-meta-top a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 1px; transition: color .2s, border-color .2s; }
-.header-meta-top a:hover { color: var(--accent-green); border-color: var(--accent-green); }
-.header-meta-top { display: none; }
+  .header-meta-top { display: none; }
   .section-head { padding: 40px 24px 0; }
   .projects { padding: 20px 24px 48px; }
   .project { padding: 28px 24px 26px; min-height: 0; }
@@ -331,28 +335,31 @@ a.project:hover .project-cta .arrow { transform: translateX(4px); }
         <img src="assets/img/clear-policy-lab-branco.png" alt="FGV CLEAR · FGV Policy Lab" />
       </a>
       <div class="header-actions">
-        <div class="header-meta-top"><a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" target="_blank" rel="noopener">FGV Policy Lab</a><br/><a href="https://fgvclear.org" target="_blank" rel="noopener">FGV CLEAR</a></div>
+        <div class="header-meta-top"><a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" target="_blank" rel="noopener">FGV Policy Lab</a><br/>FGV CLEAR</div>
       </div>
     </div>
     <h1 class="title">Evidências para decidir políticas públicas</h1>
-    <p class="subtitle">Ferramentas abertas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP, para quem formula, implementa e acompanha políticas públicas no Brasil.</p>
+    <p class="subtitle">Ferramentas gratuitas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP, para quem formula, implementa e acompanha políticas públicas no Brasil.</p>
   </div>
 </header>
 
 <div class="section-head">
   <h2>Ferramentas</h2>
-  <p>Recursos de uso livre, desenvolvidos pelo centro e suas iniciativas.</p>
+  <p>Recursos de consulta gratuita, desenvolvidos e mantidos pela equipe do centro.</p>
 </div>
 
 <main class="projects">
 
-  <a class="project" href="painel/">
+  <div class="project live">
     <div class="project-status">No ar</div>
-    <h2 class="project-titulo">Painel de estatísticas</h2>
-    <p class="project-desc">Estatísticas-chave de políticas públicas brasileiras, com série histórica, recortes por UF e a fonte oficial de cada número. Acompanha o Guia de Fontes de Dados.</p>
+    <h2 class="project-titulo"><a href="painel/">Painel de estatísticas</a></h2>
+    <p class="project-desc">Estatísticas-chave de políticas públicas brasileiras, com série histórica, recortes por UF e a fonte oficial de cada número. Acompanha o <a class="inline-link" href="https://repositorio.fgv.br/items/7a64b050-b7b3-460f-86da-704bfd53a824" target="_blank" rel="noopener">Guia de Fontes de Dados</a>.</p>
     <div class="project-nums">9 áreas · 30 temas · 45 estatísticas</div>
-    <div class="project-cta">Abrir o painel <span class="arrow">→</span></div>
-  </a>
+    <div class="project-ctas">
+      <a class="project-cta" href="painel/">Abrir o painel <span class="arrow">→</span></a>
+      <a class="project-cta secondary" href="https://repositorio.fgv.br/items/7a64b050-b7b3-460f-86da-704bfd53a824" target="_blank" rel="noopener">Baixar o Guia <span class="arrow">↗</span></a>
+    </div>
+  </div>
 
   <div class="project soon">
     <div class="project-status">Em construção</div>
@@ -379,13 +386,13 @@ a.project:hover .project-cta .arrow { transform: translateX(4px); }
         <a href="/" class="footer-logo" aria-label="FGV CLEAR e FGV Policy Lab">
           <img src="assets/img/clear-policy-lab-branco.png" alt="FGV CLEAR · FGV Policy Lab" />
         </a>
-        <p class="footer-tag">Ferramentas abertas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP em políticas públicas.</p>
+        <p class="footer-tag">Ferramentas gratuitas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP em políticas públicas.</p>
       </div>
       <div class="footer-col">
         <div class="footer-col-label">FGV Policy Lab</div>
         <a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" target="_blank" rel="noopener">Sobre o centro</a>
-        <a href="https://fgvclear.org" target="_blank" rel="noopener">FGV CLEAR</a>
         <a href="https://eesp.fgv.br/" target="_blank" rel="noopener">FGV EESP</a>
+        <a href="https://repositorio.fgv.br/items/7a64b050-b7b3-460f-86da-704bfd53a824" target="_blank" rel="noopener">Guia de Fontes de Dados</a>
       </div>
       <div class="footer-col">
         <div class="footer-col-label">Este site</div>
