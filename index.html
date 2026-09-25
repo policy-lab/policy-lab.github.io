@@ -324,6 +324,15 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+.project.restrito .project-status { color: var(--navy); display: flex; align-items: center; gap: 8px; }
+.project.restrito .project-status::before {
+  content: ""; width: 9px; height: 11px; flex: none;
+  background: var(--accent-green); border-radius: 2px 2px 1px 1px;
+  -webkit-mask: radial-gradient(circle at 50% 0, transparent 2.4px, #000 2.6px) top/100% 60% no-repeat, linear-gradient(#000,#000) bottom/100% 55% no-repeat;
+          mask: radial-gradient(circle at 50% 0, transparent 2.4px, #000 2.6px) top/100% 60% no-repeat, linear-gradient(#000,#000) bottom/100% 55% no-repeat;
+}
+.section-head + .projects { padding-top: 24px; }
 </style>
 </head>
 <body>
@@ -370,6 +379,122 @@ a { color: inherit; }
 
 </main>
 
+<div class="section-head" id="gestao">
+  <h2>Instrumentos para gestão municipal</h2>
+  <p>Produtos desenvolvidos com parceiros institucionais. Acesso restrito por senha enquanto estão em validação.</p>
+</div>
+
+<main class="projects">
+  <div class="project restrito">
+    <div class="project-status">Acesso com senha</div>
+    <h2 class="project-titulo"><a href="checklist-ma/">Como construir um sistema de M&amp;A no meu município?</a></h2>
+    <p class="project-desc">Checklist e diagnóstico em cinco etapas para institucionalizar sistemas de monitoramento e avaliação em governos subnacionais.</p>
+    <div class="project-nums">Convênio FGV CLEAR × TCE-ES</div>
+    <div class="project-ctas">
+      <a class="project-cta" href="checklist-ma/">Abrir o checklist <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <div class="project restrito">
+    <div class="project-status">Acesso com senha</div>
+    <h2 class="project-titulo"><a href="tdms-municipais/">Teorias de Mudança municipais</a></h2>
+    <p class="project-desc">Teorias de Mudança para saúde, educação e assistência social, com o que monitorar, avaliar e considerar em cada etapa.</p>
+    <div class="project-nums">3 setores · Convênio FGV CLEAR × TCE-ES</div>
+    <div class="project-ctas">
+      <a class="project-cta" href="tdms-municipais/">Abrir as Teorias de Mudança <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <div class="project restrito">
+    <div class="project-status">Acesso com senha</div>
+    <h2 class="project-titulo"><a href="mini-guia-ma/">Mini-guia de práticas em M&amp;A</a></h2>
+    <p class="project-desc">Dezessete experiências brasileiras e internacionais de monitoramento e avaliação, organizadas em cinco categorias analíticas.</p>
+    <div class="project-nums">17 experiências · 7 países</div>
+    <div class="project-ctas">
+      <a class="project-cta" href="mini-guia-ma/">Abrir o mini-guia <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <div class="project restrito">
+    <div class="project-status">Acesso com senha</div>
+    <h2 class="project-titulo"><a href="radar/">Radar de políticas municipais</a></h2>
+    <p class="project-desc">Agrega e classifica registros administrativos públicos (PNCP, Transferegov, SICONFI) por agenda de política municipal.</p>
+    <div class="project-nums">Protótipo · 2023 a 2025</div>
+    <div class="project-ctas">
+      <a class="project-cta" href="radar/">Abrir o radar <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+</main>
+
+<div class="section-head" id="ia">
+  <h2>Protótipos com IA</h2>
+  <p>Ferramentas experimentais que usam IA generativa para apoiar etapas do ciclo de políticas públicas. As respostas precisam de verificação humana. Acesso restrito por senha.</p>
+</div>
+
+<main class="projects">
+  <div class="project restrito">
+    <div class="project-status">Acesso com senha</div>
+    <h2 class="project-titulo"><a href="ia/evidencia-br/">EvidênciaBR Express</a></h2>
+    <p class="project-desc">Síntese rápida de evidência para uma pergunta de política, no método de revisão rápida do CLEAR: pergunta estruturada, hierarquia de fontes e classificação por nível.</p>
+    <div class="project-nums">Sintetizar · protótipo com IA</div>
+    <div class="project-ctas">
+      <a class="project-cta" href="ia/evidencia-br/">Abrir o protótipo <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <div class="project restrito">
+    <div class="project-status">Acesso com senha</div>
+    <h2 class="project-titulo"><a href="ia/what-works-brasil/">What Works Brasil</a></h2>
+    <p class="project-desc">Descreva um problema e o perfil do seu município para encontrar municípios comparáveis que enfrentaram algo parecido e o que fizeram.</p>
+    <div class="project-nums">Sintetizar · protótipo com IA</div>
+    <div class="project-ctas">
+      <a class="project-cta" href="ia/what-works-brasil/">Abrir o protótipo <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <div class="project restrito">
+    <div class="project-status">Acesso com senha</div>
+    <h2 class="project-titulo"><a href="ia/copiloto-gestor/">Copiloto do gestor</a></h2>
+    <p class="project-desc">Perguntas analíticas sobre a gestão do município, com orientação sobre como verificar cada resposta nos próprios dados.</p>
+    <div class="project-nums">Ler dados · protótipo com IA</div>
+    <div class="project-ctas">
+      <a class="project-cta" href="ia/copiloto-gestor/">Abrir o protótipo <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <div class="project restrito">
+    <div class="project-status">Acesso com senha</div>
+    <h2 class="project-titulo"><a href="ia/gerador-opcoes/">Gerador de opções de política</a></h2>
+    <p class="project-desc">Menu de opções de desenho para um problema de política, com instrumento, mecanismo, evidência e custo. Apoio à deliberação, não recomendação.</p>
+    <div class="project-nums">Propor · protótipo com IA</div>
+    <div class="project-ctas">
+      <a class="project-cta" href="ia/gerador-opcoes/">Abrir o protótipo <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <div class="project restrito">
+    <div class="project-status">Acesso com senha</div>
+    <h2 class="project-titulo"><a href="ia/editor-tr/">Editor de TR</a></h2>
+    <p class="project-desc">Rascunho estruturado de termo de referência a partir do objeto da contratação, com marcações do que falta e alertas de risco.</p>
+    <div class="project-nums">Construir · protótipo com IA</div>
+    <div class="project-ctas">
+      <a class="project-cta" href="ia/editor-tr/">Abrir o protótipo <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <div class="project restrito">
+    <div class="project-status">Acesso com senha</div>
+    <h2 class="project-titulo"><a href="ia/teoria-de-mudanca/">Auxiliar de Teoria de Mudança</a></h2>
+    <p class="project-desc">Levanta causas, cadeia de resultados, premissas, riscos e desenho avaliativo para você editar e exportar em Markdown, Word ou CSV.</p>
+    <div class="project-nums">Propor · protótipo com IA</div>
+    <div class="project-ctas">
+      <a class="project-cta" href="ia/teoria-de-mudanca/">Abrir o protótipo <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+</main>
+
 <section class="about">
   <div class="about-inner">
     <h2>FGV Policy Lab</h2>
@@ -397,6 +522,8 @@ a { color: inherit; }
       <div class="footer-col">
         <div class="footer-col-label">Este site</div>
         <a href="painel/">Painel de estatísticas</a>
+        <a href="#gestao">Instrumentos para gestão municipal</a>
+        <a href="#ia">Protótipos com IA</a>
         <a href="https://github.com/policy-lab/policy-lab.github.io" target="_blank" rel="noopener">Repositório no GitHub</a>
       </div>
       <div class="footer-col">

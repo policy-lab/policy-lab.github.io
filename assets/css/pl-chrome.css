@@ -1,0 +1,141 @@
+/* ==========================================================================
+   FGV Policy Lab · cabeçalho e rodapé padrão (identidade do Painel de estatísticas)
+   Usado por todas as ferramentas em policy-lab.github.io.
+   Classes com prefixo pl- para não colidir com o CSS de cada produto.
+   ========================================================================== */
+:root {
+  --pl-navy: #01354A;
+  --pl-navy2: #012030;
+  --pl-blue: #08B0EE;
+  --pl-green: #98C43B;
+  --pl-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --pl-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --pl-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+html { color-scheme: light; }
+
+/* ---------- Cabeçalho ---------- */
+.pl-header {
+  background: var(--pl-navy);
+  color: #fff;
+  padding: 56px 48px 60px;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--pl-sans);
+  line-height: 1.55;
+  box-sizing: border-box;
+}
+.pl-header *, .pl-footer * { box-sizing: border-box; }
+.pl-header::before {
+  content: ""; position: absolute; top: -120px; right: -120px;
+  width: 320px; height: 320px; border-radius: 50%;
+  background: var(--pl-blue); opacity: 0.08; pointer-events: none;
+}
+.pl-header::after {
+  content: ""; position: absolute; bottom: -100px; left: -80px;
+  width: 260px; height: 260px; border-radius: 50%;
+  background: var(--pl-green); opacity: 0.07; pointer-events: none;
+}
+.pl-header-inner { max-width: 1320px; margin: 0 auto; position: relative; z-index: 1; }
+.pl-brand-row {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  margin: 0 0 36px; flex-wrap: wrap; gap: 16px;
+}
+.pl-header .pl-logo { display: block; border: 0; }
+.pl-header .pl-logo img { height: 44px; width: auto; display: block; }
+.pl-header-links { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.pl-header .pl-top-link {
+  font-family: var(--pl-sans); font-size: 12px; font-weight: 400;
+  color: rgba(255,255,255,0.75); text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 2px;
+  transition: color .2s, border-color .2s;
+}
+.pl-header .pl-top-link:hover { color: var(--pl-green); border-color: var(--pl-green); }
+.pl-header .pl-tagline {
+  font-family: var(--pl-mono); font-size: 11px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--pl-blue); font-weight: 500;
+  margin: 0 0 22px;
+}
+.pl-header .pl-title {
+  font-family: var(--pl-serif); font-weight: 400; font-style: normal;
+  font-size: clamp(34px, 5vw, 56px); line-height: 1.08; letter-spacing: -0.02em;
+  margin: 0 0 18px; max-width: 940px; color: #fff; padding: 0; border: 0;
+  text-transform: none;
+}
+.pl-header .pl-title em { font-style: italic; font-weight: 400; color: var(--pl-blue); }
+.pl-header .pl-subtitle {
+  font-family: var(--pl-sans); font-size: 17px; font-weight: 400;
+  color: rgba(255,255,255,0.85); max-width: 720px; line-height: 1.55; margin: 0 0 8px;
+}
+.pl-header .pl-subtitle em { font-style: italic; color: var(--pl-blue); }
+.pl-header .pl-subtitle a { color: #fff; text-decoration: underline; text-decoration-color: var(--pl-blue); text-underline-offset: 3px; }
+.pl-header .pl-meta {
+  display: flex; gap: 56px; padding-top: 28px; margin-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.18); flex-wrap: wrap;
+}
+.pl-header .pl-meta-item {
+  font-family: var(--pl-mono); font-size: 11px; color: rgba(255,255,255,0.65);
+  letter-spacing: 0.04em; text-transform: uppercase; font-weight: 500;
+}
+.pl-header .pl-meta-item strong {
+  display: block; font-family: var(--pl-sans); color: #fff; font-size: 14px;
+  font-weight: 500; margin-top: 4px; letter-spacing: 0; text-transform: none;
+}
+
+/* ---------- Rodapé ---------- */
+.pl-footer {
+  background: var(--pl-navy2); color: rgba(255,255,255,0.75);
+  padding: 56px 48px 40px; font-size: 13px; font-family: var(--pl-sans);
+  line-height: 1.55;
+}
+.pl-footer-inner { max-width: 1320px; margin: 0 auto; }
+.pl-footer-grid {
+  display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 48px; margin-bottom: 40px;
+}
+.pl-footer .pl-footer-logo { display: block; margin-bottom: 14px; border: 0; }
+.pl-footer .pl-footer-logo img { height: 36px; width: auto; display: block; }
+.pl-footer .pl-footer-tag { font-size: 13px; line-height: 1.6; color: rgba(255,255,255,0.65); max-width: 420px; margin: 0; }
+.pl-footer .pl-footer-label {
+  font-family: var(--pl-mono); font-size: 10px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--pl-blue); margin-bottom: 14px; font-weight: 500;
+}
+.pl-footer .pl-footer-col a {
+  display: block; font-size: 13px; color: rgba(255,255,255,0.85);
+  margin-bottom: 8px; text-decoration: none; border: 0; transition: color .2s;
+}
+.pl-footer .pl-footer-col a:hover { color: var(--pl-green); }
+.pl-footer .pl-footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15); padding-top: 24px;
+  display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+  font-family: var(--pl-mono); font-size: 11px; color: rgba(255,255,255,0.45);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .pl-header { padding: 40px 24px 48px; }
+  .pl-header .pl-logo img { height: 36px; }
+  .pl-header .pl-meta { gap: 28px; }
+  .pl-footer { padding: 40px 24px 32px; }
+  .pl-footer-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+@media print {
+  .pl-header { padding: 16px 0; background: #fff; color: #000; }
+  .pl-header::before, .pl-header::after, .pl-brand-row, .pl-footer { display: none; }
+  .pl-header .pl-title, .pl-header .pl-subtitle { color: #000; }
+}
+
+/* ---------- Barra de navegação interna (abaixo do cabeçalho) ---------- */
+.pl-subnav {
+  background: var(--pl-navy2); position: sticky; top: 0; z-index: 100;
+  font-family: var(--pl-sans);
+}
+.pl-subnav-inner {
+  max-width: 1320px; margin: 0 auto; padding: 0 48px;
+  display: flex; gap: 4px; overflow-x: auto;
+}
+.pl-subnav a {
+  color: rgba(255,255,255,0.72); text-decoration: none; font-size: 14px;
+  padding: 14px 14px 12px; border-bottom: 2px solid transparent; white-space: nowrap;
+}
+.pl-subnav a:hover { color: #fff; border-bottom-color: var(--pl-green); }
+@media (max-width: 768px) { .pl-subnav-inner { padding: 0 16px; } }

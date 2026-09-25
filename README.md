@@ -8,8 +8,15 @@ Site com as ferramentas abertas do **FGV Policy Lab**, centro de pesquisa aplica
 
 | Projeto | Endereço | Estado |
 |---|---|---|
-| Painel de estatísticas | https://policy-lab.github.io/painel/ | No ar |
+| Painel de estatísticas | https://policy-lab.github.io/painel/ | No ar, aberto |
 | Checklists de avaliação | — | Em construção |
+| Checklist de sistemas de M&A | https://policy-lab.github.io/checklist-ma/ | No ar, com senha |
+| Teorias de Mudança municipais | https://policy-lab.github.io/tdms-municipais/ | No ar, com senha |
+| Mini-guia de práticas em M&A | https://policy-lab.github.io/mini-guia-ma/ | No ar, com senha |
+| Radar de políticas municipais | https://policy-lab.github.io/radar/ | No ar, com senha |
+| Protótipos com IA (6) | https://policy-lab.github.io/ia/ | No ar, com senha |
+
+As ferramentas com senha estão criptografadas (StaticCrypt). Veja [PRODUTOS-PROTEGIDOS.md](PRODUTOS-PROTEGIDOS.md) antes de mexer nelas.
 
 ---
 
