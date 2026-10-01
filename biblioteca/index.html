@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biblioteca · FGV Policy Lab</title>
+<meta name="description" content="Biblioteca de publicações sobre monitoramento e avaliação de políticas públicas do FGV Policy Lab e FGV CLEAR.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/pl-chrome.css">
+<style>
+:root{--navy:#01354A;--navy2:#012030;--blue:#08B0EE;--green:#98C43B;--ink:#1A1A1C;--mute:#4A4A50;--soft:#8A8A90;--line:#E3E6EA;--paper:#F7F5EF;
+--t1:#98C43B;--t2:#08B0EE;--t3:#01354A;--t4:#B4532A;--t5:#6B4E9B;--t6:#8A8A90}
+*{box-sizing:border-box}
+body{margin:0;font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+.wrap{max-width:1320px;margin:0 auto;padding:0 48px}
+/* trilha */
+.trilha{background:var(--paper);border-bottom:1px solid var(--line)}
+.trilha-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:0}
+.passo{all:unset;cursor:pointer;display:block;padding:28px 24px 26px;border-right:1px solid var(--line);position:relative;transition:background .2s}
+.passo:first-child{border-left:1px solid var(--line)}
+.passo:hover{background:#fff}
+.passo[aria-pressed="true"]{background:#fff}
+.passo[aria-pressed="true"]::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--c)}
+.passo:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
+.passo-n{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--c);font-weight:500}
+.passo h2{font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:24px;line-height:1.15;margin:8px 0 8px;color:var(--navy)}
+.passo p{margin:0;font-size:14px;color:var(--mute)}
+.passo .cnt{display:block;margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--soft)}
+.extras{display:flex;gap:10px;flex-wrap:wrap;padding:16px 0 20px}
+.chip-shelf{all:unset;cursor:pointer;font-size:13px;padding:7px 14px;border:1px solid var(--line);background:#fff;border-radius:999px;color:var(--mute)}
+.chip-shelf[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip-shelf:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+/* filtros */
+.tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding:28px 0 8px}
+.busca{flex:1 1 280px;position:relative}
+.busca input{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1px solid #cfd5db;background:#fff;color:var(--ink)}
+.busca input:focus,.tools select:focus{outline:2px solid var(--blue);outline-offset:1px;border-color:var(--blue)}
+.tools select{font:inherit;font-size:14px;padding:11px 10px;border:1px solid #cfd5db;background:#fff;color:var(--ink);max-width:220px}
+.tools label.ck{display:flex;gap:8px;align-items:center;font-size:14px;color:var(--mute);cursor:pointer}
+.status{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:6px 0 20px;font-size:13px;color:var(--soft)}
+.status button[hidden]{display:none!important}
+.status button{all:unset;cursor:pointer;color:var(--navy);border-bottom:1px solid var(--blue);font-size:13px}
+.guia{margin:0 0 24px;padding:18px 22px;border-left:4px solid var(--c,var(--navy));background:var(--paper);font-size:15px;color:var(--mute)}
+.guia strong{display:block;font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:20px;color:var(--navy);margin-bottom:4px}
+/* grade */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:32px 24px;padding-bottom:72px}
+.card{all:unset;cursor:pointer;display:flex;flex-direction:column;gap:10px}
+.card:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.capa{aspect-ratio:3/4.1;width:100%;overflow:hidden;position:relative;background:var(--paper);box-shadow:0 1px 2px rgba(1,32,48,.08),0 6px 18px rgba(1,32,48,.08);transition:transform .2s,box-shadow .2s}
+.card:hover .capa{transform:translateY(-3px);box-shadow:0 2px 4px rgba(1,32,48,.1),0 12px 28px rgba(1,32,48,.14)}
+.capa img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.gen{position:absolute;inset:0;background:var(--navy);color:#fff;padding:18px 16px;display:flex;flex-direction:column}
+.gen::before{content:"";position:absolute;top:-50px;right:-50px;width:140px;height:140px;border-radius:50%;background:var(--c);opacity:.22}
+.gen::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--c)}
+.gen .g-tipo{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--c);position:relative;filter:brightness(1.25)}
+.gen .g-tit{font-family:'Fraunces',Georgia,serif;font-size:17px;line-height:1.18;margin:12px 0 0;position:relative;display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden}
+.gen .g-inst{margin-top:auto;font-size:11px;color:rgba(255,255,255,.7);position:relative;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.gen .g-ano{font-family:'JetBrains Mono',monospace;font-size:11px;color:#fff;margin-top:4px;position:relative}
+.selo{position:absolute;top:8px;left:8px;z-index:2;background:var(--green);color:var(--navy2);font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;padding:3px 7px;text-transform:uppercase}
+.c-meta{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft)}
+.c-tit{font-family:'Fraunces',Georgia,serif;font-size:16.5px;line-height:1.25;color:var(--navy);margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.c-aut{font-size:13px;color:var(--mute);margin:0;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.vazio{padding:48px 0;color:var(--mute)}
+/* detalhe */
+dialog{border:0;padding:0;max-width:880px;width:calc(100% - 32px);max-height:calc(100vh - 48px);box-shadow:0 24px 64px rgba(1,32,48,.35)}
+dialog::backdrop{background:rgba(1,32,48,.55)}
+.d{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:32px}
+.d .capa{box-shadow:none}
+.d h3{font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:28px;line-height:1.15;color:var(--navy);margin:6px 0 10px}
+.d .aut{font-size:14px;color:var(--mute);margin:0 0 16px}
+.d dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:13px;margin:0 0 18px}
+.d dt{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding-top:2px}
+.d dd{margin:0;color:var(--ink)}
+.d .bloco{margin:0 0 16px;font-size:14.5px;color:var(--ink)}
+.d .bloco b{display:block;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:500;margin-bottom:4px}
+.acoes{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-weight:600;font-size:14px;padding:11px 18px;border:0;background:var(--navy);color:#fff;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--navy2)}
+.btn.sec{background:#fff;color:var(--navy);border:1px solid var(--navy)}
+.btn.sec:hover{background:var(--paper)}
+.btn:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.fechar{position:absolute;top:10px;right:12px;all:unset;cursor:pointer;font-size:26px;line-height:1;color:var(--mute);padding:6px 10px}
+.fechar:focus-visible{outline:2px solid var(--blue)}
+.nota{font-size:12px;color:var(--soft);margin-top:10px}
+@media (max-width:900px){.trilha-grid{grid-template-columns:1fr 1fr}.passo:nth-child(2){border-right:1px solid var(--line)}.passo:nth-child(3){border-left:1px solid var(--line)}}
+@media (max-width:768px){.wrap{padding:0 20px}.d{grid-template-columns:1fr;padding:24px}.d .capa{max-width:180px}.grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:24px 16px}.tools select{max-width:none;flex:1 1 45%}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="pl-header" role="banner">
+  <div class="pl-header-inner">
+    <div class="pl-brand-row">
+      <a href="/" class="pl-logo" aria-label="FGV CLEAR e FGV Policy Lab"><img src="/assets/img/clear-policy-lab-branco.png" alt="FGV CLEAR · FGV Policy Lab"></a>
+      <div class="pl-header-links">
+        <a href="/" class="pl-top-link">Todas as ferramentas</a>
+        <a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" class="pl-top-link" target="_blank" rel="noopener">FGV Policy Lab &rarr;</a>
+      </div>
+    </div>
+    <div class="pl-tagline">Biblioteca · Monitoramento e avaliação</div>
+    <h1 class="pl-title">Biblioteca do <em>Policy Lab</em></h1>
+    <p class="pl-subtitle">Publicações selecionadas sobre monitoramento e avaliação de políticas públicas, organizadas como uma trilha: do primeiro contato com o tema até o aprofundamento. Inclui a produção do FGV CLEAR e referências nacionais e internacionais.</p>
+    <div class="pl-meta"><div class="pl-meta-item">Publicações<strong><span id="n-total">110</span></strong></div><div class="pl-meta-item">Produção CLEAR<strong><span id="n-clear">36</span></strong></div><div class="pl-meta-item">Em português<strong><span id="n-pt">72</span></strong></div><div class="pl-meta-item">Acesso<strong>Aberto</strong></div></div>
+  </div>
+</div>
+
+<section class="trilha" aria-label="Trilha de aprendizagem">
+  <div class="wrap">
+    <div class="trilha-grid" id="trilha"></div>
+    <div class="extras" id="extras"></div>
+  </div>
+</section>
+<main class="wrap" id="conteudo">
+  <div class="tools" role="search">
+    <div class="busca"><label for="q" class="sr" style="position:absolute;left:-9999px">Buscar</label>
+      <input id="q" type="search" placeholder="Buscar por título, autor, instituição ou palavra-chave"></div>
+    <select id="f-tema" aria-label="Tema"><option value="">Todos os temas</option></select>
+    <select id="f-tipo" aria-label="Tipo"><option value="">Todos os tipos</option></select>
+    <select id="f-idioma" aria-label="Idioma"><option value="">Todos os idiomas</option></select>
+    <select id="f-foco" aria-label="Foco geográfico"><option value="">Qualquer região</option></select>
+    <label class="ck"><input type="checkbox" id="f-clear"> Só produção CLEAR</label>
+  </div>
+  <div class="status"><span id="contagem"></span><button id="limpar" type="button" hidden>Limpar filtros</button></div>
+  <div id="guia"></div>
+  <div class="grid" id="grade" aria-live="polite"></div>
+</main>
+<dialog id="dlg" aria-labelledby="d-tit"><button class="fechar" id="fechar" aria-label="Fechar">&times;</button><div id="d-corpo"></div></dialog>
+
+<div class="pl-footer" role="contentinfo">
+  <div class="pl-footer-inner">
+    <div class="pl-footer-grid">
+      <div>
+        <a href="/" class="pl-footer-logo" aria-label="FGV CLEAR e FGV Policy Lab"><img src="/assets/img/clear-policy-lab-branco.png" alt="FGV CLEAR · FGV Policy Lab"></a>
+        <p class="pl-footer-tag">Biblioteca de publicações em monitoramento e avaliação mantida pelo FGV CLEAR. Os materiais de terceiros pertencem às instituições autoras; aqui indicamos a fonte original.</p>
+      </div>
+      <div class="pl-footer-col">
+        <div class="pl-footer-label">Esta ferramenta</div>
+        <a href="mailto:clear.fgv@fgv.br?subject=Sugest%C3%A3o%20para%20a%20Biblioteca">Sugerir uma publicação</a><a href="/">Todas as ferramentas</a>
+      </div>
+      <div class="pl-footer-col">
+        <div class="pl-footer-label">FGV Policy Lab</div>
+        <a href="/">Todas as ferramentas</a>
+        <a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" target="_blank" rel="noopener">Sobre o centro</a>
+        <a href="mailto:clear.fgv@fgv.br">clear.fgv@fgv.br</a>
+      </div>
+    </div>
+    <div class="pl-footer-bottom">
+      <span>© 2026 FGV CLEAR · FGV Policy Lab · FGV EESP</span>
+      <span>Acervo em construção</span>
+    </div>
+  </div>
+</div>
+
+<script>
+const TRILHAS=[
+ {k:'Primeiros passos',n:'01',c:'var(--t1)',l:'Quero entender o que é M&A',q:'Estou começando a estudar monitoramento e avaliação. Por onde começo?'},
+ {k:'M&A na prática',n:'02',c:'var(--t2)',l:'Quero ver como é feito na prática',q:'Já entendi os conceitos. Como uma avaliação de política pública acontece de verdade?'},
+ {k:'Métodos',n:'03',c:'var(--t3)',l:'Quero aprender os métodos',q:'Quero entender como medir causalidade e produzir evidências mais rigorosas. Quais métodos posso usar?'},
+ {k:'Aprofundar',n:'04',c:'var(--t4)',l:'Quero me aprofundar e pesquisar',q:'Já domino os fundamentos e alguns métodos. O que estudar para me aprofundar?'}];
+const EXTRAS=[{k:'Sobre o CLEAR',c:'var(--t5)',l:'Relatórios do CLEAR',q:'O que o FGV EESP CLEAR produz e como atua.'},{k:'Acervo COVID-19',c:'var(--t6)',l:'Acervo COVID-19',q:'Materiais reunidos durante a pandemia, em 2020 e 2021.'}];
+const COR=Object.fromEntries([...TRILHAS,...EXTRAS].map(t=>[t.k,t.c]));
+let DADOS=[],CFG={},trilhaSel='',dlgTrigger=null;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function pdfLink(it){
+  if(!it.arquivo||!CFG.dropbox_pasta) return '';
+  try{const u=new URL(CFG.dropbox_pasta);u.searchParams.delete('dl');u.searchParams.set('preview',it.arquivo);return u.toString();}catch(e){return ''}
+}
+function capa(it){
+  const selo=it.clear?'<span class="selo">CLEAR</span>':'';
+  if(it.capa) return `<div class="capa">${selo}<img src="capas/${it.id}.jpg" alt="" loading="lazy"></div>`;
+  return `<div class="capa" style="--c:${COR[it.trilha]}">${selo}<div class="gen"><span class="g-tipo">${esc(it.tipo)}</span><span class="g-tit">${esc(it.titulo)}</span><span class="g-inst">${esc(it.instituicao)}</span><span class="g-ano">${esc(it.ano)}</span></div></div>`;
+}
+function filtrar(){
+  const q=norm($('#q').value), te=$('#f-tema').value, ti=$('#f-tipo').value, id=$('#f-idioma').value, fo=$('#f-foco').value, cl=$('#f-clear').checked;
+  return DADOS.filter(it=>(!trilhaSel||it.trilha===trilhaSel)&&(!te||it.temas.includes(te))&&(!ti||it.tipo===ti)&&(!id||it.idioma===id)&&(!fo||it.foco===fo)&&(!cl||it.clear)
+    &&(!q||it._b.includes(q)));
+}
+function render(){
+  const r=filtrar();
+  const ativos=trilhaSel||$('#q').value||$('#f-tema').value||$('#f-tipo').value||$('#f-idioma').value||$('#f-foco').value||$('#f-clear').checked;
+  $('#limpar').hidden=!ativos;
+  $('#contagem').textContent=`${r.length} ${r.length===1?'publicação':'publicações'}`;
+  const t=[...TRILHAS,...EXTRAS].find(x=>x.k===trilhaSel);
+  $('#guia').innerHTML=t?`<div class="guia" style="--c:${t.c}"><strong>${esc(t.l)}</strong>${esc(t.q)}</div>`:'';
+  $('#grade').innerHTML=r.length?r.map(it=>`<button class="card" type="button" data-id="${it.id}" aria-label="${esc(it.titulo)}">${capa(it)}<span class="c-meta">${esc(it.tipo)} · ${esc(it.ano)}</span><span class="c-tit">${esc(it.titulo)}</span><span class="c-aut">${esc(it.autores)}</span></button>`).join(''):'<p class="vazio">Nenhuma publicação com esses filtros.</p>';
+  document.querySelectorAll('.passo,.chip-shelf').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===trilhaSel));
+}
+function abrir(id,trigger){
+  const it=DADOS.find(x=>x.id===id); if(!it) return; dlgTrigger=trigger;
+  const pdf=pdfLink(it);
+  const linhas=[['Tipo',it.tipo],['Ano',it.ano],['Idioma',it.idioma],['Páginas',it.paginas],['Instituição',it.instituicao],['Temas',it.temas.join(', ')],['Foco',it.foco],['Trilha',it.trilha],['Código',it.id]].filter(x=>x[1]);
+  $('#d-corpo').innerHTML=`<div class="d"><div>${capa(it)}</div><div>
+   <div class="c-meta">${it.clear?'Produção FGV CLEAR · ':''}${esc(it.trilha)}</div>
+   <h3 id="d-tit">${esc(it.titulo)}</h3><p class="aut">${esc(it.autores)}</p>
+   ${it.resumo?`<p class="bloco"><b>Sobre</b>${esc(it.resumo)}</p>`:''}
+   ${it.quando?`<p class="bloco"><b>Quando consultar</b>${esc(it.quando)}</p>`:''}
+   <dl>${linhas.map(([a,b])=>`<dt>${a}</dt><dd>${esc(b)}</dd>`).join('')}</dl>
+   <div class="acoes">${pdf?`<a class="btn" href="${esc(pdf)}" target="_blank" rel="noopener">Abrir PDF</a>`:''}
+     ${it.url?`<a class="btn ${pdf?'sec':''}" href="${esc(it.url)}" target="_blank" rel="noopener">Fonte original</a>`:''}
+     ${it.citacao?`<button class="btn sec" type="button" id="copiar">Copiar citação</button>`:''}</div>
+   ${it.citacao?`<p class="nota" id="cit">${esc(it.citacao)}</p>`:''}
+  </div></div>`;
+  const c=$('#copiar'); if(c) c.onclick=()=>{navigator.clipboard?.writeText(it.citacao).then(()=>{c.textContent='Citação copiada'})};
+  $('#dlg').showModal();
+}
+async function init(){
+  try{CFG=await (await fetch('config.json',{cache:'no-store'})).json()}catch(e){CFG={}}
+  const d=await (await fetch('catalogo.json',{cache:'no-store'})).json();
+  DADOS=d.itens.map(it=>({...it,_b:norm([it.titulo,it.autores,it.instituicao,it.temas.join(' '),it.tipo,it.resumo].join(' '))}));
+  $('#n-total').textContent=DADOS.length; $('#n-clear').textContent=DADOS.filter(x=>x.clear).length; $('#n-pt').textContent=DADOS.filter(x=>x.idioma.startsWith('Português')).length;
+  $('#trilha').innerHTML=TRILHAS.map(t=>`<button class="passo" type="button" data-k="${t.k}" style="--c:${t.c}" aria-pressed="false"><span class="passo-n">Passo ${t.n}</span><h2>${esc(t.l)}</h2><p>${esc(t.q)}</p><span class="cnt">${DADOS.filter(x=>x.trilha===t.k).length} publicações</span></button>`).join('');
+  $('#extras').innerHTML=EXTRAS.map(t=>`<button class="chip-shelf" type="button" data-k="${t.k}" aria-pressed="false">${esc(t.l)} · ${DADOS.filter(x=>x.trilha===t.k).length}</button>`).join('');
+  const opts=(sel,vals)=>{$(sel).insertAdjacentHTML('beforeend',[...new Set(vals)].sort((a,b)=>a.localeCompare(b,'pt')).map(v=>`<option>${esc(v)}</option>`).join(''))};
+  opts('#f-tema',DADOS.flatMap(x=>x.temas)); opts('#f-tipo',DADOS.map(x=>x.tipo)); opts('#f-idioma',DADOS.map(x=>x.idioma)); opts('#f-foco',DADOS.map(x=>x.foco));
+  document.querySelectorAll('.passo,.chip-shelf').forEach(b=>b.onclick=()=>{trilhaSel=trilhaSel===b.dataset.k?'':b.dataset.k;render()});
+  ['#q','#f-tema','#f-tipo','#f-idioma','#f-foco','#f-clear'].forEach(s=>$(s).addEventListener('input',render));
+  $('#limpar').onclick=()=>{trilhaSel='';['#q','#f-tema','#f-tipo','#f-idioma','#f-foco'].forEach(s=>$(s).value='');$('#f-clear').checked=false;render()};
+  $('#grade').onclick=e=>{const b=e.target.closest('.card'); if(b) abrir(b.dataset.id,b)};
+  $('#fechar').onclick=()=>$('#dlg').close();
+  $('#dlg').addEventListener('click',e=>{if(e.target===$('#dlg'))$('#dlg').close()});
+  $('#dlg').addEventListener('close',()=>dlgTrigger?.focus());
+  render();
+}
+init();
+</script>
+</body>
+</html>
