@@ -194,7 +194,7 @@ function render(){
 }
 function abrir(id,trigger){
   const it=DADOS.find(x=>x.id===id); if(!it) return; dlgTrigger=trigger;
-  const pdf=pdfLink(it);
+  const pdf=pdfLink(it);const repoFGV=it.clear&&!/repositorio\.fgv\.br/.test(it.url||'');const fonte=repoFGV?'https://repositorio.fgv.br/communities/86fb25f1-57c0-4a7f-bcea-9343b699a111/subcoms-cols':it.url;const fonteTxt=(it.clear?'Reposit\u00f3rio FGV':'Fonte original');
   const linhas=[['Tipo',it.tipo],['Ano',it.ano],['Idioma',it.idioma],['Páginas',it.paginas],['Instituição',it.instituicao],['Temas',it.temas.join(', ')],['Foco',it.foco],['Trilha',it.trilha],['Código',it.id]].filter(x=>x[1]);
   $('#d-corpo').innerHTML=`<div class="d"><div>${capa(it)}</div><div>
    <div class="c-meta">${it.clear?'Produção FGV CLEAR · ':''}${esc(it.trilha)}</div>
@@ -202,8 +202,8 @@ function abrir(id,trigger){
    ${it.resumo?`<p class="bloco"><b>Sobre</b>${esc(it.resumo)}</p>`:''}
    ${it.quando?`<p class="bloco"><b>Quando consultar</b>${esc(it.quando)}</p>`:''}
    <dl>${linhas.map(([a,b])=>`<dt>${a}</dt><dd>${esc(b)}</dd>`).join('')}</dl>
-   <div class="acoes">${pdf?`<a class="btn" href="${esc(pdf)}" target="_blank" rel="noopener">Abrir PDF no Dropbox</a>`:''}
-     ${it.url?`<a class="btn ${pdf?'sec':''}" href="${esc(it.url)}" target="_blank" rel="noopener">Fonte original</a>`:''}
+   <div class="acoes">${pdf?`<a class="btn" href="${esc(pdf)}" target="_blank" rel="noopener">Baixar no reposit&oacute;rio digital</a>`:''}
+     ${fonte?`<a class="btn ${pdf?'sec':''}" href="${esc(fonte)}" target="_blank" rel="noopener">${fonteTxt}</a>`:''}
      ${it.citacao?`<button class="btn sec" type="button" id="copiar">Copiar citação</button>`:''}</div>
    ${it.citacao?`<p class="nota" id="cit">${esc(it.citacao)}</p>`:''}
   </div></div>`;
