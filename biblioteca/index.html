@@ -194,7 +194,7 @@ function render(){
 }
 function abrir(id,trigger){
   const it=DADOS.find(x=>x.id===id); if(!it) return; dlgTrigger=trigger;
-  const pdf=pdfLink(it);const repoFGV=it.clear&&!/repositorio\.fgv\.br/.test(it.url||'');const fonte=repoFGV?'https://repositorio.fgv.br/communities/86fb25f1-57c0-4a7f-bcea-9343b699a111/subcoms-cols':it.url;const fonteTxt=(it.clear?'Reposit\u00f3rio FGV':'Fonte original');
+  const pdf=pdfLink(it);const fonte=it.url;const fonteTxt=(/repositorio\.fgv\.br/.test(it.url||'')?'Reposit\u00f3rio FGV':'Fonte original');
   const linhas=[['Tipo',it.tipo],['Ano',it.ano],['Idioma',it.idioma],['Páginas',it.paginas],['Instituição',it.instituicao],['Temas',it.temas.join(', ')],['Foco',it.foco],['Trilha',it.trilha],['Código',it.id]].filter(x=>x[1]);
   $('#d-corpo').innerHTML=`<div class="d"><div>${capa(it)}</div><div>
    <div class="c-meta">${it.clear?'Produção FGV CLEAR · ':''}${esc(it.trilha)}</div>
