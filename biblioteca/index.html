@@ -30,15 +30,15 @@ body{margin:0;font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',
 .extras{display:flex;gap:10px;flex-wrap:wrap;padding:16px 0 20px}
 .chip-shelf{all:unset;cursor:pointer;font-size:13px;padding:7px 14px;border:1px solid var(--line);background:#fff;border-radius:999px;color:var(--mute)}
 .colrow::before{content:'Coleções';font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);align-self:center;margin-right:4px}
-.colrow{padding-top:0}
+.colrow{padding-top:16px}
 .chip-shelf[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
 .chip-shelf:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 /* filtros */
-.tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding:28px 0 8px}
-.busca{flex:1 1 280px;position:relative}
+.tools{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;padding:28px 0 8px}#f-clear{grid-column:span 2}
+.busca{grid-column:1/-1;position:relative}
 .busca input{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1px solid #cfd5db;background:#fff;color:var(--ink)}
 .busca input:focus,.tools select:focus{outline:2px solid var(--blue);outline-offset:1px;border-color:var(--blue)}
-.tools select{font:inherit;font-size:14px;padding:11px 10px;border:1px solid #cfd5db;background:#fff;color:var(--ink);max-width:220px}
+.tools select{font:inherit;font-size:14px;padding:11px 10px;border:1px solid #cfd5db;background:#fff;color:var(--ink);width:100%}
 .tools label.ck{display:flex;gap:8px;align-items:center;font-size:14px;color:var(--mute);cursor:pointer}
 .status{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:6px 0 20px;font-size:13px;color:var(--soft)}
 .status button[hidden]{display:none!important}
@@ -86,7 +86,7 @@ dialog::backdrop{background:rgba(1,32,48,.55)}
 .fechar:focus-visible{outline:2px solid var(--blue)}
 .nota{font-size:12px;color:var(--soft);margin-top:10px}
 @media (max-width:900px){.trilha-grid{grid-template-columns:1fr 1fr}.passo:nth-child(2){border-right:1px solid var(--line)}.passo:nth-child(3){border-left:1px solid var(--line)}}
-@media (max-width:768px){.wrap{padding:0 20px}.d{grid-template-columns:1fr;padding:24px}.d .capa{max-width:180px}.grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:24px 16px}.tools select{max-width:none;flex:1 1 45%}}
+@media (max-width:768px){.wrap{padding:0 20px}.d{grid-template-columns:1fr;padding:24px}.d .capa{max-width:180px}.grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:24px 16px}.tools{grid-template-columns:1fr 1fr}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -111,7 +111,7 @@ dialog::backdrop{background:rgba(1,32,48,.55)}
 <section class="trilha" aria-label="Trilha de aprendizagem">
   <div class="wrap">
     <div class="trilha-grid" id="trilha"></div>
-    <div class="extras" id="extras"></div>
+    <div class="extras" id="extras" style="display:none"></div>
     <div class="extras colrow" id="colecoes" aria-label="Coleções"></div>
   </div>
 </section>
@@ -123,7 +123,7 @@ dialog::backdrop{background:rgba(1,32,48,.55)}
     <select id="f-tipo" aria-label="Tipo"><option value="">Todos os tipos</option></select>
     <select id="f-idioma" aria-label="Idioma"><option value="">Todos os idiomas</option></select>
     <select id="f-foco" aria-label="Foco geográfico"><option value="">Qualquer região</option></select>
-    <label class="ck"><input type="checkbox" id="f-clear"> Só produção CLEAR</label>
+    <select id="f-clear" aria-label="Autoria"><option value="">Qualquer autoria</option><option value="1">Produ&ccedil;&atilde;o FGV Policy Lab / FGV CLEAR</option></select>
   </div>
   <div class="status"><span id="contagem"></span><button id="limpar" type="button" hidden>Limpar filtros</button></div>
   <div id="guia"></div>
@@ -178,13 +178,13 @@ function capa(it){
   return `<div class="capa" style="--c:${COR[it.trilha]}">${selo}<div class="gen"><span class="g-tipo">${esc(it.tipo)}</span><span class="g-tit">${esc(it.titulo)}</span><span class="g-inst">${esc(it.instituicao)}</span><span class="g-ano">${esc(it.ano)}</span></div></div>`;
 }
 function filtrar(){
-  const q=norm($('#q').value), te=$('#f-tema').value, ti=$('#f-tipo').value, id=$('#f-idioma').value, fo=$('#f-foco').value, cl=$('#f-clear').checked;
+  const q=norm($('#q').value), te=$('#f-tema').value, ti=$('#f-tipo').value, id=$('#f-idioma').value, fo=$('#f-foco').value, cl=$('#f-clear').value;
   return DADOS.filter(it=>(!trilhaSel||it.trilha===trilhaSel)&&(!colSel||it.colecoes.includes(colSel))&&(!te||it.temas.includes(te))&&(!ti||it.tipo===ti)&&(!id||it.idioma===id)&&(!fo||it.foco===fo)&&(!cl||it.clear)
     &&(!q||it._b.includes(q)));
 }
 function render(){
   const r=filtrar();
-  const ativos=trilhaSel||colSel||$('#q').value||$('#f-tema').value||$('#f-tipo').value||$('#f-idioma').value||$('#f-foco').value||$('#f-clear').checked;
+  const ativos=trilhaSel||colSel||$('#q').value||$('#f-tema').value||$('#f-tipo').value||$('#f-idioma').value||$('#f-foco').value||$('#f-clear').value;
   $('#limpar').hidden=!ativos;
   $('#contagem').textContent=`${r.length} ${r.length===1?'publicação':'publicações'}`;
   const t=[...TRILHAS,...EXTRAS].find(x=>x.k===trilhaSel)||(colSel?{l:colSel,q:'Coleção temática que atravessa as trilhas.',c:'var(--navy)'}:null);
@@ -213,7 +213,7 @@ function abrir(id,trigger){
 async function init(){
   try{CFG=await (await fetch('config.json',{cache:'no-store'})).json()}catch(e){CFG={}}
   const d=await (await fetch('catalogo.json',{cache:'no-store'})).json();
-  DADOS=d.itens.map(it=>({...it,_b:norm([it.titulo,it.autores,it.instituicao,it.temas.join(' '),it.tipo,it.resumo].join(' '))}));
+  DADOS=d.itens.map(it=>({...it,colecoes:[...it.colecoes,...(it.trilha==='Sobre o CLEAR'?['Relat\u00f3rios do CLEAR']:it.trilha==='Acervo COVID-19'?['Acervo COVID-19']:[])],_b:norm([it.titulo,it.autores,it.instituicao,it.temas.join(' '),it.tipo,it.resumo].join(' '))}));
   $('#n-total').textContent=DADOS.length; $('#n-clear').textContent=DADOS.filter(x=>x.clear).length; const COLS=[...new Set(DADOS.flatMap(x=>x.colecoes))].sort((a,b)=>a.localeCompare(b,'pt'));$('#n-col').textContent=COLS.length;$('#colecoes').innerHTML=COLS.map(c=>`<button class="chip-shelf" type="button" data-c="${esc(c)}" aria-pressed="false">${esc(c)} · ${DADOS.filter(x=>x.colecoes.includes(c)).length}</button>`).join('');
   $('#trilha').innerHTML=TRILHAS.map(t=>`<button class="passo" type="button" data-k="${t.k}" style="--c:${t.c}" aria-pressed="false"><span class="passo-n">Passo ${t.n}</span><h2>${esc(t.l)}</h2><p>${esc(t.q)}</p><span class="cnt">${DADOS.filter(x=>x.trilha===t.k).length} publicações</span></button>`).join('');
   $('#extras').innerHTML=EXTRAS.map(t=>`<button class="chip-shelf" type="button" data-k="${t.k}" aria-pressed="false">${esc(t.l)} · ${DADOS.filter(x=>x.trilha===t.k).length}</button>`).join('');
@@ -221,7 +221,7 @@ async function init(){
   opts('#f-tema',DADOS.flatMap(x=>x.temas)); opts('#f-tipo',DADOS.map(x=>x.tipo)); opts('#f-idioma',DADOS.map(x=>x.idioma)); opts('#f-foco',DADOS.map(x=>x.foco));
   document.querySelectorAll('.passo,#extras .chip-shelf').forEach(b=>b.onclick=()=>{trilhaSel=trilhaSel===b.dataset.k?'':b.dataset.k;render()});document.querySelectorAll('#colecoes .chip-shelf').forEach(b=>b.onclick=()=>{colSel=colSel===b.dataset.c?'':b.dataset.c;render()});
   ['#q','#f-tema','#f-tipo','#f-idioma','#f-foco','#f-clear'].forEach(s=>$(s).addEventListener('input',render));
-  $('#limpar').onclick=()=>{trilhaSel='';colSel='';['#q','#f-tema','#f-tipo','#f-idioma','#f-foco'].forEach(s=>$(s).value='');$('#f-clear').checked=false;render()};
+  $('#limpar').onclick=()=>{trilhaSel='';colSel='';['#q','#f-tema','#f-tipo','#f-idioma','#f-foco'].forEach(s=>$(s).value='');$('#f-clear').value='';render()};
   $('#grade').onclick=e=>{const b=e.target.closest('.card'); if(b) abrir(b.dataset.id,b)};
   $('#fechar').onclick=()=>$('#dlg').close();
   $('#dlg').addEventListener('click',e=>{if(e.target===$('#dlg'))$('#dlg').close()});
