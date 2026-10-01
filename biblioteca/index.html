@@ -29,6 +29,8 @@ body{margin:0;font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',
 .passo .cnt{display:block;margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--soft)}
 .extras{display:flex;gap:10px;flex-wrap:wrap;padding:16px 0 20px}
 .chip-shelf{all:unset;cursor:pointer;font-size:13px;padding:7px 14px;border:1px solid var(--line);background:#fff;border-radius:999px;color:var(--mute)}
+.colrow::before{content:'Coleções';font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);align-self:center;margin-right:4px}
+.colrow{padding-top:0}
 .chip-shelf[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
 .chip-shelf:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 /* filtros */
@@ -101,8 +103,8 @@ dialog::backdrop{background:rgba(1,32,48,.55)}
     </div>
     <div class="pl-tagline">Biblioteca · Monitoramento e avaliação</div>
     <h1 class="pl-title">Biblioteca do <em>Policy Lab</em></h1>
-    <p class="pl-subtitle">Publicações selecionadas sobre monitoramento e avaliação de políticas públicas, organizadas como uma trilha: do primeiro contato com o tema até o aprofundamento. Inclui a produção do FGV CLEAR e referências nacionais e internacionais.</p>
-    <div class="pl-meta"><div class="pl-meta-item">Publicações<strong><span id="n-total">110</span></strong></div><div class="pl-meta-item">Produção CLEAR<strong><span id="n-clear">36</span></strong></div><div class="pl-meta-item">Em português<strong><span id="n-pt">72</span></strong></div><div class="pl-meta-item">Acesso<strong>Aberto</strong></div></div>
+    <p class="pl-subtitle">Publicações selecionadas sobre monitoramento e avaliação de políticas públicas, organizadas como uma trilha: do primeiro contato com o tema até o aprofundamento. Todo o acervo é em português: a produção do FGV CLEAR e referências do Brasil, de Portugal e dos países africanos de língua portuguesa.</p>
+    <div class="pl-meta"><div class="pl-meta-item">Publicações<strong><span id="n-total">84</span></strong></div><div class="pl-meta-item">Produção CLEAR<strong><span id="n-clear">34</span></strong></div><div class="pl-meta-item">Coleções<strong><span id="n-col">6</span></strong></div><div class="pl-meta-item">Acesso<strong>Aberto</strong></div></div>
   </div>
 </div>
 
@@ -110,6 +112,7 @@ dialog::backdrop{background:rgba(1,32,48,.55)}
   <div class="wrap">
     <div class="trilha-grid" id="trilha"></div>
     <div class="extras" id="extras"></div>
+    <div class="extras colrow" id="colecoes" aria-label="Coleções"></div>
   </div>
 </section>
 <main class="wrap" id="conteudo">
@@ -161,7 +164,7 @@ const TRILHAS=[
  {k:'Aprofundar',n:'04',c:'var(--t4)',l:'Quero me aprofundar e pesquisar',q:'Já domino os fundamentos e alguns métodos. O que estudar para me aprofundar?'}];
 const EXTRAS=[{k:'Sobre o CLEAR',c:'var(--t5)',l:'Relatórios do CLEAR',q:'O que o FGV EESP CLEAR produz e como atua.'},{k:'Acervo COVID-19',c:'var(--t6)',l:'Acervo COVID-19',q:'Materiais reunidos durante a pandemia, em 2020 e 2021.'}];
 const COR=Object.fromEntries([...TRILHAS,...EXTRAS].map(t=>[t.k,t.c]));
-let DADOS=[],CFG={},trilhaSel='',dlgTrigger=null;
+let DADOS=[],CFG={},trilhaSel='',colSel='',dlgTrigger=null;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
@@ -176,18 +179,18 @@ function capa(it){
 }
 function filtrar(){
   const q=norm($('#q').value), te=$('#f-tema').value, ti=$('#f-tipo').value, id=$('#f-idioma').value, fo=$('#f-foco').value, cl=$('#f-clear').checked;
-  return DADOS.filter(it=>(!trilhaSel||it.trilha===trilhaSel)&&(!te||it.temas.includes(te))&&(!ti||it.tipo===ti)&&(!id||it.idioma===id)&&(!fo||it.foco===fo)&&(!cl||it.clear)
+  return DADOS.filter(it=>(!trilhaSel||it.trilha===trilhaSel)&&(!colSel||it.colecoes.includes(colSel))&&(!te||it.temas.includes(te))&&(!ti||it.tipo===ti)&&(!id||it.idioma===id)&&(!fo||it.foco===fo)&&(!cl||it.clear)
     &&(!q||it._b.includes(q)));
 }
 function render(){
   const r=filtrar();
-  const ativos=trilhaSel||$('#q').value||$('#f-tema').value||$('#f-tipo').value||$('#f-idioma').value||$('#f-foco').value||$('#f-clear').checked;
+  const ativos=trilhaSel||colSel||$('#q').value||$('#f-tema').value||$('#f-tipo').value||$('#f-idioma').value||$('#f-foco').value||$('#f-clear').checked;
   $('#limpar').hidden=!ativos;
   $('#contagem').textContent=`${r.length} ${r.length===1?'publicação':'publicações'}`;
-  const t=[...TRILHAS,...EXTRAS].find(x=>x.k===trilhaSel);
+  const t=[...TRILHAS,...EXTRAS].find(x=>x.k===trilhaSel)||(colSel?{l:colSel,q:'Coleção temática que atravessa as trilhas.',c:'var(--navy)'}:null);
   $('#guia').innerHTML=t?`<div class="guia" style="--c:${t.c}"><strong>${esc(t.l)}</strong>${esc(t.q)}</div>`:'';
   $('#grade').innerHTML=r.length?r.map(it=>`<button class="card" type="button" data-id="${it.id}" aria-label="${esc(it.titulo)}">${capa(it)}<span class="c-meta">${esc(it.tipo)} · ${esc(it.ano)}</span><span class="c-tit">${esc(it.titulo)}</span><span class="c-aut">${esc(it.autores)}</span></button>`).join(''):'<p class="vazio">Nenhuma publicação com esses filtros.</p>';
-  document.querySelectorAll('.passo,.chip-shelf').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===trilhaSel));
+  document.querySelectorAll('.passo,#extras .chip-shelf').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===trilhaSel));document.querySelectorAll('#colecoes .chip-shelf').forEach(b=>b.setAttribute('aria-pressed',b.dataset.c===colSel));
 }
 function abrir(id,trigger){
   const it=DADOS.find(x=>x.id===id); if(!it) return; dlgTrigger=trigger;
@@ -199,7 +202,7 @@ function abrir(id,trigger){
    ${it.resumo?`<p class="bloco"><b>Sobre</b>${esc(it.resumo)}</p>`:''}
    ${it.quando?`<p class="bloco"><b>Quando consultar</b>${esc(it.quando)}</p>`:''}
    <dl>${linhas.map(([a,b])=>`<dt>${a}</dt><dd>${esc(b)}</dd>`).join('')}</dl>
-   <div class="acoes">${pdf?`<a class="btn" href="${esc(pdf)}" target="_blank" rel="noopener">Abrir PDF</a>`:''}
+   <div class="acoes">${pdf?`<a class="btn" href="${esc(pdf)}" target="_blank" rel="noopener">Abrir PDF no Dropbox</a>`:''}
      ${it.url?`<a class="btn ${pdf?'sec':''}" href="${esc(it.url)}" target="_blank" rel="noopener">Fonte original</a>`:''}
      ${it.citacao?`<button class="btn sec" type="button" id="copiar">Copiar citação</button>`:''}</div>
    ${it.citacao?`<p class="nota" id="cit">${esc(it.citacao)}</p>`:''}
@@ -211,14 +214,14 @@ async function init(){
   try{CFG=await (await fetch('config.json',{cache:'no-store'})).json()}catch(e){CFG={}}
   const d=await (await fetch('catalogo.json',{cache:'no-store'})).json();
   DADOS=d.itens.map(it=>({...it,_b:norm([it.titulo,it.autores,it.instituicao,it.temas.join(' '),it.tipo,it.resumo].join(' '))}));
-  $('#n-total').textContent=DADOS.length; $('#n-clear').textContent=DADOS.filter(x=>x.clear).length; $('#n-pt').textContent=DADOS.filter(x=>x.idioma.startsWith('Português')).length;
+  $('#n-total').textContent=DADOS.length; $('#n-clear').textContent=DADOS.filter(x=>x.clear).length; const COLS=[...new Set(DADOS.flatMap(x=>x.colecoes))].sort((a,b)=>a.localeCompare(b,'pt'));$('#n-col').textContent=COLS.length;$('#colecoes').innerHTML=COLS.map(c=>`<button class="chip-shelf" type="button" data-c="${esc(c)}" aria-pressed="false">${esc(c)} · ${DADOS.filter(x=>x.colecoes.includes(c)).length}</button>`).join('');
   $('#trilha').innerHTML=TRILHAS.map(t=>`<button class="passo" type="button" data-k="${t.k}" style="--c:${t.c}" aria-pressed="false"><span class="passo-n">Passo ${t.n}</span><h2>${esc(t.l)}</h2><p>${esc(t.q)}</p><span class="cnt">${DADOS.filter(x=>x.trilha===t.k).length} publicações</span></button>`).join('');
   $('#extras').innerHTML=EXTRAS.map(t=>`<button class="chip-shelf" type="button" data-k="${t.k}" aria-pressed="false">${esc(t.l)} · ${DADOS.filter(x=>x.trilha===t.k).length}</button>`).join('');
   const opts=(sel,vals)=>{$(sel).insertAdjacentHTML('beforeend',[...new Set(vals)].sort((a,b)=>a.localeCompare(b,'pt')).map(v=>`<option>${esc(v)}</option>`).join(''))};
   opts('#f-tema',DADOS.flatMap(x=>x.temas)); opts('#f-tipo',DADOS.map(x=>x.tipo)); opts('#f-idioma',DADOS.map(x=>x.idioma)); opts('#f-foco',DADOS.map(x=>x.foco));
-  document.querySelectorAll('.passo,.chip-shelf').forEach(b=>b.onclick=()=>{trilhaSel=trilhaSel===b.dataset.k?'':b.dataset.k;render()});
+  document.querySelectorAll('.passo,#extras .chip-shelf').forEach(b=>b.onclick=()=>{trilhaSel=trilhaSel===b.dataset.k?'':b.dataset.k;render()});document.querySelectorAll('#colecoes .chip-shelf').forEach(b=>b.onclick=()=>{colSel=colSel===b.dataset.c?'':b.dataset.c;render()});
   ['#q','#f-tema','#f-tipo','#f-idioma','#f-foco','#f-clear'].forEach(s=>$(s).addEventListener('input',render));
-  $('#limpar').onclick=()=>{trilhaSel='';['#q','#f-tema','#f-tipo','#f-idioma','#f-foco'].forEach(s=>$(s).value='');$('#f-clear').checked=false;render()};
+  $('#limpar').onclick=()=>{trilhaSel='';colSel='';['#q','#f-tema','#f-tipo','#f-idioma','#f-foco'].forEach(s=>$(s).value='');$('#f-clear').checked=false;render()};
   $('#grade').onclick=e=>{const b=e.target.closest('.card'); if(b) abrir(b.dataset.id,b)};
   $('#fechar').onclick=()=>$('#dlg').close();
   $('#dlg').addEventListener('click',e=>{if(e.target===$('#dlg'))$('#dlg').close()});
