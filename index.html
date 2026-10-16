@@ -7,22 +7,23 @@
 <meta name="description" content="Ferramentas gratuitas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP em políticas públicas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/pl-chrome.css">
 <style>
+/* tokens, fontes, cabeçalho e rodapé vêm de /assets/css/pl-chrome.css */
 :root {
-  --navy: #01354A;
-  --navy2: #012030;
-  --accent-blue: #08B0EE;
-  --accent-green: #98C43B;
+  --navy: var(--pl-navy);
+  --navy2: var(--pl-navy2);
+  --accent-blue: var(--pl-blue);
+  --accent-green: var(--pl-green);
   --paper: #FFFFFF;
-  --paper-warm: #F7F5EF;
-  --ink: #1A1A1C;
-  --ink-soft: #4A4A50;
-  --ink-mute: #8A8A90;
+  --paper-warm: var(--pl-paper);
+  --ink: var(--pl-ink);
+  --ink-soft: var(--pl-mute);
+  --ink-mute: var(--pl-soft);
   --line: rgba(1, 53, 74, 0.12);
-  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --mono: 'JetBrains Mono', 'Courier New', monospace;
+  --sans: var(--pl-font);
+  --sec: var(--pl-sec);
 }
 
 html { color-scheme: light; background: var(--paper); scroll-behavior: smooth; }
@@ -38,75 +39,7 @@ body {
 a { color: inherit; }
 :focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 3px; }
 
-.header {
-  background: var(--navy);
-  color: white;
-  padding: 56px 48px 64px;
-  position: relative;
-  overflow: hidden;
-}
-.header::before {
-  content: "";
-  position: absolute;
-  top: -120px; right: -120px;
-  width: 320px; height: 320px;
-  border-radius: 50%;
-  background: var(--accent-blue);
-  opacity: 0.08;
-  pointer-events: none;
-}
-.header::after {
-  content: "";
-  position: absolute;
-  bottom: -100px; left: -80px;
-  width: 260px; height: 260px;
-  border-radius: 50%;
-  background: var(--accent-green);
-  opacity: 0.07;
-  pointer-events: none;
-}
-.header-inner { max-width: 1320px; margin: 0 auto; position: relative; z-index: 1; }
-.brand-row { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 44px; flex-wrap: wrap; gap: 16px; }
-.clear-logo { display: block; }
-.clear-logo img { height: 44px; width: auto; display: block; }
-.header-meta-top {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  color: rgba(255,255,255,0.65);
-  text-align: right;
-  line-height: 1.5;
-}
-.header-meta-top a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 1px; transition: color .2s, border-color .2s; }
-.header-meta-top a:hover { color: var(--accent-green); border-color: var(--accent-green); }
-.top-link {
-  font-size: 12px;
-  color: rgba(255,255,255,0.75);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-  padding-bottom: 2px;
-  transition: color 0.2s, border-color 0.2s;
-  white-space: nowrap;
-}
-.top-link:hover { color: var(--accent-green); border-color: var(--accent-green); }
-.header-actions { display: flex; gap: 14px; align-items: center; }
-
-.title {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: clamp(34px, 5vw, 56px);
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  margin-bottom: 20px;
-  max-width: 900px;
-  color: white;
-}
-.subtitle {
-  font-size: 17px;
-  color: rgba(255,255,255,0.85);
-  max-width: 68ch;
-  line-height: 1.55;
-}
+.pl-header .pl-subtitle { max-width: 68ch; }
 
 /* FERRAMENTAS */
 .section-head {
@@ -115,12 +48,12 @@ a { color: inherit; }
   padding: 56px 48px 0;
 }
 .section-head h2 {
-  font-family: var(--serif);
-  font-size: 28px;
-  font-weight: 500;
+  font-family: var(--sans);
+  font-size: 26px;
+  font-weight: 700;
   color: var(--navy);
-  letter-spacing: -0.02em;
-  line-height: 1.18;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
 }
 .section-head p {
   font-size: 15px;
@@ -162,22 +95,20 @@ a { color: inherit; }
 .project-cta:hover .arrow { transform: translateX(4px); }
 
 .project-status {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  font-family: var(--sec);
+  font-size: 13px;
+  font-weight: 700;
   color: var(--accent-blue);
-  font-weight: 500;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .project.soon .project-status { color: var(--ink-mute); }
 .project-titulo {
-  font-family: var(--serif);
-  font-size: 27px;
-  font-weight: 500;
+  font-family: var(--sans);
+  font-size: 23px;
+  font-weight: 700;
   color: var(--navy);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
   margin-bottom: 12px;
 }
 .project-desc {
@@ -187,56 +118,44 @@ a { color: inherit; }
   max-width: 52ch;
 }
 .project-nums {
-  font-family: var(--mono);
-  font-size: 11px;
+  font-family: var(--sec);
+  font-size: 13px;
   color: var(--ink-mute);
-  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
   margin-top: 16px;
 }
 .project-cta {
   margin-top: auto;
   padding-top: 24px;
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent-blue);
-  font-weight: 500;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--navy);
   display: flex;
   align-items: center;
   gap: 6px;
 }
-.project-cta .arrow { font-family: var(--serif); font-size: 16px; transition: transform 0.2s ease; }
+.project-cta .arrow { font-size: 16px; color: var(--accent-blue); transition: transform 0.2s ease; }
+.project-cta:hover { color: var(--accent-blue); }
 .project.soon { cursor: default; }
 .project.soon .project-titulo { color: var(--ink-soft); }
 .project.soon .project-cta { color: var(--ink-mute); }
+.project.soon .project-cta .arrow { color: inherit; }
 
 /* FAIXA SOBRE */
 .about {
   background: var(--navy);
   color: white;
   padding: 52px 48px 56px;
-  position: relative;
-  overflow: hidden;
 }
-.about::before {
-  content: "";
-  position: absolute;
-  top: -80px; right: -80px;
-  width: 220px; height: 220px;
-  border-radius: 50%;
-  background: var(--accent-green);
-  opacity: 0.08;
-  pointer-events: none;
-}
-.about-inner { max-width: 1320px; margin: 0 auto; position: relative; z-index: 1; }
+.about-inner { max-width: 1320px; margin: 0 auto; }
 .about h2 {
-  font-family: var(--serif);
-  font-size: 34px;
-  font-weight: 400;
-  letter-spacing: -0.02em;
+  font-family: var(--sans);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   margin-bottom: 14px;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 .about p {
   font-size: 16px;
@@ -260,65 +179,15 @@ a { color: inherit; }
 }
 .about-link:hover { background: rgba(255,255,255,0.09); border-color: var(--accent-green); }
 
-/* FOOTER */
-.footer {
-  background: var(--navy2);
-  color: rgba(255,255,255,0.75);
-  padding: 56px 48px 40px;
-  font-size: 13px;
-}
-.footer-inner { max-width: 1320px; margin: 0 auto; }
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 48px;
-  margin-bottom: 36px;
-}
-@media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 32px; } }
-.footer-logo { display: block; margin-bottom: 14px; }
-.footer-logo img { height: 36px; width: auto; display: block; }
-.footer-tag { font-size: 13px; line-height: 1.6; color: rgba(255,255,255,0.65); max-width: 420px; }
-.footer-col-label {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-blue);
-  margin-bottom: 14px;
-  font-weight: 500;
-}
-.footer-col a {
-  display: block;
-  font-size: 13px;
-  color: rgba(255,255,255,0.85);
-  margin-bottom: 8px;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.footer-col a:hover { color: var(--accent-green); }
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.15);
-  padding-top: 24px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  font-family: var(--mono);
-  font-size: 11px;
-  color: rgba(255,255,255,0.45);
-  flex-wrap: wrap;
-  letter-spacing: 0.04em;
-}
+/* RODAPÉ: base em pl-chrome.css; aqui só as quatro colunas */
+@media (min-width: 769px) { .pl-footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; margin-bottom: 36px; } }
 
 @media (max-width: 768px) {
-  .header { padding: 40px 24px 48px; }
-  .clear-logo img { height: 36px; }
-  .header-meta-top { display: none; }
   .section-head { padding: 40px 24px 0; }
   .projects { padding: 20px 24px 48px; }
   .project { padding: 28px 24px 26px; min-height: 0; }
   .about { padding: 44px 24px 48px; }
-  .about h2 { font-size: 27px; }
-  .footer { padding: 40px 24px 32px; }
+  .about h2 { font-size: 25px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -337,18 +206,17 @@ a { color: inherit; }
 </head>
 <body>
 
-<header class="header">
-  <div class="header-inner">
-    <div class="brand-row">
-      <a href="/" class="clear-logo" aria-label="FGV CLEAR e FGV Policy Lab">
-        <img src="assets/img/clear-policy-lab-branco.png" alt="FGV CLEAR · FGV Policy Lab" />
-      </a>
-      <div class="header-actions">
-        <div class="header-meta-top"><a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" target="_blank" rel="noopener">FGV Policy Lab</a><br/>FGV CLEAR</div>
+<header class="pl-header">
+  <div class="pl-header-inner">
+    <div class="pl-brand-row">
+      <a href="/" class="pl-logo" aria-label="FGV CLEAR e FGV Policy Lab"><img src="assets/img/clear-policy-lab-branco.png" alt="FGV CLEAR · FGV Policy Lab" /></a>
+      <div class="pl-header-links">
+        <a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" class="pl-top-link" target="_blank" rel="noopener">FGV Policy Lab &rarr;</a>
+        <a href="https://fgvclear.org/" class="pl-top-link" target="_blank" rel="noopener">FGV CLEAR &rarr;</a>
       </div>
     </div>
-    <h1 class="title">Evidências para decidir políticas públicas</h1>
-    <p class="subtitle">Ferramentas gratuitas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP, para quem formula, implementa e acompanha políticas públicas no Brasil.</p>
+    <h1 class="pl-title">Evidências para decidir políticas públicas</h1>
+    <p class="pl-subtitle">Ferramentas gratuitas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP, para quem formula, implementa e acompanha políticas públicas no Brasil.</p>
   </div>
 </header>
 
@@ -531,23 +399,23 @@ a { color: inherit; }
   </div>
 </section>
 
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-grid">
+<footer class="pl-footer">
+  <div class="pl-footer-inner">
+    <div class="pl-footer-grid">
       <div>
-        <a href="/" class="footer-logo" aria-label="FGV CLEAR e FGV Policy Lab">
+        <a href="/" class="pl-footer-logo" aria-label="FGV CLEAR e FGV Policy Lab">
           <img src="assets/img/clear-policy-lab-branco.png" alt="FGV CLEAR · FGV Policy Lab" />
         </a>
-        <p class="footer-tag">Ferramentas gratuitas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP em políticas públicas.</p>
+        <p class="pl-footer-tag">Ferramentas gratuitas do FGV Policy Lab, centro de pesquisa aplicada da FGV EESP em políticas públicas.</p>
       </div>
-      <div class="footer-col">
-        <div class="footer-col-label">FGV Policy Lab</div>
+      <div class="pl-footer-col">
+        <div class="pl-footer-label">FGV Policy Lab</div>
         <a href="https://eesp.fgv.br/centro-de-estudos/fgv-policy-lab" target="_blank" rel="noopener">Sobre o centro</a>
         <a href="https://eesp.fgv.br/" target="_blank" rel="noopener">FGV EESP</a>
         <a href="https://repositorio.fgv.br/items/7a64b050-b7b3-460f-86da-704bfd53a824" target="_blank" rel="noopener">Guia de Fontes de Dados</a>
       </div>
-      <div class="footer-col">
-        <div class="footer-col-label">Este site</div>
+      <div class="pl-footer-col">
+        <div class="pl-footer-label">Este site</div>
         <a href="painel/">Painel de estatísticas</a>
         <a href="repositorio/">Repositório de M&amp;A</a>
         <a href="#projetos">Projetos com parceiros</a>
@@ -555,12 +423,12 @@ a { color: inherit; }
         <a href="#ia">Protótipos com IA</a>
         <a href="https://github.com/policy-lab/policy-lab.github.io" target="_blank" rel="noopener">Repositório no GitHub</a>
       </div>
-      <div class="footer-col">
-        <div class="footer-col-label">Contato</div>
+      <div class="pl-footer-col">
+        <div class="pl-footer-label">Contato</div>
         <a href="mailto:clear.fgv@fgv.br">clear.fgv@fgv.br</a>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="pl-footer-bottom">
       <span>© 2026 FGV Policy Lab · FGV EESP</span>
       <span>policy-lab.github.io</span>
     </div>

@@ -27,4 +27,4 @@ Para trocar a senha, regenere **todas** as páginas com a nova senha.
 
 ## Cabeçalho e rodapé
 
-Todos os produtos usam `/assets/css/pl-chrome.css`, que reproduz o cabeçalho e o rodapé do Painel de estatísticas.
+Todos os produtos usam `/assets/css/pl-chrome.css`, base visual comum do CLEAR e do Policy Lab (identidade do Repositório de M&A: Gotham/Montserrat e Arial), com tokens de cor e fonte, cabeçalho, rodapé e barra interna. A tela de senha segue a mesma identidade.

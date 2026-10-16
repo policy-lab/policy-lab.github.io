@@ -10,25 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/pl-chrome.css">
 <style>
-:root{--navy:#01354A;--navy2:#012030;--blue:#08B0EE;--green:#98C43B;--ink:#1A1A1C;--mute:#4A4A50;--soft:#8A8A90;--line:#E3E6EA;--paper:#F7F5EF;
+/* tokens, fontes, cabeçalho e rodapé vêm de /assets/css/pl-chrome.css */
+:root{--navy:var(--pl-navy);--navy2:var(--pl-navy2);--blue:var(--pl-blue);--green:var(--pl-green);--ink:var(--pl-ink);--mute:var(--pl-mute);--soft:var(--pl-soft);--line:var(--pl-line);--paper:var(--pl-paper);
 --t1:#98C43B;--t2:#08B0EE;--t3:#01354A;--t4:#B4532A;--t5:#6B4E9B;--t6:#8A8A90;
-/* fonte institucional: Gotham (paga; Montserrat como substituta) e Arial nos textos secundários */
---sans:'Gotham','Montserrat',Arial,sans-serif;--sec:Arial,Helvetica,sans-serif;
---pl-serif:var(--sans);--pl-sans:var(--sans);--pl-mono:var(--sec)}
+--sans:var(--pl-font);--sec:var(--pl-sec)}
 *{box-sizing:border-box}
 body{margin:0;font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.55}
 .wrap{max-width:1320px;margin:0 auto;padding:0 48px}
-/* cabeçalho e rodapé: ajustes só desta página (pl-chrome.css fica como está) */
-.pl-header::before,.pl-header::after{content:none;display:none}
-.pl-header .pl-top-link{font-family:var(--sec);font-size:13px}
-.pl-header .pl-tagline{font-family:var(--sec);font-size:15px;font-weight:700;letter-spacing:0;text-transform:none;margin:0 0 14px}
-.pl-header .pl-title{font-family:var(--sans);font-weight:700;font-size:clamp(32px,4.4vw,50px);letter-spacing:-.01em;line-height:1.12;color:#fff}
-.pl-header .pl-subtitle{font-size:16px;line-height:1.65}
-.pl-header .pl-meta-item{font-family:var(--sec);font-size:13px;font-weight:400;letter-spacing:0;text-transform:none;color:rgba(255,255,255,.72)}
-.pl-header .pl-meta-item strong{font-size:15px;font-weight:600}
-.pl-footer{font-family:var(--sec)}
-.pl-footer .pl-footer-label{font-family:var(--sec);font-size:13px;font-weight:700;letter-spacing:0;text-transform:none}
-.pl-footer .pl-footer-bottom{font-family:var(--sec);font-size:12px;letter-spacing:0}
 /* trilha */
 .trilha{background:var(--paper);border-bottom:1px solid var(--line)}
 .trilha-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:0}
