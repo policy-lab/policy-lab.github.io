@@ -374,7 +374,7 @@ a { color: inherit; }
     <div class="project-status">No ar</div>
     <h2 class="project-titulo"><a href="repositorio/">Repositório de M&amp;A</a></h2>
     <p class="project-desc">Publicações sobre monitoramento e avaliação organizadas como trilha de aprendizagem: primeiros passos, prática, métodos e aprofundamento. Inclui a produção do FGV CLEAR e materiais sobre a África lusófona.</p>
-    <div class="project-nums">84 publicações em português · 6 coleções</div>
+    <div class="project-nums" id="repo-nums">120 publicações em português · 9 coleções</div>
     <div class="project-ctas">
       <a class="project-cta" href="repositorio/">Abrir o Repositório de M&amp;A <span class="arrow">→</span></a>
     </div>
@@ -567,5 +567,15 @@ a { color: inherit; }
   </div>
 </footer>
 
+<script>
+// Contagem do Repositório de M&A lida do catálogo; o texto do card fica como reserva.
+// Mesma regra da página do repositório: coleções do catálogo mais as duas derivadas da trilha.
+fetch('repositorio/catalogo.json').then(r => r.json()).then(d => {
+  const itens = d.itens, cols = new Set(itens.flatMap(x => x.colecoes));
+  if (itens.some(x => x.trilha === 'Sobre o CLEAR')) cols.add('Relatórios do CLEAR');
+  if (itens.some(x => x.trilha === 'Acervo COVID-19')) cols.add('Acervo COVID-19');
+  document.getElementById('repo-nums').textContent = `${itens.length} publicações em português · ${cols.size} coleções`;
+}).catch(() => {});
+</script>
 </body>
 </html>

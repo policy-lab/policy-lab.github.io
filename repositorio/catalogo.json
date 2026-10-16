@@ -1,5 +1,5 @@
 {
-"atualizado": "2026-10-01",
+"atualizado": "2026-10-16",
 "itens": [
 {
 "id": "PP-001",
@@ -12,13 +12,14 @@
 "idioma": "Português (BR)",
 "paginas": "232",
 "tipo": "Guia e manual",
+"colecoes": [
+"Série Avaliação na Prática (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Série Avaliação na Prática (CLEAR)"
-],
 "resumo": "Guia prático que apresenta os principais conceitos, ferramentas e etapas do monitoramento e da avaliação de políticas públicas ao longo de todo o ciclo da política. Aborda temas como teoria da mudança, indicadores, monitoramento, tipos de avaliação, uso de evidências e tomada de decisão, reunindo orientações metodológicas e exemplos de aplicação",
 "quando": "Formação de novos membros, desenvolvimento de projetos, elaboração de políticas públicas baseadas em evidências, definição de indicadores, planejamento de avaliações e revisão conceitual sobre monitoramento e avaliação de políticas públicas",
 "citacao": "FGV CLEAR. Guia Clear monitoramento e avaliação de políticas públicas: do diagnóstico à decisão. São Paulo: FGV CLEAR, 2025. (Série Avaliação na Prática).",
@@ -37,13 +38,14 @@
 "idioma": "Português (BR)",
 "paginas": "136",
 "tipo": "Livro",
+"colecoes": [
+"Sistemas e institucionalização de M&A",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sistemas e institucionalização de M&A"
-],
 "resumo": "A obra analisa o processo de consolidação dos sistemas de avaliação de políticas públicas no Brasil, reunindo contribuições de especialistas sobre aspectos institucionais, normativos, metodológicos e organizacionais relacionados à institucionalização da avaliação. O livro discute desafios enfrentados pelos diferentes níveis de governo, apresenta experiências nacionais e propõe caminhos para fortalecer a cultura de tomada de decisão baseada em evidências e ampliar o uso da avaliação como instrumento de aperfeiçoamento das políticas públicas",
 "quando": "Formação de novos membros, planejamento de sistemas de monitoramento e avaliação, desenvolvimento de projetos de fortalecimento institucional, elaboração de diagnósticos sobre capacidade avaliativa, desenho de estratégias de institucionalização da avaliação, pesquisa aplicada e revisão bibliográfica sobre governança e uso de evidências",
 "citacao": "LACERDA, Gabriela; LIMA, Lycia; SOUZA, André Portela (Org.). Avaliar para transformar: Consolidação dos sistemas de avaliação de políticas públicas no Brasil. Rio de Janeiro: Editora FGV, 2025.",
@@ -62,12 +64,12 @@
 "idioma": "Português (BR)",
 "paginas": "117",
 "tipo": "Livro",
+"colecoes": [],
 "temas": [
 "Educação",
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "A publicação apresenta uma introdução prática à análise de dados educacionais para apoiar a gestão pública baseada em evidências. O e-book reúne conceitos fundamentais sobre produção, qualidade e interpretação de dados, descreve as principais bases de dados educacionais brasileiras e demonstra como indicadores e avaliações podem subsidiar o planejamento, o monitoramento e a tomada de decisão. Também discute desigualdades educacionais, visualização de dados e comunicação de evidências, oferecendo exemplos aplicados ao contexto da gestão da educação pública",
 "quando": "Formação de novos membros, desenvolvimento de projetos que utilizem dados administrativos, construção e interpretação de indicadores, monitoramento de políticas públicas, avaliação educacional, capacitação em gestão baseada em evidências, elaboração de diagnósticos e revisão metodológica",
 "citacao": "OPEN KNOWLEDGE BRASIL; FUNDAÇÃO LEMANN; INTERDISCIPLINARIDADE E EVIDÊNCIAS NO DEBATE EDUCACIONAL (IEDE). Análise de dados educacionais: aplicando evidências na gestão pública. São Paulo: Open Knowledge Brasil, 2022.",
@@ -86,13 +88,13 @@
 "idioma": "Português (BR)",
 "paginas": "54",
 "tipo": "Guia e manual",
+"colecoes": [
+"Desenho de programas e indicadores"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Desenho de programas e indicadores"
-],
 "resumo": "A publicação apresenta uma introdução prática à metodologia do Marco Lógico aplicada à avaliação e ao planejamento de políticas públicas. O guia explica como estruturar problemas, objetivos, resultados, produtos e indicadores de forma lógica e consistente, demonstrando como essa metodologia pode apoiar o desenho, o monitoramento e a avaliação de programas governamentais. Além dos fundamentos conceituais, são apresentados exemplos práticos e orientações para utilização do Marco Lógico como instrumento de planejamento e gestão baseada em evidências",
 "quando": "Formação de novos membros, planejamento de políticas públicas, construção de árvores de problemas e objetivos, elaboração de matrizes de Marco Lógico, desenvolvimento de Teorias da Mudança, planejamento de avaliações (especialmente avaliação de desenho), elaboração de projetos e revisão metodológica",
 "citacao": "ASSIS, Marcos Arcanjo de; BRONZO, Carla; IMURA, Carolina Proietti. Avaliação de políticas públicas: por onde começar?: Um guia prático da metodologia do marco lógico. Belo Horizonte: Fundação João Pinheiro, 2021.",
@@ -111,13 +113,13 @@
 "idioma": "Português (BR)",
 "paginas": "202",
 "tipo": "Livro",
+"colecoes": [
+"Desenho de programas e indicadores"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Desenho de programas e indicadores"
-],
 "resumo": "A publicação apresenta um referencial metodológico para a realização de análises ex ante, enfatizando a importância da avaliação antes da implementação de políticas públicas. O guia descreve etapas para identificação do problema público, diagnóstico, definição de objetivos, construção e comparação de alternativas de intervenção, análise de custos, riscos, viabilidade e impactos esperados. Também aborda instrumentos como Teoria da Mudança, Marco Lógico, análise multicritério e análise custo-benefício, demonstrando como essas ferramentas contribuem para decisões governamentais mais eficientes e fundamentadas em evidências",
 "quando": "Formação de novos membros, elaboração de projetos de pesquisa, planejamento de políticas públicas, construção de Teorias da Mudança, desenvolvimento de Marcos Lógicos, planejamento de avaliações (especialmente avaliação de desenho), análise de alternativas de intervenção, desenvolvimento de consultorias e revisão metodológica",
 "citacao": "INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). Avaliação de Políticas Públicas: Guia Prático de Análise Ex Ante. Volume 1. Brasília: Ipea, 2018.",
@@ -136,11 +138,11 @@
 "idioma": "Português (BR)",
 "paginas": "332",
 "tipo": "Livro",
+"colecoes": [],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "A publicação apresenta um referencial metodológico para a realização de avaliações ex post de políticas públicas, concentrando-se na análise de intervenções já implementadas. A publicação aborda conceitos, métodos e instrumentos para avaliar desenho, implementação, governança, resultados, impactos, eficiência, efetividade e sustentabilidade de políticas públicas. Inspirado em boas práticas internacionais e em experiências brasileiras, o documento busca padronizar procedimentos de avaliação no governo federal e fortalecer a utilização de evidências na tomada de decisão",
 "quando": "Formação de novos membros, desenvolvimento de avaliações de implementação, avaliações de resultados e impacto, elaboração de projetos de pesquisa, produção de pareceres técnicos, revisão metodológica, desenvolvimento de consultorias, monitoramento de políticas públicas e fortalecimento institucional dos sistemas de avaliação",
 "citacao": "INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). Avaliação de Políticas Públicas: Guia Prático de Análise Ex Post. Volume 2. Brasília: Ipea, 2018.",
@@ -159,13 +161,13 @@
 "idioma": "Português (BR)",
 "paginas": "10",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [
+"Sistemas e institucionalização de M&A"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sistemas e institucionalização de M&A"
-],
 "resumo": "A publicação apresenta uma proposta de institucionalização de sistemas de Monitoramento e Avaliação (M&A) de políticas públicas, tomando como referência principalmente as experiências do Chile, Colômbia e México. O boletim discute diferentes tipos de avaliação ao longo do ciclo das políticas e destaca a importância de integrar M&A ao ciclo orçamentário para aprimorar políticas e subsidiar decisões de alocação de recursos",
 "quando": "Para estudos sobre institucionalização de sistemas de M&A, avaliação de políticas públicas, avaliação ex ante e ex post, integração entre avaliação e orçamento, experiências internacionais e desenho de sistemas nacionais de monitoramento e avaliação",
 "citacao": "ESPÍRITO SANTO. Instituto Jones dos Santos Neves. Avaliação de políticas públicas: êxitos e possibilidades de avanço. Brasília: Ministério da Fazenda, 2015. (Boletim de Avaliação de Políticas Públicas, v. 1, n. 1).",
@@ -184,13 +186,13 @@
 "idioma": "Português (PT)",
 "paginas": "23",
 "tipo": "Guia e manual",
+"colecoes": [
+"Desenho de programas e indicadores"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Desenho de programas e indicadores"
-],
 "resumo": "A publicação reúne e define os principais termos da avaliação e da gestão centrada nos resultados para padronizar a linguagem de profissionais que atuam no ciclo de políticas públicas. O glossário abrange conceitos fundamentais como monitoramento, impacto, cadeia de resultados e indicadores, servindo como uma importante referência conceitual para equipes que trabalham com monitoramento, avaliação e gestão baseada em evidências",
 "quando": "Formação de novos membros, desenvolvimento de projetos, elaboração de termos de referência, planejamento de avaliações, construção de teorias da mudança e quadros lógicos, definição de indicadores, leitura de documentos técnicos, escrita de artigos e relatórios e revisão conceitual e metodológica",
 "citacao": "OCDE. Glossário dos Principais Termos da Avaliação e da Gestão Centrada nos Resultados. Paris: OCDE, 2002. DOI: https://doi.org/10.1787/9788588595088-pt.",
@@ -209,14 +211,15 @@
 "idioma": "Português (BR)",
 "paginas": "46",
 "tipo": "Relatório",
+"colecoes": [
+"Sistemas e institucionalização de M&A",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Proteção social e renda",
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sistemas e institucionalização de M&A"
-],
 "resumo": "A publicação apresenta um diagnóstico da gestão do CadÚnico em São Paulo, avaliando a qualidade dos dados, a infraestrutura e a capacitação profissional. Combinando diferentes metodologias de pesquisa, o estudo introduz o Índice de Gestão do CadÚnico (IGCAD) para mensurar o desempenho municipal em sete dimensões e propõe a criação de um sistema estadual de monitoramento contínuo para aprimorar as políticas públicas",
 "quando": "Formação de novos membros, desenvolvimento de projetos, desenho e implementação de sistemas de monitoramento, construção de indicadores e índices, análise de bases administrativas, diagnósticos de políticas públicas, planejamento de avaliações, desenvolvimento de sistemas de informação, estudos sobre capacidades estatais e gestão pública baseada em evidências",
 "citacao": "FGV CLEAR. CadÚnico em São Paulo – Diagnóstico da gestão, mensuração da qualidade e arquitetura de um Sistema Estadual de Monitoramento. São Paulo: FGV CLEAR, 2026.",
@@ -235,13 +238,14 @@
 "idioma": "Português (BR)",
 "paginas": "240",
 "tipo": "Livro",
+"colecoes": [
+"Sistemas e institucionalização de M&A",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sistemas e institucionalização de M&A"
-],
 "resumo": "A obra apresenta um diagnóstico abrangente sobre o estágio de desenvolvimento dos sistemas de avaliação de políticas públicas no Brasil. Com base em uma análise institucional de diferentes entes federativos e iniciativas nacionais, o livro identifica avanços, lacunas e desafios relacionados à governança, capacidade técnica, produção e utilização de evidências, oferecendo um panorama atualizado sobre a institucionalização da avaliação no país. Além de sistematizar experiências brasileiras, propõe elementos para orientar estratégias de fortalecimento dos sistemas de avaliação e apoiar a consolidação de uma cultura de gestão pública baseada em evidências",
 "quando": "Desenvolvimento de diagnósticos institucionais, planejamento de estratégias de fortalecimento de sistemas de monitoramento e avaliação, elaboração de projetos de cooperação técnica, formação de novos membros, pesquisa aplicada, desenvolvimento de consultorias e revisão bibliográfica sobre governança e institucionalização da avaliação",
 "citacao": "FGV CLEAR. Diagnóstico dos sistemas de avaliação de políticas públicas no Brasil. Rio de Janeiro: FGV Editora, 2025.",
@@ -260,15 +264,16 @@
 "idioma": "Português (BR)",
 "paginas": "56",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"Avaliações executivas (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Saúde",
 "Proteção social e renda",
 "Trabalho e empreendedorismo"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Avaliações executivas (CLEAR)"
-],
 "resumo": "A publicação apresenta uma Avaliação Executiva do Programa Chapéu de Palha, política de Pernambuco voltada para mitigar o desemprego sazonal por meio de transferência temporária de renda e qualificação profissional. O estudo analisa o desempenho e a execução da iniciativa, apontando lacunas e a interrupção do monitoramento desde 2020. Como principal recomendação, a pesquisa propõe a implementação de um novo sistema de monitoramento baseado em 15 indicadores abrangentes para medir os resultados e impactos do programa",
 "quando": "Formação de novos membros, desenvolvimento de projetos, planejamento e execução de Avaliações Executivas, elaboração de diagnósticos de políticas públicas, construção de Teorias da Mudança, análise de sistemas de monitoramento, definição de indicadores, avaliação de desenho, formulação de recomendações e preparação de avaliações de implementação e impacto",
 "citacao": "FGV CLEAR. Avaliação Executiva – Programa Chapéu de Palha. São Paulo: FGV CLEAR, 2025.",
@@ -287,14 +292,15 @@
 "idioma": "Português (BR)",
 "paginas": "105",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"Avaliações executivas (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Saúde",
 "Proteção social e renda"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Avaliações executivas (CLEAR)"
-],
 "resumo": "O estudo avalia o Programa Garantia-Safra, política voltada à proteção de agricultores familiares diante de perdas produtivas por eventos climáticos extremos. A análise aponta que, embora a lógica do programa seja consistente, existem fragilidades na execução da assistência técnica (ATER) e deficiências no monitoramento de impactos, além de ressaltar que a inflação tem corroído o poder de proteção do benefício financeiro concedido",
 "quando": "Formação de novos membros, desenvolvimento de projetos, planejamento e execução de Avaliações Executivas, elaboração de diagnósticos de políticas públicas, construção de Teorias da Mudança, análise de implementação, desenvolvimento de indicadores, planejamento de sistemas de monitoramento, formulação de recomendações e preparação de avaliações futuras",
 "citacao": "FGV CLEAR. Avaliação Executiva – Programa Garantia-Safra. São Paulo: FGV CLEAR, 2025.",
@@ -313,15 +319,16 @@
 "idioma": "Português (BR)",
 "paginas": "56",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"Avaliações executivas (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Primeira infância",
 "Saúde",
 "Proteção social e renda"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Avaliações executivas (CLEAR)"
-],
 "resumo": "O Cartão Mais Infância Ceará (CMIC) é um programa criado em 2017 pelo Governo do Ceará para complementar o Bolsa Família, voltado a famílias em extrema pobreza com crianças de até 5 anos e 11 meses. A avaliação executiva realizada pelo FGV CLEAR analisa seu desenho, execução e desempenho, visando mitigar a pobreza, promover a segurança alimentar e o desenvolvimento integral infantil, além de articular políticas públicas para romper o ciclo intergeracional da pobreza por meio de uma Teoria da Mudança",
 "quando": "Para estudos sobre avaliação executiva, transferência de renda, primeira infância, proteção social, pobreza infantil, Teoria da Mudança, monitoramento de políticas públicas e avaliação de programas sociais. Também é recomendado como referência para projetos que envolvam análise de desenho, implementação e desempenho de políticas públicas",
 "citacao": "FGV CLEAR. Avaliação Executiva do Cartão Mais Infância Ceará. São Paulo: FGV CLEAR, 2025.",
@@ -340,14 +347,15 @@
 "idioma": "Português (BR)",
 "paginas": "44",
 "tipo": "Livro",
+"colecoes": [
+"Desenho de programas e indicadores",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Primeira infância",
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Desenho de programas e indicadores"
-],
 "resumo": "A publicação apresenta a experiência de construção e utilização da Teoria da Mudança no Programa Primeira Infância Melhor (PIM), política pública do Governo do Rio Grande do Sul voltada ao desenvolvimento integral na primeira infância. O livro descreve como o processo participativo de elaboração da Teoria da Mudança apoiou a adaptação do programa durante a pandemia de Covid-19, fortalecendo a tomada de decisão baseada em evidências, a revisão das estratégias de implementação e a aprendizagem institucional. Além de contextualizar a trajetória do PIM, a obra reúne os principais aprendizados e recomendações para outras iniciativas que desejem incorporar a Teoria da Mudança em processos de monitoramento e avaliação",
 "quando": "Formação de novos membros, construção ou revisão de Teorias da Mudança, desenvolvimento de projetos de monitoramento e avaliação, planejamento de avaliações, implementação de políticas públicas, capacitação em gestão baseada em evidências e sistematização de experiências",
 "citacao": "FGV CLEAR; PROGRAMA PRIMEIRA INFÂNCIA MELHOR. Da Teoria à Mudança: Adaptações do Primeira Infância Melhor a partir das ações de Monitoramento e Avaliação. São Paulo: FGV EESP CLEAR, 2024.",
@@ -366,14 +374,14 @@
 "idioma": "Português (PT)",
 "paginas": "52",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Educação",
 "Cooperação internacional"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "A publicação apresenta a avaliação do Projeto Formar Mais, realizado entre 2016 e 2018 em Timor-Leste, voltado à formação contínua de professores e ao fortalecimento de competências pedagógicas e em língua portuguesa. A avaliação analisa a implementação, os efeitos alcançados, o funcionamento das escolas e os principais desafios do projeto, propondo recomendações para seu aprimoramento",
 "quando": "Para estudos sobre avaliação de programas, educação, formação de professores, implementação, desenvolvimento de capacidades, indicadores, avaliação de resultados, cooperação internacional e sustentabilidade",
 "citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA, I.P. Avaliação Do Projeto Formar Mais (2016-2018). Lisboa: Camões, I.P., 2019.",
@@ -392,15 +400,15 @@
 "idioma": "Português (PT)",
 "paginas": "95",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Educação",
 "Gestão e orçamento",
 "Cooperação internacional"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "A publicação avalia o Programa de Cooperação Portuguesa com Timor-Leste entre 2011 e 2017, analisando sua implementação, alinhamento às prioridades timorenses, coordenação, uso de recursos e resultados, com destaque para educação e promoção da língua portuguesa. A avaliação também examina a apropriação e sustentabilidade das intervenções e apresenta recomendações para o próximo ciclo de cooperação",
 "quando": "Para estudos sobre avaliação de programas, cooperação internacional, educação, desenvolvimento de capacidades, implementação, coordenação, apropriação, sustentabilidade e avaliação de políticas de desenvolvimento",
 "citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA, I.P. Avaliação do Programa de Cooperação Portugal – Timor-Leste (2011-2017). Lisboa: Camões, I.P., 2018.",
@@ -419,11 +427,11 @@
 "idioma": "Português (PT)",
 "paginas": "137",
 "tipo": "Relatório de avaliação",
+"colecoes": [],
 "temas": [
 "Cooperação internacional"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "A publicação avalia como a igualdade de género foi incorporada às ações da Cooperação Portuguesa entre 2011 e 2015, analisando políticas, programas e projetos, seus resultados e mecanismos de implementação. O estudo identifica avanços e limitações na transversalização da perspectiva de género e apresenta recomendações para fortalecer sua integração na cooperação para o desenvolvimento",
 "quando": "Para estudos sobre avaliação de políticas, cooperação internacional, igualdade de género, transversalização de políticas, indicadores, monitoramento, desenvolvimento e critérios de avaliação do CAD/OCDE.",
 "citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA, I.P. Avaliação da Integração da Igualdade de Género na Cooperação Portuguesa (2011-2015). Lisboa: Camões, I.P., 2018.",
@@ -442,11 +450,11 @@
 "idioma": "Português (BR)",
 "paginas": "30",
 "tipo": "Relatório de avaliação",
+"colecoes": [],
 "temas": [
 "Proteção social e renda"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "O artigo investiga a focalização do Programa Bolsa Família e os fatores associados à sua cobertura nos municípios brasileiros. A análise mostra uma relação entre cobertura do programa, características socioeconômicas municipais e qualidade da gestão dos recursos.",
 "quando": "Pode ser consultado em estudos sobre focalização e cobertura de políticas sociais, especialmente quando se pretende analisar a identificação do público-alvo, erros de inclusão e exclusão e fatores associados à implementação municipal. Também é útil como referência metodológica para pesquisas quantitativas que utilizem dados administrativos e socioeconômicos para investigar determinantes da cobertura e do desempenho de programas públicos",
 "citacao": "DUARTE, Janete; GADELHA, Sérgio Ricardo de Brito; NEVES, José de Anchieta Semedo; OLIVEIRA, Plínio Portela de; SOUZA, André Portela. Uma investigação sobre a focalização do Programa Bolsa Família e seus determinantes imediatos. Economia Aplicada, Ribeirão Preto, v. 22, n. 3, p. 89-118, 2018. DOI: https://doi.org/10.11606/1980-5330/ea168729.",
@@ -465,12 +473,12 @@
 "idioma": "Português (PT)",
 "paginas": "111",
 "tipo": "Relatório de avaliação",
+"colecoes": [],
 "temas": [
 "Educação",
 "Cooperação internacional"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "A publicação apresenta a avaliação externa da Estratégia Nacional de Educação para o Desenvolvimento (ENED) 2010-2015, analisando sua implementação, acompanhamento, resultados e sustentabilidade. O estudo busca contribuir tanto para a prestação de contas quanto para a aprendizagem institucional, identificando avanços, desafios e recomendações para a continuidade da política",
 "quando": "Para estudos sobre avaliação externa, avaliação de políticas públicas, avaliação participativa, implementação, monitoramento, aprendizagem institucional e formulação de recomendações",
 "citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA. Avaliação externa: Estratégia Nacional de Educação para o Desenvolvimento 2010-2015. Lisboa: Camões, I.P., 2017.",
@@ -489,14 +497,14 @@
 "idioma": "Português (PT)",
 "paginas": "110",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Educação",
 "Gestão e orçamento"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "O relatório avalia a Reforma do Ensino Secundário de São Tomé e Príncipe implementada entre 2009 e 2016, analisando mudanças no currículo, gestão escolar, recursos humanos e físicos e percepção dos principais atores envolvidos. A avaliação identifica avanços, limitações e recomendações para fortalecer a qualidade e a sustentabilidade do ensino secundário no país",
 "quando": "Para estudos sobre avaliação de políticas educacionais, reformas do ensino, gestão escolar, currículo, formação de professores, avaliação externa, cooperação internacional e análise de políticas públicas",
 "citacao": "UNIVERSIDADE DE AVEIRO. Avaliação externa à reforma do Ensino Secundário em São Tomé e Príncipe (2009-2016). Lisboa: Camões, I.P., 2017.",
@@ -515,14 +523,14 @@
 "idioma": "Português (PT)",
 "paginas": "96",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Educação",
 "Cooperação internacional"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "O relatório avalia a intervenção da Cooperação Portuguesa no setor da educação da Guiné-Bissau entre 2009 e 2016, abrangendo os níveis pré-escolar, básico e secundário. Analisa os resultados, a articulação e a sustentabilidade dos projetos, com destaque para a formação de professores e agentes educativos, qualidade e equidade da educação, e apresenta lições e recomendações para futuras intervenções",
 "quando": "Para estudos sobre avaliação de políticas educacionais, cooperação internacional, formação de professores, qualidade e equidade da educação, sustentabilidade, indicadores de resultados e avaliação de programas",
 "citacao": "INSTITUTO UNIVERSITÁRIO DE LISBOA (ISCTE). Avaliação Externa à Intervenção da Cooperação Portuguesa no Setor da Educação (Pré-Escolar, Básico e Secundário) na Guiné-Bissau 2009-2016. Lisboa: Camões, I.P., 2017.",
@@ -541,12 +549,12 @@
 "idioma": "Português (PT)",
 "paginas": "108",
 "tipo": "Relatório de avaliação",
+"colecoes": [],
 "temas": [
 "Proteção social e renda",
 "Cooperação internacional"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "A publicação apresenta a avaliação externa da atuação da SOFID entre 2007 e 2014, analisando sua contribuição para o desenvolvimento dos países parceiros por meio do apoio ao setor privado. A avaliação examina a relevância, eficácia, eficiência, impacto e sustentabilidade da atuação da instituição e apresenta recomendações para aprimorar seu desempenho e articulação com a Cooperação Portuguesa",
 "quando": "Para estudos sobre avaliação de políticas e programas, avaliação institucional, cooperação internacional, financiamento do desenvolvimento, avaliação baseada na teoria, estudos de caso e critérios de avaliação",
 "citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA, I.P. Avaliação da ação da Sociedade para o Financiamento do Desenvolvimento (SOFID) na promoção do desenvolvimento no período (2007-2014). Lisboa: Camões, I.P., 2016.",
@@ -565,14 +573,14 @@
 "idioma": "Português (PT)",
 "paginas": "146",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Proteção social e renda",
 "Cooperação internacional"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "O relatório avalia o Programa Indicativo de Cooperação Portugal–São Tomé e Príncipe (2012-2015), analisando sua implementação, coordenação, resultados e sustentabilidade em áreas como boa governação, saúde, educação, formação profissional, emprego e proteção social. A avaliação identifica avanços, desafios e recomendações para orientar o próximo ciclo de cooperação entre os dois países",
 "quando": "Para estudos sobre avaliação de programas, cooperação internacional, desenvolvimento, gestão pública, avaliação setorial, coordenação, sustentabilidade e critérios de avaliação da cooperação para o desenvolvimento",
 "citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA, I.P. Avaliação Conjunta do Programa Indicativo de Cooperação Portugal – São Tomé e Príncipe (2012-2015). Lisboa: Camões, I.P., 2016.",
@@ -591,13 +599,13 @@
 "idioma": "Português (PT)",
 "paginas": "164",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "A publicação avalia o Projeto de Apoio à Intensificação da Produção Alimentar (PAIPA), desenvolvido na Guiné-Bissau entre 2008 e 2013, com foco na melhoria da produção agrícola e na transição para uma agricultura de maior rendimento. A avaliação analisa sua metodologia, resultados e sustentabilidade, destacando contribuições para a segurança alimentar e a melhoria das condições de vida das comunidades rurais",
 "quando": "Para estudos sobre avaliação de programas, cooperação internacional, desenvolvimento rural, agricultura familiar, segurança alimentar, participação comunitária, transferência de conhecimentos e sustentabilidade",
 "citacao": "CEsA (Centro de Estudos sobre África, Ásia e América Latina). Avaliação do Projeto de Apoio à Intensificação da Produção Alimentar na Guiné-Bissau (2008-2013). Lisboa: Camões, I.P., 2016.",
@@ -616,15 +624,15 @@
 "idioma": "Português (PT)",
 "paginas": "87",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Saúde",
 "Gestão e orçamento",
 "Cooperação internacional"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "O relatório avalia o Programa \"Saúde Para Todos\" em São Tomé e Príncipe no período de 2005 a 2015, analisando sua relevância, eficácia, eficiência, impacto, sustentabilidade e governança. A avaliação também apresenta recomendações para a continuidade do apoio ao setor de saúde e para uma eventual estratégia de saída",
 "quando": "Pode ser consultado no planejamento e desenvolvimento de avaliações de programas públicos, especialmente em iniciativas na área da saúde e de cooperação internacional. É útil como referência para análises de eficácia, eficiência, impacto, sustentabilidade e governança, além de apoiar a elaboração de termos de referência, estratégias de avaliação e recomendações para programas públicos",
 "citacao": "CENTRO DE INVESTIGAÇÃO EM SAÚDE COMUNITÁRIA (CISCOS). Avaliação do Programa Integrado \"Saúde Para Todos\" em São Tomé e Príncipe (2005-2015): relatório final. Lisboa: Camões, I.P., 2016.",
@@ -643,14 +651,14 @@
 "idioma": "Português (PT)",
 "paginas": "125",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Gestão e orçamento",
 "Cooperação internacional"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "O relatório avalia o Programa Indicativo de Cooperação Portugal–Moçambique 2011-2014, analisando sua conceção, implementação e resultados. A avaliação examina aspectos como alinhamento, coordenação, eficiência e eficácia e apresenta recomendações para o próximo ciclo de cooperação",
 "quando": "Pode ser consultado no planejamento e desenvolvimento de avaliações de programas de cooperação internacional, especialmente quando se pretende analisar a conceção, implementação, coordenação, eficiência e eficácia de programas plurianuais. Também é útil como referência para elaboração de matrizes de avaliação, definição de questões e indicadores, análise de stakeholders e formulação de recomendações para novos ciclos de programação",
 "citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA, I.P. MOÇAMBIQUE. Ministério dos Negócios Estrangeiros e Cooperação. Avaliação do Programa Indicativo de Cooperação Portugal Cabo Verde (2012-2015). Lisboa: Camões, I.P., 2016.",
@@ -669,11 +677,11 @@
 "idioma": "Português (BR)",
 "paginas": "30",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [],
 "temas": [
 "Trabalho e empreendedorismo"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "O artigo avalia o Programa de Microcrédito Nossocrédito, do Espírito Santo, buscando identificar fatores associados à eficácia operacional de suas agências no cumprimento das metas. A pesquisa utiliza regressão logística para analisar os determinantes do alcance das metas e identifica fatores como incentivos, jornada de trabalho, suporte técnico e tempo dedicado à cobrança de inadimplentes",
 "quando": "Para estudos sobre avaliação de processos, avaliação ex post, eficácia operacional, eficiência, cumprimento de metas, análise de desempenho e aplicação de métodos quantitativos na avaliação de programas públicos",
 "citacao": "CIRINO, Jader Fernandes; PREMOLI, Marcus Vinícius Zandonadi. Avaliação de processo em políticas e programas públicos: o caso do programa de microcrédito Nossocrédito – ES. Brasília: Instituto de Pesquisa Econômica Aplicada (IPEA), 2014. (Planejamento e Políticas Públicas, n. 42, p. 1-25).",
@@ -692,15 +700,15 @@
 "idioma": "Português (PT)",
 "paginas": "80",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Educação",
 "Saúde",
 "Cooperação internacional"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "O relatório avalia o Programa Indicativo de Cooperação Portugal–Cabo Verde 2012-2015, analisando sua implementação, coerência, alinhamento às prioridades cabo-verdianas e contribuição para o desenvolvimento do país. A avaliação aborda setores como educação, saúde, segurança, formação profissional, infraestrutura e finanças, apresentando conclusões e recomendações para o próximo ciclo de cooperação",
 "quando": "Para estudos sobre avaliação de programas, cooperação internacional, gestão centrada em resultados, desenvolvimento de capacidades, alinhamento de políticas, coordenação entre doadores e avaliação de intervenções multissetoriais",
 "citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA, I.P. Avaliação do Programa Indicativo de Cooperação Portugal Cabo Verde (2012-2015). Lisboa: Camões, I.P., 2014.",
@@ -719,14 +727,14 @@
 "idioma": "Português (PT)",
 "paginas": "123",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Segurança pública",
 "Cooperação internacional"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "O relatório apresenta a avaliação a meio percurso do Projeto de Apoio ao Desenvolvimento Institucional do Ministério do Interior de Moçambique, analisando sua implementação, resultados e sustentabilidade. A avaliação identifica avanços, limitações e ajustes necessários para a continuidade do projeto",
 "quando": "Pode ser consultado no planejamento e desenvolvimento de avaliações de meio percurso, especialmente em projetos de cooperação internacional e desenvolvimento institucional. É útil como referência para construção de matrizes de avaliação, análise de implementação, identificação de constrangimentos, acompanhamento de resultados, avaliação de sustentabilidade e formulação de recomendações para ajustes durante a execução de um projeto",
 "citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA, I.P. Projeto de Apoio ao Ministério do Interior de Moçambique – Avaliação a Meio Percurso. Lisboa: Camões, I.P., 2013.",
@@ -745,11 +753,11 @@
 "idioma": "Português (BR)",
 "paginas": "34",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [],
 "temas": [
 "Proteção social e renda"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "O artigo avalia a focalização e os impactos do Programa Bolsa Família sobre a pobreza e a desigualdade de renda, utilizando dados da PNAD de 2004. Também compara dois cenários: a adoção de um mecanismo de seleção por proxy means-test (PMT) e a expansão do programa mantendo sua regra de seleção",
 "quando": "Para estudos sobre avaliação de políticas sociais, focalização, transferência de renda, pobreza, desigualdade, seleção de beneficiários e desenho de programas",
 "citacao": "CAMELO, Rafael de Sousa; FERNANDES, Reynaldo; PAZELLO, Elaine Toldo; TAVARES, Priscilla Albuquerque. Uma avaliação do Programa Bolsa Família: focalização e impacto na distribuição de renda e pobreza. Pesquisa e Planejamento Econômico (PPE), Rio de Janeiro, v. 39, n. 1, p. 25-58, 2009.",
@@ -768,13 +776,14 @@
 "idioma": "Português (BR)",
 "paginas": "173",
 "tipo": "Guia e manual",
+"colecoes": [
+"Série Avaliação na Prática (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Série Avaliação na Prática (CLEAR)"
-],
 "resumo": "Guia introdutório que apresenta os fundamentos teóricos e aplicações do método de Diferença-em-Diferenças para estimar efeitos causais de políticas públicas e programas sociais, incluindo pressupostos, limitações e exemplos práticos.",
 "quando": "Formação de novos membros, desenvolvimento de projetos, escrita de artigos, planejamento de avaliações (avaliação de desenho) e revisão metodológica",
 "citacao": "FGV CLEAR. Avaliação de impacto: método de diferença-em-diferenças. Rio de Janeiro: FGV Editora, 2025. (Série Avaliação na Prática).",
@@ -793,13 +802,14 @@
 "idioma": "Português (BR)",
 "paginas": "116",
 "tipo": "Guia e manual",
+"colecoes": [
+"Série Avaliação na Prática (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Proteção social e renda"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Série Avaliação na Prática (CLEAR)"
-],
 "resumo": "Guia que apresenta os fundamentos da avaliação ex-ante de impacto por meio da modelagem de microssimulação, explicando como prever os efeitos de políticas públicas antes de sua implementação. O material aborda conceitos teóricos, modelos estatísticos, exemplos aplicados e estudos de caso voltados à análise de programas governamentais",
 "quando": "Formulação de políticas públicas, elaboração de projetos de pesquisa, estudos prospectivos, avaliação ex-ante, capacitação de novos pesquisadores e escrita de artigos científicos",
 "citacao": "FGV CLEAR. Avaliação ex-ante de impacto: modelagem de microssimulação. Rio de Janeiro: FGV Editora, 2025. (Série Avaliação na Prática).",
@@ -818,13 +828,14 @@
 "idioma": "Português (BR)",
 "paginas": "80",
 "tipo": "Guia e manual",
+"colecoes": [
+"Série Avaliação na Prática (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Série Avaliação na Prática (CLEAR)"
-],
 "resumo": "Guia que apresenta os fundamentos do cálculo de poder estatístico em avaliações de impacto, abordando conceitos como erro tipo I e II, efeito mínimo detectável (MDE), tamanho da amostra e aplicações em experimentos aleatorizados, incluindo exemplos práticos e simulações",
 "quando": "Elaboração de projeto de pesquisa, planejamento amostral, avaliação de impacto, capacitação de novos pesquisadores, escrita de artigos científicos e revisão metodológica",
 "citacao": "FGV CLEAR. Cálculo de poder estatístico. Rio de Janeiro: FGV Editora, 2025. (Série Avaliação na Prática).",
@@ -843,13 +854,14 @@
 "idioma": "Português (BR)",
 "paginas": "102",
 "tipo": "Guia e manual",
+"colecoes": [
+"Série Avaliação na Prática (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Série Avaliação na Prática (CLEAR)"
-],
 "resumo": "Guia que apresenta os fundamentos da Análise de Custo-Benefício (ACB) aplicada à avaliação de políticas públicas. Explica como identificar, mensurar e monetizar custos e benefícios, calcular indicadores econômicos e utilizar os resultados para apoiar decisões sobre implementação, ampliação ou reformulação de políticas públicas",
 "quando": "Avaliação de políticas públicas, elaboração de projetos, estudos de viabilidade (avaliação de custo-benefício), capacitação de novos pesquisadores e escrita de artigos científicos",
 "citacao": "FGV CLEAR. Análise de custo-benefício. Rio de Janeiro: FGV Editora, 2025. (Série Avaliação na Prática).",
@@ -868,13 +880,14 @@
 "idioma": "Português (BR)",
 "paginas": "63",
 "tipo": "Guia e manual",
+"colecoes": [
+"Série Avaliação na Prática (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Série Avaliação na Prática (CLEAR)"
-],
 "resumo": "Guia introdutório que apresenta os conceitos fundamentais da avaliação de impacto, sua importância no ciclo das políticas públicas e os principais métodos utilizados para identificar relações de causalidade. Aborda abordagens experimentais, quase experimentais e não experimentais, além de aplicações práticas e desafios da avaliação de impacto",
 "quando": "Material introdutório recomendado para compreensão dos principais desenhos de avaliação de impacto e da lógica de inferência causal aplicada à análise de políticas públicas",
 "citacao": "FGV CLEAR. Avaliação de impacto. São Paulo: Fundação Getulio Vargas, 2025. (Série Avaliação na Prática).",
@@ -893,11 +906,13 @@
 "idioma": "Português (BR)",
 "paginas": "29",
 "tipo": "Relatório",
+"colecoes": [
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "A publicação apresenta uma síntese comparativa de experiências internacionais em análise de impacto normativo, com foco em avaliações ex ante de atos regulatórios e legislativos. O estudo analisa experiências dos Estados Unidos, Chile, Colômbia e União Europeia, buscando contribuir para as discussões sobre a institucionalização e o desenho dessa ferramenta no Brasil",
 "quando": "Para estudos sobre avaliação ex ante, análise de impacto normativo, análise de impacto regulatório e legislativo, institucionalização de sistemas de avaliação, desenho de políticas públicas e benchmarking internacional de práticas de M&A",
 "citacao": "FGV CLEAR. Análise de impacto normativo: uma síntese comparativa. São Paulo: FGV CLEAR, 2025.",
@@ -916,13 +931,13 @@
 "idioma": "Português (BR)",
 "paginas": "39",
 "tipo": "Guia e manual",
+"colecoes": [
+"Sistemas e institucionalização de M&A"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "América Latina",
-"colecoes": [
-"Sistemas e institucionalização de M&A"
-],
 "resumo": "Guia voltado aos bancos de desenvolvimento da América Latina e do Caribe que apresenta orientações para fortalecer a institucionalização do monitoramento e da avaliação, desenvolver sistemas de indicadores e alinhar a atuação institucional aos Objetivos de Desenvolvimento Sustentável (ODS). O material reúne conceitos, recomendações e exemplos para apoiar organizações financeiras de desenvolvimento na incorporação do uso de evidências em seus processos decisórios",
 "quando": "Desenvolvimento de projetos de cooperação técnica, desenho de sistemas de monitoramento e avaliação, elaboração de indicadores, planejamento estratégico institucional, capacitações sobre governança e apoio a organizações públicas ou financeiras de desenvolvimento",
 "citacao": "REDE DE DESENVOLVIMENTO DE CAPACIDADES DE AVALIAÇÃO (ReDeCA). Institucionalização, indicadores e objetivos de desenvolvimento sustentável: um guia para os bancos de desenvolvimento da América Latina e do Caribe. [S. l.]: ReDeCA, jun. 2025.",
@@ -941,11 +956,11 @@
 "idioma": "Português (BR)",
 "paginas": "34",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [],
 "temas": [
 "Proteção social e renda"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "O estudo avalia o impacto da criação do Fundo Estadual de Combate à Pobreza (FECOP), em 2003, sobre a pobreza e a extrema pobreza no Ceará. Utilizando o método de Controle Sintético Generalizado e dados estaduais de 1981 a 2014, os resultados indicam redução estatisticamente significativa desses indicadores a partir de 2008",
 "quando": "Para estudos sobre avaliação de impacto, métodos quantitativos, Controle Sintético Generalizado, políticas de combate à pobreza, análise de contrafactuais e avaliação baseada em evidências",
 "citacao": "CAMPÊLO, Guaracyane Lima; FRANÇA, João Mário Santos de; FRANÇA, Natália Cecília de; FIRMIANO, Marília Rodrigues; MARIANO, Francisca Zilânia; SILVA, Vitor Hugo Miro Couto. Avaliação do Fundo Estadual de Combate à Pobreza do Ceará a partir do método de controle sintético generalizado. Fortaleza: Instituto de Pesquisa e Estratégia Econômica do Ceará (IPECE), 2021. (Texto para Discussão CAPP, n. 01).",
@@ -964,11 +979,11 @@
 "idioma": "Português (BR)",
 "paginas": "14",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "O artigo apresenta os principais parâmetros de interesse e métodos utilizados na avaliação de impacto de programas sociais e recupera aplicações desses métodos em programas operacionalizados pelo Banco do Nordeste. A publicação parte do problema do contrafactual e discute diferentes estratégias para estimar efeitos causais quando a designação ao tratamento não é aleatória. Também apresenta evidências de avaliações realizadas no âmbito do BNB e as limitações encontradas na construção de grupos de comparação válidos",
 "quando": "Pode ser consultado na formação de pesquisadores, desenvolvimento de projetos de avaliação de impacto, planejamento metodológico de avaliações e revisão de métodos quantitativos. É especialmente útil quando houver necessidade de compreender as diferenças entre os principais desenhos de avaliação, identificar as condições necessárias para construção de contrafactuais e analisar limitações relacionadas à seleção, observabilidade e comparabilidade dos grupos. Também pode servir como material de apoio na leitura e elaboração de estudos de avaliação de impacto",
 "citacao": "CAMBOTA, Jacqueline Nogueira; CARNEIRO, Diego Rafael Fonseca. Metodologias de Avaliação de Políticas Públicas: Análise e Aplicação dos Principais Métodos no Contexto do Banco do Nordeste. Revista Econômica do Nordeste, [S. l.], v. 49, n. 4, p. 9–21, 2019. DOI: https://doi.org/10.61673/ren.2018.945.",
@@ -987,15 +1002,16 @@
 "idioma": "Português (BR)",
 "paginas": "9",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Educação",
 "Trabalho e empreendedorismo",
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação sintetiza evidências sobre os efeitos de longo prazo do Jovem de Futuro, programa voltado à melhoria da gestão de escolas públicas de ensino médio. A análise acompanha estudantes por até 15 anos e combina dados do Censo Escolar, ENEM, Censo da Educação Superior e RAIS. Os resultados indicam que melhorias na gestão escolar produziram efeitos positivos sobre a conclusão do ensino médio, o desempenho no ENEM e, no longo prazo, o acesso a universidades públicas, cursos mais seletivos e vagas por ação afirmativa. Não foram identificados efeitos estatisticamente detectáveis sobre emprego formal e salários no período observado",
 "quando": "Formação de novos membros, desenvolvimento de projetos de avaliação de impacto, estudos sobre educação e capital humano, planejamento de avaliações de longo prazo, revisão metodológica, desenvolvimento de pesquisas com dados administrativos, elaboração de avaliações de políticas educacionais e análise de evidências experimentais",
 "citacao": "FGV CLEAR. Qualidade da educação e decisões de capital humano – Evidência experimental do Brasil. São Paulo: FGV CLEAR, 2026.",
@@ -1014,14 +1030,15 @@
 "idioma": "Português (BR)",
 "paginas": "9",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Educação",
 "Segurança pública"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação sistematiza evidências empíricas sobre os efeitos da exposição à violência nos resultados educacionais. A análise está organizada em dois eixos principais: os efeitos sobre a proficiência escolar e os efeitos sobre outros indicadores educacionais, como conclusão do ensino médio e acesso ao ensino superior. A síntese também examina evidências sobre políticas de prevenção, especialmente programas de policiamento escolar. A literatura revisada aponta efeitos negativos da exposição à violência sobre o desempenho acadêmico, além de impactos sobre trajetórias educacionais e possíveis efeitos sobre colegas de turma",
 "quando": "Formação de novos membros, desenvolvimento de projetos, elaboração de diagnósticos educacionais, avaliação de políticas de educação e segurança, planejamento de avaliações de impacto, revisão metodológica, estudos sobre violência e educação e desenvolvimento de pesquisas sobre resultados escolares",
 "citacao": "FGV CLEAR. Exposição à violência e resultados escolares. São Paulo: FGV CLEAR, 2026.",
@@ -1040,14 +1057,15 @@
 "idioma": "Português (BR)",
 "paginas": "12",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Proteção social e renda",
 "Trabalho e empreendedorismo"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação sistematiza evidências sobre os efeitos dos Fundos Constitucionais de Financiamento das regiões Norte, Nordeste e Centro-Oeste (FNO, FNE e FCO) e dos Fundos Estaduais de Combate à Pobreza (FECPs) sobre emprego, salários, produção, renda, pobreza e desigualdade. A síntese realiza uma revisão sistemática da literatura e organiza as evidências em dimensões macro e microeconômicas. Os resultados indicam efeitos positivos dos fundos constitucionais sobre o emprego, especialmente em micro e pequenas empresas, e efeitos positivos sobre o PIB per capita municipal. Para os FECPs, são encontradas evidências de redução da pobreza e da mortalidade infantil, embora não sejam identificados efeitos significativos sobre a desigualdade de renda",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre desenvolvimento regional, planejamento de avaliações de impacto, revisão metodológica, pesquisas sobre emprego, renda e pobreza, elaboração de diagnósticos de políticas públicas, síntese de evidências e desenvolvimento de avaliações de políticas de financiamento",
 "citacao": "FGV CLEAR. Fundos de financiamento federais e estaduais: em busca de evidências sobre emprego, renda e pobreza. São Paulo: FGV CLEAR, 2026.",
@@ -1066,13 +1084,14 @@
 "idioma": "Português (BR)",
 "paginas": "10",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Educação"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação sistematiza evidências empíricas sobre os efeitos da correspondência racial entre professores e estudantes, com foco especial nos resultados de alunos negros. A síntese reúne estudos experimentais e quase-experimentais realizados em diferentes países e organiza os resultados ao longo da trajetória educacional, abrangendo desempenho acadêmico, progressão escolar, comportamento, acesso e permanência no ensino superior, escolha de área de estudo e resultados no mercado de trabalho. A publicação também apresenta evidências brasileiras sobre os efeitos de uma maior presença de professores negros nas trajetórias educacionais dos estudantes",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre desigualdade racial e educação, planejamento de avaliações de impacto, revisão metodológica, desenvolvimento de pesquisas com dados administrativos, elaboração de diagnósticos educacionais e análise de políticas de promoção da equidade racial",
 "citacao": "FGV CLEAR. Os efeitos da paridade racial na educação. São Paulo: FGV CLEAR, 2026.",
@@ -1091,15 +1110,16 @@
 "idioma": "Português (BR)",
 "paginas": "17",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Educação",
 "Saúde",
 "Trabalho e empreendedorismo"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação sistematiza evidências disponíveis sobre os efeitos da Educação Profissional e Técnica (EPT) no Brasil, com foco principalmente em dois resultados: renda e empregabilidade. A análise considera diferentes modalidades de EPT, incluindo cursos de qualificação profissional, cursos técnicos de nível médio e cursos tecnológicos, além de diferentes programas, instituições ofertantes e escalas territoriais, revelando efeitos gerais positivos, embora com variações. Enquanto os impactos na remuneração costumam ser mais favoráveis, os resultados na empregabilidade mostram-se mais heterogêneos. Essas variações dependem da modalidade de ensino, do perfil demográfico dos estudantes, da instituição ofertante e do contexto do mercado de trabalho",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre educação e mercado de trabalho, planejamento de avaliações de impacto, revisão metodológica, elaboração de diagnósticos de políticas de qualificação profissional, desenvolvimento de pesquisas sobre inclusão produtiva e análise de políticas de geração de emprego e renda",
 "citacao": "FGV CLEAR. Educação profissional e técnica (EPT) no Brasil: evidências sobre empregabilidade e renda. São Paulo: FGV CLEAR, 2025.",
@@ -1118,12 +1138,14 @@
 "idioma": "Português (BR)",
 "paginas": "22",
 "tipo": "Relatório institucional",
+"colecoes": [
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Trabalho e empreendedorismo",
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "A publicação sintetiza a atuação do FGV CLEAR no programa Empreenda-SP, iniciativa paulista de apoio a empreendedores que une microcrédito, capacitação e mentoria. O relatório detalha o suporte metodológico prestado ao longo das etapas do programa, incluindo a construção da Teoria da Mudança e a aleatorização dos participantes, e destaca que, apesar da impossibilidade de concluir a avaliação experimental de impacto prevista, o acompanhamento realizado contribuiu para qualificar a iniciativa",
 "quando": "Formação de novos membros, desenvolvimento de projetos, construção de Teorias da Mudança, desenho de avaliações experimentais, planejamento de avaliações de impacto, monitoramento da implementação, análise de participação e engajamento, identificação de riscos e hipóteses e desenvolvimento de avaliações de programas de empreendedorismo e microcrédito",
 "citacao": "FGV CLEAR. Relatório de Atividades – Empreenda-SP. São Paulo: FGV CLEAR, 2025.",
@@ -1142,15 +1164,16 @@
 "idioma": "Português (BR)",
 "paginas": "11",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Educação",
 "Saúde",
 "Trabalho e empreendedorismo"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação analisa a relação entre educação e crescimento econômico a partir da literatura nacional e internacional, destacando a forte associação positiva entre a qualidade da educação (medida por habilidades cognitivas) e o desenvolvimento dos países. O estudo aponta que um aumento de um desvio-padrão em testes padronizados eleva a taxa anual de crescimento do PIB per capita entre 1 e 2,2 pontos percentuais, com uma média de 1,5 ponto. Além disso, o texto traz evidências específicas para o Brasil, conectando a qualidade educacional a impactos diretos na produtividade, na geração de empregos e no desenvolvimento econômico",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre educação e desenvolvimento econômico, planejamento de avaliações, elaboração de diagnósticos de políticas educacionais, revisão metodológica, pesquisas sobre capital humano, análise de evidências internacionais e estudos sobre os retornos econômicos da educação",
 "citacao": "FGV CLEAR. Síntese de Evidências: Educação e Crescimento Econômico. São Paulo: FGV CLEAR, 2022.",
@@ -1169,14 +1192,15 @@
 "idioma": "Português (BR)",
 "paginas": "8",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Educação",
 "Saúde"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação analisa os efeitos de programas de água, saneamento e higiene (WASH) nas escolas sobre o absenteísmo estudantil, reunindo avaliações experimentais de países em desenvolvimento. O estudo examina como a combinação de melhorias na infraestrutura e a promoção de hábitos de higiene impacta a frequência escolar, avaliando o absenteísmo como um importante indicador intermediário para a saúde e a educação",
 "quando": "Síntese de evidências produzida pelo FGV EESP CLEAR que reúne seis avaliações experimentais de programas de água, saneamento e higiene implementados em países em desenvolvimento. O material demonstra a aplicação de métodos experimentais à análise de políticas intersetoriais e utiliza o absenteísmo escolar como indicador para avaliar os resultados das intervenções",
 "citacao": "FGV CLEAR. Programas de promoção à higiene em escolas e o absenteísmo escolar: evidências de países em desenvolvimento. São Paulo: FGV CLEAR, 2021.",
@@ -1195,13 +1219,14 @@
 "idioma": "Português (BR)",
 "paginas": "6",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação discute a importância de usar evidências na formulação de políticas públicas, baseando-se em uma pesquisa do LAPOP de 2019 que revelou um forte apoio popular de 83,8% para que o governo considere estudos de universidades. O respaldo é amplo em várias regiões e grupos da população. Além disso, o estudo apresenta exemplos práticos dessa aplicação no Brasil, como avaliações de impacto em educação e primeira infância, criação de sistemas de monitoramento e apoio a guias de avaliação",
 "quando": "Formação de novos membros, desenvolvimento de projetos, introdução ao campo de políticas públicas baseadas em evidências, planejamento de sistemas de monitoramento e avaliação, desenvolvimento de capacidades institucionais, revisão metodológica, estudos sobre uso de evidências e desenho de estratégias para aproximação entre pesquisa e gestão pública",
 "citacao": "FGV CLEAR. Uso das evidências nas políticas públicas: em busca de consolidação. São Paulo: FGV CLEAR, 2021.",
@@ -1220,14 +1245,15 @@
 "idioma": "Português (BR)",
 "paginas": "16",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Primeira infância",
 "Saúde"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação sistematiza evidências sobre programas remotos e híbridos de parentalidade na primeira infância, surgidos para superar barreiras de acesso e expandidos durante a pandemia de COVID-19. Com base em iniciativas internacionais, a análise aponta efeitos positivos consistentes sobre as habilidades, conhecimentos e reações dos cuidadores frente ao comportamento infantil, enquanto os impactos na interação familiar e na saúde mental dos pais apresentam resultados mais heterogêneos",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre primeira infância, planejamento de avaliações de impacto, revisão metodológica, elaboração de diagnósticos de políticas sociais, desenvolvimento de programas de parentalidade, análise de intervenções remotas e pesquisas sobre desenvolvimento infantil",
 "citacao": "FGV CLEAR. Programas de parentalidade na primeira infância com componentes remotos. São Paulo: FGV CLEAR, 2021.",
@@ -1246,14 +1272,15 @@
 "idioma": "Português (BR)",
 "paginas": "14",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Educação",
 "Trabalho e empreendedorismo"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação analisa evidências empíricas de dez programas de ensino técnico e profissional (TVET) em nove países, divididos em três formatos para avaliar potenciais adaptações ao Brasil. Os resultados mostram uma forte heterogeneidade por gênero, com impactos positivos sobre emprego e renda que frequentemente superam os observados entre os homens, embora ainda existam poucas evidências consolidadas sobre os efeitos educacionais, como conclusão do ensino médio e acesso ao ensino superior",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre educação profissional e mercado de trabalho, planejamento de avaliações de impacto, revisão metodológica, elaboração de diagnósticos de políticas de qualificação profissional, análise de programas de aprendizagem e pesquisas sobre emprego, renda e capital humano",
 "citacao": "FGV CLEAR. Um olhar sobre as evidências de programas de ensino técnico e educação profissional. São Paulo: FGV CLEAR, 2021.",
@@ -1272,13 +1299,14 @@
 "idioma": "Português (BR)",
 "paginas": "12",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Primeira infância"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação apresenta os resultados de avaliações experimentais de quatro programas internacionais de visitação domiciliar na primeira infância, analisando seus impactos em diversas dimensões ao longo do tempo. O estudo aponta efeitos positivos e duradouros sobre várias habilidades não cognitivas, como autocontrole, motivação e autoestima, enquanto os impactos nas habilidades cognitivas tendem a decair com o tempo, mostrando-se mais persistentes quando as intervenções ocorrem logo nos primeiros anos de vida",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre primeira infância, planejamento de avaliações de impacto, revisão metodológica, elaboração de diagnósticos de políticas sociais, análise de programas de visitação domiciliar, pesquisas sobre desenvolvimento infantil e estudos sobre efeitos de longo prazo de políticas públicas",
 "citacao": "FGV CLEAR. Primeira infância: atingindo resultados em programas de visitação domiciliar. São Paulo: FGV CLEAR, 2021.",
@@ -1297,15 +1325,16 @@
 "idioma": "Português (BR)",
 "paginas": "9",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Educação",
 "Primeira infância",
 "Saúde"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação sintetiza evidências de várias áreas sobre a importância dos primeiros seis anos de vida para o desenvolvimento humano, analisando programas de educação infantil fora do ambiente familiar no Brasil e na América Latina. O estudo revisa iniciativas como o Perry Preschool Program e o Head Start, apontando impactos positivos dessas intervenções, especialmente para famílias vulneráveis. Contudo, os resultados em indicadores cognitivos mostram-se heterogêneos em alguns programas, e a literatura ainda carece de mais pesquisas sobre os impactos na América Latina e sobre o peso comparativo da qualidade dessas políticas",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre primeira infância, planejamento de avaliações de impacto, elaboração de diagnósticos de políticas sociais, análise de programas de educação infantil, revisão metodológica, pesquisas sobre desenvolvimento infantil e estudos sobre capital humano",
 "citacao": "FGV CLEAR. Primeira infância: caminho para o desenvolvimento desde o início da vida. São Paulo: FGV CLEAR, 2021.",
@@ -1324,15 +1353,16 @@
 "idioma": "Português (BR)",
 "paginas": "25",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Primeira infância",
 "Proteção social e renda",
 "Trabalho e empreendedorismo"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação sistematiza evidências de 17 programas de transferência de renda condicionada em 11 países, incluindo o Bolsa Família e o Oportunidades, para analisar seus impactos na pobreza, na desigualdade e no mercado de trabalho. Com base em metodologias rigorosas, a síntese aponta reduções consistentes na pobreza e na desigualdade, além de uma tendência de queda na incidência do trabalho infantil. No que tange ao trabalho dos adultos, os resultados mostram-se mais heterogêneos, embora predominem a ausência de impactos negativos e a indicação de efeitos neutros ou positivos",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre políticas sociais e transferência de renda, planejamento de avaliações de impacto, revisão metodológica, elaboração de diagnósticos de pobreza e desigualdade, análise de programas de proteção social e pesquisas sobre mercado de trabalho, trabalho infantil e capital humano",
 "citacao": "FGV CLEAR. Primeira infância: caminho para o desenvolvimento desde o início da vida. São Paulo: FGV CLEAR, 2021.",
@@ -1351,13 +1381,14 @@
 "idioma": "Português (BR)",
 "paginas": "8",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Educação"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação sistematiza evidências sobre as políticas de ações afirmativas no ensino superior brasileiro, focando nos mecanismos que ampliam o acesso de grupos historicamente sub-representados. O estudo destaca a relevância dessa política pública para o enfrentamento das desigualdades educacionais, permitindo analisar tanto o perfil dos ingressantes quanto os impactos dessas medidas sobre diferentes grupos sociais e educacionais",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre educação e desigualdades, planejamento de avaliações de políticas educacionais, revisão metodológica, elaboração de diagnósticos sobre acesso ao ensino superior, análise de políticas de ações afirmativas e pesquisas sobre equidade e inclusão educacional",
 "citacao": "FGV CLEAR. Ações afirmativas no ensino superior brasileiro. São Paulo: FGV CLEAR, 2021.",
@@ -1376,13 +1407,14 @@
 "idioma": "Português (BR)",
 "paginas": "10",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Segurança pública"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação sistematiza evidências de avaliações experimentais sobre o uso de terapias cognitivo-comportamentais na prevenção e redução de comportamentos de risco, violência e criminalidade em diversos contextos, como escolas, sistemas prisionais e comunidades vulneráveis. O estudo destaca o programa Becoming a Man, implementado em Chicago, cujos resultados demonstram impactos positivos em indicadores comportamentais e educacionais. Conclui-se que, apesar da escassez de dados mais amplos, as intervenções baseadas nessa abordagem mostram-se promissoras para mitigar a violência e a reincidência, sobretudo entre jovens em situação de vulnerabilidade",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre segurança pública, planejamento de avaliações de impacto, revisão metodológica, elaboração de diagnósticos de políticas de prevenção da violência, análise de programas voltados a populações vulneráveis e pesquisas sobre reincidência e comportamento de risco",
 "citacao": "FGV CLEAR. Uso de terapias cognitivo comportamentais na redução da violência e da criminalidade. São Paulo: FGV CLEAR, 2021.",
@@ -1401,14 +1433,15 @@
 "idioma": "Português (BR)",
 "paginas": "16",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Proteção social e renda",
 "Trabalho e empreendedorismo"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação sistematiza evidências internacionais sobre programas de microcrédito para avaliar seus efeitos na inclusão financeira, renda, consumo, empreendedorismo e bem-estar dos beneficiários. O estudo analisa o microcrédito como ferramenta de desenvolvimento econômico e inclusão produtiva para públicos sem acesso ao sistema tradicional, sendo relevante para o CLEAR por demonstrar aplicações de avaliação de impacto a políticas de desenvolvimento econômico e inclusão financeira, e comparar diferentes contextos e resultados",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre desenvolvimento econômico e inclusão financeira, planejamento de avaliações de impacto, revisão metodológica, elaboração de diagnósticos de políticas de crédito, análise de programas de microcrédito e pesquisas sobre pobreza, renda, empreendedorismo e inclusão produtiva",
 "citacao": "FGV CLEAR. Programas de microcrédito pelo mundo: em busca de evidências. São Paulo: FGV CLEAR, 2021.",
@@ -1427,15 +1460,16 @@
 "idioma": "Português (BR)",
 "paginas": "7",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Saúde",
 "Trabalho e empreendedorismo",
 "Segurança pública"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação reúne evidências internacionais sobre os impactos de diversos programas e projetos habitacionais no bem-estar dos beneficiários, abrangendo iniciativas como o Moving to Opportunity e o Techo. O estudo aponta efeitos positivos variados conforme o perfil demográfico e o desenho de cada intervenção, destacando melhorias na saúde física e mental, redução da criminalidade e da exposição infantil a riscos, além do aumento de renda e escolaridade para grupos específicos",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre políticas habitacionais e desenvolvimento urbano, planejamento de avaliações de impacto, revisão metodológica, elaboração de diagnósticos de políticas sociais, análise de programas de habitação e pesquisas sobre saúde, segurança, emprego, renda e desenvolvimento infantil",
 "citacao": "FGV CLEAR. Impactos de projetos habitacionais sobre saúde, criminalidade e emprego. São Paulo: FGV CLEAR, 2021.",
@@ -1454,11 +1488,11 @@
 "idioma": "Português (BR)",
 "paginas": "23",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [],
 "temas": [
 "Saúde"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "O estudo analisa a desigualdade social na obesidade entre adultos no Brasil, considerando diferenças por gênero e nível socioeconômico. Utilizando dados da Pesquisa Nacional de Saúde de 2013 e diferentes índices de desigualdade, investiga a concentração, intensidade e severidade da obesidade e os fatores associados a essas diferenças",
 "quando": "Para estudos sobre desigualdade social, saúde pública, economia da saúde, determinantes socioeconômicos, análise distributiva e aplicação de métodos quantitativos na análise de políticas públicas",
 "citacao": "CAMPÊLO, Guaracyane Lima; FRANÇA, João Mário Santos de; FRANÇA, Natália Cecília de; VALE, Eleydiane Gomes. Evidência Econômica da Desigualdade Social em Obesidade no Brasil. Fortaleza: Instituto de Pesquisa e Estratégia Econômica do Ceará (IPECE), 2021. (Texto para Discussão CAPP, n. 04).",
@@ -1477,12 +1511,14 @@
 "idioma": "Português (BR)",
 "paginas": "36",
 "tipo": "Relatório institucional",
+"colecoes": [
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Saúde",
 "Gestão e orçamento"
 ],
 "foco": "África",
-"colecoes": [],
 "resumo": "O Relatório de Atividades FGV CLEAR 2023 detalha as iniciativas, pesquisas, capacitações e ações de disseminação realizadas pelo centro ao longo do ano para fortalecer o monitoramento, a avaliação e o uso de evidências na gestão pública. A atuação é organizada em quatro frentes voltadas à cultura de tomada de decisão, capacitação, geração e disseminação de conhecimento, abrangendo projetos executados no Brasil, em Moçambique e em Cabo Verde, além de cursos, avaliações, eventos e publicações",
 "quando": "Formação de novos membros, introdução às frentes de atuação do centro, desenvolvimento de projetos, identificação de experiências anteriores do CLEAR, compreensão das diferentes modalidades de avaliação realizadas pelo centro, planejamento de iniciativas de capacitação, pesquisa sobre institucionalização de M&A, desenvolvimento de parcerias e identificação de referências para novos projetos",
 "citacao": "FGV CLEAR. Relatório de Atividades FGV CLEAR 2023. São Paulo: FGV CLEAR, 2023.",
@@ -1501,12 +1537,14 @@
 "idioma": "Português (BR)",
 "paginas": "36",
 "tipo": "Relatório institucional",
+"colecoes": [
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Saúde",
 "Gestão e orçamento"
 ],
 "foco": "África",
-"colecoes": [],
 "resumo": "O relatório anual de 2022 do FGV EESP CLEAR destaca as atividades do centro no fortalecimento da cultura de Monitoramento e Avaliação e da tomada de decisão baseada em evidências, estruturadas em quatro pilares de assistência técnica, capacitação, geração e disseminação de conhecimento. O documento detalha a atuação do centro no Brasil e em países africanos de língua portuguesa, por meio de parcerias com governos, universidades e a sociedade civil, em iniciativas que envolveram assessorias a avaliações, apoio à institucionalização de sistemas de M&A, pesquisas e ações formativas ao longo do ano",
 "quando": "Formação de novos membros, introdução às frentes de atuação do centro, desenvolvimento de projetos, identificação de experiências anteriores do CLEAR, compreensão das diferentes modalidades de avaliação realizadas pelo centro, pesquisa sobre institucionalização de M&A, planejamento de iniciativas de capacitação, identificação de parceiros e contextualização de projetos desenvolvidos pelo centro",
 "citacao": "FGV CLEAR. Relatório Anual FGV EESP CLEAR – 2022. São Paulo: FGV CLEAR, 2022.",
@@ -1525,12 +1563,14 @@
 "idioma": "Português (BR)",
 "paginas": "20",
 "tipo": "Relatório institucional",
+"colecoes": [
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Saúde",
 "Gestão e orçamento"
 ],
 "foco": "África",
-"colecoes": [],
 "resumo": "O Relatório de Atividades do FGV EESP CLEAR LAB 2015-2021 consolida os principais marcos do primeiro ciclo de atuação do centro, período em que promoveu mais de duzentas atividades em 65 projetos com governos, universidades e organizações sociais. O documento estrutura essa trajetória em quatro eixos voltados à cultura de evidências, capacitação, geração e disseminação em Monitoramento e Avaliação. Entre as realizações destacam-se a participação na criação do sistema de M&A do Espírito Santo, o apoio a guias de avaliação do governo federal, o desenvolvimento de sistemas estaduais, a expansão para a África Lusófona, a criação do CLEAR Nordeste e o lançamento da primeira Convocatória de Avaliação Executiva",
 "quando": "Formação de novos membros, introdução às frentes de atuação do centro, compreensão da trajetória institucional, desenvolvimento de projetos, identificação de experiências anteriores do CLEAR, pesquisa sobre institucionalização de sistemas de M&A, planejamento de iniciativas de capacitação, identificação de parceiros e contextualização de projetos desenvolvidos pelo centro",
 "citacao": "FGV CLEAR. Relatório de Atividades FGV EESP Clear LAB 2015-2021. São Paulo: FGV CLEAR, 2021.",
@@ -1549,13 +1589,14 @@
 "idioma": "Português (BR)",
 "paginas": "53",
 "tipo": "Síntese de evidências",
+"colecoes": [
+"Sínteses de evidências (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "Educação"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sínteses de evidências (CLEAR)"
-],
 "resumo": "A publicação levanta evidências científicas sobre os impactos da interrupção das aulas presenciais durante a pandemia de COVID-19, focando na proficiência dos estudantes, no abandono escolar e na efetividade do ensino remoto. A revisão aponta efeitos negativos na proficiência, sobretudo em matemática, e um aumento da evasão escolar, afetando mais severamente os anos iniciais e os alunos em maior vulnerabilidade. Além disso, o documento ressalta a necessidade de aprofundar as análises sobre o papel do ensino remoto na mitigação dessas perdas educacionais",
 "quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre políticas educacionais, planejamento de avaliações, revisão metodológica, elaboração de diagnósticos educacionais, análise de impactos de interrupções escolares e pesquisas sobre aprendizagem, abandono escolar, ensino remoto e desigualdade educacional",
 "citacao": "FGV CLEAR. Pandemia de covid-19: o que sabemos sobre os efeitos da interrupção das aulas sobre os resultados educacionais?. São Paulo: FGV CLEAR, 2021.",
@@ -1574,12 +1615,12 @@
 "idioma": "Português (BR)",
 "paginas": "4",
 "tipo": "Nota e policy brief",
+"colecoes": [],
 "temas": [
 "Proteção social e renda",
 "Trabalho e empreendedorismo"
 ],
 "foco": "América Latina",
-"colecoes": [],
 "resumo": "A publicação analisa os impactos imediatos da pandemia de COVID-19 sobre os mercados de trabalho da América Latina e do Caribe, destacando o aumento do desemprego, da informalidade, da pobreza e das desigualdades sociais. O relatório examina os efeitos da crise sobre diferentes grupos populacionais, identifica os setores econômicos mais afetados e apresenta recomendações para políticas públicas voltadas à preservação do emprego, proteção da renda, fortalecimento dos sistemas de proteção social e promoção de uma recuperação econômica inclusiva e sustentável",
 "quando": "Formação de novos membros, elaboração de diagnósticos socioeconômicos, desenvolvimento de pesquisas sobre mercado de trabalho, avaliação de políticas de emprego e proteção social, estudos comparados internacionais, produção de pareceres técnicos, revisão bibliográfica e desenvolvimento de consultorias em políticas públicas",
 "citacao": "COMISSÃO ECONÔMICA PARA A AMÉRICA LATINA E O CARIBE (CEPAL); ORGANIZAÇÃO INTERNACIONAL DO TRABALHO (OIT). Políticas Sociais em Resposta ao Coronavírus – O mercado de trabalho na América Latina e no Caribe frente ao impacto da COVID-19. [S.l.]: CEPAL; OIT, 2020.",
@@ -1598,11 +1639,11 @@
 "idioma": "Português (BR)",
 "paginas": "53",
 "tipo": "Nota e policy brief",
+"colecoes": [],
 "temas": [
 "Saúde"
 ],
 "foco": "América Latina",
-"colecoes": [],
 "resumo": "A publicação apresenta como conceitos e ferramentas da economia comportamental podem ser utilizados no desenho de políticas e estratégias de comunicação durante situações de emergência, tomando como contexto a pandemia de COVID-19. O documento identifica diferentes vieses comportamentais que podem afetar a adoção de medidas sanitárias e apresenta recomendações para o desenho de mensagens e intervenções capazes de estimular comportamentos desejados. A publicação também oferece orientações práticas e materiais de comunicação que podem ser utilizados por governos no enfrentamento da pandemia",
 "quando": "Formação de novos membros, desenvolvimento de projetos, avaliação de desenho, elaboração de estratégias de comunicação pública, planejamento de intervenções comportamentais, desenho de políticas públicas, desenvolvimento de avaliações e revisão metodológica",
 "citacao": "MÉNDEZ, Ana María Rojas; SCARTASCINI, Carlos; VILLARREAL, Déborah Martínez. A economia do comportamento pode ajudar a combater o coronavírus. Washington, D.C.: Banco Interamericano de Desenvolvimento (BID), 2020. (Boletim de políticas do BID; 334).",
@@ -1621,6 +1662,7 @@
 "idioma": "Português (BR)",
 "paginas": "26",
 "tipo": "Relatório",
+"colecoes": [],
 "temas": [
 "Educação",
 "Saúde",
@@ -1629,7 +1671,6 @@
 "Segurança pública"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "O estudo \"Covid-19: mitigação dos efeitos de longo prazo\", primeiro produto da iniciativa Evidência Express da Enap, sintetiza evidências de duas décadas sobre choques exógenos como epidemias e desastres naturais para identificar estratégias de combate aos impactos da pandemia. A análise aborda as áreas de saúde, educação, trabalho e rendimento, pobreza e desigualdade, e violência doméstica, apresentando os efeitos de médio e longo prazo e alternativas de mitigação para cada setor. O documento tem como objetivo fornecer subsídios baseados em evidências para auxiliar gestores e tomadores de decisão no desenho, monitoramento e avaliação de políticas públicas",
 "quando": "Caderno Enap nº 71, produzido pela iniciativa Evidência Express (EvEx), que sintetiza evidências dos últimos 20 anos sobre os efeitos de epidemias, desastres naturais e outros choques exógenos. Analisa impactos de médio e longo prazo da Covid-19 nas áreas de saúde, educação, trabalho e rendimento, pobreza e desigualdade e violência doméstica, apresentando possíveis estratégias de mitigação",
 "citacao": "LEITE, Vittorio; LOPES, Daniel; MONASTERIO, Leonardo; SHIKIDA, Claudio D.. Covid-19: mitigação dos efeitos de longo prazo. Brasília: Escola Nacional de Administração Pública (Enap), 2020. 26 p. (Cadernos Enap, 71). Produzido por Evidência Express (EvEx).",
@@ -1648,11 +1689,11 @@
 "idioma": "Português (BR)",
 "paginas": "56",
 "tipo": "Relatório",
+"colecoes": [],
 "temas": [
 "Educação"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "O estudo do Instituto Rodrigo Mendes analisa diretrizes de 23 países e organismos internacionais para apoiar gestores na garantia da educação inclusiva a pessoas com deficiência durante a pandemia. A pesquisa examina o isolamento social e a reabertura escolar abordando temas como acessibilidade à informação, sobrecarga familiar, saúde mental, aprendizagem e medidas sanitárias de retorno",
 "quando": "Desenvolvimento de projetos relacionados à educação inclusiva, formulação e avaliação de políticas educacionais, elaboração de diagnósticos, estudos comparativos internacionais, planejamento de respostas educacionais em situações de crise, análise de políticas para pessoas com deficiência, planejamento da reabertura escolar e pesquisas sobre equidade e inclusão educacional",
 "citacao": "INSTITUTO RODRIGO MENDES. Protocolos sobre educação inclusiva durante a pandemia da covid-19: um sobrevoo por 23 países e organismos internacionais. São Paulo: Instituto Rodrigo Mendes, 2020. 72 p.",
@@ -1671,6 +1712,7 @@
 "idioma": "Português (BR)",
 "paginas": "49",
 "tipo": "Relatório",
+"colecoes": [],
 "temas": [
 "Educação",
 "Primeira infância",
@@ -1678,7 +1720,6 @@
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "A publicação, desenvolvido pela Fundação Maria Cecilia Souto Vidigal, apoia gestores municipais e redes de ensino no planejamento da retomada escolar durante a pandemia com base em experiências internacionais. O documento orienta que a reabertura considere o cenário sanitário e as necessidades de crianças, famílias e profissionais, estruturando diretrizes que abrangem segurança sanitária, organização institucional, acolhimento, práticas pedagógicas, capacitação e as particularidades dessa etapa de ensino",
 "quando": "Desenvolvimento de projetos relacionados à educação infantil e primeira infância, elaboração de diagnósticos educacionais, planejamento de políticas públicas, estudos sobre gestão municipal da educação, análise de políticas de retomada das atividades presenciais, estudos sobre educação em situações de crise e pesquisas sobre respostas educacionais à pandemia de Covid-19",
 "citacao": "FUNDAÇÃO MARIA CECILIA SOUTO VIDIGAL. Como voltar às atividades na educação infantil: recomendações aos municípios no planejamento para a retomada no contexto da pandemia de covid-19. São Paulo: Fundação Maria Cecilia Souto Vidigal; 2020.",
@@ -1697,13 +1738,13 @@
 "idioma": "Português (BR)",
 "paginas": "41",
 "tipo": "Relatório",
+"colecoes": [],
 "temas": [
 "Educação",
 "Primeira infância",
 "Saúde"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "A edição especial do Comitê Científico do NCPI analisa os impactos das medidas de distanciamento e da crise sanitária sobre as crianças pequenas e o ambiente familiar. O documento examina questões como estresse, alterações emocionais e comportamentais, mudanças na dinâmica doméstica e a interrupção de serviços essenciais, oferecendo recomendações baseadas em evidências para orientar famílias, profissionais e gestores públicos na mitigação desses desafios",
 "quando": "Desenvolvimento de projetos relacionados à primeira infância, elaboração de diagnósticos, formulação e avaliação de políticas públicas para crianças, estudos sobre desenvolvimento infantil, pesquisas sobre os impactos da Covid-19, análise de políticas de saúde, educação e proteção social e planejamento de estratégias de apoio às famílias",
 "citacao": "NÚCLEO CIÊNCIA PELA INFÂNCIA (NCPI). Repercussões da pandemia de COVID-19 no desenvolvimento infantil. São Paulo: NCPI, 2020. (Working Paper, edição especial).",
@@ -1722,11 +1763,11 @@
 "idioma": "Português (BR)",
 "paginas": "29",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [],
 "temas": [
 "Saúde"
 ],
 "foco": "Global",
-"colecoes": [],
 "resumo": "A publicação analisa os impactos da COVID-19 sobre o transporte público e apresenta recomendações para usuários, operadores e poder público durante a pandemia. O estudo também reúne experiências internacionais de prevenção e adaptação dos sistemas de transporte, buscando contribuir para a manutenção do serviço e a redução dos riscos de transmissão",
 "quando": "Para estudos sobre mobilidade urbana, transporte público, gestão de crises, políticas públicas em situações de emergência, continuidade de serviços essenciais e análise de experiências internacionais de resposta à COVID-19",
 "citacao": "BRIZON, Luciana Costa; FIGUEIREDO, Miguel Zobaran; LIMA, Gregório Costa Luz de Souza; SCHECHTMAN, Rafael. Transporte público e COVID-19: o que pode ser feito?. Rio de Janeiro: FGV CERI, 2020.",
@@ -1745,11 +1786,11 @@
 "idioma": "Português (BR)",
 "paginas": "49",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [],
 "temas": [
 "Proteção social e renda"
 ],
 "foco": "América Latina",
-"colecoes": [],
 "resumo": "O documento analisa a rede de proteção social brasileira e sua resposta à pandemia de COVID-19, com foco na cobertura, no Auxílio Emergencial, nos efeitos sobre a pobreza e na sustentabilidade fiscal. A publicação também discute a necessidade de reformulação da rede de proteção social brasileira",
 "quando": "Pode ser consultado em estudos sobre proteção social, transferência de renda e políticas públicas em contextos de crise, especialmente quando se pretende analisar cobertura, focalização, efeitos sobre a pobreza e sustentabilidade fiscal. Também é útil como referência para pesquisas sobre o Auxílio Emergencial, a estrutura da proteção social brasileira e o uso de evidências na formulação de respostas governamentais a situações de emergência",
 "citacao": "CAMARGO, Juliana; CHAVES, Giovanna; LIMA, Lycia; MAGALHÃES, Camila; MARCONDES, Gabriel; MÁXIMO, Luciano; SOUZA, André Portela. A resposta da proteção social à covid-19 no Brasil. Nova York: Programa das Nações Unidas para o Desenvolvimento (PNUD América Latina e o Caribe), 2021. (UNDP LAC C19 PDS, n. 27).",
@@ -1768,12 +1809,12 @@
 "idioma": "Português (BR)",
 "paginas": "38",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [],
 "temas": [
 "Educação",
 "Gestão e orçamento"
 ],
 "foco": "América Latina",
-"colecoes": [],
 "resumo": "O estudo analisa os possíveis impactos da pandemia de COVID-19 sobre o financiamento da educação pública no Brasil. Para isso, realiza simulações das despesas educacionais a partir das receitas vinculadas à educação, considerando diferentes cenários de evolução da pandemia e seus efeitos sobre o PIB, a massa salarial e a produção de petróleo e gás natural. As projeções estimam diferentes níveis de redução das despesas educacionais para 2020 e 2021, evidenciando os possíveis efeitos da crise econômica sobre o orçamento educacional",
 "quando": "Pode ser consultado em estudos sobre financiamento e planejamento de políticas educacionais, especialmente quando for necessário analisar como mudanças econômicas podem afetar receitas vinculadas e despesas públicas. Também é útil como referência metodológica para construção de cenários e simulações utilizadas na análise de impactos orçamentários e no planejamento de políticas públicas em contextos de incerteza",
 "citacao": "AFONSO, José Roberto; CASTRO, Kleber Pacheco de; ELACQUA, Gregory; MAROTTA, Luana; SOARES, Sammara. Covid-19 e Financiamento da Educação no Brasil: impactos da pandemia sobre o orçamento educacional. Washington, D.C.: Banco Interamericano de Desenvolvimento (BID); Dados para um Debate Democrático na Educação (D3E), 2020. DOI: https://doi.org/10.18235/0002603.",
@@ -1792,11 +1833,11 @@
 "idioma": "Português (BR)",
 "paginas": "6",
 "tipo": "Nota e policy brief",
+"colecoes": [],
 "temas": [
 "Saúde"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "A nota técnica estima, sob diferentes cenários de disseminação da COVID-19, o déficit potencial de leitos adultos de UTI no SUS e o investimento necessário para ampliar a infraestrutura hospitalar. A análise utiliza dados administrativos do CNES e do SIH e combina diferentes hipóteses sobre taxa de infecção, duração da disseminação, permanência em UTI e demanda concorrente por hospitalizações. O estudo busca principalmente identificar diferenças de escassez entre regiões e subsidiar o planejamento e a alocação de recursos diante da incerteza",
 "quando": "Recomendado para projetos que envolvam dimensionamento de necessidades, planejamento de oferta de serviços públicos, projeções de demanda, análise de cenários, alocação territorial de recursos e utilização de dados administrativos para subsidiar decisões. Também pode ser consultado para compreender como construir cenários alternativos e incorporar diferentes hipóteses sobre demanda, capacidade instalada e comportamento de outras demandas concorrentes",
 "citacao": "RACHE, Beatriz; ROCHA, Rudi; NUNES, Letícia; SPINOLA, Paula; MASSUDA, Adriano. Para além do custeio: necessidades de investimento em leitos de UTI no SUS sob diferentes cenários da COVID-19. Nota Técnica n. 7. São Paulo: Instituto de Estudos para Políticas de Saúde (IEPS), 2020.",
@@ -1815,11 +1856,11 @@
 "idioma": "Português (BR)",
 "paginas": "406",
 "tipo": "Livro",
+"colecoes": [],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Global",
-"colecoes": [],
 "resumo": "Introdução completa à avaliação de impacto para gestores e profissionais do desenvolvimento: por que avaliar, inferência causal, seleção aleatória, variáveis instrumentais, regressão descontínua, diferença em diferenças, pareamento, gestão e ética da avaliação, com exemplos reais.",
 "quando": "Para quem vai desenhar, contratar ou ler uma avaliação de impacto e precisa entender a lógica do contrafactual e dos principais métodos. É a porta de entrada clássica em português.",
 "citacao": "GERTLER, Paul J. et al. Avaliação de impacto na prática. 2. ed. Washington, DC: Banco Mundial; BID, 2018.",
@@ -1838,13 +1879,13 @@
 "idioma": "Português (BR)",
 "paginas": "132",
 "tipo": "Guia e manual",
+"colecoes": [
+"Desenho de programas e indicadores"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Desenho de programas e indicadores"
-],
 "resumo": "Guia para construir indicadores de desempenho de programas governamentais: conceitos, propriedades e tipos de indicadores, o sistema estatístico nacional como fonte, indicadores no PPA e um método passo a passo com oficina de aplicação.",
 "quando": "Na hora de definir ou revisar os indicadores de um programa, plano ou sistema de monitoramento.",
 "citacao": "BRASIL. Ministério do Planejamento, Orçamento e Gestão. Indicadores de programas: guia metodológico. Brasília: MP, 2010.",
@@ -1863,13 +1904,13 @@
 "idioma": "Português (BR)",
 "paginas": "35",
 "tipo": "Nota e policy brief",
+"colecoes": [
+"Desenho de programas e indicadores"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Desenho de programas e indicadores"
-],
 "resumo": "Roteiro do IPEA para construir o modelo lógico de um programa: explicação do problema, referências básicas, estrutura de resultados e fatores de contexto, articulando ações, produtos e resultados esperados como base para a avaliação.",
 "quando": "Para formular um programa novo ou organizar a avaliação de um programa existente a partir da sua teoria.",
 "citacao": "CASSIOLATO, Martha; GUERESI, Simone. Como elaborar modelo lógico: roteiro para formular programas e organizar avaliação. Brasília: Ipea, 2010. (Nota Técnica Disoc, n. 6).",
@@ -1888,18 +1929,18 @@
 "idioma": "Português (BR)",
 "paginas": "152",
 "tipo": "Guia e manual",
+"colecoes": [
+"Sistemas e institucionalização de M&A"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sistemas e institucionalização de M&A"
-],
 "resumo": "Referencial do TCU com critérios para avaliar a maturidade de políticas públicas em cada fase do ciclo: diagnóstico do problema, análise de alternativas, desenho, governança, orçamento, operação e monitoramento, e avaliação.",
 "quando": "Para entender o que os órgãos de controle esperam de uma política bem desenhada e para fazer um diagnóstico de maturidade de um programa.",
 "citacao": "BRASIL. Tribunal de Contas da União. Referencial de controle de políticas públicas. Brasília: TCU, 2020.",
 "url": "https://portal.tcu.gov.br/publicacoes-institucionais/cartilha-manual-ou-tutorial/referencial-de-controle-de-politicas-publicas",
-"arquivo": "MP-028.pdf",
+"arquivo": "",
 "capa": false
 },
 {
@@ -1913,18 +1954,18 @@
 "idioma": "Português (BR)",
 "paginas": "28",
 "tipo": "Guia e manual",
+"colecoes": [
+"Sistemas e institucionalização de M&A"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sistemas e institucionalização de M&A"
-],
 "resumo": "Referencial para avaliar a coordenação entre União, estados e municípios em políticas descentralizadas, a partir do modelo da OCDE de governança multinível, com itens de verificação para fiscalizações.",
 "quando": "Para analisar políticas executadas por municípios com financiamento ou regras federais e estaduais, como saúde, educação e assistência social.",
 "citacao": "BRASIL. Tribunal de Contas da União. Referencial para avaliação de governança multinível em políticas públicas descentralizadas. Brasília: TCU, 2021.",
 "url": "https://portal.tcu.gov.br/data/files/30/90/36/1D/47F5B710140B5BA7F18818A8/Referencial%20de%20Governanca%20Multinivel.pdf",
-"arquivo": "AP-021.pdf",
+"arquivo": "",
 "capa": false
 },
 {
@@ -1938,13 +1979,13 @@
 "idioma": "Português (PT)",
 "paginas": "24",
 "tipo": "Guia e manual",
+"colecoes": [
+"Desenho de programas e indicadores"
+],
 "temas": [
 "Cooperação internacional"
 ],
 "foco": "Global",
-"colecoes": [
-"Desenho de programas e indicadores"
-],
 "resumo": "Guia de referência do CAD/OCDE com normas de boas práticas para cada fase de uma avaliação: objetivos, planeamento, desenho, implementação, relatório e aprendizagem. Tradução portuguesa do IPAD.",
 "quando": "Para preparar termos de referência ou revisar a qualidade de uma avaliação, sobretudo em projetos de cooperação.",
 "citacao": "OCDE. Comité de Ajuda ao Desenvolvimento. Normas de qualidade para a avaliação do desenvolvimento. Paris: OCDE, 2010.",
@@ -1963,14 +2004,14 @@
 "idioma": "Português (PT)",
 "paginas": "60",
 "tipo": "Guia e manual",
+"colecoes": [
+"Sistemas e institucionalização de M&A"
+],
 "temas": [
 "Cooperação internacional",
 "Gestão e orçamento"
 ],
 "foco": "Global",
-"colecoes": [
-"Sistemas e institucionalização de M&A"
-],
 "resumo": "Doze lições das revisões por pares do CAD sobre como organizar a função de avaliação: política de avaliação, independência, recursos, escolha de métodos, uso dos resultados e aprendizagem.",
 "quando": "Para quem está estruturando uma unidade ou política de avaliação dentro de um governo ou agência.",
 "citacao": "OCDE. Avaliar as atividades de desenvolvimento: 12 lições do CAD da OCDE. Paris: OCDE, 2013.",
@@ -1989,14 +2030,14 @@
 "idioma": "Português (PT)",
 "paginas": "27",
 "tipo": "Nota e policy brief",
-"temas": [
-"Cooperação internacional"
-],
-"foco": "África lusófona e Timor-Leste",
 "colecoes": [
 "M&A na África lusófona",
 "Desenho de programas e indicadores"
 ],
+"temas": [
+"Cooperação internacional"
+],
+"foco": "África lusófona e Timor-Leste",
 "resumo": "Nota técnica sobre como verificar, antes de contratar, se um projeto ou programa pode ser avaliado de forma útil e credível: clareza da lógica de intervenção, disponibilidade de dados e interesse dos atores.",
 "quando": "Antes de encomendar uma avaliação, para decidir se ela é viável agora e o que precisa ser ajustado.",
 "citacao": "AFONSO, Maria Manuela; ROBALO, Maria João. Análise da avaliabilidade: determinar a viabilidade de uma avaliação a um projeto ou programa. Lisboa: GAA/Camões, I.P., 2016. (Nota Técnica n. 2).",
@@ -2015,13 +2056,14 @@
 "idioma": "Português (BR)",
 "paginas": "48",
 "tipo": "Guia e manual",
+"colecoes": [
+"Série Avaliação na Prática (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Série Avaliação na Prática (CLEAR)"
-],
 "resumo": "Guia que apresenta o método de controle sintético para avaliar políticas aplicadas a uma ou poucas unidades, como um estado ou um país, construindo o contrafactual a partir de uma combinação ponderada de unidades de comparação. Cobre o estimador clássico, a inferência por testes placebo e extensões recentes como o SCM aumentado e o Synthetic Difference-in-Differences, com aplicação à Lei Seca brasileira e código completo em R.",
 "quando": "Planejamento de avaliações de políticas implementadas em uma única unidade ou em poucas unidades, com dados em painel, e revisão metodológica",
 "citacao": "FGV CLEAR. Avaliação de impacto: controle sintético. São Paulo: Fundação Getulio Vargas, 2026. (Série Avaliação na Prática).",
@@ -2040,13 +2082,14 @@
 "idioma": "Português (BR)",
 "paginas": "28",
 "tipo": "Guia e manual",
+"colecoes": [
+"Série Avaliação na Prática (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Série Avaliação na Prática (CLEAR)"
-],
 "resumo": "Guia que apresenta o método de Regressão Descontínua para estimar efeitos causais quando a elegibilidade a um programa depende de um ponto de corte numa variável contínua. Aborda os casos sharp e fuzzy, os testes de validade e robustez e extensões como múltiplos cortes e RDD geográfico, com aplicação ao Bolsa Família e código completo em R.",
 "quando": "Planejamento de avaliações de programas com critérios de elegibilidade baseados em pontos de corte e revisão metodológica",
 "citacao": "FGV CLEAR. Avaliação de impacto: regressão descontínua. São Paulo: Fundação Getulio Vargas, 2026. (Série Avaliação na Prática).",
@@ -2065,13 +2108,14 @@
 "idioma": "Português (BR)",
 "paginas": "56",
 "tipo": "Guia e manual",
+"colecoes": [
+"Série Avaliação na Prática (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Série Avaliação na Prática (CLEAR)"
-],
 "resumo": "Guia que apresenta o método de Pareamento para avaliar impacto quando não há aleatorização e só se dispõe de dados observacionais, construindo um grupo de comparação semelhante ao tratado nas características observáveis. Cobre a hipótese de independência condicional, o pareamento exato e aproximado, o propensity score, a distância de Mahalanobis e a ponderação inversa de probabilidade, com aplicação empírica aos dados do NSW e da CPS.",
 "quando": "Planejamento de avaliações com dados observacionais, sem possibilidade de sorteio, e revisão metodológica",
 "citacao": "FGV CLEAR. Avaliação de impacto: pareamento. São Paulo: Fundação Getulio Vargas, 2026. (Série Avaliação na Prática).",
@@ -2090,13 +2134,14 @@
 "idioma": "Português (BR)",
 "paginas": "206",
 "tipo": "Guia e manual",
+"colecoes": [
+"Série Avaliação na Prática (CLEAR)",
+"Produção FGV EESP CLEAR"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Série Avaliação na Prática (CLEAR)"
-],
 "resumo": "Guia que apresenta um panorama das principais fontes de dados disponíveis para avaliação de políticas públicas no Brasil e no contexto internacional, organizadas por área temática, com uma ficha rápida de cada base (produtor, acesso, cobertura, periodicidade e unidade de análise). Discute usos recomendados, limitações e estratégias de acesso, incluindo APIs e ferramentas de inteligência artificial para coleta e tratamento de dados.",
 "quando": "Identificação da base de dados mais adequada a uma pergunta avaliativa, desenho de indicadores e planejamento de avaliações",
 "citacao": "FGV CLEAR. Fontes de dados para avaliação de políticas públicas no Brasil. São Paulo: Fundação Getulio Vargas, 2026. (Série Avaliação na Prática).",
@@ -2115,13 +2160,13 @@
 "idioma": "Português (PT)",
 "paginas": "24",
 "tipo": "Guia e manual",
+"colecoes": [
+"Desenho de programas e indicadores"
+],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Portugal",
-"colecoes": [
-"Desenho de programas e indicadores"
-],
 "resumo": "Guia do governo português sobre como iniciar um processo de avaliação pela análise de avaliabilidade, com casos práticos da administração pública e orientações para preparar termos de referência.",
 "quando": "Para dar o primeiro passo numa avaliação: definir perguntas, verificar dados e decidir se e como avaliar.",
 "citacao": "PLANAPP. Avaliação de políticas públicas: por onde começar? A análise de avaliabilidade como instrumento base do processo de avaliação. Lisboa: PlanAPP, 2024.",
@@ -2140,14 +2185,14 @@
 "idioma": "Português (PT)",
 "paginas": "63",
 "tipo": "Guia e manual",
-"temas": [
-"Gestão e orçamento"
-],
-"foco": "África lusófona e Timor-Leste",
 "colecoes": [
 "M&A na África lusófona",
 "Sistemas e institucionalização de M&A"
 ],
+"temas": [
+"Gestão e orçamento"
+],
+"foco": "África lusófona e Timor-Leste",
 "resumo": "Guião oficial de Moçambique que orienta órgãos centrais, provinciais e distritais na elaboração dos instrumentos de planificação, orçamentação, monitoria e avaliação, no âmbito da reforma do SISTAFE e do Subsistema de Monitoria e Avaliação.",
 "quando": "Para conhecer como um país africano lusófono organiza o M&A dentro do ciclo de planeamento e orçamento.",
 "citacao": "MOÇAMBIQUE. Ministério da Economia e Finanças. Guião de orientações metodológicas para a elaboração dos instrumentos de planificação e orçamentação, monitoria e avaliação. Maputo: MEF.",
@@ -2166,14 +2211,14 @@
 "idioma": "Português (PT)",
 "paginas": "124",
 "tipo": "Relatório",
-"temas": [
-"Gestão e orçamento"
-],
-"foco": "África lusófona e Timor-Leste",
 "colecoes": [
 "M&A na África lusófona",
 "Sistemas e institucionalização de M&A"
 ],
+"temas": [
+"Gestão e orçamento"
+],
+"foco": "África lusófona e Timor-Leste",
 "resumo": "Relatório que mapeia as capacidades dos setores do governo moçambicano para monitorar os Objetivos de Desenvolvimento Sustentável, propõe um sistema nacional de monitoria e uma lista de indicadores nacionais.",
 "quando": "Para estudar diagnósticos de capacidade de M&A e sistemas nacionais de indicadores em contexto africano.",
 "citacao": "MOÇAMBIQUE. Ministério da Economia e Finanças. Relatório de ODS: mapeamento dos instrumentos e sistemas de monitoria sobre os ODS. Maputo: MEF.",
@@ -2192,13 +2237,13 @@
 "idioma": "Português (BR)",
 "paginas": "10",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Gestão e orçamento"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "Artigo que discute a análise e a avaliação de políticas públicas em Angola e seus efeitos sobre o desenvolvimento local, com foco nas políticas setoriais e no Plano Nacional de Desenvolvimento.",
 "quando": "Para contextualizar o debate sobre avaliação de políticas públicas em Angola.",
 "citacao": "TEIXEIRA, Carlos dos Santos. Análise e avaliação das políticas públicas: seu impacto no desenvolvimento local em Angola. História: Debates e Tendências, v. 15, n. 1, p. 21-29, 2015.",
@@ -2217,14 +2262,14 @@
 "idioma": "Português (PT)",
 "paginas": "57",
 "tipo": "Guia e manual",
-"temas": [
-"Proteção social e renda"
-],
-"foco": "África lusófona e Timor-Leste",
 "colecoes": [
 "M&A na África lusófona",
 "Sistemas e institucionalização de M&A"
 ],
+"temas": [
+"Proteção social e renda"
+],
+"foco": "África lusófona e Timor-Leste",
 "resumo": "Documento de orientação do INAS, elaborado com apoio técnico e financeiro da OIT, que organiza a monitoria e avaliação dos programas de segurança social básica de Moçambique, como o PSSB e o PASD. Define indicadores ao longo da cadeia de processos, incluindo o pagamento terceirizado das transferências monetárias, e atribui responsabilidades aos níveis central e provincial.",
 "quando": "Para ver como uma agência de proteção social africana estrutura um plano de M&A com indicadores, fluxos de informação e responsabilidades.",
 "citacao": "INSTITUTO NACIONAL DE ACÇÃO SOCIAL (Moçambique). Plano de monitoria e avaliação dos programas de segurança social básica. Maputo: INAS, 2020.",
@@ -2243,14 +2288,14 @@
 "idioma": "Português (PT)",
 "paginas": "126",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Proteção social e renda",
 "Cooperação internacional"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "Avaliação final independente da segunda fase do projeto ACTION/Portugal, executado pela OIT com financiamento do governo português para reforçar os sistemas de proteção social de Angola, Cabo Verde, Guiné-Bissau, Moçambique, São Tomé e Príncipe e Timor-Leste. Analisa relevância, coerência, eficácia, eficiência, sustentabilidade e impacto do projeto e apresenta lições aprendidas e recomendações.",
 "quando": "Para conhecer uma avaliação de projeto de cooperação multipaís em proteção social nos PALOP e usá-la como modelo de relatório de avaliação final.",
 "citacao": "CARVALHO, Patrícia. Relatório de avaliação final independente ACTION/Portugal (Fase 2): reforço dos sistemas de proteção social dos PALOP e Timor-Leste. Genebra: OIT, 2022.",
@@ -2269,14 +2314,14 @@
 "idioma": "Português (BR)",
 "paginas": "133",
 "tipo": "Relatório",
+"colecoes": [
+"Sistemas e institucionalização de M&A"
+],
 "temas": [
 "Proteção social e renda",
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sistemas e institucionalização de M&A"
-],
 "resumo": "Sistematiza as pesquisas de avaliação de programas sociais concluídas pelo MDS entre 2004 e 2006, nos primeiros anos da SAGI. Para cada pesquisa, apresenta a instituição contratada, a metodologia, os principais resultados e as recomendações aos gestores dos programas.",
 "quando": "Para conhecer a origem do sistema de avaliação do MDS e o tipo de pesquisa que sustentou programas como o Bolsa Família.",
 "citacao": "PAES-SOUSA, Rômulo; VAITSMAN, Jeni (org.). Síntese das pesquisas de avaliação de programas sociais do MDS. Brasília: MDS, 2007. (Cadernos de Estudos Desenvolvimento Social em Debate, n. 5).",
@@ -2295,14 +2340,14 @@
 "idioma": "Português (BR)",
 "paginas": "358",
 "tipo": "Relatório",
+"colecoes": [
+"Sistemas e institucionalização de M&A"
+],
 "temas": [
 "Proteção social e renda",
 "Gestão e orçamento"
 ],
 "foco": "Brasil",
-"colecoes": [
-"Sistemas e institucionalização de M&A"
-],
 "resumo": "Reúne as fichas-síntese das pesquisas de avaliação concluídas pela SAGI/MDS entre 2011 e 2014, cobrindo programas como Bolsa Família, Brasil Sem Miséria, assistência social e segurança alimentar. Cada ficha descreve objetivos, metodologia, principais resultados e uso dos achados na gestão.",
 "quando": "Para mapear evidências produzidas pelo governo federal sobre programas sociais e ver um sistema de avaliação ministerial em funcionamento.",
 "citacao": "JANNUZZI, Paulo; QUIROGA, Júnia (org.). Síntese das pesquisas de avaliação de programas sociais do MDS 2011-2014. Brasília: MDS, 2014. (Cadernos de Estudos Desenvolvimento Social em Debate, n. 16).",
@@ -2321,13 +2366,13 @@
 "idioma": "Português (PT)",
 "paginas": "58",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Proteção social e renda"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "Estudo que avalia a eficácia do Programa Subsídio Social Básico para idosos, a principal pensão social de Moçambique, com base em três critérios: seleção dos beneficiários, fiabilidade dos pagamentos e relevância do valor transferido. Constata cobertura parcial do público-alvo, desigualdades regionais e grandes atrasos nos pagamentos, e defende um modelo operacional mais simples e robusto.",
 "quando": "Para estudar critérios de eficácia de transferências monetárias e a situação da pensão social para idosos em Moçambique.",
 "citacao": "ALMEIDA, Sara; BERKEL, Hanna; JONES, Sam; JUSTINO, Patrícia; MASSINGUE, Telça. Protecção social para os idosos em Moçambique: história, estrutura e potencial eficácia. Maputo: UNU-WIDER, 2025.",
@@ -2346,11 +2391,11 @@
 "idioma": "Português (BR)",
 "paginas": "21",
 "tipo": "Artigo e texto para discussão",
+"colecoes": [],
 "temas": [
 "M&A em geral"
 ],
 "foco": "Brasil",
-"colecoes": [],
 "resumo": "Artigo que apresenta de forma sistematizada conceitos de monitoramento e avaliação de programas sociais, a partir da literatura clássica e da experiência do autor na SAGI/MDS. Discute tipologias de avaliação segundo o ciclo dos programas, a necessidade de abordagens multimétodo e a complementaridade entre sistemas de monitoramento e estudos avaliativos, e propõe um marco para planejar instrumentos de M&A.",
 "quando": "Para uma introdução conceitual em português sobre tipos de avaliação e a relação entre monitoramento e avaliação.",
 "citacao": "JANNUZZI, Paulo de Martino. Avaliação de programas sociais: conceitos e referenciais de quem a realiza. Estudos em Avaliação Educacional, São Paulo, v. 25, n. 58, p. 22-42, 2014. DOI: https://doi.org/10.18222/eae255820142916.",
@@ -2369,19 +2414,628 @@
 "idioma": "Português (PT)",
 "paginas": "109",
 "tipo": "Relatório de avaliação",
+"colecoes": [
+"M&A na África lusófona"
+],
 "temas": [
 "Proteção social e renda"
 ],
 "foco": "África lusófona e Timor-Leste",
-"colecoes": [
-"M&A na África lusófona"
-],
 "resumo": "Avaliação intermédia da segunda Estratégia Nacional de Segurança Social Básica de Moçambique (ENSSB II), realizada pela Oxford Policy Management com financiamento da OIT, que examina a implementação dos quatro eixos da estratégia entre 2016 e 2021. Analisa eficiência, eficácia, fatores que afetaram o ritmo de implementação e a relevância da estratégia diante de choques como os ciclones de 2019 e a COVID-19, e recomenda um novo plano operacional para 2022-2024.",
 "quando": "Para estudar a avaliação intermédia de uma estratégia nacional de proteção social e como suas recomendações orientam o ciclo seguinte de planeamento.",
 "citacao": "MOÇAMBIQUE. Ministério do Género, Criança e Acção Social. Relatório de avaliação intermédia da Estratégia Nacional de Segurança Social Básica (2016-2024). Maputo: MGCAS, 2022.",
 "url": "https://www.social-protection.org/gimi/ShowRessource.action?id=57857",
 "arquivo": "MP-035.pdf",
 "capa": false
+},
+{
+"id": "PP-025",
+"trilha": "Primeiros passos",
+"clear": false,
+"titulo": "Mitos da Avaliação",
+"autores": "Maria Manuela Afonso",
+"instituicao": "Instituto Português de Apoio ao Desenvolvimento (IPAD)",
+"ano": "2011",
+"idioma": "Português (PT)",
+"paginas": "9",
+"tipo": "Artigo e texto para discussão",
+"colecoes": [
+"M&A na África lusófona"
+],
+"temas": [
+"Cooperação internacional"
+],
+"foco": "África lusófona e Timor-Leste",
+"resumo": "Documento introdutório que discute 13 mitos comuns sobre a avaliação de programas e projetos, questionando percepções que dificultam sua realização e utilização. Com base em uma revisão da literatura, aborda o papel da avaliação na aprendizagem, na melhoria das intervenções, na tomada de decisões e na prestação de contas, além de discutir a escolha de métodos e o envolvimento dos atores interessados",
+"quando": "Formação de novos membros, introdução aos fundamentos de M&A, preparação de equipes para processos avaliativos, discussão sobre avaliação interna e externa, escolha de abordagens metodológicas, promoção da cultura avaliativa e reflexão sobre a utilização dos resultados e das recomendações em políticas públicas",
+"citacao": "AFONSO, Maria Manuela. Mitos da avaliação. Documento de Trabalho n. 6. Lisboa: IPAD, 2011.",
+"url": "https://www.instituto-camoes.pt/images/cooperacao/doc_trabalho6_2011.pdf",
+"arquivo": "PP-025.pdf",
+"capa": true
+},
+{
+"id": "PP-026",
+"trilha": "Primeiros passos",
+"clear": false,
+"titulo": "Avaliação Interna vs Externa",
+"autores": "Maria Manuela Afonso; Mário Ribeiro",
+"instituicao": "Instituto Português de Apoio ao Desenvolvimento (IPAD)",
+"ano": "2009",
+"idioma": "Português (PT)",
+"paginas": "27",
+"tipo": "Artigo e texto para discussão",
+"colecoes": [
+"M&A na África lusófona"
+],
+"temas": [
+"Cooperação internacional"
+],
+"foco": "África lusófona e Timor-Leste",
+"resumo": "Documento de trabalho que compara as avaliações internas e externas, discutindo suas vantagens, limitações e condições de utilização. Com base em revisão da literatura e na experiência da cooperação portuguesa, considera também a possibilidade de combinar as duas abordagens para equilibrar conhecimento contextual, independência e credibilidade",
+"quando": "Ao planejar uma avaliação, definir os responsáveis por sua execução ou elaborar termos de referência para contratação de avaliadores. Também é útil para discutir a independência da equipe avaliadora, avaliar a conveniência de uma abordagem mista e estabelecer critérios institucionais para a escolha entre avaliações internas e externas",
+"citacao": "AFONSO, Maria Manuela; RIBEIRO, Mário. Avaliação interna vs externa. Documento de Trabalho n. 3. Lisboa: IPAD, 2009.",
+"url": "https://www.instituto-camoes.pt/images/cooperacao/doc_trabalho3_2009.pdf",
+"arquivo": "PP-026.pdf",
+"capa": true
+},
+{
+"id": "PP-027",
+"trilha": "Primeiros passos",
+"clear": false,
+"titulo": "Definindo o Tipo de Sistema de M&A: Clientes, Usos Pretendidos e Utilização Real",
+"autores": "Bertha Briceño",
+"instituicao": "Banco Mundial – Rede de Redução da Pobreza e Gestão Econômica (PREM)",
+"ano": "2010",
+"idioma": "Português (BR)",
+"paginas": "11",
+"tipo": "Nota e policy brief",
+"colecoes": [
+"Sistemas e institucionalização de M&A"
+],
+"temas": [
+"M&A em geral",
+"Gestão e orçamento"
+],
+"foco": "América Latina",
+"resumo": "A publicação discute como definir o tipo de sistema de monitoramento e avaliação mais adequado às necessidades de um governo ou organização. Destaca a importância de identificar os usuários das informações, os usos pretendidos e a utilização efetiva dos resultados. A abordagem reforça que um sistema de M&A deve ser concebido para apoiar decisões e atender às demandas institucionais, e não apenas produzir dados e relatórios",
+"quando": "Quando for necessário planejar ou revisar um sistema de M&A, identificar seus principais usuários, definir quais decisões as informações devem apoiar ou analisar por que resultados de monitoramento e avaliação não estão sendo utilizados como esperado",
+"citacao": "BRICEÑO, Bertha. Definindo o tipo de sistema de M&A: clientes, usos pretendidos e utilização real. PREM Notes, Série Especial, n. 2. Washington, DC: Banco Mundial, 2010.",
+"url": "https://documents.worldbank.org/pt/publication/documents-reports/documentdetail/749921468168542249",
+"arquivo": "PP-027.pdf",
+"capa": true
+},
+{
+"id": "MP-036",
+"trilha": "M&A na prática",
+"clear": false,
+"titulo": "O Apoio ao Orçamento Geral: A Avaliação Conjunta no Quadro do CAD/OCDE",
+"autores": "Maria Manuela Afonso",
+"instituicao": "Instituto Português de Apoio ao Desenvolvimento (IPAD)",
+"ano": "2009",
+"idioma": "Português (PT)",
+"paginas": "29",
+"tipo": "Artigo e texto para discussão",
+"colecoes": [
+"M&A na África lusófona"
+],
+"temas": [
+"Cooperação internacional",
+"Gestão e orçamento"
+],
+"foco": "África lusófona e Timor-Leste",
+"resumo": "Documento que apresenta a avaliação conjunta do Apoio ao Orçamento Geral, realizada no âmbito do CAD/OCDE, e discute sua metodologia e seus principais resultados. Examina como esse instrumento de cooperação contribui para a gestão das finanças públicas, a coordenação dos doadores e as políticas de redução da pobreza em diferentes países",
+"quando": "Ao planejar avaliações de programas financiados por múltiplos parceiros, elaborar matrizes de avaliação, definir estudos de caso comparativos ou combinar fontes qualitativas e quantitativas. Também é útil para refletir sobre atribuição de resultados, coordenação entre atores, fortalecimento de sistemas públicos e limitações de avaliações de intervenções que atuam em escala nacional",
+"citacao": "AFONSO, Maria Manuela. O apoio ao orçamento geral: a avaliação conjunta no quadro do CAD/OCDE. Documento de Trabalho n. 1. Lisboa: IPAD, 2009.",
+"url": "https://www.instituto-camoes.pt/images/cooperacao/doc_trabalho1_2009.pdf",
+"arquivo": "MP-036.pdf",
+"capa": true
+},
+{
+"id": "ME-021",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Uma Nota sobre a Abordagem de Avaliação Executiva",
+"autores": "Instituto de Pesquisa e Estratégia Econômica do Ceará (IPECE)",
+"instituicao": "Instituto de Pesquisa e Estratégia Econômica do Ceará (IPECE) – Centro de Análise de Dados e Avaliação de Políticas Públicas (CAPP)",
+"ano": "2021",
+"idioma": "Português (BR)",
+"paginas": "22",
+"tipo": "Nota e policy brief",
+"colecoes": [],
+"temas": [
+"M&A em geral"
+],
+"foco": "Brasil",
+"resumo": "A nota apresenta a abordagem de avaliação executiva, discutindo suas características, modelos e principais elementos. O documento reúne experiências dos Estados Unidos, Colômbia, Chile, Minas Gerais e Espírito Santo e descreve a experiência inicial do CAPP na aplicação da metodologia em programas financiados pelo FECOP",
+"quando": "Pode ser consultado na formação de profissionais de M&A, desenvolvimento de avaliações executivas, estruturação de sistemas de monitoramento e avaliação e planejamento de avaliações de políticas públicas. É especialmente útil quando se busca compreender como realizar uma avaliação abrangente de uma política utilizando informações já disponíveis, identificar fragilidades de desenho, gestão e implementação e decidir se há necessidade de avaliações mais aprofundadas",
+"citacao": "INSTITUTO DE PESQUISA E ESTRATÉGIA ECONÔMICA DO CEARÁ. Uma nota sobre a abordagem de avaliação executiva. Nota Técnica CAPP, n. 1. Fortaleza: IPECE, 2021.",
+"url": "https://www.ipece.ce.gov.br/wp-content/uploads/sites/45/2021/07/NOTA_TECNICA_CAPP_01.pdf",
+"arquivo": "ME-021.pdf",
+"capa": true
+},
+{
+"id": "ME-022",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Matriz de Avaliação",
+"autores": "Maria Manuela Afonso",
+"instituicao": "Camões, Instituto da Cooperação e da Língua – Gabinete de Avaliação e Auditoria",
+"ano": "2015",
+"idioma": "Português (PT)",
+"paginas": "12",
+"tipo": "Nota e policy brief",
+"colecoes": [
+"M&A na África lusófona",
+"Desenho de programas e indicadores"
+],
+"temas": [
+"Cooperação internacional"
+],
+"foco": "África lusófona e Timor-Leste",
+"resumo": "A nota apresenta a Matriz de Avaliação como ferramenta para planejar e organizar uma avaliação, explicando sua finalidade, momento de utilização, nível de detalhamento e processo de elaboração. O documento apresenta diferentes modelos de matrizes e exemplos que podem ser adaptados pelas equipes de avaliação",
+"quando": "Pode ser consultado durante o planejamento de uma avaliação, elaboração de planos de avaliação, definição de perguntas e subperguntas, construção de indicadores e seleção de fontes e métodos de coleta de dados. É especialmente útil quando a equipe precisa transformar perguntas avaliativas em um plano organizado de produção e análise de evidências ou revisar se existe coerência entre as perguntas, os dados coletados e as conclusões da avaliação",
+"citacao": "AFONSO, Maria Manuela. Matriz de avaliação. Nota Técnica n. 1. Lisboa: GAA/Camões, I.P., 2015.",
+"url": "https://www.instituto-camoes.pt/images/cooperacao/notatec1_matriz.pdf",
+"arquivo": "ME-022.pdf",
+"capa": true
+},
+{
+"id": "ME-023",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Eficiência – Análise e Metodologias",
+"autores": "Maria Inês Queiroz de Barros; Maria João Robalo",
+"instituicao": "Instituto Português de Apoio ao Desenvolvimento (IPAD)",
+"ano": "2012",
+"idioma": "Português (PT)",
+"paginas": "20",
+"tipo": "Artigo e texto para discussão",
+"colecoes": [
+"M&A na África lusófona"
+],
+"temas": [
+"Cooperação internacional"
+],
+"foco": "África lusófona e Timor-Leste",
+"resumo": "Documento de trabalho que apresenta conceitos e metodologias para analisar a eficiência de programas e projetos, relacionando recursos empregados, produtos e resultados. Discute métodos qualitativos e quantitativos, incluindo análise de custos unitários, rastreamento de despesas, análise custo-benefício e análise custo-eficácia, destacando suas aplicações e limitações na avaliação de intervenções de desenvolvimento",
+"quando": "Formação de novos membros, planejamento de avaliações, análise da eficiência do gasto público, seleção de métodos de avaliação, comparação de alternativas de intervenção, elaboração de indicadores de custos e resultados e revisão metodológica de projetos que envolvam análise de eficiência econômica",
+"citacao": "BARROS, Maria Inês Queiroz de; ROBALO, Maria João. Eficiência: análise e metodologias. Documento de Trabalho n. 7. Lisboa: IPAD, 2012.",
+"url": "https://www.instituto-camoes.pt/images/cooperacao/doc_trabalho7_2012.pdf",
+"arquivo": "ME-023.pdf",
+"capa": true
+},
+{
+"id": "ME-024",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Revisão no Percurso: Nota Metodológica",
+"autores": "Maria Manuela Afonso; Mário Ribeiro",
+"instituicao": "Instituto Português de Apoio ao Desenvolvimento (IPAD)",
+"ano": "2011",
+"idioma": "Português (PT)",
+"paginas": "12",
+"tipo": "Artigo e texto para discussão",
+"colecoes": [
+"M&A na África lusófona"
+],
+"temas": [
+"Cooperação internacional"
+],
+"foco": "África lusófona e Timor-Leste",
+"resumo": "Nota metodológica que apresenta a revisão no percurso como instrumento de avaliação durante a implementação de projetos e programas. Aborda a análise do desempenho, dos objetivos e indicadores inicialmente definidos, dos recursos utilizados e dos resultados alcançados, destacando sua contribuição para identificar desvios, recomendar ajustes e aprimorar a execução das intervenções",
+"quando": "Formação de novos membros, planejamento de avaliações intermediárias, acompanhamento de projetos em execução, análise de objetivos e indicadores, revisão de quadros lógicos, identificação de dificuldades de implementação e elaboração de recomendações para ajustes operacionais e orçamentários",
+"citacao": "AFONSO, Maria Manuela; RIBEIRO, Mário. Revisão no percurso: nota metodológica. Documento de Trabalho n. 5. Lisboa: IPAD, 2011.",
+"url": "https://www.instituto-camoes.pt/images/cooperacao/doc_trabalho5_2011.pdf",
+"arquivo": "ME-024.pdf",
+"capa": true
+},
+{
+"id": "ME-025",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "A Avaliação Programa/País: Contributo para Debate Interno",
+"autores": "Maria João Robalo",
+"instituicao": "Instituto Português de Apoio ao Desenvolvimento (IPAD)",
+"ano": "2011",
+"idioma": "Português (PT)",
+"paginas": "22",
+"tipo": "Artigo e texto para discussão",
+"colecoes": [
+"M&A na África lusófona"
+],
+"temas": [
+"Cooperação internacional"
+],
+"foco": "África lusófona e Timor-Leste",
+"resumo": "Documento que discute os desafios metodológicos da avaliação de programas e estratégias de cooperação de um país. Examina a utilidade dessas avaliações, suas limitações, os custos envolvidos e as dificuldades para identificar efeitos e atribuir resultados às intervenções",
+"quando": "Ao planejar avaliações de programas ou estratégias que envolvam múltiplos projetos, setores e atores; ao definir perguntas avaliativas e selecionar métodos; ou quando for necessário refletir sobre os limites da avaliação de impacto, a atribuição de resultados e a relação entre complexidade metodológica, custos e utilidade",
+"citacao": "ROBALO, Maria João. A avaliação programa/país: contributo para debate interno. Documento de Trabalho n. 4. Lisboa: IPAD, 2011.",
+"url": "https://www.instituto-camoes.pt/images/cooperacao/doc_trabalho4_2011.pdf",
+"arquivo": "ME-025.pdf",
+"capa": true
+},
+{
+"id": "ME-026",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Normas para Evitar Conflito de Interesses no Processo de Avaliação",
+"autores": "Camões, Instituto da Cooperação e da Língua – Gabinete de Avaliação e Auditoria",
+"instituicao": "Camões, Instituto da Cooperação e da Língua – Gabinete de Avaliação e Auditoria",
+"ano": "2014",
+"idioma": "Português (PT)",
+"paginas": "7",
+"tipo": "Guia e manual",
+"colecoes": [
+"M&A na África lusófona",
+"Sistemas e institucionalização de M&A"
+],
+"temas": [
+"Cooperação internacional"
+],
+"foco": "África lusófona e Timor-Leste",
+"resumo": "Documento institucional que estabelece normas para prevenir, identificar e tratar conflitos de interesses durante processos de avaliação. Define situações que podem comprometer a independência e a imparcialidade dos avaliadores, além de apresentar procedimentos para declaração, comunicação e resolução desses conflitos",
+"quando": "Ao elaborar termos de referência para avaliações externas, definir critérios de seleção de avaliadores, estabelecer procedimentos de supervisão ou criar protocolos institucionais de integridade. Também é útil quando surgirem dúvidas sobre impedimentos, vínculos anteriores com a intervenção avaliada ou a necessidade de declarar e tratar potenciais conflitos de interesses",
+"citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA. Gabinete de Avaliação e Auditoria. Normas para evitar conflito de interesses no processo de avaliação. 3. ed. Lisboa: Camões, I.P., 2014.",
+"url": "https://www.instituto-camoes.pt/images/transparencia/Normas_Conflito_Interesses.pdf",
+"arquivo": "ME-026.pdf",
+"capa": true
+},
+{
+"id": "ME-027",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "R para Cientistas Sociais",
+"autores": "Jakson Alves de Aquino",
+"instituicao": "Universidade Estadual de Santa Cruz (UESC)",
+"ano": "2014",
+"idioma": "Português (BR)",
+"paginas": "167",
+"tipo": "Livro",
+"colecoes": [],
+"temas": [
+"M&A em geral"
+],
+"foco": "Brasil",
+"resumo": "O livro apresenta os fundamentos da linguagem de programação R e suas aplicações na análise estatística de dados nas Ciências Sociais. Parte dos conceitos básicos de programação e organização de objetos, avançando para importação e manipulação de bancos de dados, estatística descritiva, testes estatísticos, regressões, gráficos e produção de relatórios. A abordagem é prática, com exemplos e comandos que o leitor pode reproduzir e adaptar às próprias pesquisas",
+"quando": "Recomendado para a formação de novos membros do CLEAR que precisem aprender ou reforçar o uso do R, para a preparação e análise de bases de dados de projetos e para a elaboração de indicadores, gráficos e relatórios técnicos. Também pode ser consultado durante o desenvolvimento de pesquisas quantitativas e avaliações de políticas públicas, especialmente quando houver necessidade de executar análises estatísticas ou automatizar procedimentos de tratamento de dados",
+"citacao": "AQUINO, Jakson Alves de. R para cientistas sociais. Ilhéus, BA: EDITUS, 2014.",
+"url": "https://www.uesc.br/editora/livrosdigitais_20140513/r_cientistas.pdf",
+"arquivo": "ME-027.pdf",
+"capa": true
+},
+{
+"id": "ME-028",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Guia de Integração da Avaliação nas Revisões Nacionais Voluntárias em África",
+"autores": "Ian Goldman; Candice Morkel; Ian Hopwood",
+"instituicao": "UNICEF – Gabinete de Avaliação; CLEAR África Anglófona",
+"ano": "2019",
+"idioma": "Português (PT)",
+"paginas": "60",
+"tipo": "Guia e manual",
+"colecoes": [
+"Sistemas e institucionalização de M&A"
+],
+"temas": [
+"M&A em geral"
+],
+"foco": "África",
+"resumo": "O guia apresenta orientações para incorporar evidências de avaliação às Revisões Nacionais Voluntárias, utilizadas pelos países para relatar seu progresso em relação aos ODS. Aborda tipos de avaliação, métodos rápidos, Teoria da Mudança, repositórios e sínteses de evidências, além de discutir o fortalecimento dos ecossistemas nacionais de avaliação. O material procura fazer com que as revisões contribuam não apenas para a prestação de contas, mas também para a aprendizagem e a melhoria das políticas públicas",
+"quando": "Recomendado para a formação de novos membros do CLEAR, o desenvolvimento de estudos sobre sistemas nacionais de avaliação e o planejamento de iniciativas voltadas ao uso de evidências. Também pode apoiar trabalhos de síntese de avaliações, construção de Teorias da Mudança, organização de repositórios e análise de lacunas de evidências, especialmente em projetos relacionados aos ODS e ao desenvolvimento sustentável",
+"citacao": "UNICEF; CLEAR ÁFRICA ANGLÓFONA. Guia de integração da avaliação nas Revisões Nacionais Voluntárias em África. Nova Iorque: UNICEF, 2019.",
+"url": "https://evalsdgs.org/wp-content/uploads/2020/04/PT-Guia-de-Integrac%CC%A7a%CC%83o-da-Avaliac%CC%A7a%CC%83o-nas-Reviso%CC%83es-Nacionais-Volunta%CC%81rias-em-A%CC%81frica.pdf",
+"arquivo": "ME-028.pdf",
+"capa": true
+},
+{
+"id": "ME-029",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Linhas de Orientação para os Relatórios de Avaliação",
+"autores": "Camões, Instituto da Cooperação e da Língua – Gabinete de Avaliação e Auditoria",
+"instituicao": "Camões, Instituto da Cooperação e da Língua – Gabinete de Avaliação e Auditoria",
+"ano": "2014",
+"idioma": "Português (PT)",
+"paginas": "5",
+"tipo": "Guia e manual",
+"colecoes": [
+"M&A na África lusófona",
+"Sistemas e institucionalização de M&A"
+],
+"temas": [
+"Cooperação internacional"
+],
+"foco": "África lusófona e Timor-Leste",
+"resumo": "O documento estabelece orientações para a estrutura e a apresentação dos relatórios preliminares e finais de avaliação no âmbito do Camões, I. P. Define os principais elementos que devem compor esses produtos, incluindo metodologia, resultados, conclusões, recomendações, lições aprendidas e anexos. Também apresenta diretrizes de extensão, formatação e organização das informações, com o objetivo de favorecer a clareza, o rigor e a utilização dos resultados avaliativos",
+"quando": "Recomendado para a elaboração ou revisão de relatórios preliminares e finais de avaliação, a preparação de sumários executivos e a organização de constatações, conclusões e recomendações. Também pode ser utilizado na definição de padrões internos de qualidade para produtos avaliativos, na revisão de entregas de consultorias e na formação de profissionais que precisam comunicar resultados de forma clara e fundamentada",
+"citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA. Gabinete de Avaliação e Auditoria. Linhas de orientação para os relatórios de avaliação. Lisboa: Camões, I.P., 2014.",
+"url": "https://www.instituto-camoes.pt/images/transparencia/Relat%C3%B3rios_Avalia%C3%A7%C3%A3o.pdf",
+"arquivo": "ME-029.pdf",
+"capa": true
+},
+{
+"id": "ME-030",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Estrutura de Termos de Referência",
+"autores": "Camões, Instituto da Cooperação e da Língua – Gabinete de Avaliação e Auditoria",
+"instituicao": "Camões, Instituto da Cooperação e da Língua – Gabinete de Avaliação e Auditoria",
+"ano": "2014",
+"idioma": "Português (PT)",
+"paginas": "10",
+"tipo": "Guia e manual",
+"colecoes": [
+"M&A na África lusófona",
+"Sistemas e institucionalização de M&A"
+],
+"temas": [
+"Cooperação internacional"
+],
+"foco": "África lusófona e Timor-Leste",
+"resumo": "Documento orientador que apresenta a estrutura recomendada para elaborar Termos de Referência de avaliações. Organiza os principais componentes do planejamento avaliativo, desde o contexto e os objetivos até a metodologia, a equipe, o orçamento, o cronograma e a gestão da avaliação",
+"quando": "Na preparação de uma avaliação, especialmente durante a elaboração ou revisão dos Termos de Referência. Também pode ser consultado para verificar se o planejamento contempla objetivos, perguntas, metodologia, critérios, entregas, responsabilidades e prazos de forma coerente",
+"citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA. Gabinete de Avaliação e Auditoria. Estrutura de termos de referência. Lisboa: Camões, I.P., 2014.",
+"url": "https://www.instituto-camoes.pt/images/transparencia/Estrutura_Termos_Refer%C3%AAncia.pdf",
+"arquivo": "ME-030.pdf",
+"capa": true
+},
+{
+"id": "ME-031",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Normas de Gestão das Avaliações",
+"autores": "Camões, Instituto da Cooperação e da Língua – Gabinete de Avaliação e Auditoria",
+"instituicao": "Camões, Instituto da Cooperação e da Língua – Gabinete de Avaliação e Auditoria",
+"ano": "2014",
+"idioma": "Português (PT)",
+"paginas": "11",
+"tipo": "Guia e manual",
+"colecoes": [
+"M&A na África lusófona",
+"Sistemas e institucionalização de M&A"
+],
+"temas": [
+"Cooperação internacional"
+],
+"foco": "África lusófona e Timor-Leste",
+"resumo": "Documento que estabelece procedimentos para a gestão de avaliações internas e externas, definindo os papéis dos participantes e as etapas do processo avaliativo. Abrange a preparação, a realização, a elaboração dos relatórios, a divulgação dos resultados e o acompanhamento das recomendações",
+"quando": "Na elaboração de procedimentos institucionais para conduzir avaliações, na definição de responsabilidades entre gestores, avaliadores e demais interessados e no planejamento das etapas de uma avaliação. Também é útil para estruturar mecanismos de revisão de relatórios, divulgação de resultados e acompanhamento das recomendações",
+"citacao": "CAMÕES – INSTITUTO DA COOPERAÇÃO E DA LÍNGUA. Gabinete de Avaliação e Auditoria. Normas de gestão das avaliações. Lisboa: Camões, I.P., 2014.",
+"url": "https://www.instituto-camoes.pt/images/transparencia/Normas_Gest%C3%A3o_Avalia%C3%A7%C3%B5es.pdf",
+"arquivo": "ME-031.pdf",
+"capa": true
+},
+{
+"id": "ME-032",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Desenho de Pesquisa",
+"autores": "Glauco Peres da Silva",
+"instituicao": "Escola Nacional de Administração Pública (Enap)",
+"ano": "2023",
+"idioma": "Português (BR)",
+"paginas": "121",
+"tipo": "Livro",
+"colecoes": [],
+"temas": [
+"M&A em geral"
+],
+"foco": "Brasil",
+"resumo": "O manual apresenta os fundamentos teóricos e práticos do desenho de pesquisa nas Ciências Sociais. Discute a produção de conhecimento, a construção de teorias e a causalidade, além de apresentar métodos quantitativos, qualitativos e mistos, incluindo experimentos, métodos quase-experimentais e estudos de caso",
+"quando": "Recomendado na etapa de planejamento de pesquisas e avaliações, especialmente para formular perguntas de pesquisa, definir estratégias de comparação, selecionar métodos de análise e avaliar a adequação das evidências disponíveis. Também pode ser utilizado na formação de novos membros do CLEAR, no desenvolvimento de projetos e na revisão metodológica de propostas de avaliação de políticas públicas",
+"citacao": "SILVA, Glauco Peres da. Desenho de pesquisa. Ed. rev. Brasília: Enap, 2023.",
+"url": "https://repositorio.enap.gov.br/handle/1/3330",
+"arquivo": "ME-032.pdf",
+"capa": true
+},
+{
+"id": "ME-033",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Introdução aos Modelos de Regressão Linear: Um Passo Inicial para Compreensão da Econometria como uma Ferramenta de Avaliação de Políticas Públicas",
+"autores": "Flávia Chein",
+"instituicao": "Escola Nacional de Administração Pública (Enap)",
+"ano": "2019",
+"idioma": "Português (BR)",
+"paginas": "77",
+"tipo": "Livro",
+"colecoes": [],
+"temas": [
+"M&A em geral"
+],
+"foco": "Brasil",
+"resumo": "Manual introdutório sobre modelos de regressão linear e seus fundamentos estatísticos. Aborda regressão simples e múltipla, estimação por mínimos quadrados ordinários, inferência estatística e violações dos pressupostos do modelo, além de apresentar o método de diferenças-em-diferenças como ferramenta para a avaliação de políticas públicas",
+"quando": "Na formação de integrantes que precisam compreender fundamentos de econometria e regressão linear, na preparação para estudos quantitativos e na leitura de resultados de avaliações de impacto. Também é útil como referência para revisar os conceitos de MQO, regressão múltipla, endogeneidade e diferenças-em-diferenças antes de avançar para materiais metodológicos mais especializados",
+"citacao": "CHEIN, Flávia. Introdução aos modelos de regressão linear: um passo inicial para compreensão da econometria como uma ferramenta de avaliação de políticas públicas. Brasília: Enap, 2019.",
+"url": "https://repositorio.enap.gov.br/handle/1/4788",
+"arquivo": "ME-033.pdf",
+"capa": true
+},
+{
+"id": "ME-034",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Desenho de Pesquisa em Política Comparada",
+"autores": "Lorena G. Barberia",
+"instituicao": "Escola Nacional de Administração Pública (Enap)",
+"ano": "2019",
+"idioma": "Português (BR)",
+"paginas": "88",
+"tipo": "Livro",
+"colecoes": [],
+"temas": [
+"M&A em geral"
+],
+"foco": "Brasil",
+"resumo": "Manual introdutório sobre desenhos de pesquisa observacionais em Política Comparada. Apresenta estudos de corte transversal, séries temporais e séries temporais com dados em cortes transversais, explicando como cada desenho organiza os dados, permite comparar unidades e períodos e responde a diferentes perguntas de pesquisa. Utiliza exemplos relacionados a eleições, desempenho econômico e gastos sociais",
+"quando": "Na etapa de planejamento de uma pesquisa ou avaliação, especialmente quando for necessário decidir quais unidades comparar, quais períodos analisar e que tipo de banco de dados utilizar. Também é útil na formação metodológica de novos integrantes, na formulação de perguntas de pesquisa e na leitura crítica de estudos quantitativos sobre políticas públicas",
+"citacao": "BARBERIA, Lorena G. Desenho de pesquisa em política comparada. Brasília: Enap, 2019.",
+"url": "https://repositorio.enap.gov.br/handle/1/4789",
+"arquivo": "ME-034.pdf",
+"capa": true
+},
+{
+"id": "ME-035",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Modelo de Equações Estruturais: Uma Introdução Aplicada",
+"autores": "Jorge Alexandre Barbosa Neves",
+"instituicao": "Escola Nacional de Administração Pública (Enap)",
+"ano": "2018",
+"idioma": "Português (BR)",
+"paginas": "81",
+"tipo": "Livro",
+"colecoes": [],
+"temas": [
+"M&A em geral"
+],
+"foco": "Brasil",
+"resumo": "O livro apresenta os fundamentos da modelagem de equações estruturais e demonstra sua aplicação por meio de exemplos com variáveis observadas e construtos latentes. Aborda modelos de mensuração, relações entre variáveis, testes de hipóteses e avaliação da qualidade do ajuste, utilizando o software Stata",
+"quando": "Recomendado quando uma pesquisa exigir a mensuração de conceitos que não podem ser observados diretamente ou a análise simultânea de relações entre diferentes variáveis. Pode ser consultado durante o desenho metodológico de estudos quantitativos, o desenvolvimento de indicadores compostos ou latentes e a análise de dados de pesquisas sociais. Também é útil para pesquisadores que desejam aprofundar conhecimentos estatísticos além da regressão convencional",
+"citacao": "NEVES, Jorge Alexandre Barbosa. Modelo de equações estruturais: uma introdução aplicada. Brasília: Enap, 2018.",
+"url": "https://repositorio.enap.gov.br/handle/1/3334",
+"arquivo": "ME-035.pdf",
+"capa": true
+},
+{
+"id": "ME-036",
+"trilha": "Métodos",
+"clear": false,
+"titulo": "Avaliação Econômica de Projetos Sociais",
+"autores": "Betânia Peixoto; Cristine Campos de Xavier Pinto; Lycia Lima; Miguel Nathan Foguel; Ricardo Paes de Barros",
+"instituicao": "Fundação Itaú Social",
+"ano": "2017",
+"idioma": "Português (BR)",
+"paginas": "256",
+"tipo": "Livro",
+"colecoes": [],
+"temas": [
+"M&A em geral"
+],
+"foco": "Brasil",
+"resumo": "O livro apresenta os fundamentos da avaliação de impacto e do cálculo do retorno econômico de projetos sociais. Explica métodos experimentais e quase-experimentais para estimar efeitos de intervenções e aborda ferramentas econômicas para analisar os custos e benefícios dos projetos, com exemplos e exercícios aplicados",
+"quando": "Recomendado para a formação em avaliação de impacto, o planejamento metodológico de avaliações, a escolha de estratégias de identificação causal e a interpretação de resultados quantitativos. Também pode ser consultado quando houver necessidade de analisar o retorno econômico de uma intervenção, comparar alternativas de investimento social ou aprofundar conhecimentos sobre métodos como diferenças em diferenças, pareamento, variáveis instrumentais e regressão descontínua",
+"citacao": "MENEZES FILHO, Naercio Aquino; PINTO, Cristine Campos de Xavier (org.). Avaliação econômica de projetos sociais. 3. ed. São Paulo: Fundação Itaú Social, 2017.",
+"url": "https://www.itausocial.org.br/wp-content/uploads/2018/05/avaliacao-economica-3a-ed_1513188151.pdf",
+"arquivo": "ME-036.pdf",
+"capa": true
+},
+{
+"id": "CV-027",
+"trilha": "Acervo COVID-19",
+"clear": false,
+"titulo": "Pontos-chave para Gestão do SUS na Resposta à Pandemia COVID-19",
+"autores": "Adriano Massuda; Ana Maria Malik; Walter Cintra Ferreira Junior; Gonzalo Vecina Neto; Miguel Lago; Renato Tasca",
+"instituicao": "Instituto de Estudos para Políticas de Saúde (IEPS); FGVsaúde – Centro de Estudos em Planejamento e Gestão da Saúde (FGV EAESP)",
+"ano": "2020",
+"idioma": "Português (BR)",
+"paginas": "4",
+"tipo": "Nota e policy brief",
+"colecoes": [],
+"temas": [
+"Saúde"
+],
+"foco": "Brasil",
+"resumo": "A nota técnica sistematiza recomendações e práticas observadas em experiências nacionais e internacionais para apoiar gestores locais e regionais do SUS na resposta à pandemia de COVID-19. O documento reúne dez pontos-chave relacionados à governança, planejamento, financiamento, informação, profissionais, insumos, organização da rede de atenção, gestão de cadáveres e mitigação de consequências sociais e econômicas",
+"quando": "Pode ser consultado em estudos sobre gestão e planejamento do SUS, políticas de saúde, monitoramento de sistemas públicos e respostas a emergências. Também é útil para compreender como informações epidemiológicas, análise territorial, capacidade instalada e monitoramento de recursos podem apoiar a tomada de decisão e a coordenação de políticas públicas em contextos de crise",
+"citacao": "MASSUDA, Adriano; MALIK, Ana Maria; FERREIRA JUNIOR, Walter Cintra; VECINA NETO, Gonzalo; LAGO, Miguel; TASCA, Renato. Pontos-chave para gestão do SUS na resposta à pandemia COVID-19. Nota Técnica n. 6. São Paulo: IEPS, 2020.",
+"url": "https://ieps.org.br/nota-tecnica-06/",
+"arquivo": "CV-027.pdf",
+"capa": true
+},
+{
+"id": "CV-028",
+"trilha": "Acervo COVID-19",
+"clear": false,
+"titulo": "Escolhas Dramáticas em Contextos Trágicos: Alocação de Vagas em UTI Durante a Crise da COVID-19",
+"autores": "Daniel Wang; Marcos de Lucca-Silveira",
+"instituicao": "Instituto de Estudos para Políticas de Saúde (IEPS)",
+"ano": "2020",
+"idioma": "Português (BR)",
+"paginas": "3",
+"tipo": "Nota e policy brief",
+"colecoes": [],
+"temas": [
+"Saúde"
+],
+"foco": "Brasil",
+"resumo": "A nota técnica analisa critérios para a alocação de vagas de UTI em situações de escassez extrema durante uma crise sanitária. Partindo da possibilidade de sobrecarga dos sistemas de saúde durante a COVID-19, discute critérios de priorização, admissão e alta, critérios sociais, impactos sobre outros serviços de saúde e possibilidades de centralização da distribuição de leitos",
+"quando": "Pode ser consultado em estudos sobre gestão do SUS, políticas de saúde, alocação de recursos, gestão hospitalar e tomada de decisão em situações de emergência. Também é útil para refletir sobre como critérios técnicos, evidências, equidade e transparência podem ser considerados na formulação de decisões públicas diante de recursos escassos",
+"citacao": "WANG, Daniel; LUCCA-SILVEIRA, Marcos de. Escolhas dramáticas em contextos trágicos: alocação de vagas em UTI durante a crise da COVID-19. Nota Técnica n. 5. São Paulo: IEPS, 2020.",
+"url": "https://ieps.org.br/nota-tecnica-05/",
+"arquivo": "CV-028.pdf",
+"capa": true
+},
+{
+"id": "CV-029",
+"trilha": "Acervo COVID-19",
+"clear": false,
+"titulo": "Como Conter a Curva no Brasil? Onde a Epidemiologia e a Economia se Encontram",
+"autores": "Beatriz Rache; Letícia Nunes; Rudi Rocha; Miguel Lago; Arminio Fraga",
+"instituicao": "Instituto de Estudos para Políticas de Saúde (IEPS)",
+"ano": "2020",
+"idioma": "Português (BR)",
+"paginas": "4",
+"tipo": "Nota e policy brief",
+"colecoes": [],
+"temas": [
+"Saúde",
+"Proteção social e renda"
+],
+"foco": "Brasil",
+"resumo": "A nota técnica analisa a relação entre a contenção da disseminação da COVID-19 e as vulnerabilidades sanitárias e socioeconômicas da população brasileira. A partir de microdados da Pesquisa Nacional de Saúde (PNS) de 2013, os autores identificam a sobreposição entre doenças crônicas, idade, trabalho por conta própria e vulnerabilidade econômica, discutindo medidas para reduzir simultaneamente os riscos sanitários e os efeitos econômicos da pandemia",
+"quando": "Pode ser consultado em estudos sobre análise de vulnerabilidades, políticas de saúde, proteção social, mercado de trabalho e planejamento de respostas a crises. Também é útil para pesquisadores que desejam observar um exemplo de utilização de microdados de pesquisa domiciliar para caracterizar grupos populacionais e subsidiar a formulação de políticas públicas",
+"citacao": "RACHE, Beatriz; NUNES, Letícia; ROCHA, Rudi; LAGO, Miguel; FRAGA, Arminio. Como conter a curva no Brasil? Onde a epidemiologia e a economia se encontram. Nota Técnica n. 4. São Paulo: IEPS, 2020.",
+"url": "https://ieps.org.br/nota-tecnica-04/",
+"arquivo": "CV-029.pdf",
+"capa": true
+},
+{
+"id": "CV-030",
+"trilha": "Acervo COVID-19",
+"clear": false,
+"titulo": "Assistência Humanitária no Contexto da Covid-19 – Boletim, Edição 11",
+"autores": "Instituto Unibanco",
+"instituicao": "Instituto Unibanco",
+"ano": "2020",
+"idioma": "Português (BR)",
+"paginas": "6",
+"tipo": "Nota e policy brief",
+"colecoes": [],
+"temas": [
+"Proteção social e renda"
+],
+"foco": "Brasil",
+"resumo": "O boletim apresenta o acompanhamento das ações de assistência humanitária promovidas pelo Instituto Unibanco durante a pandemia de Covid-19, em parceria com 21 organizações sociais. A edição registra recursos repassados, modalidades de atendimento e experiências desenvolvidas em territórios vulneráveis do Ceará, Minas Gerais e Rio de Janeiro. Também apresenta relatos de organizações e dados sobre as populações atendidas",
+"quando": "Pode ser consultado em estudos e projetos relacionados a proteção social, assistência humanitária, gestão de crises, vulnerabilidade socioeconômica e implementação de ações emergenciais, especialmente para conhecer experiências desenvolvidas durante a pandemia de Covid-19 e observar como informações de recursos, atividades e atendimentos podem ser sistematizadas para acompanhar iniciativas sociais",
+"citacao": "INSTITUTO UNIBANCO. Assistência humanitária no contexto da Covid-19. Boletim, edição 11, 13 a 24 jul. 2020. [S.l.]: Instituto Unibanco, 2020.",
+"url": "https://fgvclear.org/website/wp-content/uploads/assistencia-humanitaria-no-contexto-da-covid-19_instituto-unibanco.pdf",
+"arquivo": "CV-030.pdf",
+"capa": true
+},
+{
+"id": "CV-031",
+"trilha": "Acervo COVID-19",
+"clear": false,
+"titulo": "Estratégias diferenciadas e falta de padrão nas testagens dificultam o enfrentamento da pandemia, enfraquecem as decisões de flexibilização e aumentam a insegurança da população",
+"autores": "Rede de Pesquisa Solidária em Políticas Públicas e Sociedade",
+"instituicao": "Rede de Pesquisa Solidária em Políticas Públicas e Sociedade",
+"ano": "2020",
+"idioma": "Português (BR)",
+"paginas": "8",
+"tipo": "Nota e policy brief",
+"colecoes": [],
+"temas": [
+"Saúde"
+],
+"foco": "Brasil",
+"resumo": "A nota técnica analisa as estratégias de testagem para Covid-19 adotadas pelos estados brasileiros em junho de 2020, destacando diferenças na cobertura, nos tipos de testes utilizados e na divulgação das informações. A partir de dados das Secretarias Estaduais de Saúde, o estudo examina a taxa de positividade e a disponibilidade das informações para discutir como essas diferenças afetavam o acompanhamento da pandemia e as decisões relacionadas ao distanciamento e à flexibilização",
+"quando": "Pode ser consultado em estudos e projetos sobre monitoramento de políticas públicas, sistemas de informação, indicadores, análise de dados, saúde pública e tomada de decisão baseada em evidências. É especialmente útil como exemplo de análise de dados secundários e de discussão sobre como problemas de cobertura, padronização e transparência podem limitar o monitoramento de uma situação de emergência",
+"citacao": "REDE DE PESQUISA SOLIDÁRIA. Estratégias diferenciadas e falta de padrão nas testagens dificultam o enfrentamento da pandemia, enfraquecem as decisões de flexibilização e aumentam a insegurança da população. Covid-19: Políticas Públicas e as Respostas da Sociedade, Boletim n. 13. São Paulo: Rede de Pesquisa Solidária, 2020.",
+"url": "https://fgvclear.org/website/wp-content/uploads/boletimpps_13_26junho.pdf",
+"arquivo": "CV-031.pdf",
+"capa": true
 }
 ]
 }
