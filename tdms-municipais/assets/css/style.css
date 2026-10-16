@@ -629,7 +629,8 @@ section.tight { padding: 48px 0; }
 
 .viewer-canvas:active { cursor: grabbing; }
 
-.viewer-canvas.fullscreen {
+.viewer-canvas.fullscreen,
+.viewer-canvas.is-fullscreen {
   position: fixed;
   top: 0; left: 0;
   width: 100vw;
