@@ -1927,7 +1927,7 @@
 "instituicao": "Tribunal de Contas da União (TCU)",
 "ano": "2020",
 "idioma": "Português (BR)",
-"paginas": "152",
+"paginas": "1061",
 "tipo": "Guia e manual",
 "colecoes": [
 "Sistemas e institucionalização de M&A"
@@ -1940,8 +1940,8 @@
 "quando": "Para entender o que os órgãos de controle esperam de uma política bem desenhada e para fazer um diagnóstico de maturidade de um programa.",
 "citacao": "BRASIL. Tribunal de Contas da União. Referencial de controle de políticas públicas. Brasília: TCU, 2020.",
 "url": "https://portal.tcu.gov.br/publicacoes-institucionais/cartilha-manual-ou-tutorial/referencial-de-controle-de-politicas-publicas",
-"arquivo": "",
-"capa": false
+"arquivo": "MP-028.pdf",
+"capa": true
 },
 {
 "id": "AP-021",
@@ -1952,7 +1952,7 @@
 "instituicao": "Tribunal de Contas da União (TCU)",
 "ano": "2021",
 "idioma": "Português (BR)",
-"paginas": "28",
+"paginas": "52",
 "tipo": "Guia e manual",
 "colecoes": [
 "Sistemas e institucionalização de M&A"
@@ -1965,8 +1965,8 @@
 "quando": "Para analisar políticas executadas por municípios com financiamento ou regras federais e estaduais, como saúde, educação e assistência social.",
 "citacao": "BRASIL. Tribunal de Contas da União. Referencial para avaliação de governança multinível em políticas públicas descentralizadas. Brasília: TCU, 2021.",
 "url": "https://portal.tcu.gov.br/data/files/30/90/36/1D/47F5B710140B5BA7F18818A8/Referencial%20de%20Governanca%20Multinivel.pdf",
-"arquivo": "",
-"capa": false
+"arquivo": "AP-021.pdf",
+"capa": true
 },
 {
 "id": "PP-021",
