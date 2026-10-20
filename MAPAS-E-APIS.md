@@ -12,7 +12,7 @@ e a seção *Automação* no fim).
 > (é o caso dos biomas, Amazônia e Cerrado).
 > Entradas que não são UF (ex.: `"Brasil (média)"`) ficam na lista lateral, sem cor.
 
-Estado atual: **17 mapas em 8 das 9 áreas.** Só **habitação** ainda não tem: o dado do
+Estado atual: **16 mapas em 8 das 9 áreas.** Só **habitação** ainda não tem: o dado do
 Censo 2022 por UF já está no SIDRA, mas a estatística nova ainda não foi criada
 (detalhes no fim).
 
@@ -39,7 +39,6 @@ Censo 2022 por UF já está no SIDRA, mas a estatística nova ainda não foi cri
 | Finanças | `dependencia` | Transferências correntes ÷ receitas correntes do conjunto dos municípios da UF, % (2025; 26 UFs, o DF fica sem cor) | Siconfi, FINBRA Contas Anuais (Anexo I-C) | Download consolidado |
 | Finanças | `despesa-pessoal` | Média dos municípios da UF da despesa com pessoal do Executivo, % da RCL ajustada (2025; 26 UFs) | Siconfi, FINBRA RGF (Anexo 01) | Download consolidado |
 | Saúde | `equipes-esf` | Equipes de Saúde da Família por 100 mil hab. (dez/2025) | CNES/DATASUS (TabNet); IBGE, SIDRA 6579 | Consulta TabNet |
-| Saúde | `cobertura-cadastro-aps` | Pessoas cadastradas em eSF e eAP, % da população (dez/2023; série encerrada em abr/2024) | Ministério da Saúde, relatório Cobertura da APS (PNS), cadastros do SISAB; IBGE, projeções revisão 2024 | **API** |
 | Assistência | `renda-media-uf` | Rendimento médio mensal 14+ R$ (Censo 2022) | IBGE, Censo 2022, SIDRA 10299 | **API** |
 | Habitação | (sem estatística) | *(dado disponível, estatística não criada; ver abaixo)* | IBGE, Censo 2022 | **API** |
 
@@ -151,7 +150,11 @@ https://apidatalake.tesouro.gov.br/ords/siconfi/tt/dca?an_exercicio=2025&no_anex
 - Conferência: o microdado do FTP (`ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/EP/EP{UF}{AAMM}.dbc`)
   dá o mesmo total do TabNet (57.330 equipes em dez/2025).
 
-### Saúde: cobertura por cadastro na APS por UF (SISAB)
+### Saúde: cadastros na APS por UF (SISAB; estatística retirada, receita guardada)
+A estatística `cobertura-cadastro-aps` foi retirada do painel em 20/10/2026: a série oficial
+de cadastros acabou em abril de 2024, e a regra do Siaps de 2025 não emenda com ela. Hoje
+não há mapa. A receita fica para uso futuro; os valores calculados (2020 a 2023) estão em
+`REVISAO-OUTUBRO-2026.md`, seção "Terceira rodada".
 ```
 https://relatorioaps-prd.saude.gov.br/cobertura/pns?unidadeGeografica=UF&nuCompInicio=202312&nuCompFim=202312
 ```

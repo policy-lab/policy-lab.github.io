@@ -30,7 +30,7 @@ Reúne estatísticas-chave de fontes oficiais brasileiras em segurança, educaç
 
 - **9 áreas** de política pública
 - **30 temas** organizados hierarquicamente
-- **47 estatísticas** com séries históricas e recortes (por UF, sexo, raça, idade, faixa de renda, etc.)
+- **46 estatísticas** com séries históricas e recortes (por UF, sexo, raça, idade, faixa de renda, etc.)
 - **Mapas coropléticos por UF em 8 das 9 áreas**, vários coletados direto de APIs oficiais (IBGE/SIDRA, SICONFI/Tesouro) — ver [MAPAS-E-APIS.md](MAPAS-E-APIS.md)
 - Fontes oficiais (IBGE, INEP, DataSUS, Atlas da Violência, Tesouro Nacional, ANA, INPE, e outras)
 - Download de dados em CSV
@@ -39,7 +39,7 @@ Reúne estatísticas-chave de fontes oficiais brasileiras em segurança, educaç
 ## Como o painel é organizado
 
 ```
-Área (9)        →   Tema (30)              →   Estatística (47)
+Área (9)        →   Tema (30)              →   Estatística (46)
 ─────────────       ──────────────────────     ─────────────────
 Saúde           →   Mortalidade infantil   →   TMI Brasil
                 →   Imunização             →   Cobertura BCG

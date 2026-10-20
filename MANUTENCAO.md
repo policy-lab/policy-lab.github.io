@@ -980,11 +980,10 @@ Resumo prático:
   arquivos de taxas do INPE/TerraBrasilis). O Atlas da Violência (homicídios e
   homicídios de mulheres) depende de conferência manual em PDF; use os prompts de
   `PROMPTS-IA.md`.
-- Desde outubro de 2026 há **17 mapas**. Os novos: ISS per capita, dependência de
-  transferências e despesa com pessoal (FINBRA, seção 17), equipes de Saúde da Família
-  (CNES, pelo TabNet) e cobertura por cadastro na APS (SISAB, pela API do relatório de
-  cobertura). Os mapas de dependência e de despesa com pessoal ficam com o DF sem cor,
-  porque o DF não tem municípios.
+- Desde outubro de 2026 há **16 mapas**. Os novos: ISS per capita, dependência de
+  transferências e despesa com pessoal (FINBRA, seção 17) e equipes de Saúde da
+  Família (CNES, pelo TabNet). Os mapas de dependência e de despesa com pessoal ficam
+  com o DF sem cor, porque o DF não tem municípios.
 
 ### Pendência aberta: mapa de habitação
 
@@ -1068,21 +1067,22 @@ pessoa. São dois tipos de arquivo:
 
 ## 18. Atenção primária: SISAB e CNES
 
-O tema "Atenção primária" (área saúde) tem três estatísticas que se completam:
+O tema "Atenção primária" (área saúde) tem duas estatísticas que se completam:
 
 - **`esf`** (cobertura da Estratégia Saúde da Família): série oficial do Ministério da
   Saúde de 2015 a 2020. O Ministério encerrou essa série em dezembro de 2020; não há
   ano novo para acrescentar.
-- **`cobertura-cadastro-aps`**: pessoas cadastradas em equipes de Saúde da Família e de
-  Atenção Primária, em % da população, de 2020 a 2023 (dezembro). Coleta pela API do
-  relatório de cobertura (receita em `MAPAS-E-APIS.md`). A série oficial parou em abril
-  de 2024; o Siaps conta cadastros com outra regra desde 2025, e as duas não podem ser
-  emendadas.
 - **`equipes-esf`**: equipes de Saúde da Família por 100 mil habitantes, desde 2010
   (dezembro). Atualização anual: no TabNet do CNES, dezembro do ano novo, somando o
   código 70 e os códigos antigos de eSF (lista em `MAPAS-E-APIS.md`), dividido pela
   estimativa de população do IBGE do ano (SIDRA 6579).
-- Nas duas novas, a população é a das projeções do IBGE (revisão 2024), uma série única
+- Em `equipes-esf`, a população é a das projeções do IBGE (revisão 2024), uma série única
   compatível com o Censo 2022; ela coincide com as estimativas oficiais de 2024 e 2025.
   Não misture estimativas antigas (base Censo 2010) com o Censo 2022: isso cria um salto
   falso em 2022.
+- **`cobertura-cadastro-aps`** (pessoas cadastradas em equipes de Saúde da Família e de
+  Atenção Primária, em % da população) foi criada e retirada em 20/10/2026. A série
+  oficial de cadastros (relatório de cobertura do PNS, pela API do SISAB) acabou em abril
+  de 2024, e o Siaps conta cadastros com outra regra desde 2025, que não emenda com ela.
+  Os valores calculados (2020 a 2023, Brasil, regiões e UFs) estão em
+  `REVISAO-OUTUBRO-2026.md`, e a receita de coleta em `MAPAS-E-APIS.md`, para uso futuro.
