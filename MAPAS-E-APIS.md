@@ -12,7 +12,7 @@ e a seção *Automação* no fim).
 > (é o caso dos biomas, Amazônia e Cerrado).
 > Entradas que não são UF (ex.: `"Brasil (média)"`) ficam na lista lateral, sem cor.
 
-Estado atual: **8 das 9 áreas têm mapa.** Só **habitação** ainda não tem: o dado do
+Estado atual: **17 mapas em 8 das 9 áreas.** Só **habitação** ainda não tem: o dado do
 Censo 2022 por UF já está no SIDRA, mas a estatística nova ainda não foi criada
 (detalhes no fim).
 
@@ -35,6 +35,11 @@ Censo 2022 por UF já está no SIDRA, mas a estatística nova ainda não foi cri
 | Educação | `ideb-medio` | IDEB ensino médio, rede total (2025) | INEP, planilhas de resultados do IDEB | Planilha |
 | Saneamento | `lixo` | Domicílios com coleta de lixo % (Censo 2022) | IBGE, Censo 2022, SIDRA 6892 | **API** |
 | Finanças | `receita-estadual-pc` | Receita corrente estadual per capita R$ (2025) | SICONFI/Tesouro Nacional | **API** |
+| Finanças | `iss` | ISS per capita R$ (2025): ISS bruto dos municípios da UF (no DF, a DCA do DF) ÷ população IBGE 2025 | Siconfi, FINBRA Contas Anuais (Anexo I-C); IBGE, SIDRA 6579 | Download consolidado |
+| Finanças | `dependencia` | Transferências correntes ÷ receitas correntes do conjunto dos municípios da UF, % (2025; 26 UFs, o DF fica sem cor) | Siconfi, FINBRA Contas Anuais (Anexo I-C) | Download consolidado |
+| Finanças | `despesa-pessoal` | Média dos municípios da UF da despesa com pessoal do Executivo, % da RCL ajustada (2025; 26 UFs) | Siconfi, FINBRA RGF (Anexo 01) | Download consolidado |
+| Saúde | `equipes-esf` | Equipes de Saúde da Família por 100 mil hab. (dez/2025) | CNES/DATASUS (TabNet); IBGE, SIDRA 6579 | Consulta TabNet |
+| Saúde | `cobertura-cadastro-aps` | Pessoas cadastradas em eSF e eAP, % da população (dez/2023; série encerrada em abr/2024) | Ministério da Saúde, relatório Cobertura da APS (PNS), cadastros do SISAB; IBGE, projeções revisão 2024 | **API** |
 | Assistência | `renda-media-uf` | Rendimento médio mensal 14+ R$ (Censo 2022) | IBGE, Censo 2022, SIDRA 10299 | **API** |
 | Habitação | (sem estatística) | *(dado disponível, estatística não criada; ver abaixo)* | IBGE, Censo 2022 | **API** |
 
@@ -42,6 +47,10 @@ Censo 2022 por UF já está no SIDRA, mas a estatística nova ainda não foi cri
 publica um arquivo para download (XLSX, ZIP ou JSON) com o dado por UF; dá para
 automatizar, mas o layout pode mudar a cada edição. "Manual" = a fonte publica em
 PDF; o número é conferido e atualizado à mão (ou com ajuda de IA, ver `PROMPTS-IA.md`).
+"Download consolidado" = um arquivo por exercício com todos os municípios, baixado por
+uma pessoa no site do Siconfi (o botão tem CAPTCHA); o passo a passo está em
+`MANUTENCAO.md`, seção 17. "Consulta TabNet" = tabela gerada no TabNet do DATASUS
+(consulta pública de leitura, sem login).
 
 ---
 
@@ -113,6 +122,52 @@ https://apidatalake.tesouro.gov.br/ords/siconfi/tt/dca?an_exercicio=2025&no_anex
 - No arquivo Brasil de 2025, a aba de anos finais não traz `VL_OBSERVADO_2023`; o
   valor sai de `VL_NOTA_MEDIA_2023 × VL_INDICADOR_REND_2023` (rede total: 5,0).
 
+### Finanças municipais: ISS, dependência e despesa com pessoal por UF (FINBRA)
+- Arquivos: FINBRA do Siconfi, Contas Anuais (Receitas Orçamentárias, Anexo I-C) e RGF
+  (Anexo 01, Poder Executivo, tabela "DTP e Apuração do Cumprimento do Limite Legal",
+  3º quadrimestre e 2º semestre). Como baixar e conferir: `MANUTENCAO.md`, seção 17.
+- A UF de cada município sai dos dois primeiros dígitos do código IBGE.
+- **ISS per capita:** soma da conta `RO1.1.1.4.51.1.0` ("Receitas Brutas Realizadas") dos
+  municípios da UF, dividida pela população estimada da UF:
+  `https://apisidra.ibge.gov.br/values/t/6579/n3/all/v/9324/p/2025`.
+  O DF entra com a DCA dele na API (`id_ente=53`).
+- **Dependência:** soma de `RO1.7.0.0.00.0.0` ÷ soma de `RO1.0.0.0.00.0.0`, receita bruta,
+  municípios da UF. O DF não tem municípios e fica sem cor no mapa.
+- **Despesa com pessoal:** média simples, entre os municípios da UF, do "% sobre a RCL
+  Ajustada" de `DespesaComPessoalTotal`, sem as declarações acima de 100% ou negativas.
+
+### Saúde: equipes de Saúde da Família por UF (CNES/TabNet)
+- Consulta: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?cnes/cnv/equipebr.def
+  ("CNES - Equipes de Saúde - Brasil"). Linha "Unidade da Federação" (ou "Região"),
+  coluna "Tipo da Equipe", conteúdo "Quantidade", período dez/AAAA (arquivo `epbrAAMM`).
+- Somar os tipos de eSF: código **70** (eSF, desde maio de 2020) e os códigos antigos
+  01 a 03, 12 a 15, 24 a 39 (ainda há algumas equipes neles). Antes de maio de 2020 só
+  existem os códigos antigos. Tabela de tipos: Portaria SAES/MS nº 37/2021,
+  https://bvsms.saude.gov.br/bvs/saudelegis/saes/2021/prt0037_21_01_2021.html.
+- Dividir pela população estimada da UF no ano (SIDRA 6579, acima) e multiplicar por
+  100 mil. Para a série antes de 2024, usar as projeções do IBGE revisão 2024
+  (`https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab4_indicadores.xlsx`,
+  coluna POP_T), que coincidem com as estimativas de 2024 e 2025.
+- Conferência: o microdado do FTP (`ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/EP/EP{UF}{AAMM}.dbc`)
+  dá o mesmo total do TabNet (57.330 equipes em dez/2025).
+
+### Saúde: cobertura por cadastro na APS por UF (SISAB)
+```
+https://relatorioaps-prd.saude.gov.br/cobertura/pns?unidadeGeografica=UF&nuCompInicio=202312&nuCompFim=202312
+```
+- É a API do relatório público "Cobertura da Atenção Primária (PNS 2020 - 2023)"
+  (https://relatorioaps.saude.gov.br/cobertura/pns). Troque `UF` por `BRASIL` ou `REGIAO`.
+- Numerador: campo `qtTotalCadastroApsPaga` (pessoas com cadastro individual em eSF e eAP
+  financiadas), competência de dezembro. Não use o campo `vlCobertura`: ele limita os
+  cadastros à população de cada município e usa a estimativa de 2021.
+- Denominador: população das projeções do IBGE, revisão 2024 (coluna POP_T, sigla da UF):
+  https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab4_indicadores.xlsx
+- A série vai de dez/2020 a abr/2024; de mai/2024 em diante a API devolve zeros (fim da
+  capitação, Portaria GM/MS 3.493/2024). O Siaps conta cadastros com outra regra desde
+  jan/2025 (Nota Técnica 30/2025), não comparável: não emende as duas séries.
+- Algumas UFs passam de 100% (cadastros duplicados ou desatualizados). Mantenha o valor e
+  registre na nota.
+
 ### Meio ambiente: PRODES por UF (INPE)
 - Amazônia: taxas por UF e ano em
   `https://terrabrasilis.dpi.inpe.br/app/prodes/dashboard/deforestation/files/rates2026.json`
@@ -161,9 +216,13 @@ planilha da edição com dados de 2024 (27 UFs, valores absolutos e relativos).
 A revisão recomendada é **trimestral** (ver `CALENDARIO.md`). Dos mapas acima, os
 marcados "**API**" (desocupação, mortalidade infantil, lixo, renda, receita estadual)
 podem ser **re-coletados automaticamente**. Os de "Planilha" (IDEB e PRODES) também,
-desde que o script confira o layout do arquivo a cada edição. Só o Atlas da Violência
+desde que o script confira o layout do arquivo a cada edição. O Atlas da Violência
 (homicídios e homicídios de mulheres) segue dependendo de conferência humana, porque
-a fonte publica em PDF.
+a fonte publica em PDF. Os mapas de finanças municipais (ISS, dependência e despesa com
+pessoal) dependem do download consolidado do FINBRA, que uma pessoa precisa fazer por
+causa do CAPTCHA; o cálculo a partir dos arquivos pode ser automático. As equipes de
+Saúde da Família vêm de consulta ao TabNet, que também pode ser automatizada com poucas
+consultas espaçadas.
 
 O caminho de automação é um **GitHub Action agendado** que roda um script de coleta,
 atualiza os JSONs das estatísticas "API" e gera um **relatório do que mudou**. A

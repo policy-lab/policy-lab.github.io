@@ -25,6 +25,9 @@ Esse documento ensina como **atualizar dados**, **trocar textos**, **adicionar e
 13. [Erros comuns e como resolver](#13-erros-comuns-e-como-resolver)
 14. [Quando o painel quebra: como restaurar](#14-quando-o-painel-quebra-como-restaurar)
 15. [Quando pedir ajuda técnica](#15-quando-pedir-ajuda-técnica)
+16. [Mapas por UF e coleta via API](#16-mapas-por-uf-e-coleta-via-api)
+17. [Finanças municipais: download consolidado do FINBRA (Siconfi)](#17-finanças-municipais-download-consolidado-do-finbra-siconfi)
+18. [Atenção primária: SISAB e CNES](#18-atenção-primária-sisab-e-cnes)
 
 ---
 
@@ -974,9 +977,14 @@ Resumo prático:
   infantil (arquivo da Projeção IBGE) e receita estadual per capita (SICONFI/Tesouro).
   Os endpoints exatos estão em `MAPAS-E-APIS.md`.
 - IDEB e PRODES vêm de arquivos para download (planilhas do INEP; notas técnicas e
-  arquivos de taxas do INPE/TerraBrasilis). Só o Atlas da Violência (homicídios e
+  arquivos de taxas do INPE/TerraBrasilis). O Atlas da Violência (homicídios e
   homicídios de mulheres) depende de conferência manual em PDF; use os prompts de
   `PROMPTS-IA.md`.
+- Desde outubro de 2026 há **17 mapas**. Os novos: ISS per capita, dependência de
+  transferências e despesa com pessoal (FINBRA, seção 17), equipes de Saúde da Família
+  (CNES, pelo TabNet) e cobertura por cadastro na APS (SISAB, pela API do relatório de
+  cobertura). Os mapas de dependência e de despesa com pessoal ficam com o DF sem cor,
+  porque o DF não tem municípios.
 
 ### Pendência aberta: mapa de habitação
 
@@ -992,3 +1000,89 @@ O que falta é decidir qual estatística criar e adicioná-la com recorte `uf`; 
 aparece sozinho. Consultas testadas e valores de conferência em `MAPAS-E-APIS.md`.
 Não use a tabela 10345 como denominador: ela cobre só setores selecionados de
 municípios com favelas.
+
+---
+
+## 17. Finanças municipais: download consolidado do FINBRA (Siconfi)
+
+Três estatísticas da área de finanças somam dados de **todos os municípios**:
+`iss`, `dependencia` e `despesa-pessoal`. Desde outubro de 2026 elas são calculadas
+com o **download consolidado do FINBRA**, um arquivo por exercício com os 5.570
+municípios. Não use a API do Siconfi para isso: ela exige uma consulta por município,
+tem limite documentado de **1 requisição por segundo** e bloqueia o acesso (HTTP 429)
+quando o limite é passado. Coletar oito anos pela API levaria mais de um dia.
+
+### O que baixar
+
+O download tem um CAPTCHA no botão "Consultar", então precisa ser feito por uma
+pessoa. São dois tipos de arquivo:
+
+1. **Contas Anuais** (para `iss` e `dependencia`), um por exercício:
+   https://siconfi.tesouro.gov.br/siconfi/pages/public/consulta_finbra/finbra_list.jsf
+   - Exercício: o ano; Escopo: **Municípios**;
+     Tabela: **Receitas Orçamentárias (Anexo I-C)**.
+2. **RGF, despesa com pessoal** (para `despesa-pessoal`), dois por exercício:
+   https://siconfi.tesouro.gov.br/siconfi/pages/public/consulta_finbra_rgf/finbra_rgf_list.jsf
+   - Exercício: o ano; Escopo: **Municípios**; Poder: **Executivo**;
+     Anexo: **Anexo 01**; Tabela: **DTP e Apuração do Cumprimento do Limite Legal**.
+   - Baixe **Quadrimestral, 3º quadrimestre** e também **Semestral, 2º semestre**.
+     Os municípios com menos de 50 mil habitantes podem publicar o RGF por semestre;
+     sem o segundo arquivo faltam cerca de 2.300 municípios.
+   - A tabela "Despesas com pessoal" do mesmo anexo **não serve**: ela não traz a RCL.
+
+### Como conferir os arquivos
+
+- Os nomes dos zips não dizem o ano nem o período, e o navegador numera os repetidos
+  ("(1)", "(2)"...). **Identifique cada arquivo pelo cabeçalho do CSV**: as primeiras
+  linhas trazem "Exercício", "Período" (no RGF), "Escopo" e "Tabela". Se o mesmo
+  exercício e período vier duas vezes, use o mais recente.
+- Os CSVs vêm em Latin-1, separados por ponto e vírgula, com vírgula decimal.
+- Confira a cobertura: cada ano deve ter perto de 5.570 municípios (os que faltam são
+  os que não entregaram). No RGF, some os municípios do 3º quadrimestre e do
+  2º semestre; ninguém aparece nos dois.
+- O Distrito Federal não está no escopo Municípios. Para o ISS ele entra à parte, pela
+  DCA dele na API (`id_ente=53`), uma consulta por ano.
+
+### Como cada estatística é calculada
+
+- **`iss`**: soma do ISSQN dos municípios mais o DF, na receita bruta realizada
+  (coluna "Receitas Brutas Realizadas"), em R$ correntes. A conta é
+  `RO1.1.1.8.02.3.0` até 2021 e `RO1.1.1.4.51.1.0` de 2022 em diante.
+- **`dependencia`**: soma das transferências correntes (`RO1.7.0.0.00.0.0`) dividida
+  pela soma das receitas correntes (`RO1.0.0.0.00.0.0`) do conjunto dos municípios,
+  na receita bruta. É a conta do Boletim de Finanças dos Entes Subnacionais da STN
+  (65,8% em 2024).
+- **`despesa-pessoal`**: média simples, entre os municípios, do percentual declarado da
+  despesa total com pessoal do Executivo sobre a RCL ajustada (`DespesaComPessoalTotal`,
+  coluna "% sobre a RCL Ajustada"). Ficam fora os percentuais acima de 100% ou negativos
+  (erro de declaração), na média, nos recortes, no mapa e nas contagens por faixa da LRF.
+  Registre na nota quantos saíram em cada ano.
+- Mapas por UF: ISS per capita (ISS dos municípios da UF ÷ população da UF; o DF entra
+  com a DCA dele), dependência (mesma conta, por UF) e despesa com pessoal (média dos
+  municípios de cada UF). Receitas detalhadas em `MAPAS-E-APIS.md`.
+- Os recortes por porte usam a estimativa de população do IBGE do ano. Os scripts
+  usados na revisão de outubro de 2026 e o passo a passo estão descritos em
+  `REVISAO-OUTUBRO-2026.md`.
+
+---
+
+## 18. Atenção primária: SISAB e CNES
+
+O tema "Atenção primária" (área saúde) tem três estatísticas que se completam:
+
+- **`esf`** (cobertura da Estratégia Saúde da Família): série oficial do Ministério da
+  Saúde de 2015 a 2020. O Ministério encerrou essa série em dezembro de 2020; não há
+  ano novo para acrescentar.
+- **`cobertura-cadastro-aps`**: pessoas cadastradas em equipes de Saúde da Família e de
+  Atenção Primária, em % da população, de 2020 a 2023 (dezembro). Coleta pela API do
+  relatório de cobertura (receita em `MAPAS-E-APIS.md`). A série oficial parou em abril
+  de 2024; o Siaps conta cadastros com outra regra desde 2025, e as duas não podem ser
+  emendadas.
+- **`equipes-esf`**: equipes de Saúde da Família por 100 mil habitantes, desde 2010
+  (dezembro). Atualização anual: no TabNet do CNES, dezembro do ano novo, somando o
+  código 70 e os códigos antigos de eSF (lista em `MAPAS-E-APIS.md`), dividido pela
+  estimativa de população do IBGE do ano (SIDRA 6579).
+- Nas duas novas, a população é a das projeções do IBGE (revisão 2024), uma série única
+  compatível com o Censo 2022; ela coincide com as estimativas oficiais de 2024 e 2025.
+  Não misture estimativas antigas (base Censo 2010) com o Censo 2022: isso cria um salto
+  falso em 2022.

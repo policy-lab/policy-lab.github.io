@@ -668,15 +668,15 @@
           "id": "esf",
           "titulo": "Cobertura da Estratégia Saúde da Família",
           "indicador": "% da população coberta pela Estratégia Saúde da Família (ESF)",
-          "valor": 65.4,
-          "unidade": "% da população (2024)",
-          "destaque": "Maior programa de atenção primária do mundo",
-          "totalAbsoluto": "~139 milhões de pessoas cobertas",
-          "tendencia": "alta",
+          "valor": 63.6,
+          "unidade": "% da população (2020)",
+          "destaque": "Série oficial encerrada pelo Ministério da Saúde em dezembro de 2020",
+          "totalAbsoluto": "~133,7 milhões de pessoas cobertas (dez/2020)",
+          "tendencia": "queda",
           "serie": [
             {
               "ano": 2015,
-              "valor": 62.0
+              "valor": 62.5
             },
             {
               "ano": 2016,
@@ -684,35 +684,19 @@
             },
             {
               "ano": 2017,
-              "valor": 64.0
+              "valor": 63.9
             },
             {
               "ano": 2018,
-              "valor": 64.4
-            },
-            {
-              "ano": 2019,
-              "valor": 65.1
-            },
-            {
-              "ano": 2020,
-              "valor": 63.0
-            },
-            {
-              "ano": 2021,
-              "valor": 60.8
-            },
-            {
-              "ano": 2022,
-              "valor": 62.3
-            },
-            {
-              "ano": 2023,
               "valor": 64.2
             },
             {
-              "ano": 2024,
-              "valor": 65.4
+              "ano": 2019,
+              "valor": 64.5
+            },
+            {
+              "ano": 2020,
+              "valor": 63.6
             }
           ],
           "rotuloSerieY": "% da população",
@@ -720,49 +704,543 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Cobertura ESF por região (2024, %)",
+              "titulo": "Cobertura ESF por região (2020, %)",
               "valores": [
                 {
                   "rotulo": "Nordeste",
-                  "valor": 81.2,
+                  "valor": 82.3,
                   "max": 90
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 67.5,
+                  "valor": 64.7,
                   "max": 90
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 65.0,
+                  "valor": 65.3,
                   "max": 90
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 65.4,
+                  "valor": 63.6,
                   "max": 90
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 61.4,
+                  "valor": 63.7,
                   "max": 90
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 58.6,
+                  "valor": 51.0,
                   "max": 90
                 }
               ]
             }
           ],
           "fonte": {
-            "nome": "e-Gestor APS / Ministério da Saúde",
+            "nome": "Relatório de Cobertura da Atenção Básica 2007-2020 (antigo e-Gestor AB) / Ministério da Saúde",
             "produtor": "Secretaria de Atenção Primária à Saúde (SAPS/MS)",
-            "periodicidade": "Mensal (consolidado anual)",
-            "ultimaAtualizacao": "2025 (dados de 2024)",
-            "url": "https://egestorab.saude.gov.br/paginas/acessoPublico/relatorios/relHistoricoCoberturaAB.xhtml"
+            "periodicidade": "Mensal, com dezembro como valor anual (série encerrada em dez/2020)",
+            "ultimaAtualizacao": "Março/2021 (dados de 2020)",
+            "url": "https://relatorioaps.saude.gov.br/cobertura/ab"
           },
-          "notaMetodologica": "Cobertura ESF: percentual da população do município atendido por equipes de Saúde da Família credenciadas e em funcionamento. Maior cobertura no Nordeste reflete priorização histórica da política. Sudeste tem cobertura mais baixa por mix de provisão privada e UBS tradicionais (não ESF). Valores aproximados por região."
+          "notaMetodologica": "Cobertura ESF: população estimada coberta por equipes de Saúde da Família (3.450 pessoas por equipe válida no SCNES, limitada à população de cada município) dividida pela estimativa populacional do IBGE. Valor anual = competência de dezembro, como prevê a nota metodológica do Ministério da Saúde. O Ministério da Saúde encerrou esta série em dezembro de 2020 e não a calcula mais; por isso o último ponto é 2020. Com o Previne Brasil (Portaria nº 2.979/2019) o Ministério passou a medir a cobertura pela população cadastrada nas equipes financiadas (meta do PNS 2020-2023) e, desde 2025, pela Cobertura Potencial da APS (Nota Técnica nº 2/2025-SAPS/MS, de 2021 em diante), que incluem outros tipos de equipe e não são comparáveis com esta série. Nordeste tem a maior cobertura e Sudeste a menor, onde pesam a rede privada e as UBS sem equipes de Saúde da Família. Para acompanhar a atenção primária depois de 2020, veja neste tema a cobertura por cadastro na APS e as equipes de Saúde da Família por 100 mil habitantes."
+        },
+        {
+          "id": "cobertura-cadastro-aps",
+          "titulo": "Cobertura por cadastro na APS",
+          "indicador": "% da população com cadastro individual em equipes de Saúde da Família e de Atenção Primária financiadas pelo Ministério da Saúde (SISAB), sobre a população do IBGE do mesmo ano",
+          "valor": 83.1,
+          "unidade": "% da população (dez/2023)",
+          "destaque": "Subiu de 57,3% em 2020 para 83,1% em 2023, no Previne Brasil",
+          "totalAbsoluto": "~176,0 milhões de pessoas cadastradas em eSF e eAP (162,3 milhões em eSF e 13,7 milhões em eAP), dez/2023",
+          "tendencia": "alta",
+          "serie": [
+            {
+              "ano": 2020,
+              "valor": 57.3
+            },
+            {
+              "ano": 2021,
+              "valor": 72.2
+            },
+            {
+              "ano": 2022,
+              "valor": 78.1
+            },
+            {
+              "ano": 2023,
+              "valor": 83.1
+            }
+          ],
+          "rotuloSerieY": "% da população",
+          "recortes": [
+            {
+              "id": "uf",
+              "dimensao": "Por UF",
+              "titulo": "Cadastrados em eSF e eAP por UF (dez/2023, % da população)",
+              "valores": [
+                {
+                  "rotulo": "Piauí",
+                  "valor": 102.6,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Santa Catarina",
+                  "valor": 100.9,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Tocantins",
+                  "valor": 100.9,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Sergipe",
+                  "valor": 98.9,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Ceará",
+                  "valor": 98.8,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Paraíba",
+                  "valor": 98.0,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Minas Gerais",
+                  "valor": 94.8,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Paraná",
+                  "valor": 93.7,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Mato Grosso do Sul",
+                  "valor": 92.9,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Rio Grande do Norte",
+                  "valor": 88.1,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Maranhão",
+                  "valor": 88.0,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Espírito Santo",
+                  "valor": 87.7,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Mato Grosso",
+                  "valor": 86.7,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Bahia",
+                  "valor": 85.5,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Roraima",
+                  "valor": 85.0,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Alagoas",
+                  "valor": 84.4,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Rondônia",
+                  "valor": 84.4,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Rio Grande do Sul",
+                  "valor": 84.0,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Pernambuco",
+                  "valor": 83.7,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Acre",
+                  "valor": 83.2,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Goiás",
+                  "valor": 79.5,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Amazonas",
+                  "valor": 77.2,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Distrito Federal",
+                  "valor": 72.2,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Rio de Janeiro",
+                  "valor": 71.4,
+                  "max": 110
+                },
+                {
+                  "rotulo": "São Paulo",
+                  "valor": 70.0,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Pará",
+                  "valor": 69.8,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Amapá",
+                  "valor": 63.0,
+                  "max": 110
+                },
+                {
+                  "rotulo": "Brasil (média)",
+                  "valor": 83.1,
+                  "max": 110
+                }
+              ]
+            },
+            {
+              "id": "regiao",
+              "dimensao": "Por região",
+              "titulo": "Cadastrados em eSF e eAP por região (dez/2023, % da população)",
+              "valores": [
+                {
+                  "rotulo": "Sul",
+                  "valor": 92.0,
+                  "max": 100
+                },
+                {
+                  "rotulo": "Nordeste",
+                  "valor": 90.2,
+                  "max": 100
+                },
+                {
+                  "rotulo": "Brasil (média)",
+                  "valor": 83.1,
+                  "max": 100
+                },
+                {
+                  "rotulo": "Centro-Oeste",
+                  "valor": 82.1,
+                  "max": 100
+                },
+                {
+                  "rotulo": "Sudeste",
+                  "valor": 77.0,
+                  "max": 100
+                },
+                {
+                  "rotulo": "Norte",
+                  "valor": 76.4,
+                  "max": 100
+                }
+              ]
+            }
+          ],
+          "fonte": {
+            "nome": "Relatório Cobertura da Atenção Primária (PNS 2020-2023), cadastros do SISAB / Ministério da Saúde; população: IBGE, Projeções da População (revisão 2024)",
+            "produtor": "Secretaria de Atenção Primária à Saúde (SAPS/MS)",
+            "periodicidade": "Mensal, com dezembro como valor anual (série encerrada em abr/2024)",
+            "ultimaAtualizacao": "Março/2024 (dados de 2023)",
+            "url": "https://relatorioaps.saude.gov.br/cobertura/pns"
+          },
+          "notaMetodologica": "Pessoas com cadastro individual (completo ou simplificado) no SISAB em equipes de Saúde da Família (eSF) e de Atenção Primária (eAP) financiadas pelo Ministério da Saúde no Previne Brasil. na competência de dezembro (campo qtTotalCadastroApsPaga do relatório Cobertura da Atenção Primária. PNS 2020-2023. método da Nota Técnica nº 418/2021-CGGAP/DESF/SAPS/MS). divididas pela população do IBGE do mesmo ano. das Projeções da População. revisão 2024 (população em 1º de julho. compatível com o Censo 2022 e igual às estimativas oficiais de 2024 e 2025: https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab4_indicadores.xlsx). Em dez/2023: 175.958.504 cadastrados sobre 211.695.158 habitantes. Usar uma única série de população evita o salto artificial que a troca das estimativas antigas (base Censo 2010) pelo Censo 2022 criaria em 2022; é a mesma população usada nas equipes de Saúde da Família deste tema. O indicador oficial do PNS (79,7% em dez/2023) limita os cadastros à população de cada município e usa a estimativa de 2021; aqui não há teto. Limitações: em dez/2023 Piauí (102,6%), Santa Catarina (100,9%) e Tocantins (100,9%) passam de 100%, sinal de cadastros duplicados ou desatualizados (o SISAB só unifica registros com o mesmo CPF, só exclui óbitos lançados no CadSUS e aceita cadastros feitos desde 2013); os valores foram mantidos sem corte. A alta coincide com o pagamento por pessoa cadastrada (capitação ponderada). A série termina em 2023 porque o relatório parou em abr/2024, com o fim da capitação (Portaria GM/MS nº 3.493/2024); desde jan/2025 o Siaps conta pessoas cadastradas com outra regra (Nota Técnica nº 30/2025-CGESCO/DESCO/SAPS/MS), não comparável. Difere da cobertura da ESF (3.450 pessoas por equipe, até 2020) e da Cobertura Potencial da APS (2021 em diante), que medem a capacidade das equipes, e não pessoas cadastradas."
+        },
+        {
+          "id": "equipes-esf",
+          "titulo": "Equipes de Saúde da Família",
+          "indicador": "Equipes de Saúde da Família por 100 mil habitantes",
+          "valor": 26.9,
+          "unidade": "equipes por 100 mil hab. (dez/2025)",
+          "destaque": "Piauí tem 2,5 vezes a taxa de São Paulo",
+          "totalAbsoluto": "57.330 equipes de Saúde da Família no CNES (dez/2025)",
+          "tendencia": "alta",
+          "serie": [
+            {
+              "ano": 2010,
+              "valor": 16.7
+            },
+            {
+              "ano": 2011,
+              "valor": 17.1
+            },
+            {
+              "ano": 2012,
+              "valor": 17.5
+            },
+            {
+              "ano": 2013,
+              "valor": 18.3
+            },
+            {
+              "ano": 2014,
+              "valor": 19.9
+            },
+            {
+              "ano": 2015,
+              "valor": 20.5
+            },
+            {
+              "ano": 2016,
+              "valor": 20.6
+            },
+            {
+              "ano": 2017,
+              "valor": 21.3
+            },
+            {
+              "ano": 2018,
+              "valor": 21.5
+            },
+            {
+              "ano": 2019,
+              "valor": 21.8
+            },
+            {
+              "ano": 2020,
+              "valor": 23.7
+            },
+            {
+              "ano": 2021,
+              "valor": 24.2
+            },
+            {
+              "ano": 2022,
+              "valor": 24.6
+            },
+            {
+              "ano": 2023,
+              "valor": 25.6
+            },
+            {
+              "ano": 2024,
+              "valor": 26.5
+            },
+            {
+              "ano": 2025,
+              "valor": 26.9
+            }
+          ],
+          "rotuloSerieY": "Equipes por 100 mil hab.",
+          "recortes": [
+            {
+              "id": "uf",
+              "dimensao": "Por UF",
+              "titulo": "Equipes de Saúde da Família por UF (2025, por 100 mil hab.)",
+              "valores": [
+                {
+                  "rotulo": "Piauí",
+                  "valor": 41.5,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Paraíba",
+                  "valor": 40.3,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Tocantins",
+                  "valor": 39.7,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Maranhão",
+                  "valor": 39.0,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Rio Grande do Norte",
+                  "valor": 35.9,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Roraima",
+                  "valor": 35.1,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Amapá",
+                  "valor": 34.7,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Ceará",
+                  "valor": 34.2,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Alagoas",
+                  "valor": 33.9,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Sergipe",
+                  "valor": 33.4,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Minas Gerais",
+                  "valor": 31.6,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Santa Catarina",
+                  "valor": 31.6,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Pernambuco",
+                  "valor": 31.2,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Acre",
+                  "valor": 31.1,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Bahia",
+                  "valor": 30.9,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Pará",
+                  "valor": 29.5,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Espírito Santo",
+                  "valor": 28.4,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Rondônia",
+                  "valor": 28.3,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Mato Grosso",
+                  "valor": 28.1,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Mato Grosso do Sul",
+                  "valor": 26.8,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Amazonas",
+                  "valor": 26.4,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Paraná",
+                  "valor": 25.3,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Goiás",
+                  "valor": 24.4,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Rio Grande do Sul",
+                  "valor": 24.4,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Distrito Federal",
+                  "valor": 21.8,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Rio de Janeiro",
+                  "valor": 21.6,
+                  "max": 50
+                },
+                {
+                  "rotulo": "São Paulo",
+                  "valor": 16.7,
+                  "max": 50
+                },
+                {
+                  "rotulo": "Brasil (média)",
+                  "valor": 26.9,
+                  "max": 50
+                }
+              ]
+            },
+            {
+              "id": "regiao",
+              "dimensao": "Por região",
+              "titulo": "Equipes de Saúde da Família por região (2025, por 100 mil hab.)",
+              "valores": [
+                {
+                  "rotulo": "Nordeste",
+                  "valor": 34.3,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Norte",
+                  "valor": 30.1,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Brasil (média)",
+                  "valor": 26.9,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Sul",
+                  "valor": 26.6,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Centro-Oeste",
+                  "valor": 25.2,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Sudeste",
+                  "valor": 21.8,
+                  "max": 40
+                }
+              ]
+            }
+          ],
+          "fonte": {
+            "nome": "CNES/DATASUS (TabNet, Equipes de Saúde) e população do IBGE",
+            "produtor": "Ministério da Saúde (DATASUS)",
+            "periodicidade": "Mensal (valor anual = competência de dezembro)",
+            "ultimaAtualizacao": "Janeiro/2026 (dados de dez/2025)",
+            "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?cnes/cnv/equipebr.def"
+          },
+          "notaMetodologica": "Equipes de Saúde da Família (eSF) registradas no CNES na competência de dezembro, divididas pela população do IBGE do ano e multiplicadas por 100 mil (2025: 57.330 ÷ 213.421.037 × 100 mil = 26,9). Códigos somados: até abril de 2020 a eSF aparecia em vários tipos de equipe, todos somados aqui: 01 a 03 (ESF, com e sem saúde bucal), 12, 13 e 39 (ribeirinha), 14 e 15 (fluvial), 24 a 35 (ESF tipos I a IV) e 36 a 38 (ESF transitória). A Portaria SAES/MS nº 99/2020 (depois nº 37/2021) trocou todos eles pelo código 70 (eSF, que inclui a ribeirinha), em uso desde maio de 2020; de 2020 em diante somam-se o código 70 e as poucas equipes que ficaram nos códigos antigos (255 em 2025). É a mesma lista que o Ministério da Saúde usa para contar eSF no cálculo de cobertura. A tabela de correspondência da portaria também levou ao código 70 as equipes de agentes comunitários (EACS, códigos 04, 10 e 11), que antes não eram eSF: cerca de 2,2 mil EACS de 2019 aparecem como eSF em 2020, por isso parte da alta de 2019 (21,8) para 2020 (23,7) é reclassificação e não equipe nova. A contagem inclui todas as equipes da competência no CNES, como no TabNet, homologadas ou não, e fica de 1% a 4% acima do número de eSF válidas do Ministério; em 2020 a diferença chegou a 14%, porque o CNES deixou de checar a composição das equipes e o Ministério só contou as completas. População: projeções do IBGE (revisão 2024, compatíveis com o Censo 2022) para 2010-2023 e estimativas oficiais para 2024 e 2025, que coincidem com essas projeções; isso evita o salto artificial que a troca do Censo 2010 pelo Censo 2022 criaria na série. Nordeste e Norte têm as maiores taxas; o Sudeste tem a menor, puxado por São Paulo (16,7) e Rio de Janeiro (21,6)."
         },
         {
           "id": "pre-natal",

@@ -32,7 +32,7 @@ Você não precisa instalar nada. Tudo é feito no navegador, no site do GitHub.
 
 ## O que conferir depois de subir
 
-- O cabeçalho mostra **v4.3 · 9 áreas · 30 temas · 45 estatísticas**.
+- O cabeçalho mostra **v4.3 · 9 áreas · 30 temas · 47 estatísticas**.
 - Há um botão **"↧ Gerar relatório"** no topo. Clique → escolha "Painel completo"
   → **Imprimir / Salvar PDF** e **Baixar Markdown** devem funcionar.
 - Abra algumas estatísticas e veja a aba **"Por UF"** com o **mapa** (segurança,

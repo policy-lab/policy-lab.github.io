@@ -292,39 +292,43 @@
           "id": "iss",
           "titulo": "Arrecadação de ISS",
           "indicador": "Imposto Sobre Serviços de Qualquer Natureza",
-          "valor": 105.8,
-          "unidade": "R$ bilhões em 2024",
-          "destaque": "Maior receita tributária própria municipal",
-          "totalAbsoluto": "Crescimento real de 3,2% em 2024",
+          "valor": 157.5,
+          "unidade": "R$ bilhões em 2025",
+          "destaque": "Maior receita tributária própria municipal, quase o dobro do IPTU em 2025",
+          "totalAbsoluto": "Alta nominal de 10,5% em 2025; real de 5,2% pelo IPCA médio",
           "tendencia": "alta",
           "serie": [
             {
               "ano": 2018,
-              "valor": 64.5
+              "valor": 64.0
             },
             {
               "ano": 2019,
-              "valor": 70.2
+              "valor": 72.6
             },
             {
               "ano": 2020,
-              "valor": 73.1
+              "valor": 73.0
             },
             {
               "ano": 2021,
-              "valor": 82.4
+              "valor": 90.3
             },
             {
               "ano": 2022,
-              "valor": 93.8
+              "valor": 107.9
             },
             {
               "ano": 2023,
-              "valor": 102.5
+              "valor": 123.4
             },
             {
               "ano": 2024,
-              "valor": 105.8
+              "valor": 142.6
+            },
+            {
+              "ano": 2025,
+              "valor": 157.5
             }
           ],
           "rotuloSerieY": "R$ bilhões",
@@ -332,76 +336,223 @@
             {
               "id": "porte",
               "dimensao": "Por porte do município",
-              "titulo": "ISS como % da receita corrente (2024)",
+              "titulo": "ISS como % da receita corrente (2025)",
               "valores": [
                 {
                   "rotulo": "Acima de 500 mil hab",
-                  "valor": 13.4,
-                  "max": 15
+                  "valor": 21.7,
+                  "max": 25
                 },
                 {
                   "rotulo": "100 mil a 500 mil hab",
-                  "valor": 6.2,
-                  "max": 15
+                  "valor": 10.1,
+                  "max": 25
                 },
                 {
                   "rotulo": "20 mil a 100 mil hab",
-                  "valor": 2.8,
-                  "max": 15
+                  "valor": 5.0,
+                  "max": 25
                 },
                 {
                   "rotulo": "Até 20 mil hab",
-                  "valor": 1.3,
-                  "max": 15
+                  "valor": 2.7,
+                  "max": 25
                 }
               ]
             },
             {
               "id": "concentracao",
               "dimensao": "Concentração",
-              "titulo": "Capitais que concentram a arrecadação (% do ISS nacional, 2024)",
+              "titulo": "Capitais que concentram a arrecadação (% do ISS nacional, 2025)",
               "valores": [
                 {
                   "rotulo": "São Paulo (cidade)",
-                  "valor": 23.6,
+                  "valor": 25.1,
                   "max": 50
                 },
                 {
                   "rotulo": "Rio de Janeiro",
-                  "valor": 8.4,
+                  "valor": 6.1,
                   "max": 50
                 },
                 {
                   "rotulo": "Belo Horizonte",
-                  "valor": 3.7,
+                  "valor": 2.1,
                   "max": 50
                 },
                 {
                   "rotulo": "Brasília",
-                  "valor": 3.2,
+                  "valor": 2.5,
                   "max": 50
                 },
                 {
                   "rotulo": "Outras capitais",
-                  "valor": 12.5,
+                  "valor": 14.6,
                   "max": 50
                 },
                 {
                   "rotulo": "Demais 5.500+ municípios",
-                  "valor": 48.6,
+                  "valor": 49.7,
                   "max": 50
+                }
+              ]
+            },
+            {
+              "id": "uf",
+              "dimensao": "Por UF",
+              "titulo": "ISS per capita por UF (2025, R$)",
+              "valores": [
+                {
+                  "rotulo": "São Paulo",
+                  "valor": 1488,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Distrito Federal",
+                  "valor": 1289,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Rio de Janeiro",
+                  "valor": 909,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Espírito Santo",
+                  "valor": 736,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Santa Catarina",
+                  "valor": 700,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Paraná",
+                  "valor": 684,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Mato Grosso",
+                  "valor": 675,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Mato Grosso do Sul",
+                  "valor": 633,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Rio Grande do Sul",
+                  "valor": 553,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Minas Gerais",
+                  "valor": 534,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Goiás",
+                  "valor": 496,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Amazonas",
+                  "valor": 442,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Tocantins",
+                  "valor": 428,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Rio Grande do Norte",
+                  "valor": 390,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Bahia",
+                  "valor": 389,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Sergipe",
+                  "valor": 384,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Pernambuco",
+                  "valor": 380,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Rondônia",
+                  "valor": 362,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Ceará",
+                  "valor": 337,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Roraima",
+                  "valor": 335,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Pará",
+                  "valor": 333,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Alagoas",
+                  "valor": 318,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Piauí",
+                  "valor": 292,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Maranhão",
+                  "valor": 281,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Paraíba",
+                  "valor": 278,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Acre",
+                  "valor": 264,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Amapá",
+                  "valor": 253,
+                  "max": 1500
+                },
+                {
+                  "rotulo": "Brasil (média)",
+                  "valor": 738,
+                  "max": 1500
                 }
               ]
             }
           ],
           "fonte": {
-            "nome": "FINBRA/Siconfi e Anuário Multi Cidades (FNP)",
-            "produtor": "Secretaria do Tesouro Nacional / FNP",
+            "nome": "Siconfi/Tesouro Nacional: FINBRA, Contas Anuais (DCA), Anexo I-C",
+            "produtor": "Secretaria do Tesouro Nacional (STN)",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "Janeiro/2026 (dados de 2024)",
-            "url": "https://siconfi.tesouro.gov.br/"
+            "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",
+            "url": "https://siconfi.tesouro.gov.br/siconfi/pages/public/consulta_finbra/finbra_list.jsf"
           },
-          "notaMetodologica": "ISS é o maior tributo próprio municipal — maior que IPTU em volume. Reforma Tributária (EC 132/2023) extingue ISS gradualmente até 2032, substituindo pelo IBS (compartilhado com estados). Alta concentração: 4 capitais respondem por ~39% da arrecadação nacional. Valores aproximados."
+          "notaMetodologica": "ISS é o maior tributo próprio municipal, quase o dobro do IPTU. A série soma, em R$ bilhões correntes, o ISSQN bruto (receitas brutas realizadas) das Contas Anuais (DCA, Anexo I-C) entregues ao Siconfi e consolidadas no FINBRA, mais o Distrito Federal, que cobra o imposto no lugar de município. Municípios com DCA: 5.536 em 2018; 5.553 em 2019; 5.559 em 2020; 5.562 em 2021; 5.557 em 2022; 5.557 em 2023; 5.546 em 2024; 5.502 em 2025. Quem não entregou fica de fora, sem estimativa; entre os que entregaram em 2024 e 2025, a alta nominal foi de 11,0%. É a mesma conta do Boletim de Finanças dos Entes Subnacionais 2025 do Tesouro (ISS municipal de R$ 138,95 bilhões em 2024, receitas brutas; https://www.tesourotransparente.gov.br/publicacoes/boletim-de-financas-dos-entes-subnacionais/2025/114). Para comparação, o Anuário Multi Cidades (FNP), que estima os municípios sem dados, desconta deduções, exclui o DF e corrige pelo IPCA, publica R$ 154,18 bilhões em 2025. Em 2018, municípios lançaram cerca de R$ 1,1 bilhão de ISS (1,8%) na conta do ICMS, que fica fora da série. Reforma Tributária (EC 132/2023) reduz o ISS de 2029 a 2032 e o extingue em 2033, substituído pelo IBS (compartilhado com estados). Alta concentração: 4 capitais (São Paulo, Rio de Janeiro, Belo Horizonte e Brasília) respondem por cerca de 36% da arrecadação nacional em 2025; só São Paulo, por 25,1%. No recorte por porte, a razão é agregada (ISS bruto da faixa dividido pela receita corrente bruta da faixa), com a população estimada pelo IBGE para 2025, sem o DF."
         }
       ]
     },
@@ -414,39 +565,43 @@
           "id": "dependencia",
           "titulo": "Dependência de Transferências",
           "indicador": "Receita corrente municipal vinda de outras esferas (FPM, ICMS, Fundeb, royalties)",
-          "valor": 68.0,
-          "unidade": "% da receita corrente municipal (média)",
-          "destaque": "Municípios pequenos chegam a 90%+ de dependência",
-          "totalAbsoluto": "Receitas próprias cobrem só 32% das despesas municipais",
+          "valor": 65.6,
+          "unidade": "% da receita corrente do conjunto dos municípios (2025)",
+          "destaque": "Em 45% dos municípios com até 20 mil habitantes, 90% ou mais da receita corrente vem de transferências",
+          "totalAbsoluto": "Impostos, taxas e contribuições de melhoria próprios são só 23,6% da receita corrente do conjunto dos municípios",
           "tendencia": "estavel",
           "serie": [
             {
               "ano": 2018,
-              "valor": 67.2
+              "valor": 66.5
             },
             {
               "ano": 2019,
-              "valor": 67.5
+              "valor": 66.0
             },
             {
               "ano": 2020,
-              "valor": 70.1
-            },
-            {
-              "ano": 2021,
-              "valor": 69.4
-            },
-            {
-              "ano": 2022,
               "valor": 68.5
             },
             {
+              "ano": 2021,
+              "valor": 68.0
+            },
+            {
+              "ano": 2022,
+              "valor": 66.5
+            },
+            {
               "ano": 2023,
-              "valor": 67.8
+              "valor": 65.2
             },
             {
               "ano": 2024,
-              "valor": 68.0
+              "valor": 65.9
+            },
+            {
+              "ano": 2025,
+              "valor": 65.6
             }
           ],
           "rotuloSerieY": "% receita corrente",
@@ -454,26 +609,26 @@
             {
               "id": "porte",
               "dimensao": "Por porte do município",
-              "titulo": "Dependência média por porte populacional (2024, %)",
+              "titulo": "Dependência por porte populacional, conjunto dos municípios (2025, %)",
               "valores": [
                 {
                   "rotulo": "Até 20 mil hab",
-                  "valor": 92.0,
+                  "valor": 86.0,
                   "max": 100
                 },
                 {
                   "rotulo": "20 mil a 100 mil hab",
-                  "valor": 83.0,
+                  "valor": 77.2,
                   "max": 100
                 },
                 {
                   "rotulo": "100 mil a 500 mil hab",
-                  "valor": 68.0,
+                  "valor": 62.4,
                   "max": 100
                 },
                 {
                   "rotulo": "Acima de 500 mil hab",
-                  "valor": 48.0,
+                  "valor": 44.6,
                   "max": 100
                 }
               ]
@@ -481,49 +636,191 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Dependência média municipal por região (2024, %)",
+              "titulo": "Dependência por região, conjunto dos municípios (2025, %)",
               "valores": [
                 {
                   "rotulo": "Norte",
-                  "valor": 84.2,
+                  "valor": 78.9,
                   "max": 90
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 82.5,
+                  "valor": 79.5,
                   "max": 90
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 71.8,
+                  "valor": 67.5,
                   "max": 90
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 68.0,
+                  "valor": 65.6,
                   "max": 90
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 64.3,
+                  "valor": 61.8,
                   "max": 90
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 58.7,
+                  "valor": 57.2,
+                  "max": 90
+                }
+              ]
+            },
+            {
+              "id": "uf",
+              "dimensao": "Por UF",
+              "titulo": "Dependência por UF, conjunto dos municípios de cada UF (2025, %)",
+              "valores": [
+                {
+                  "rotulo": "Maranhão",
+                  "valor": 85.4,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Piauí",
+                  "valor": 82.8,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Paraíba",
+                  "valor": 81.9,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Pará",
+                  "valor": 81.5,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Alagoas",
+                  "valor": 81.4,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Amapá",
+                  "valor": 80.9,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Bahia",
+                  "valor": 79.0,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Roraima",
+                  "valor": 78.6,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Ceará",
+                  "valor": 78.6,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Amazonas",
+                  "valor": 78.2,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Tocantins",
+                  "valor": 78.2,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Rio Grande do Norte",
+                  "valor": 77.6,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Sergipe",
+                  "valor": 75.5,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Pernambuco",
+                  "valor": 74.8,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Acre",
+                  "valor": 74.4,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Rondônia",
+                  "valor": 72.0,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Minas Gerais",
+                  "valor": 71.4,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Espírito Santo",
+                  "valor": 69.4,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Mato Grosso do Sul",
+                  "valor": 69.2,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Mato Grosso",
+                  "valor": 68.0,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Goiás",
+                  "valor": 66.3,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Rio Grande do Sul",
+                  "valor": 63.4,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Santa Catarina",
+                  "valor": 61.2,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Rio de Janeiro",
+                  "valor": 60.8,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Paraná",
+                  "valor": 60.8,
+                  "max": 90
+                },
+                {
+                  "rotulo": "São Paulo",
+                  "valor": 49.0,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Brasil (média)",
+                  "valor": 65.6,
                   "max": 90
                 }
               ]
             }
           ],
           "fonte": {
-            "nome": "FINBRA / Siconfi — Tesouro Nacional",
-            "produtor": "Secretaria do Tesouro Nacional (STN) — coleta dos 5.568 municípios via LRF",
+            "nome": "Siconfi, FINBRA, Contas Anuais, Anexo I-C (Tesouro Nacional)",
+            "produtor": "Secretaria do Tesouro Nacional (STN), com as Declarações de Contas Anuais dos municípios",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "2025 (dados de 2024)",
-            "url": "https://siconfi.tesouro.gov.br/"
+            "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",
+            "url": "https://siconfi.tesouro.gov.br/siconfi/pages/public/consulta_finbra/finbra_list.jsf"
           },
-          "notaMetodologica": "Mede a proporção das receitas correntes municipais oriundas de transferências (FPM, cota-parte do ICMS, Fundeb, royalties, SUS, FNDE etc.) versus receitas próprias (IPTU, ISS, ITBI, taxas, contribuição de melhoria). Municípios pequenos e do Norte/Nordeste são estruturalmente mais dependentes. Limitação: não considera transferências voluntárias (emendas parlamentares, convênios). Valores agregados; análise detalhada exige FINBRA por município."
+          "notaMetodologica": "Soma das transferências correntes (conta 1.7: FPM, cota-parte do ICMS e do IPVA, Fundeb, SUS, FNDE, royalties, convênios) dividida pela soma das receitas correntes (conta 1.0) de todos os municípios com Declaração de Contas Anuais (DCA) no Siconfi, pela receita bruta realizada, sem descontar deduções. É a conta do Boletim de Finanças dos Entes Subnacionais 2025 da STN, que dá 65,8% para 2024 (Tabela 15: https://www.tesourotransparente.gov.br/publicacoes/boletim-de-financas-dos-entes-subnacionais/2025/114). Na receita bruta, a parcela do FPM, do ICMS e das demais cotas retida para formar o Fundeb aparece duas vezes: na transferência bruta e no retorno do Fundeb. Por isso a conta bruta fica acima da líquida de deduções (63,4% em 2025). Por ser uma razão do conjunto, as cidades grandes pesam mais; na média simples entre municípios, em que cada um pesa igual, a dependência é 84,2% em 2025. Recortes na mesma conta, por grupo; porte pela população estimada pelo IBGE para 2025. Não inclui transferências de capital. A série 2018-2025 está toda nessa mesma conta. Municípios com DCA em cada ano: 5.536 (2018), 5.553 (2019), 5.559 (2020), 5.562 (2021), 5.557 (2022), 5.557 (2023), 5.546 (2024) e 5.502 (2025). Dados do FINBRA (Contas Anuais, Anexo I-C), os mesmos da API do Siconfi: https://apidatalake.tesouro.gov.br/ords/siconfi/tt/dca?an_exercicio=2025&no_anexo=DCA-Anexo%20I-C&id_ente=CÓDIGO_IBGE."
         }
       ]
     },
@@ -536,10 +833,10 @@
           "id": "despesa-pessoal",
           "titulo": "Despesa com pessoal",
           "indicador": "Gasto municipal com folha como % da Receita Corrente Líquida (RCL)",
-          "valor": 52.4,
-          "unidade": "% da RCL (média municipal 2024)",
-          "destaque": "Limite LRF é 60% — muitos municípios próximos",
-          "totalAbsoluto": "~1.200 municípios acima do limite prudencial (54%)",
+          "valor": 45.3,
+          "unidade": "% da RCL (média dos municípios, 2025)",
+          "destaque": "Limite LRF do Executivo municipal é 54% da RCL; 431 municípios acima dele em 2025",
+          "totalAbsoluto": "899 municípios acima do limite prudencial do Executivo (51,3% da RCL) em 2025",
           "tendencia": "alta",
           "serie": [
             {
@@ -548,27 +845,31 @@
             },
             {
               "ano": 2019,
-              "valor": 52.1
+              "valor": 49.6
             },
             {
               "ano": 2020,
-              "valor": 50.4
+              "valor": 49.4
             },
             {
               "ano": 2021,
-              "valor": 49.8
+              "valor": 46.9
             },
             {
               "ano": 2022,
-              "valor": 50.6
+              "valor": 46.1
             },
             {
               "ano": 2023,
-              "valor": 51.8
+              "valor": 47.7
             },
             {
               "ano": 2024,
-              "valor": 52.4
+              "valor": 44.2
+            },
+            {
+              "ano": 2025,
+              "valor": 45.3
             }
           ],
           "rotuloSerieY": "% da RCL",
@@ -576,26 +877,26 @@
             {
               "id": "porte",
               "dimensao": "Por porte do município",
-              "titulo": "Despesa com pessoal média por porte (2024, % RCL)",
+              "titulo": "Despesa com pessoal média por porte (2025, % RCL)",
               "valores": [
                 {
                   "rotulo": "Até 20 mil hab",
-                  "valor": 54.6,
+                  "valor": 44.8,
                   "max": 60
                 },
                 {
                   "rotulo": "20 mil a 100 mil hab",
-                  "valor": 52.8,
+                  "valor": 47.0,
                   "max": 60
                 },
                 {
                   "rotulo": "100 mil a 500 mil hab",
-                  "valor": 51.4,
+                  "valor": 44.9,
                   "max": 60
                 },
                 {
                   "rotulo": "Acima de 500 mil hab",
-                  "valor": 49.2,
+                  "valor": 41.4,
                   "max": 60
                 }
               ]
@@ -603,22 +904,169 @@
             {
               "id": "limite",
               "dimensao": "Situação na LRF",
-              "titulo": "Municípios por situação na LRF (2024)",
+              "titulo": "Municípios por situação na LRF, Poder Executivo (2025)",
               "valores": [
                 {
-                  "rotulo": "Acima de 60% (limite)",
-                  "valor": 285,
+                  "rotulo": "Acima de 54% (limite)",
+                  "valor": 431,
                   "max": 5570
                 },
                 {
-                  "rotulo": "Alerta (54% a 60%)",
-                  "valor": 920,
+                  "rotulo": "51,3% a 54% (prudencial)",
+                  "valor": 468,
                   "max": 5570
                 },
                 {
-                  "rotulo": "Abaixo do alerta",
-                  "valor": 4365,
+                  "rotulo": "48,6% a 51,3% (alerta)",
+                  "valor": 715,
                   "max": 5570
+                },
+                {
+                  "rotulo": "Abaixo de 48,6%",
+                  "valor": 3885,
+                  "max": 5570
+                }
+              ]
+            },
+            {
+              "id": "uf",
+              "dimensao": "Por UF",
+              "titulo": "Despesa com pessoal média dos municípios por UF (2025, % RCL)",
+              "valores": [
+                {
+                  "rotulo": "Sergipe",
+                  "valor": 55.5,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Amapá",
+                  "valor": 54.4,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Acre",
+                  "valor": 53.0,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Pará",
+                  "valor": 52.6,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Paraíba",
+                  "valor": 49.8,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Pernambuco",
+                  "valor": 49.1,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Amazonas",
+                  "valor": 48.6,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Bahia",
+                  "valor": 48.5,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Maranhão",
+                  "valor": 48.1,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Alagoas",
+                  "valor": 48.1,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Ceará",
+                  "valor": 47.8,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Mato Grosso do Sul",
+                  "valor": 46.7,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Roraima",
+                  "valor": 46.2,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Tocantins",
+                  "valor": 46.2,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Rondônia",
+                  "valor": 45.5,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Goiás",
+                  "valor": 45.4,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Rio de Janeiro",
+                  "valor": 45.1,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Minas Gerais",
+                  "valor": 44.0,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Paraná",
+                  "valor": 43.8,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Rio Grande do Norte",
+                  "valor": 43.7,
+                  "max": 60
+                },
+                {
+                  "rotulo": "São Paulo",
+                  "valor": 43.4,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Rio Grande do Sul",
+                  "valor": 42.9,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Santa Catarina",
+                  "valor": 42.8,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Piauí",
+                  "valor": 42.7,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Espírito Santo",
+                  "valor": 41.5,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Mato Grosso",
+                  "valor": 40.3,
+                  "max": 60
+                },
+                {
+                  "rotulo": "Brasil (média)",
+                  "valor": 45.3,
+                  "max": 60
                 }
               ]
             }
@@ -627,10 +1075,10 @@
             "nome": "Relatório de Gestão Fiscal (RGF/LRF) — Siconfi",
             "produtor": "Secretaria do Tesouro Nacional (STN)",
             "periodicidade": "Quadrimestral (consolidado anual)",
-            "ultimaAtualizacao": "2025 (dados de 2024)",
-            "url": "https://siconfi.tesouro.gov.br/"
+            "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",
+            "url": "https://siconfi.tesouro.gov.br/siconfi/pages/public/consulta_finbra_rgf/finbra_rgf_list.jsf"
           },
-          "notaMetodologica": "A Lei de Responsabilidade Fiscal (LC 101/2000) impõe limite de 60% da RCL para despesa de pessoal municipal (Poder Executivo). Acima de 54% (90% do limite) o município entra em 'alerta', e acima de 57,6% (95%) é vedada contratação. Cerca de 1.200 municípios estão acima do nível prudencial, com risco de sanções e dificuldade de execução de outras políticas. Valores aproximados."
+          "notaMetodologica": "Média simples, entre os 5.499 municípios com declaração válida, do percentual da despesa total com pessoal (DTP) do Poder Executivo sobre a receita corrente líquida (RCL) ajustada, conforme o Anexo 1 do Relatório de Gestão Fiscal do 3º quadrimestre de 2025 (ou do 2º semestre, nos municípios com menos de 50 mil habitantes que optaram pela divulgação semestral), pelo FINBRA (Siconfi). Ficam fora da média, dos recortes e das contagens os municípios que declararam despesa com pessoal acima de 100% da RCL ajustada ou negativa, provável erro de declaração: 1 em 2018, 6 em 2019, 3 em 2020, 29 em 2021, 24 em 2022 (um deles com valor negativo), 22 em 2023, 26 em 2024 e 26 em 2025. Com eles, a média de 2025 seria de 46,2%. Como cada município pesa igual, a média fica acima da razão entre a soma da DTP e a soma da RCL ajustada de todos os municípios (42,5% em 2025), em que pesam mais os grandes. Não inclui a Câmara Municipal. Pela LRF (LC 101/2000), o limite de despesa com pessoal do município é 60% da RCL (art. 19), dos quais 54% para o Executivo e 6% para o Legislativo (art. 20). Para o Executivo, o limite de alerta é 48,6% (90% do limite, art. 59) e o prudencial é 51,3% (95%, art. 22), acima do qual ficam vedados, entre outros, reajustes, criação de cargos e novas contratações. O recorte por situação na LRF usa essas faixas do Executivo: acima de 54% (limite), de 51,3% a 54% (prudencial), de 48,6% a 51,3% (alerta) e abaixo de 48,6%. Em 2025, 899 municípios estavam acima do limite prudencial e 431 acima do limite de 54%. Porte pela estimativa de população do IBGE para 2025. O recorte por UF não inclui o Distrito Federal, que não é município."
         }
       ]
     },

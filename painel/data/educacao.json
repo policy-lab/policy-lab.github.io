@@ -908,43 +908,47 @@
           "id": "distorcao",
           "titulo": "Distorção idade-série",
           "indicador": "Estudantes do EF e EM com 2+ anos de atraso em relação à idade ideal",
-          "valor": 21.4,
-          "unidade": "% dos estudantes do ensino básico (2024)",
-          "destaque": "Atinge 1 em cada 5 estudantes",
+          "valor": 11.4,
+          "unidade": "% dos estudantes do EF e do EM (2025)",
+          "destaque": "Atinge cerca de 1 em cada 9 estudantes",
           "totalAbsoluto": "Pior nos anos finais EF e EM",
           "tendencia": "queda",
           "serie": [
             {
               "ano": 2017,
-              "valor": 26.0
+              "valor": 20.4
             },
             {
               "ano": 2018,
-              "valor": 25.5
+              "valor": 19.6
             },
             {
               "ano": 2019,
-              "valor": 24.3
+              "valor": 18.4
             },
             {
               "ano": 2020,
-              "valor": 22.5
+              "valor": 17.8
             },
             {
               "ano": 2021,
-              "valor": 22.8
+              "valor": 16.3
             },
             {
               "ano": 2022,
-              "valor": 22.0
+              "valor": 14.5
             },
             {
               "ano": 2023,
-              "valor": 21.6
+              "valor": 13.5
             },
             {
               "ano": 2024,
-              "valor": 21.4
+              "valor": 12.5
+            },
+            {
+              "ano": 2025,
+              "valor": 11.4
             }
           ],
           "rotuloSerieY": "% dos estudantes",
@@ -952,21 +956,21 @@
             {
               "id": "etapa",
               "dimensao": "Por etapa de ensino",
-              "titulo": "Distorção idade-série por etapa (2024, %)",
+              "titulo": "Distorção idade-série por etapa (2025, %)",
               "valores": [
                 {
                   "rotulo": "Ensino Médio",
-                  "valor": 27.4,
+                  "valor": 16.0,
                   "max": 30
                 },
                 {
                   "rotulo": "Anos Finais EF",
-                  "valor": 24.5,
+                  "valor": 14.4,
                   "max": 30
                 },
                 {
                   "rotulo": "Anos Iniciais EF",
-                  "valor": 9.5,
+                  "valor": 6.6,
                   "max": 30
                 }
               ]
@@ -976,10 +980,10 @@
             "nome": "INEP — Censo Escolar / Indicadores Educacionais",
             "produtor": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "2025 (dados de 2024)",
-            "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais"
+            "ultimaAtualizacao": "Fevereiro/2026 (dados de 2025)",
+            "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/inep-data/estatisticas-censo-escolar"
           },
-          "notaMetodologica": "Distorção idade-série indica que o estudante tem 2 anos ou mais de atraso em relação à idade esperada para sua etapa. Reflete repetência acumulada e abandono temporário. Estatística relevante para políticas de recomposição da aprendizagem. Valores aproximados — números oficiais detalhados estão no INEP."
+          "notaMetodologica": "Distorção idade-série indica que o estudante tem 2 anos ou mais de atraso em relação à idade recomendada para a série que frequenta. Reflete repetência acumulada e abandono temporário. Taxa conjunta do ensino fundamental (1º ao 9º ano) e do ensino médio (1ª à 4ª série, incluindo normal/magistério e ensino médio integrado ao técnico), Brasil, redes pública e privada, matrículas em classes comuns: alunos com distorção divididos pelo total de matrículas das duas etapas. Valores do painel Estatísticas do Censo Escolar do INEP (InepData), com as etapas anos iniciais, anos finais e ensino médio selecionadas juntas; por etapa, são os mesmos das planilhas de Taxas de Distorção Idade-Série. Estatística relevante para políticas de recomposição da aprendizagem."
         }
       ]
     },

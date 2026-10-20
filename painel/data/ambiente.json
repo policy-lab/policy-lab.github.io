@@ -467,86 +467,102 @@
         {
           "id": "estresse-hidrico",
           "titulo": "Estresse hídrico nas bacias",
-          "indicador": "% das bacias brasileiras com balanço hídrico crítico ou em alerta",
-          "valor": 23.0,
-          "unidade": "% das unidades de gestão (2023)",
-          "destaque": "Crise no semiárido e em SP/MG",
-          "totalAbsoluto": "Disponibilidade per capita varia 70x entre regiões",
-          "tendencia": "alta",
+          "indicador": "Nível de estresse hídrico (ODS 6.4.2): retirada de água doce em % da disponibilidade hídrica (definição adotada em outubro de 2026)",
+          "valor": 2.3,
+          "unidade": "% da água disponível que é retirada (ODS 6.4.2, 2024)",
+          "destaque": "Atlântico Nordeste Oriental retira 59,9% da água disponível",
+          "totalAbsoluto": "São Francisco concentra 17% das retiradas e 1,3% da disponibilidade (Q95) do país (2024)",
+          "tendencia": "estavel",
           "serie": [
             {
+              "ano": 2015,
+              "valor": 2.4
+            },
+            {
+              "ano": 2016,
+              "valor": 2.4
+            },
+            {
               "ano": 2017,
-              "valor": 17.0
+              "valor": 2.3
+            },
+            {
+              "ano": 2018,
+              "valor": 2.4
             },
             {
               "ano": 2019,
-              "valor": 18.5
+              "valor": 2.5
             },
             {
               "ano": 2020,
-              "valor": 20.2
+              "valor": 2.2
             },
             {
               "ano": 2021,
-              "valor": 22.0
+              "valor": 2.3
             },
             {
               "ano": 2022,
-              "valor": 22.5
+              "valor": 2.3
             },
             {
               "ano": 2023,
-              "valor": 23.0
+              "valor": 2.3
+            },
+            {
+              "ano": 2024,
+              "valor": 2.3
             }
           ],
-          "rotuloSerieY": "% das bacias",
+          "rotuloSerieY": "% da água disponível",
           "recortes": [
             {
               "id": "regiao-hidrografica",
               "dimensao": "Por região hidrográfica",
-              "titulo": "Bacias em situação crítica (% das UGHs em 2023)",
+              "titulo": "Nível de estresse hídrico (% da água disponível retirada em 2024)",
               "valores": [
                 {
                   "rotulo": "Atlântico Nordeste Oriental",
-                  "valor": 58,
+                  "valor": 59.9,
                   "max": 60
                 },
                 {
                   "rotulo": "Parnaíba",
-                  "valor": 42,
+                  "valor": 6.6,
                   "max": 60
                 },
                 {
                   "rotulo": "São Francisco",
-                  "valor": 38,
+                  "valor": 30.4,
                   "max": 60
                 },
                 {
                   "rotulo": "Paraná",
-                  "valor": 30,
+                  "valor": 6.6,
                   "max": 60
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 23,
+                  "valor": 2.3,
                   "max": 60
                 },
                 {
                   "rotulo": "Amazônica",
-                  "valor": 5,
+                  "valor": 0.2,
                   "max": 60
                 }
               ]
             }
           ],
           "fonte": {
-            "nome": "Conjuntura dos Recursos Hídricos no Brasil (ANA)",
-            "produtor": "Agência Nacional de Águas e Saneamento Básico (ANA)",
+            "nome": "Indicador ODS 6.4.2: nível de estresse hídrico (ANA; IBGE, SIDRA tabela 7077)",
+            "produtor": "Agência Nacional de Águas e Saneamento Básico (ANA), com divulgação do IBGE",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "2024 (dados de 2023)",
-            "url": "https://www.gov.br/ana/pt-br/assuntos/o-que-e-a-ana/conjuntura-dos-recursos-hidricos"
+            "ultimaAtualizacao": "Agosto/2026 (dados de 2024)",
+            "url": "https://sidra.ibge.gov.br/tabela/7077"
           },
-          "notaMetodologica": "Bacias em estresse hídrico = unidades onde a relação demanda/disponibilidade ultrapassa 40% (alerta) ou 100% (crítico). Brasil tem 12 regiões hidrográficas e 270 unidades de gestão hídrica (UGHs). A Amazônia concentra 80% da disponibilidade nacional mas só 12% da população; o Nordeste tem situação inversa. Mudanças climáticas e desmatamento agravam o problema. Valores aproximados a partir dos relatórios da ANA."
+          "notaMetodologica": "Mudança de definição em outubro de 2026: até então esta estatística mostrava o \"% das bacias com balanço hídrico crítico ou em alerta\" (23% em 2023), definição que a ANA nunca publicou e que não se reproduz em nenhuma edição do Conjuntura dos Recursos Hídricos. Passou a usar o indicador oficial ODS 6.4.2, que mede outra coisa (quanto da água disponível é retirada) e não é comparável com os números antigos. Indicador ODS 6.4.2 calculado pela ANA: retirada total de água doce dividida pela disponibilidade hídrica total (superficial, vazão Q95 somada à garantia dos reservatórios, mais a reserva subterrânea explotável), para o Brasil e as 12 regiões hidrográficas. No recorte, Brasil é a razão nacional (total retirado sobre total disponível). O nível nacional é baixo porque a Região Amazônica tem cerca de 80% dos recursos hídricos e menos de 7% das demandas; o estresse se concentra no Semiárido (Atlântico Nordeste Oriental 59,9%, São Francisco 30,4%, Atlântico Leste 27,0%) e no Atlântico Sul (22,0%). Série 2015-2024 da 3ª edição do relatório ODS 6 no Brasil (ANA), que passou a incluir a água subterrânea."
         }
       ]
     }
