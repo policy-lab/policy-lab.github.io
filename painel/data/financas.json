@@ -20,39 +20,43 @@
           "id": "fpm",
           "titulo": "Fundo de Participação dos Municípios",
           "indicador": "Transferência federal automática para as prefeituras",
-          "valor": 220.8,
-          "unidade": "R$ bilhões distribuídos em 2024",
-          "destaque": "Crescimento real de 11,5% em 2024",
-          "totalAbsoluto": "Representa 17,5% a 18,5% da receita corrente municipal",
+          "valor": 240.9,
+          "unidade": "R$ bilhões distribuídos em 2025",
+          "destaque": "Alta nominal de 11,4% em 2025",
+          "totalAbsoluto": "Líquido do Fundeb, equivale a 14,7% da receita corrente municipal em 2025",
           "tendencia": "alta",
           "serie": [
             {
               "ano": 2018,
-              "valor": 92.8
+              "valor": 101.7
             },
             {
               "ano": 2019,
-              "valor": 95.1
+              "valor": 110.8
             },
             {
               "ano": 2020,
-              "valor": 102.5
+              "valor": 106.1
             },
             {
               "ano": 2021,
-              "valor": 134.2
+              "valor": 140.0
             },
             {
               "ano": 2022,
-              "valor": 168.5
+              "valor": 179.1
             },
             {
               "ano": 2023,
-              "valor": 198.0
+              "valor": 185.9
             },
             {
               "ano": 2024,
-              "valor": 220.8
+              "valor": 216.2
+            },
+            {
+              "ano": 2025,
+              "valor": 240.9
             }
           ],
           "rotuloSerieY": "R$ bilhões",
@@ -82,31 +86,31 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Distribuição estimada do FPM 2024 por região (% do total)",
+              "titulo": "Distribuição do FPM 2025 por região (% do total)",
               "valores": [
                 {
                   "rotulo": "Nordeste",
-                  "valor": 35.3,
+                  "valor": 35.4,
                   "max": 40
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 31.2,
+                  "valor": 31.1,
                   "max": 40
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 17.6,
+                  "valor": 17.4,
                   "max": 40
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 8.7,
+                  "valor": 9.0,
                   "max": 40
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 7.2,
+                  "valor": 7.1,
                   "max": 40
                 }
               ]
@@ -116,10 +120,10 @@
             "nome": "Tesouro Nacional — Sistema de Transferências Constitucionais",
             "produtor": "Secretaria do Tesouro Nacional (STN)",
             "periodicidade": "Decendial (consolidado anual)",
-            "ultimaAtualizacao": "Janeiro/2025 (fechamento de 2024)",
+            "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",
             "url": "https://www.tesourotransparente.gov.br/temas/estados-e-municipios/transferencias-a-estados-e-municipios"
           },
-          "notaMetodologica": "FPM é composto por 22,5% da arrecadação do IR e IPI da União (CF, art. 159), repassado em três decêndios. Desde 2024 inclui mais 1% adicional pago em setembro (LC 198/2023). Distribuição por coeficientes populacionais. Em 2024, IR cresceu 8,8% real e IPI 38,4% real. A distribuição por região é estimada a partir dos coeficientes populacionais e populações estaduais; valores efetivos por município estão no Tesouro Transparente."
+          "notaMetodologica": "FPM é formado por 22,5% da arrecadação líquida de IR e IPI da União (CF, art. 159), repassados em três decêndios por mês, mais parcelas extras de 1% em julho (EC 84/2014), em setembro (EC 112/2021, que chegou a 0,5% em 2024 e a 1% em 2025) e em dezembro (EC 55/2007). A distribuição segue coeficientes populacionais. A série está em R$ bilhões correntes e soma os repasses do Tesouro aos municípios à retenção de 20% para o Fundeb, que não incide sobre as parcelas extras. Líquido do Fundeb, o FPM somou R$ 177,0 bilhões em 2024 e R$ 198,0 bilhões em 2025. Segundo o Multi Cidades, a arrecadação de IR cresceu 5,0% em termos reais em 2025 e a de IPI caiu 0,2%. A distribuição por região soma os repasses aos municípios de cada UF."
         }
       ]
     },
@@ -132,39 +136,43 @@
           "id": "iptu",
           "titulo": "Arrecadação de IPTU",
           "indicador": "Receita dos municípios com IPTU",
-          "valor": 73.4,
-          "unidade": "R$ bilhões em 2024",
-          "destaque": "Alta de 1,9% real frente a 2023",
-          "totalAbsoluto": "R$ 698 por imóvel em média — São Paulo concentra 22,3%",
+          "valor": 80.1,
+          "unidade": "R$ bilhões em 2025",
+          "destaque": "Alta de 3,9% real frente a 2024",
+          "totalAbsoluto": "R$ 762 por imóvel em média; São Paulo concentra 22,6%",
           "tendencia": "alta",
           "serie": [
             {
               "ano": 2018,
-              "valor": 48.5
+              "valor": 63.9
             },
             {
               "ano": 2019,
-              "valor": 52.1
+              "valor": 68.8
             },
             {
               "ano": 2020,
-              "valor": 55.4
+              "valor": 66.9
             },
             {
               "ano": 2021,
-              "valor": 58.7
+              "valor": 71.8
             },
             {
               "ano": 2022,
-              "valor": 64.9
+              "valor": 71.9
             },
             {
               "ano": 2023,
-              "valor": 71.2
+              "valor": 75.7
             },
             {
               "ano": 2024,
-              "valor": 73.4
+              "valor": 77.1
+            },
+            {
+              "ano": 2025,
+              "valor": 80.1
             }
           ],
           "rotuloSerieY": "R$ bilhões",
@@ -199,36 +207,36 @@
             {
               "id": "regiao",
               "dimensao": "Por região (crescimento)",
-              "titulo": "Crescimento real do IPTU por região (2023→2024, %)",
+              "titulo": "Crescimento real do IPTU por região (2024→2025, %)",
               "valores": [
                 {
                   "rotulo": "Norte",
-                  "valor": 13.6,
+                  "valor": 2.5,
                   "max": 15
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 4.0,
+                  "valor": 4.3,
                   "max": 15
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 1.9,
+                  "valor": 3.9,
                   "max": 15
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 1.5,
+                  "valor": 4.7,
                   "max": 15
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 1.4,
+                  "valor": 3.7,
                   "max": 15
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 0.9,
+                  "valor": 4.0,
                   "max": 15
                 }
               ]
@@ -236,49 +244,49 @@
             {
               "id": "valor-medio",
               "dimensao": "Valor médio por imóvel",
-              "titulo": "Arrecadação média por imóvel (2024, R$)",
+              "titulo": "Arrecadação média por imóvel (2025, R$)",
               "valores": [
                 {
                   "rotulo": "Acima de 500 mil hab",
-                  "valor": 1411,
-                  "max": 2900
+                  "valor": 1519,
+                  "max": 3200
                 },
                 {
                   "rotulo": "Capitais (média)",
-                  "valor": 1546,
-                  "max": 2900
+                  "valor": 1660,
+                  "max": 3200
                 },
                 {
                   "rotulo": "São Paulo (cidade)",
-                  "valor": 2887,
-                  "max": 2900
+                  "valor": 3187,
+                  "max": 3200
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 698,
-                  "max": 2900
+                  "valor": 762,
+                  "max": 3200
                 },
                 {
                   "rotulo": "Até 20 mil hab",
-                  "valor": 129,
-                  "max": 2900
+                  "valor": 147,
+                  "max": 3200
                 },
                 {
                   "rotulo": "Macapá",
-                  "valor": 91,
-                  "max": 2900
+                  "valor": 95,
+                  "max": 3200
                 }
               ]
             }
           ],
           "fonte": {
-            "nome": "Anuário Multi Cidades 2025 (FNP) — Finanças dos Municípios",
+            "nome": "Anuário Multi Cidades (FNP), 22ª edição: Finanças dos Municípios do Brasil",
             "produtor": "Frente Nacional de Prefeitas e Prefeitos (FNP) / FINBRA-Siconfi",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "Janeiro/2026 (dados de 2024)",
-            "url": "https://multicidadesonline.com.br/"
+            "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",
+            "url": "https://multicidadesonline.com.br/receita/iptu/"
           },
-          "notaMetodologica": "IPTU é tributo de competência exclusivamente municipal e principal receita própria que prefeituras controlam. Arrecadação altamente concentrada: cidades acima de 500 mil habitantes têm IPTU médio de R$ 1.412/imóvel; municípios pequenos, R$ 129. Reforma Tributária (EC 132/2023) preserva IPTU, mas extingue ISS (substituído pelo IBS). Cadastros desatualizados são a maior limitação à arrecadação efetiva."
+          "notaMetodologica": "IPTU é tributo de competência exclusivamente municipal e principal receita própria que prefeituras controlam. A série está em R$ bilhões a preços de 2025 (corrigidos pelo IPCA médio), como publicada pelo Multi Cidades; em valores da época, a arrecadação de 2024 foi de R$ 73,45 bilhões. Arrecadação altamente concentrada: em 2025, cidades acima de 500 mil habitantes arrecadaram em média R$ 1.519 por imóvel; municípios com até 20 mil habitantes, R$ 147. Reforma Tributária (EC 132/2023) preserva IPTU, mas extingue ISS (substituído pelo IBS). Cadastros desatualizados são a maior limitação à arrecadação efetiva."
         },
         {
           "id": "iss",
@@ -356,32 +364,32 @@
                 {
                   "rotulo": "São Paulo (cidade)",
                   "valor": 23.6,
-                  "max": 25
+                  "max": 50
                 },
                 {
                   "rotulo": "Rio de Janeiro",
                   "valor": 8.4,
-                  "max": 25
+                  "max": 50
                 },
                 {
                   "rotulo": "Belo Horizonte",
                   "valor": 3.7,
-                  "max": 25
+                  "max": 50
                 },
                 {
                   "rotulo": "Brasília",
                   "valor": 3.2,
-                  "max": 25
+                  "max": 50
                 },
                 {
                   "rotulo": "Outras capitais",
                   "valor": 12.5,
-                  "max": 25
+                  "max": 50
                 },
                 {
                   "rotulo": "Demais 5.500+ municípios",
                   "valor": 48.6,
-                  "max": 25
+                  "max": 50
                 }
               ]
             }
@@ -532,7 +540,7 @@
           "unidade": "% da RCL (média municipal 2024)",
           "destaque": "Limite LRF é 60% — muitos municípios próximos",
           "totalAbsoluto": "~1.200 municípios acima do limite prudencial (54%)",
-          "tendencia": "estavel",
+          "tendencia": "alta",
           "serie": [
             {
               "ano": 2018,
@@ -634,15 +642,19 @@
           "id": "receita-estadual-pc",
           "titulo": "Receita Estadual per Capita",
           "indicador": "Receita corrente do governo estadual por habitante",
-          "valor": 7997,
-          "unidade": "R$ por habitante (gov. estadual, 2024)",
-          "destaque": "Estados de baixa população lideram (RR, AP, AC); Nordeste com os menores",
+          "valor": 8637,
+          "unidade": "R$ por habitante (gov. estadual, 2025)",
+          "destaque": "Roraima, Mato Grosso e Amapá lideram; Nordeste tem os menores valores",
           "totalAbsoluto": "Receita corrente dos 26 estados + DF, coletada via API do SICONFI",
-          "tendencia": "estavel",
+          "tendencia": "alta",
           "serie": [
             {
               "ano": 2024,
               "valor": 7997
+            },
+            {
+              "ano": 2025,
+              "valor": 8637
             }
           ],
           "rotuloSerieY": "R$ por habitante",
@@ -651,147 +663,147 @@
             {
               "id": "uf",
               "dimensao": "Por UF",
-              "titulo": "Receita corrente estadual per capita por UF (R$/hab, 2024)",
+              "titulo": "Receita corrente estadual per capita por UF (R$/hab, 2025)",
               "valores": [
                 {
                   "rotulo": "Roraima",
-                  "valor": 16002,
-                  "max": 16500
+                  "valor": 17977,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Amapá",
-                  "valor": 15851,
-                  "max": 16500
+                  "valor": 17629,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Acre",
-                  "valor": 15483,
-                  "max": 16500
+                  "valor": 17199,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Mato Grosso",
-                  "valor": 15037,
-                  "max": 16500
+                  "valor": 17844,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Tocantins",
-                  "valor": 13718,
-                  "max": 16500
+                  "valor": 14869,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Distrito Federal",
-                  "valor": 13332,
-                  "max": 16500
+                  "valor": 14438,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Mato Grosso do Sul",
-                  "valor": 12865,
-                  "max": 16500
+                  "valor": 14092,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Rondônia",
-                  "valor": 12423,
-                  "max": 16500
+                  "valor": 13802,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Espírito Santo",
-                  "valor": 9518,
-                  "max": 16500
+                  "valor": 10193,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Goiás",
-                  "valor": 9164,
-                  "max": 16500
+                  "valor": 9724,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Amazonas",
-                  "valor": 9121,
-                  "max": 16500
+                  "valor": 9816,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Sergipe",
-                  "valor": 8975,
-                  "max": 16500
+                  "valor": 9710,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Santa Catarina",
-                  "valor": 8911,
-                  "max": 16500
+                  "valor": 9683,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Paraná",
-                  "valor": 8119,
-                  "max": 16500
+                  "valor": 8624,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Rio Grande do Sul",
-                  "valor": 8083,
-                  "max": 16500
+                  "valor": 8687,
+                  "max": 18000
                 },
                 {
                   "rotulo": "São Paulo",
-                  "valor": 8027,
-                  "max": 16500
+                  "valor": 8514,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Rio de Janeiro",
-                  "valor": 7732,
-                  "max": 16500
+                  "valor": 8339,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Alagoas",
-                  "valor": 7371,
-                  "max": 16500
+                  "valor": 8164,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Minas Gerais",
-                  "valor": 7269,
-                  "max": 16500
+                  "valor": 7832,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Rio Grande do Norte",
-                  "valor": 7162,
-                  "max": 16500
+                  "valor": 8069,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Piauí",
-                  "valor": 7042,
-                  "max": 16500
+                  "valor": 7666,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Pará",
-                  "valor": 6718,
-                  "max": 16500
+                  "valor": 7252,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Pernambuco",
-                  "valor": 6626,
-                  "max": 16500
+                  "valor": 7137,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Paraíba",
-                  "valor": 6410,
-                  "max": 16500
+                  "valor": 7122,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Bahia",
-                  "valor": 6076,
-                  "max": 16500
+                  "valor": 6475,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Maranhão",
-                  "valor": 5787,
-                  "max": 16500
+                  "valor": 6364,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Ceará",
-                  "valor": 5644,
-                  "max": 16500
+                  "valor": 6144,
+                  "max": 18000
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 7997,
-                  "max": 16500
+                  "valor": 8637,
+                  "max": 18000
                 }
               ]
             }
@@ -800,10 +812,10 @@
             "nome": "SICONFI / Tesouro Nacional — Declaração de Contas Anuais (DCA)",
             "produtor": "Secretaria do Tesouro Nacional (STN)",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "Exercício de 2024",
+            "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",
             "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/"
           },
-          "notaMetodologica": "Receita corrente do governo estadual (DCA, Anexo I-C, receitas brutas realizadas) dividida pela população do estado. Coleta automática via API do SICONFI/Tesouro Nacional."
+          "notaMetodologica": "Receita corrente do governo estadual (DCA, Anexo I-C, receitas brutas realizadas) dividida pela população do estado. A população vem do cadastro de entes do SICONFI e é a mesma em 2024 e 2025, de modo que a variação reflete só a receita. Coleta automática via API do SICONFI/Tesouro Nacional."
         }
       ]
     }

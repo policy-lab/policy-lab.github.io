@@ -970,20 +970,25 @@ Resumo prático:
 - Uma estatística vira mapa **automaticamente** quando tem um recorte `"id": "uf"` com
   **20+ estados**. Não há nada a "ligar" — basta ter o recorte.
 - Vários mapas são coletados **direto de API** (sem digitar à mão): desocupação e
-  renda (IBGE/SIDRA), coleta de lixo (Censo 2022/SIDRA) e receita estadual per
-  capita (SICONFI/Tesouro). Os endpoints exatos estão em `MAPAS-E-APIS.md`.
-- Outros (Atlas da Violência, IDEB, PRODES) dependem de conferência manual porque a
-  fonte só publica em PDF/portal — use os prompts de `PROMPTS-IA.md`.
+  renda (IBGE/SIDRA), coleta de lixo (Censo 2022, SIDRA tabela 6892), mortalidade
+  infantil (arquivo da Projeção IBGE) e receita estadual per capita (SICONFI/Tesouro).
+  Os endpoints exatos estão em `MAPAS-E-APIS.md`.
+- IDEB e PRODES vêm de arquivos para download (planilhas do INEP; notas técnicas e
+  arquivos de taxas do INPE/TerraBrasilis). Só o Atlas da Violência (homicídios e
+  homicídios de mulheres) depende de conferência manual em PDF; use os prompts de
+  `PROMPTS-IA.md`.
 
 ### Pendência aberta: mapa de habitação
 
-Habitação é a **única área sem mapa**, por falta de dado por UF em fonte aberta:
+Habitação é a **única área sem mapa**. O dado por UF **já existe**: na revisão de
+outubro de 2026 confirmou-se que o IBGE publicou no SIDRA, para o Censo 2022:
 
-- Déficit habitacional (FJP) → sem API (hub interativo).
-- Condição de ocupação (domicílios próprios) do **Censo 2022** → ainda **não publicada** no SIDRA.
-- Aglomerados subnormais no SIDRA → só **Censo 2010** (velho demais).
+- **Condição de ocupação** (próprio, alugado, cedido): tabela 9929, com o percentual
+  pronto (variável 1000381).
+- **Favelas e comunidades urbanas**: tabela 9890 (domicílios), a dividir pelo total
+  de domicílios da UF na tabela 9929.
 
-**O que fazer quando o IBGE publicar** a condição de ocupação ou os aglomerados
-subnormais do Censo 2022 no SIDRA: puxar a tabela por UF, calcular o `%` (numerador
-÷ total de domicílios da tabela 10345, classe "Total") e adicionar uma estatística nova
-com recorte `uf` — vira mapa sozinho. Passo a passo em `MAPAS-E-APIS.md`.
+O que falta é decidir qual estatística criar e adicioná-la com recorte `uf`; o mapa
+aparece sozinho. Consultas testadas e valores de conferência em `MAPAS-E-APIS.md`.
+Não use a tabela 10345 como denominador: ela cobre só setores selecionados de
+municípios com favelas.

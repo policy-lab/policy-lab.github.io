@@ -22,21 +22,21 @@
           "indicador": "Domicílios em situação de déficit habitacional",
           "valor": 5.77,
           "unidade": "milhões de domicílios (2024)",
-          "destaque": "Menor patamar da série histórica",
+          "destaque": "Menor proporção de domicílios da série histórica",
           "totalAbsoluto": "7,4% dos domicílios — segundo recuo anual seguido",
           "tendencia": "queda",
           "serie": [
             {
               "ano": 2016,
-              "valor": 6.18
+              "valor": 5.77
             },
             {
               "ano": 2017,
-              "valor": 6.21
+              "valor": 6.07
             },
             {
               "ano": 2018,
-              "valor": 5.78
+              "valor": 5.97
             },
             {
               "ano": 2019,
@@ -64,17 +64,17 @@
               "valores": [
                 {
                   "rotulo": "Ônus excessivo aluguel",
-                  "valor": 3.24,
+                  "valor": 3.59,
                   "max": 4
                 },
                 {
                   "rotulo": "Coabitação familiar",
-                  "valor": 1.69,
+                  "valor": 1.03,
                   "max": 4
                 },
                 {
                   "rotulo": "Habitação precária",
-                  "valor": 0.62,
+                  "valor": 1.16,
                   "max": 4
                 },
                 {
@@ -87,41 +87,41 @@
             {
               "id": "uf",
               "dimensao": "Por UF",
-              "titulo": "Estados com maior déficit (2022, em milhões — dado mais recente por UF)",
+              "titulo": "Déficit em estados selecionados (2024, em milhões)",
               "valores": [
                 {
                   "rotulo": "São Paulo",
-                  "valor": 1.2,
+                  "valor": 1.253,
                   "max": 1.3
                 },
                 {
                   "rotulo": "Minas Gerais",
-                  "valor": 0.556,
+                  "valor": 0.506,
                   "max": 1.3
                 },
                 {
                   "rotulo": "Bahia",
-                  "valor": 0.461,
+                  "valor": 0.318,
                   "max": 1.3
                 },
                 {
                   "rotulo": "Rio de Janeiro",
-                  "valor": 0.453,
+                  "valor": 0.514,
                   "max": 1.3
                 },
                 {
                   "rotulo": "Pernambuco",
-                  "valor": 0.298,
+                  "valor": 0.221,
                   "max": 1.3
                 },
                 {
                   "rotulo": "Roraima",
-                  "valor": 0.031,
+                  "valor": 0.028,
                   "max": 1.3
                 },
                 {
                   "rotulo": "Acre",
-                  "valor": 0.029,
+                  "valor": 0.023,
                   "max": 1.3
                 }
               ]
@@ -158,10 +158,10 @@
             "nome": "Fundação João Pinheiro — Déficit Habitacional (com Min. das Cidades)",
             "produtor": "Fundação João Pinheiro / Ministério das Cidades",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "Abril/2026 (dados de 2024)",
+            "ultimaAtualizacao": "Junho/2026 (dados de 2024)",
             "url": "https://fjp.mg.gov.br/deficit-habitacional-no-brasil/"
           },
-          "notaMetodologica": "O déficit habitacional considera quatro componentes: ônus excessivo com aluguel urbano (famílias até 3 SM que gastam >30% da renda com aluguel), coabitação familiar (mais de uma família por domicílio), habitação precária (improvisados e rústicos) e adensamento excessivo. Base: PNAD Contínua/IBGE e CadÚnico/MDS. O ônus excessivo é o componente dominante (56% do déficit em 2024). Valores anteriores a 2022 baseiam-se em estimativas a partir da PNAD anual."
+          "notaMetodologica": "A FJP soma três componentes: ônus excessivo com aluguel urbano (domicílios urbanos alugados, com renda de até 3 SM, que gastam mais de 30% da renda com aluguel), coabitação (cômodos e famílias conviventes em domicílio com mais de 2 moradores por dormitório) e habitação precária (domicílios improvisados e rústicos). Base: PNAD Contínua/IBGE e CadÚnico/MDS. O ônus excessivo é o componente dominante (62,1% do déficit em 2024). Os valores de 2016 a 2019 são as estimativas reponderadas da FJP; não há estimativa para 2020 e 2021."
         }
       ]
     },
@@ -328,39 +328,43 @@
           "id": "domicilios-proprios",
           "titulo": "Casa Própria",
           "indicador": "Domicílios próprios (já pagos ou em aquisição)",
-          "valor": 73.4,
+          "valor": 67.0,
           "unidade": "% dos domicílios particulares",
-          "destaque": "Padrão estável há uma década",
-          "totalAbsoluto": "Aluguel cresceu de 17,8% (2016) para 20,1% (2024)",
+          "destaque": "Queda de 6 pontos percentuais desde 2016",
+          "totalAbsoluto": "Aluguel cresceu de 18,4% (2016) para 23,8% (2025)",
           "tendencia": "estavel",
           "serie": [
             {
               "ano": 2016,
-              "valor": 74.0
+              "valor": 73.0
             },
             {
               "ano": 2017,
-              "valor": 73.6
+              "valor": 72.4
             },
             {
               "ano": 2018,
-              "valor": 73.3
+              "valor": 71.4
             },
             {
               "ano": 2019,
-              "valor": 73.1
+              "valor": 71.4
             },
             {
               "ano": 2022,
-              "valor": 73.2
+              "valor": 70.0
             },
             {
               "ano": 2023,
-              "valor": 73.3
+              "valor": 68.5
             },
             {
               "ano": 2024,
-              "valor": 73.4
+              "valor": 67.6
+            },
+            {
+              "ano": 2025,
+              "valor": 67.0
             }
           ],
           "rotuloSerieY": "% domicílios próprios",
@@ -368,21 +372,21 @@
             {
               "id": "situacao",
               "dimensao": "Urbano × Rural",
-              "titulo": "Domicílios próprios por situação (2024, %)",
+              "titulo": "Domicílios próprios por situação (2025, %)",
               "valores": [
                 {
                   "rotulo": "Rural",
-                  "valor": 85.4,
+                  "valor": 80.2,
                   "max": 90
                 },
                 {
                   "rotulo": "Urbano",
-                  "valor": 71.6,
+                  "valor": 65.3,
                   "max": 90
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 73.4,
+                  "valor": 67.0,
                   "max": 90
                 }
               ]
@@ -390,36 +394,36 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Domicílios próprios por região (2024, %)",
+              "titulo": "Domicílios próprios por região (2025, %)",
               "valores": [
                 {
                   "rotulo": "Sul",
-                  "valor": 76.2,
+                  "valor": 68.6,
                   "max": 80
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 75.8,
+                  "valor": 71.0,
                   "max": 80
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 73.5,
+                  "valor": 72.3,
                   "max": 80
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 73.4,
+                  "valor": 67.0,
                   "max": 80
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 71.9,
+                  "valor": 64.4,
                   "max": 80
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 70.8,
+                  "valor": 60.0,
                   "max": 80
                 }
               ]
@@ -427,26 +431,26 @@
             {
               "id": "padrao",
               "dimensao": "Por tipo de ocupação",
-              "titulo": "Forma de ocupação dos domicílios (2024, %)",
+              "titulo": "Forma de ocupação dos domicílios (2025, %)",
               "valores": [
                 {
                   "rotulo": "Próprio (já pago/em aquisição)",
-                  "valor": 73.4,
+                  "valor": 67.0,
                   "max": 80
                 },
                 {
                   "rotulo": "Alugado",
-                  "valor": 20.1,
+                  "valor": 23.8,
                   "max": 80
                 },
                 {
                   "rotulo": "Cedido",
-                  "valor": 6.3,
+                  "valor": 8.9,
                   "max": 80
                 },
                 {
                   "rotulo": "Outras formas",
-                  "valor": 0.2,
+                  "valor": 0.3,
                   "max": 80
                 }
               ]
@@ -456,48 +460,52 @@
             "nome": "PNAD Contínua — Características dos Domicílios (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "Setembro/2025 (dados de 2024)",
-            "url": "https://www.ibge.gov.br/estatisticas/sociais/habitacao.html"
+            "ultimaAtualizacao": "Abril/2026 (dados de 2025)",
+            "url": "https://sidra.ibge.gov.br/tabela/6821"
           },
-          "notaMetodologica": "Inclui domicílios próprios já quitados e em processo de aquisição (financiamento ativo). A estabilidade da taxa convive com aumento do aluguel (de 17,8% para 20,1% em 8 anos) e queda da cessão informal. Limitação: não captura qualidade da moradia nem segurança da posse. Valores aproximados a partir das tabulações da PNAD; séries oficiais detalhadas estão no SIDRA/IBGE."
+          "notaMetodologica": "Soma dos domicílios próprios já pagos e dos próprios ainda pagando (tabela 6821 do SIDRA, PNAD Contínua anual, 1ª visita), em % dos domicílios particulares permanentes. A casa própria caiu de 73,0% (2016) para 67,0% (2025), enquanto o aluguel subiu de 18,4% para 23,8%. A série não tem 2020 e 2021. O recorte urbano/rural de 2025 foi calculado com os microdados da PNAD Contínua (1ª visita de 2025), que reproduzem os totais publicados pelo IBGE. Limitação: não captura qualidade da moradia nem segurança da posse."
         },
         {
           "id": "aluguel",
           "titulo": "Famílias em aluguel",
           "indicador": "Domicílios com regime de aluguel",
-          "valor": 20.1,
-          "unidade": "% dos domicílios (2024)",
-          "destaque": "Crescimento de 2,3 pp em 8 anos",
+          "valor": 23.8,
+          "unidade": "% dos domicílios (2025)",
+          "destaque": "Alta de 5,4 pontos percentuais desde 2016",
           "totalAbsoluto": "Avança especialmente em capitais e jovens",
           "tendencia": "alta",
           "serie": [
             {
               "ano": 2016,
-              "valor": 17.8
+              "valor": 18.4
             },
             {
               "ano": 2017,
-              "valor": 18.0
+              "valor": 18.4
             },
             {
               "ano": 2018,
-              "valor": 18.3
+              "valor": 19.0
             },
             {
               "ano": 2019,
-              "valor": 18.5
+              "valor": 19.2
             },
             {
               "ano": 2022,
-              "valor": 19.3
+              "valor": 21.0
             },
             {
               "ano": 2023,
-              "valor": 19.7
+              "valor": 22.3
             },
             {
               "ano": 2024,
-              "valor": 20.1
+              "valor": 23.0
+            },
+            {
+              "ano": 2025,
+              "valor": 23.8
             }
           ],
           "rotuloSerieY": "% dos domicílios",
@@ -505,37 +513,37 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Domicílios alugados por região (2024, %)",
+              "titulo": "Domicílios alugados por região (2025, %)",
               "valores": [
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 23.4,
-                  "max": 25
+                  "valor": 29.5,
+                  "max": 30
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 22.8,
-                  "max": 25
+                  "valor": 26.3,
+                  "max": 30
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 19.6,
-                  "max": 25
+                  "valor": 23.6,
+                  "max": 30
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 20.1,
-                  "max": 25
+                  "valor": 23.8,
+                  "max": 30
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 17.2,
-                  "max": 25
+                  "valor": 18.1,
+                  "max": 30
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 16.3,
-                  "max": 25
+                  "valor": 19.7,
+                  "max": 30
                 }
               ]
             }
@@ -544,10 +552,10 @@
             "nome": "PNAD Contínua — Características dos Domicílios (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "Setembro/2025 (dados de 2024)",
-            "url": "https://www.ibge.gov.br/estatisticas/sociais/habitacao.html"
+            "ultimaAtualizacao": "Abril/2026 (dados de 2025)",
+            "url": "https://sidra.ibge.gov.br/tabela/6821"
           },
-          "notaMetodologica": "Avanço do aluguel reflete três tendências: (1) queda do poder de compra para aquisição em metropoles, (2) preferência por mobilidade de jovens trabalhadores, (3) financeirização do mercado imobiliário (multipropriedade, BTS, Airbnb). É um dos componentes do déficit habitacional (ônus excessivo). Valores regionais aproximados."
+          "notaMetodologica": "Avanço do aluguel reflete três tendências: (1) queda do poder de compra para aquisição em metrópoles, (2) preferência por mobilidade de jovens trabalhadores, (3) financeirização do mercado imobiliário (multipropriedade, BTS, Airbnb). É um dos componentes do déficit habitacional (ônus excessivo). Valores da tabela 6821 do SIDRA (PNAD Contínua anual, 1ª visita); a série não tem 2020 e 2021."
         }
       ]
     }

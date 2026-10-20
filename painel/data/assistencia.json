@@ -20,15 +20,15 @@
           "id": "bolsa-familia",
           "titulo": "Bolsa Família",
           "indicador": "Famílias beneficiárias",
-          "valor": 18.9,
-          "unidade": "milhões de famílias",
+          "valor": 19.3,
+          "unidade": "milhões de famílias (out/2026)",
           "destaque": "Cobertura nos 5.571 municípios brasileiros",
-          "totalAbsoluto": "Valor médio: R$ 678 — Investimento: R$ 12,8 bi/mês",
-          "tendencia": "estavel",
+          "totalAbsoluto": "Valor médio: R$ 783; investimento de R$ 15,1 bi no mês (out/2026)",
+          "tendencia": "alta",
           "serie": [
             {
               "ano": 2018,
-              "valor": 13.9
+              "valor": 14.1
             },
             {
               "ano": 2019,
@@ -36,15 +36,15 @@
             },
             {
               "ano": 2020,
-              "valor": 14.6
+              "valor": 14.3
             },
             {
               "ano": 2021,
-              "valor": 14.7
+              "valor": 14.5
             },
             {
               "ano": 2022,
-              "valor": 21.5
+              "valor": 21.6
             },
             {
               "ano": 2023,
@@ -60,7 +60,7 @@
             },
             {
               "ano": 2026,
-              "valor": 18.9
+              "valor": 19.3
             }
           ],
           "rotuloSerieY": "Milhões de famílias",
@@ -68,31 +68,31 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Famílias beneficiárias por região (dez/2025, em milhões)",
+              "titulo": "Famílias beneficiárias por região (out/2026, em milhões)",
               "valores": [
                 {
                   "rotulo": "Nordeste",
-                  "valor": 8.7,
+                  "valor": 8.96,
                   "max": 10
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 5.26,
+                  "valor": 5.48,
                   "max": 10
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 2.43,
+                  "valor": 2.5,
                   "max": 10
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 1.28,
+                  "valor": 1.33,
                   "max": 10
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 0.99,
+                  "valor": 1.03,
                   "max": 10
                 }
               ]
@@ -100,46 +100,46 @@
             {
               "id": "uf",
               "dimensao": "Por UF",
-              "titulo": "Estados com maior número de famílias (dez/2025, em milhões)",
+              "titulo": "Estados com maior número de famílias (out/2026, em milhões)",
               "valores": [
                 {
                   "rotulo": "Bahia",
-                  "valor": 2.3,
+                  "valor": 2.39,
                   "max": 2.5
                 },
                 {
                   "rotulo": "São Paulo",
-                  "valor": 2.18,
+                  "valor": 2.33,
                   "max": 2.5
                 },
                 {
                   "rotulo": "Pernambuco",
-                  "valor": 1.46,
+                  "valor": 1.5,
                   "max": 2.5
                 },
                 {
                   "rotulo": "Minas Gerais",
-                  "valor": 1.41,
+                  "valor": 1.46,
                   "max": 2.5
                 },
                 {
                   "rotulo": "Rio de Janeiro",
-                  "valor": 1.39,
+                  "valor": 1.42,
                   "max": 2.5
                 },
                 {
                   "rotulo": "Ceará",
-                  "valor": 1.33,
+                  "valor": 1.38,
                   "max": 2.5
                 },
                 {
                   "rotulo": "Pará",
-                  "valor": 1.24,
+                  "valor": 1.28,
                   "max": 2.5
                 },
                 {
                   "rotulo": "Maranhão",
-                  "valor": 1.14,
+                  "valor": 1.17,
                   "max": 2.5
                 }
               ]
@@ -191,32 +191,32 @@
             "nome": "MDS — Folha de Pagamento mensal do Bolsa Família",
             "produtor": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
             "periodicidade": "Mensal",
-            "ultimaAtualizacao": "Abril/2026",
-            "url": "https://aplicacoes.cidadania.gov.br/vis/data3/data-explorer.php"
+            "ultimaAtualizacao": "Outubro/2026 (dados de outubro de 2026)",
+            "url": "https://aplicacoes.mds.gov.br/sagi/servicos/misocial?q=*:*&fq=anomes_s:202610&rows=0&wt=json&stats=true&stats.field=qtd_familias_beneficiarias_bolsa_familia_i&stats.field=valor_repassado_bolsa_familia_f&stats.facet=regiao&stats.facet=sigla_uf"
           },
-          "notaMetodologica": "Folha mensal de pagamento. Mulheres respondem por 84% da titularidade. Série até 2022 inclui Auxílio Brasil — valores podem não ser estritamente comparáveis por mudanças no desenho."
+          "notaMetodologica": "Folha mensal de pagamento. Mulheres respondem por 83% da titularidade (out/2026). Cada ponto anual da série é a folha de dezembro; o ponto de 2026 é outubro, último mês publicado. Em 2021 e 2022 o dado de dezembro é do Auxílio Brasil, que substituiu o programa entre nov/2021 e fev/2023, e os valores podem não ser estritamente comparáveis por mudanças no desenho. Desde a folha de out/2026 os benefícios têm reajuste de 15,04% (Decreto nº 13.120/2026), o que explica a alta do valor médio. O recorte de valor médio por UF segue em dez/2025, antes do reajuste."
         },
         {
           "id": "bpc",
           "titulo": "Benefício de Prestação Continuada (BPC)",
           "indicador": "Beneficiários — idosos e pessoas com deficiência",
-          "valor": 6.0,
-          "unidade": "milhões de beneficiários (2025)",
-          "destaque": "Crescimento de 30% desde 2022",
-          "totalAbsoluto": "Gasto: ~R$ 113 bi/ano — 1 salário mínimo por benefício",
+          "valor": 6.5,
+          "unidade": "milhões de beneficiários (ago/2026)",
+          "destaque": "Crescimento de 27% desde dez/2022",
+          "totalAbsoluto": "Gasto: R$ 122 bi nos 12 meses até ago/2026; 1 salário mínimo por benefício",
           "tendencia": "alta",
           "serie": [
             {
               "ano": 2018,
-              "valor": 4.6
-            },
-            {
-              "ano": 2019,
               "valor": 4.7
             },
             {
+              "ano": 2019,
+              "valor": 4.6
+            },
+            {
               "ano": 2020,
-              "valor": 4.8
+              "valor": 4.7
             },
             {
               "ano": 2021,
@@ -224,19 +224,23 @@
             },
             {
               "ano": 2022,
-              "valor": 4.6
+              "valor": 5.1
             },
             {
               "ano": 2023,
-              "valor": 5.4
-            },
-            {
-              "ano": 2024,
               "valor": 5.7
             },
             {
+              "ano": 2024,
+              "valor": 6.3
+            },
+            {
               "ano": 2025,
-              "valor": 6.0
+              "valor": 6.4
+            },
+            {
+              "ano": 2026,
+              "valor": 6.5
             }
           ],
           "rotuloSerieY": "Milhões de beneficiários",
@@ -244,16 +248,16 @@
             {
               "id": "tipo",
               "dimensao": "Por tipo",
-              "titulo": "Composição do BPC (2025, em milhões)",
+              "titulo": "Composição do BPC (ago/2026, em milhões)",
               "valores": [
                 {
                   "rotulo": "Pessoas com deficiência",
-                  "valor": 3.4,
+                  "valor": 3.78,
                   "max": 4
                 },
                 {
                   "rotulo": "Idosos (65+)",
-                  "valor": 2.6,
+                  "valor": 2.74,
                   "max": 4
                 }
               ]
@@ -261,31 +265,31 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Beneficiários BPC por região (2025, em milhões — estimativa)",
+              "titulo": "Beneficiários BPC por região (ago/2026, em milhões)",
               "valores": [
                 {
                   "rotulo": "Nordeste",
-                  "valor": 2.34,
+                  "valor": 2.35,
                   "max": 2.5
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 2.16,
+                  "valor": 2.28,
                   "max": 2.5
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 0.66,
+                  "valor": 0.7,
                   "max": 2.5
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 0.54,
+                  "valor": 0.65,
                   "max": 2.5
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 0.3,
+                  "valor": 0.54,
                   "max": 2.5
                 }
               ]
@@ -295,10 +299,10 @@
             "nome": "INSS / MDS — Benefício de Prestação Continuada (LOAS)",
             "produtor": "Instituto Nacional do Seguro Social e Ministério do Desenvolvimento Social",
             "periodicidade": "Mensal",
-            "ultimaAtualizacao": "2025 (acompanhamento corrente)",
-            "url": "https://portaldatransparencia.gov.br/beneficios/bpc"
+            "ultimaAtualizacao": "Outubro/2026 (dados de agosto de 2026)",
+            "url": "https://aplicacoes.mds.gov.br/sagi/servicos/misocial?q=*:*&fq=anomes_s:202608&rows=0&wt=json&stats=true&stats.field=bpc_ben_i&stats.field=bpc_idoso_ben_i&stats.field=bpc_pcd_ben_i&stats.facet=regiao"
           },
-          "notaMetodologica": "BPC paga um salário mínimo a idosos (65+) e pessoas com deficiência de baixa renda (renda familiar per capita < 1/4 do salário mínimo). Não exige contribuição prévia ao INSS. Concessões judiciais explicam parte do crescimento recente. Microdados mensais com cobertura municipal disponíveis no Portal da Transparência."
+          "notaMetodologica": "BPC paga um salário mínimo a idosos (65+) e pessoas com deficiência de baixa renda (renda familiar per capita < 1/4 do salário mínimo). Não exige contribuição prévia ao INSS. Concessões judiciais explicam parte do crescimento recente. Microdados mensais com cobertura municipal disponíveis no Portal da Transparência. Série: beneficiários em dezembro de cada ano (SAGI/MDS, VIS DATA 3 e API MI Social); o ponto de 2026 é agosto, último mês publicado. Os valores de 2018 a 2025 foram corrigidos em out/2026 para a série oficial do MDS."
         }
       ]
     },
@@ -311,43 +315,47 @@
           "id": "cadunico",
           "titulo": "Cadastro Único (CadÚnico)",
           "indicador": "Famílias cadastradas no CadÚnico",
-          "valor": 41.7,
-          "unidade": "milhões de famílias",
+          "valor": 43.6,
+          "unidade": "milhões de famílias (out/2026)",
           "destaque": "Base para 30+ programas sociais",
-          "totalAbsoluto": "~93 milhões de pessoas — quase metade da população",
+          "totalAbsoluto": "98,3 milhões de pessoas (out/2026), 46% da população",
           "tendencia": "alta",
           "serie": [
             {
               "ano": 2018,
-              "valor": 28.1
+              "valor": 26.9
             },
             {
               "ano": 2019,
-              "valor": 28.6
+              "valor": 28.9
             },
             {
               "ano": 2020,
-              "valor": 30.9
+              "valor": 28.9
             },
             {
               "ano": 2021,
-              "valor": 32.1
+              "valor": 32.6
             },
             {
               "ano": 2022,
-              "valor": 38.4
+              "valor": 41.3
             },
             {
               "ano": 2023,
-              "valor": 40.5
+              "valor": 43.9
             },
             {
               "ano": 2024,
-              "valor": 41.2
+              "valor": 41.5
             },
             {
               "ano": 2025,
-              "valor": 41.7
+              "valor": 41.8
+            },
+            {
+              "ano": 2026,
+              "valor": 43.6
             }
           ],
           "rotuloSerieY": "Milhões de famílias",
@@ -355,31 +363,31 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Famílias no CadÚnico por região (2025, em milhões)",
+              "titulo": "Famílias no CadÚnico por região (out/2026, em milhões)",
               "valores": [
                 {
                   "rotulo": "Nordeste",
-                  "valor": 16.7,
+                  "valor": 16.4,
                   "max": 18
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 13.5,
+                  "valor": 14.6,
                   "max": 18
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 5.2,
+                  "valor": 4.9,
                   "max": 18
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 3.7,
+                  "valor": 4.4,
                   "max": 18
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 2.6,
+                  "valor": 3.3,
                   "max": 18
                 }
               ]
@@ -387,41 +395,41 @@
             {
               "id": "penetracao",
               "dimensao": "% da população",
-              "titulo": "Cobertura do CadÚnico — penetração por UF (% da pop. estadual)",
+              "titulo": "Cobertura do CadÚnico: penetração por UF (% da pop. estadual, out/2026)",
               "valores": [
                 {
                   "rotulo": "Maranhão",
-                  "valor": 71.2,
+                  "valor": 66.5,
                   "max": 75
                 },
                 {
                   "rotulo": "Piauí",
-                  "valor": 68.4,
+                  "valor": 66.2,
                   "max": 75
                 },
                 {
                   "rotulo": "Alagoas",
-                  "valor": 66.1,
+                  "valor": 64.2,
                   "max": 75
                 },
                 {
                   "rotulo": "Bahia",
-                  "valor": 60.5,
+                  "valor": 64.0,
                   "max": 75
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 45.7,
+                  "valor": 45.9,
                   "max": 75
                 },
                 {
                   "rotulo": "São Paulo",
-                  "valor": 28.3,
+                  "valor": 31.5,
                   "max": 75
                 },
                 {
                   "rotulo": "Santa Catarina",
-                  "valor": 24.8,
+                  "valor": 22.6,
                   "max": 75
                 }
               ]
@@ -431,10 +439,10 @@
             "nome": "Cadastro Único — MDS",
             "produtor": "Ministério do Desenvolvimento Social (Senarc)",
             "periodicidade": "Mensal",
-            "ultimaAtualizacao": "2025 (acompanhamento corrente)",
-            "url": "https://aplicacoes.mds.gov.br/sagi/vis/data3/data-explorer.php"
+            "ultimaAtualizacao": "Outubro/2026 (dados de outubro de 2026)",
+            "url": "https://aplicacoes.mds.gov.br/sagi/servicos/misocial?q=*:*&fq=anomes_s:202610&rows=0&wt=json&stats=true&stats.field=cadun_qtd_familias_cadastradas_i&stats.field=cadun_qtd_pessoas_cadastradas_i&stats.facet=regiao&stats.facet=sigla_uf"
           },
-          "notaMetodologica": "CadÚnico identifica famílias de baixa renda (até 1/2 salário mínimo per capita) e é a porta de entrada para Bolsa Família, BPC, Tarifa Social de Energia, Pé-de-Meia e dezenas de outros programas. Limitação: cadastros desatualizados podem inflar números (revisões periódicas reduzem totais). Valores da série são aproximados a partir de séries do MDS — para análise rigorosa, consultar SAGI/MDS."
+          "notaMetodologica": "CadÚnico identifica famílias de baixa renda (até 1/2 salário mínimo per capita) e é a porta de entrada para Bolsa Família, BPC, Tarifa Social de Energia, Pé-de-Meia e dezenas de outros programas. O total inclui famílias com renda acima desse limite (15,7 milhões em out/2026). Limitação: cadastros desatualizados podem inflar números (revisões periódicas reduzem totais). Série: famílias cadastradas em dezembro de cada ano (SAGI/MDS, VIS DATA 3 e API MI Social); o ponto de 2026 é outubro, último mês publicado. Os valores de 2018 a 2025 foram corrigidos em out/2026 para a série oficial do MDS. Penetração por UF: pessoas cadastradas em out/2026 divididas pela população estimada pelo IBGE para 2026."
         }
       ]
     },

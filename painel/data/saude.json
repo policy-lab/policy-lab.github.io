@@ -273,13 +273,13 @@
             "ultimaAtualizacao": "Projeção 2024, 3ª edição (referência 2023)",
             "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9109-projecao-da-populacao.html"
           },
-          "notaMetodologica": "Razão entre óbitos de menores de 1 ano e nascidos vivos, vezes mil. Reflete saneamento, pré-natal, atenção ao parto e cobertura básica. No Norte, taxa para meninos chega a 16/mil e para meninas 13,6/mil. Recortes por UF e região 2023 — valores aproximados a partir de relatórios do IBGE e Ministério da Saúde; para análises precisas, consultar projeções oficiais e o SIM/Sinasc."
+          "notaMetodologica": "Razão entre óbitos de menores de 1 ano e nascidos vivos, vezes mil. Reflete saneamento, pré-natal, atenção ao parto e cobertura básica. No Norte, a taxa de 2023 chega a 17,4 por mil para meninos e 13,9 por mil para meninas. Série e recortes por região, UF e sexo vêm da Projeção da População do IBGE (revisão 2024, colunas TMI_T, TMI_H e TMI_M). Essa revisão usou óbitos do SIM até 2023 e trata 2024 em diante como projeção; por isso o painel fica em 2023 até o IBGE publicar estimativa nova."
         },
         {
           "id": "mortalidade-materna",
           "titulo": "Mortalidade Materna",
           "indicador": "Óbitos maternos por 100 mil nascidos vivos (RMM)",
-          "valor": 50.7,
+          "valor": 55.3,
           "unidade": "por 100 mil nascidos vivos",
           "destaque": "Queda após pico pandêmico",
           "totalAbsoluto": "Meta ODS 2030: 30 por 100 mil",
@@ -287,11 +287,11 @@
           "serie": [
             {
               "ano": 2014,
-              "valor": 60.0
+              "valor": 63.8
             },
             {
               "ano": 2015,
-              "valor": 60.6
+              "valor": 62.0
             },
             {
               "ano": 2016,
@@ -315,15 +315,15 @@
             },
             {
               "ano": 2021,
-              "valor": 107.5
+              "valor": 117.4
             },
             {
               "ano": 2022,
-              "valor": 55.3
+              "valor": 57.7
             },
             {
               "ano": 2023,
-              "valor": 50.7
+              "valor": 55.3
             }
           ],
           "rotuloSerieY": "Por 100 mil nasc. vivos",
@@ -335,32 +335,32 @@
               "valores": [
                 {
                   "rotulo": "Norte",
-                  "valor": 76.4,
+                  "valor": 80.2,
                   "max": 85
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 55.8,
+                  "valor": 63.7,
                   "max": 85
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 50.7,
+                  "valor": 55.3,
                   "max": 85
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 48.2,
+                  "valor": 48.0,
                   "max": 85
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 45.1,
+                  "valor": 56.2,
                   "max": 85
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 38.5,
+                  "valor": 38.0,
                   "max": 85
                 }
               ]
@@ -372,17 +372,17 @@
               "valores": [
                 {
                   "rotulo": "Pretas e pardas",
-                  "valor": 58.4,
+                  "valor": 65.5,
                   "max": 70
                 },
                 {
                   "rotulo": "Brancas",
-                  "valor": 35.2,
+                  "valor": 30.1,
                   "max": 70
                 },
                 {
                   "rotulo": "Outras/sem informação",
-                  "valor": 6.4,
+                  "valor": 4.4,
                   "max": 70
                 }
               ]
@@ -390,29 +390,29 @@
             {
               "id": "causa",
               "dimensao": "Por causa",
-              "titulo": "Distribuição das causas obstétricas (% dos óbitos)",
+              "titulo": "Distribuição das causas obstétricas (% dos óbitos com causa direta ou indireta, 2023)",
               "valores": [
                 {
                   "rotulo": "Causas diretas",
-                  "valor": 63.5,
+                  "valor": 69.6,
                   "max": 70
                 },
                 {
                   "rotulo": "Causas indiretas",
-                  "valor": 36.5,
+                  "valor": 30.4,
                   "max": 70
                 }
               ]
             }
           ],
           "fonte": {
-            "nome": "DATASUS — SIM e Sinasc (Ministério da Saúde)",
-            "produtor": "Ministério da Saúde / Observatório Obstétrico Brasileiro",
+            "nome": "Ministério da Saúde, RMM corrigida pelo método Vigilância (SIM e Sinasc), publicada no SIDRA/IBGE, tabela 6694 (indicador ODS 3.1.1)",
+            "produtor": "Ministério da Saúde (SVSA/CGIAE)",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "2024 (dados consolidados até 2023)",
-            "url": "http://plataforma.saude.gov.br/mortalidade/materna/"
+            "ultimaAtualizacao": "Julho/2025 (dados de 2023)",
+            "url": "https://sidra.ibge.gov.br/tabela/6694"
           },
-          "notaMetodologica": "Razão de Mortalidade Materna: óbitos de mulheres durante gestação, parto ou até 42 dias após o término, por 100 mil nascidos vivos. Pico em 2021 reflete impacto da Covid-19. Subnotificação é limitação clássica; valores podem ser revisados. Hipertensão, hemorragia e infecção são as principais causas."
+          "notaMetodologica": "Razão de Mortalidade Materna: óbitos de mulheres durante gestação, parto ou até 42 dias após o término, por 100 mil nascidos vivos. O Ministério da Saúde corrige a razão direta com dados da investigação de óbitos de mulheres em idade fértil (método Vigilância). Pico em 2021 reflete impacto da Covid-19. Subnotificação é limitação clássica; valores podem ser revisados. Série e recorte por região conferidos em outubro/2026 na tabela 6694 do SIDRA; recortes por raça/cor e por causa contam óbitos maternos de 2023 no SIM (TabNet). Hipertensão, hemorragia e infecção são as principais causas."
         }
       ]
     },
@@ -425,11 +425,11 @@
           "id": "vacinacao",
           "titulo": "Cobertura Vacinal",
           "indicador": "Cobertura da Tríplice Viral (1ª dose) — sarampo, caxumba e rubéola",
-          "valor": 96.3,
-          "unidade": "% das crianças menores de 1 ano",
-          "destaque": "Recuperação após anos de queda",
-          "totalAbsoluto": "Meta PNI: 95% — Pólio (VIP): cobertura recuperada",
-          "tendencia": "alta",
+          "valor": 93.1,
+          "unidade": "% das crianças menores de 1 ano (2025, preliminar)",
+          "destaque": "Recuou em 2025 e voltou a ficar abaixo da meta de 95%",
+          "totalAbsoluto": "Meta PNI: 95%. Pólio (VIP) em 2025: 88,8%",
+          "tendencia": "queda",
           "serie": [
             {
               "ano": 2015,
@@ -445,7 +445,7 @@
             },
             {
               "ano": 2018,
-              "valor": 93.1
+              "valor": 92.6
             },
             {
               "ano": 2019,
@@ -453,11 +453,11 @@
             },
             {
               "ano": 2020,
-              "valor": 79.1
+              "valor": 80.9
             },
             {
               "ano": 2021,
-              "valor": 71.5
+              "valor": 74.9
             },
             {
               "ano": 2022,
@@ -465,11 +465,15 @@
             },
             {
               "ano": 2023,
-              "valor": 95.4
+              "valor": 89.9
             },
             {
               "ano": 2024,
-              "valor": 96.3
+              "valor": 95.9
+            },
+            {
+              "ano": 2025,
+              "valor": 93.1
             }
           ],
           "rotuloSerieY": "% cobertura",
@@ -477,99 +481,99 @@
             {
               "id": "vacina",
               "dimensao": "Por vacina",
-              "titulo": "Cobertura vacinal infantil 2024 — principais imunobiológicos (%)",
+              "titulo": "Cobertura vacinal infantil 2025, principais imunobiológicos (%)",
               "valores": [
                 {
                   "rotulo": "BCG (tuberculose)",
-                  "valor": 99.4,
-                  "max": 100
+                  "valor": 100.8,
+                  "max": 110
                 },
                 {
                   "rotulo": "Tríplice viral 1ª dose",
-                  "valor": 96.3,
-                  "max": 100
+                  "valor": 93.1,
+                  "max": 110
                 },
                 {
                   "rotulo": "Poliomielite (VIP)",
-                  "valor": 92.5,
-                  "max": 100
+                  "valor": 88.8,
+                  "max": 110
                 },
                 {
                   "rotulo": "Penta (DTP-Hib-HB)",
-                  "valor": 89.8,
-                  "max": 100
+                  "valor": 89.2,
+                  "max": 110
                 },
                 {
                   "rotulo": "Tríplice viral 2ª dose",
-                  "valor": 80.1,
-                  "max": 100
+                  "valor": 78.6,
+                  "max": 110
                 }
               ]
             },
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Cobertura da Tríplice Viral por região (2024, %)",
+              "titulo": "Cobertura da Tríplice Viral por região (2025, %)",
               "valores": [
                 {
                   "rotulo": "Sul",
-                  "valor": 98.4,
-                  "max": 100
-                },
-                {
-                  "rotulo": "Sudeste",
-                  "valor": 97.7,
-                  "max": 100
-                },
-                {
-                  "rotulo": "Centro-Oeste",
-                  "valor": 96.5,
-                  "max": 100
-                },
-                {
-                  "rotulo": "Brasil (média)",
                   "valor": 96.3,
                   "max": 100
                 },
                 {
+                  "rotulo": "Sudeste",
+                  "valor": 94.3,
+                  "max": 100
+                },
+                {
+                  "rotulo": "Centro-Oeste",
+                  "valor": 92.8,
+                  "max": 100
+                },
+                {
+                  "rotulo": "Brasil (média)",
+                  "valor": 93.1,
+                  "max": 100
+                },
+                {
                   "rotulo": "Nordeste",
-                  "valor": 95.0,
+                  "valor": 92.2,
                   "max": 100
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 91.2,
+                  "valor": 87.8,
                   "max": 100
                 }
               ]
             }
           ],
           "fonte": {
-            "nome": "SI-PNI — Sistema de Informações do Programa Nacional de Imunizações",
+            "nome": "Ministério da Saúde, painel Cobertura Vacinal Infantil (SI-PNI/RNDS, por residência)",
             "produtor": "Ministério da Saúde — DATASUS",
             "periodicidade": "Mensal/anual",
-            "ultimaAtualizacao": "Janeiro/2025 (dados de 2024)",
-            "url": "http://sipni.datasus.gov.br/"
+            "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",
+            "url": "https://infoms.saude.gov.br/extensions/SEIDIGI_DEMAS_VACINACAO_CALENDARIO_NACIONAL_COBERTURA_RESIDENCIA/index.html"
           },
-          "notaMetodologica": "Cobertura é a razão entre doses aplicadas e população-alvo. Quedas pós-2017 e durante a pandemia foram parcialmente revertidas a partir de 2023. Em novembro/2024, o Brasil substituiu a VOP (gotinha) pela VIP injetável em todas as doses, alinhando-se às recomendações da OMS."
+          "notaMetodologica": "Cobertura é a razão entre doses aplicadas e população-alvo (nascidos vivos do Sinasc). Quedas pós-2017 e durante a pandemia foram parcialmente revertidas a partir de 2023. Em novembro/2024, o Brasil substituiu a VOP (gotinha) pela VIP injetável em todas as doses, alinhando-se às recomendações da OMS. Série conferida em outubro/2026 no painel do Ministério da Saúde (cobertura por residência); o painel trata os dados como preliminares até o fechamento de cada ano, e 2025 usa o mesmo denominador de 2024."
         },
         {
           "id": "bcg",
           "titulo": "Cobertura BCG",
           "indicador": "Cobertura vacinal de BCG em menores de 1 ano",
-          "valor": 99.4,
-          "unidade": "% das crianças menores de 1 ano (2024)",
+          "valor": 100.8,
+          "unidade": "% das crianças menores de 1 ano (2025, preliminar)",
           "destaque": "Universal — aplicada na maternidade",
-          "totalAbsoluto": "Vacina mais universal do calendário infantil",
-          "tendencia": "estavel",
+          "totalAbsoluto": "Em 2025, só BCG e hepatite B (até 30 dias de vida) passaram de 95%",
+          "tendencia": "alta",
           "serie": [
             {
               "ano": 2016,
-              "valor": 95.4
+              "valor": 95.6
             },
             {
               "ano": 2017,
-              "valor": 98.6
+              "valor": 98.0
             },
             {
               "ano": 2018,
@@ -577,27 +581,31 @@
             },
             {
               "ano": 2019,
-              "valor": 98.9
+              "valor": 86.7
             },
             {
               "ano": 2020,
-              "valor": 98.6
+              "valor": 77.1
             },
             {
               "ano": 2021,
-              "valor": 100.0
+              "valor": 75.0
             },
             {
               "ano": 2022,
-              "valor": 100.0
+              "valor": 90.1
             },
             {
               "ano": 2023,
-              "valor": 99.8
+              "valor": 86.6
             },
             {
               "ano": 2024,
-              "valor": 99.4
+              "valor": 98.5
+            },
+            {
+              "ano": 2025,
+              "valor": 100.8
             }
           ],
           "rotuloSerieY": "% das crianças <1 ano",
@@ -605,49 +613,49 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Cobertura BCG por região (2024, %)",
+              "titulo": "Cobertura BCG por região (2025, %)",
               "valores": [
                 {
                   "rotulo": "Sudeste",
-                  "valor": 99.9,
-                  "max": 100
+                  "valor": 98.8,
+                  "max": 110
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 99.8,
-                  "max": 100
+                  "valor": 102.5,
+                  "max": 110
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 99.7,
-                  "max": 100
+                  "valor": 100.3,
+                  "max": 110
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 99.3,
-                  "max": 100
+                  "valor": 102.5,
+                  "max": 110
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 99.4,
-                  "max": 100
+                  "valor": 100.8,
+                  "max": 110
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 97.8,
-                  "max": 100
+                  "valor": 101.6,
+                  "max": 110
                 }
               ]
             }
           ],
           "fonte": {
-            "nome": "SI-PNI — Sistema de Informações do Programa Nacional de Imunizações",
+            "nome": "Ministério da Saúde, painel Cobertura Vacinal Infantil (SI-PNI/RNDS, por residência)",
             "produtor": "Ministério da Saúde",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "2025 (dados de 2024)",
-            "url": "https://datasus.saude.gov.br/transferencia-de-arquivos/"
+            "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",
+            "url": "https://infoms.saude.gov.br/extensions/SEIDIGI_DEMAS_VACINACAO_CALENDARIO_NACIONAL_COBERTURA_RESIDENCIA/index.html"
           },
-          "notaMetodologica": "BCG (tuberculose) é a única vacina cuja meta da OMS é 90% e que o Brasil mantém acima de 95% historicamente, pois é aplicada na maternidade ainda no primeiro mês de vida. É a melhor estatística da cobertura básica de imunização. Coberturas podem ultrapassar 100% por correções de denominador (mais aplicações que nascidos vivos estimados pela projeção)."
+          "notaMetodologica": "BCG (tuberculose) tem meta de 90% e costuma ser aplicada na maternidade, no primeiro mês de vida. Na série por residência do painel do Ministério da Saúde, a cobertura ficou entre 75,0% e 90,1% de 2019 a 2023, subiu para 98,5% em 2024 e chegou a 100,8% em 2025. Coberturas podem ultrapassar 100% quando as doses aplicadas superam os nascidos vivos do Sinasc usados como denominador (em 2025, o mesmo de 2024). Dados de 2025 são preliminares."
         }
       ]
     },
@@ -760,43 +768,47 @@
           "id": "pre-natal",
           "titulo": "Pré-natal adequado",
           "indicador": "% de gestantes com 7 ou mais consultas de pré-natal",
-          "valor": 76.4,
-          "unidade": "% das gestantes (2023)",
+          "valor": 79.1,
+          "unidade": "% das gestantes (2024)",
           "destaque": "Meta OMS é 100% com 8+ consultas",
-          "totalAbsoluto": "Acompanhamento incompleto: 23,6%",
+          "totalAbsoluto": "Menos de 7 consultas ou sem informação: 20,9%",
           "tendencia": "alta",
           "serie": [
             {
               "ano": 2016,
-              "valor": 64.5
+              "valor": 67.7
             },
             {
               "ano": 2017,
-              "valor": 66.8
+              "valor": 69.3
             },
             {
               "ano": 2018,
-              "valor": 68.2
+              "valor": 70.8
             },
             {
               "ano": 2019,
-              "valor": 70.4
+              "valor": 72.4
             },
             {
               "ano": 2020,
-              "valor": 71.3
+              "valor": 71.0
             },
             {
               "ano": 2021,
-              "valor": 72.5
+              "valor": 73.1
             },
             {
               "ano": 2022,
-              "valor": 74.2
+              "valor": 74.8
             },
             {
               "ano": 2023,
-              "valor": 76.4
+              "valor": 77.2
+            },
+            {
+              "ano": 2024,
+              "valor": 79.1
             }
           ],
           "rotuloSerieY": "% das gestantes",
@@ -804,36 +816,36 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Pré-natal com 7+ consultas por região (2023, %)",
+              "titulo": "Pré-natal com 7+ consultas por região (2024, %)",
               "valores": [
                 {
                   "rotulo": "Sul",
-                  "valor": 84.5,
+                  "valor": 85.6,
                   "max": 90
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 82.1,
+                  "valor": 82.4,
                   "max": 90
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 78.4,
+                  "valor": 79.0,
                   "max": 90
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 76.4,
+                  "valor": 79.1,
                   "max": 90
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 71.0,
+                  "valor": 77.0,
                   "max": 90
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 60.8,
+                  "valor": 65.0,
                   "max": 90
                 }
               ]
@@ -841,21 +853,21 @@
             {
               "id": "raca",
               "dimensao": "Por raça/cor",
-              "titulo": "Pré-natal adequado por raça/cor (2023, %)",
+              "titulo": "Pré-natal adequado por raça/cor da mãe (2024, %)",
               "valores": [
                 {
                   "rotulo": "Brancas",
-                  "valor": 82.4,
+                  "valor": 84.8,
                   "max": 90
                 },
                 {
                   "rotulo": "Pardas",
-                  "valor": 73.8,
+                  "valor": 76.8,
                   "max": 90
                 },
                 {
                   "rotulo": "Pretas",
-                  "valor": 69.2,
+                  "valor": 76.8,
                   "max": 90
                 }
               ]
@@ -865,10 +877,10 @@
             "nome": "Sinasc — Sistema de Informações sobre Nascidos Vivos (DataSUS)",
             "produtor": "Ministério da Saúde",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "2025 (dados de 2023)",
-            "url": "https://datasus.saude.gov.br/nascidos-vivos-desde-1994"
+            "ultimaAtualizacao": "Dezembro/2025 (dados de 2024)",
+            "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinasc/cnv/nvuf.def"
           },
-          "notaMetodologica": "Estatística da Rede Cegonha e linha de base do PNAB. A OMS recomenda mínimo de 8 consultas; o Brasil ainda usa o parâmetro de 7+. Mulheres pretas e da região Norte têm acesso significativamente menor, refletindo desigualdades de raça e território no acesso à saúde. Valores aproximados a partir do TabNet/DataSUS."
+          "notaMetodologica": "Estatística da Rede Cegonha e linha de base do PNAB. A OMS recomenda mínimo de 8 consultas; o Brasil ainda usa o parâmetro de 7+. Cálculo: nascidos vivos de mães residentes com 7 ou mais consultas sobre o total de nascidos vivos (consultas ignoradas ficam no denominador). Série e recorte por região conferidos em outubro/2026 no TabNet/Sinasc (2024 com dados finais); recorte por raça/cor usa a raça/cor da mãe nos microdados do Sinasc 2024. Mães pretas e pardas e a região Norte têm acesso menor, refletindo desigualdades de raça e território no acesso à saúde."
         }
       ]
     }

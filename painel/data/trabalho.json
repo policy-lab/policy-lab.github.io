@@ -20,36 +20,36 @@
           "id": "emprego-formal",
           "titulo": "Emprego Formal",
           "indicador": "Saldo anual de empregos com carteira assinada",
-          "valor": 1279498,
+          "valor": 1270556,
           "unidade": "empregos formais (saldo de 2025)",
-          "destaque": "Saldo positivo em todas as 27 UFs",
-          "totalAbsoluto": "Estoque: 48,47 milhões de vínculos celetistas",
-          "tendencia": "alta",
+          "destaque": "Saldo positivo em todas as 27 UFs em 2025",
+          "totalAbsoluto": "Jan-ago/2026: saldo de +1.134.033 vagas (jan-ago/2025: +1.516.881). Estoque de 48,24 milhões de vínculos celetistas em ago/2026",
+          "tendencia": "queda",
           "formatoValor": "inteiro",
           "serie": [
             {
               "ano": 2020,
-              "valor": -191995
+              "valor": -189370
             },
             {
               "ano": 2021,
-              "valor": 2730597
+              "valor": 2782502
             },
             {
               "ano": 2022,
-              "valor": 2034626
+              "valor": 2015013
             },
             {
               "ano": 2023,
-              "valor": 1480067
+              "valor": 1455780
             },
             {
               "ano": 2024,
-              "valor": 1677575
+              "valor": 1679094
             },
             {
               "ano": 2025,
-              "valor": 1279498
+              "valor": 1270556
             }
           ],
           "rotuloSerieY": "Saldo anual",
@@ -61,27 +61,27 @@
               "valores": [
                 {
                   "rotulo": "Serviços",
-                  "valor": 758355,
+                  "valor": 747888,
                   "max": 800000
                 },
                 {
                   "rotulo": "Comércio",
-                  "valor": 247097,
+                  "valor": 250664,
                   "max": 800000
                 },
                 {
                   "rotulo": "Indústria",
-                  "valor": 144319,
+                  "valor": 143881,
                   "max": 800000
                 },
                 {
                   "rotulo": "Construção",
-                  "valor": 87878,
+                  "valor": 86226,
                   "max": 800000
                 },
                 {
                   "rotulo": "Agropecuária",
-                  "valor": 41870,
+                  "valor": 41825,
                   "max": 800000
                 }
               ]
@@ -93,27 +93,27 @@
               "valores": [
                 {
                   "rotulo": "Sudeste",
-                  "valor": 504972,
+                  "valor": 494606,
                   "max": 550000
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 347940,
+                  "valor": 351780,
                   "max": 550000
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 186126,
+                  "valor": 184218,
                   "max": 550000
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 149530,
+                  "valor": 148061,
                   "max": 550000
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 90613,
+                  "valor": 91582,
                   "max": 550000
                 }
               ]
@@ -121,41 +121,41 @@
             {
               "id": "uf",
               "dimensao": "Por UF",
-              "titulo": "Maiores saldos por estado (2025)",
+              "titulo": "Saldo de empregos em estados selecionados (2025)",
               "valores": [
                 {
                   "rotulo": "São Paulo",
-                  "valor": 311228,
+                  "valor": 301812,
                   "max": 320000
                 },
                 {
                   "rotulo": "Rio de Janeiro",
-                  "valor": 100920,
+                  "valor": 100705,
                   "max": 320000
                 },
                 {
                   "rotulo": "Bahia",
-                  "valor": 94380,
+                  "valor": 94352,
                   "max": 320000
                 },
                 {
                   "rotulo": "Pernambuco",
-                  "valor": 72565,
+                  "valor": 75534,
                   "max": 320000
                 },
                 {
                   "rotulo": "Ceará",
-                  "valor": 49184,
+                  "valor": 48481,
                   "max": 320000
                 },
                 {
                   "rotulo": "Maranhão",
-                  "valor": 31713,
+                  "valor": 32650,
                   "max": 320000
                 },
                 {
                   "rotulo": "Paraíba",
-                  "valor": 31043,
+                  "valor": 31104,
                   "max": 320000
                 }
               ]
@@ -165,10 +165,10 @@
             "nome": "Novo CAGED — Cadastro Geral de Empregados e Desempregados",
             "produtor": "Ministério do Trabalho e Emprego (a partir do eSocial e CAGEDWeb)",
             "periodicidade": "Mensal",
-            "ultimaAtualizacao": "Janeiro/2026 (fechamento de 2025)",
-            "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/novo-caged"
+            "ultimaAtualizacao": "Outubro/2026 (dados de 2025 com ajustes; conjuntura até ago/2026)",
+            "url": "https://drive.google.com/file/d/1LFiRd5cYqCLbBv7udPWtus6h4cF3GaA0/view"
           },
-          "notaMetodologica": "Saldo é a diferença entre admissões e desligamentos CLT. Novo CAGED, ativo desde 2020, integra CAGEDWeb, eSocial e Empregador Web — quebra de série em 2020. Limitação: cobre apenas emprego formal; para informais e autônomos, usar PNAD Contínua."
+          "notaMetodologica": "Saldo é a diferença entre admissões e desligamentos CLT. Novo CAGED, ativo desde 2020, integra CAGEDWeb, eSocial e Empregador Web, com quebra de série em 2020. Saldos anuais com ajustes (declarações entregues fora do prazo), somados da série mensal das tabelas do Novo CAGED de agosto/2026 (tabelas 5.1, 6.1 e 7.1); os anos anteriores são revistos a cada divulgação. Em 2026 o MTE atualizou o estoque de referência com a RAIS 2025: o estoque de dez/2025 passou de 48,47 para 47,11 milhões de vínculos, sem alterar os saldos. Limitação: cobre apenas emprego formal; para informais e autônomos, usar PNAD Contínua."
         }
       ]
     },
@@ -184,28 +184,28 @@
           "valor": 5.6,
           "unidade": "% da força de trabalho (2025)",
           "destaque": "Menor taxa da série histórica iniciada em 2012",
-          "totalAbsoluto": "103 milhões ocupados (recorde) — 6,2 milhões desocupados",
+          "totalAbsoluto": "Trimestre jun-ago/2026: taxa de 5,3%, com 103,5 milhões de ocupados (recorde da série) e 5,8 milhões de desocupados",
           "tendencia": "queda",
           "serie": [
             {
               "ano": 2014,
-              "valor": 6.8
+              "valor": 7.0
             },
             {
               "ano": 2015,
-              "valor": 8.5
+              "valor": 8.9
             },
             {
               "ano": 2016,
-              "valor": 11.5
+              "valor": 11.6
             },
             {
               "ano": 2017,
-              "valor": 12.7
+              "valor": 12.6
             },
             {
               "ano": 2018,
-              "valor": 12.3
+              "valor": 12.1
             },
             {
               "ano": 2019,
@@ -221,11 +221,11 @@
             },
             {
               "ano": 2022,
-              "valor": 9.3
+              "valor": 9.6
             },
             {
               "ano": 2023,
-              "valor": 7.8
+              "valor": 7.7
             },
             {
               "ano": 2024,
@@ -389,11 +389,11 @@
             {
               "id": "sexo",
               "dimensao": "Por sexo",
-              "titulo": "Taxa de desocupação por sexo (4º tri 2025, %)",
+              "titulo": "Taxa de desocupação por sexo (média anual de 2025, %)",
               "valores": [
                 {
                   "rotulo": "Mulheres",
-                  "valor": 6.2,
+                  "valor": 6.9,
                   "max": 8
                 },
                 {
@@ -403,7 +403,7 @@
                 },
                 {
                   "rotulo": "Homens",
-                  "valor": 4.2,
+                  "valor": 4.6,
                   "max": 8
                 }
               ]
@@ -411,21 +411,21 @@
             {
               "id": "raca",
               "dimensao": "Por raça/cor",
-              "titulo": "Taxa de desocupação por raça/cor (4º tri 2025, %)",
+              "titulo": "Taxa de desocupação por raça/cor (média anual de 2025, %)",
               "valores": [
                 {
                   "rotulo": "Pretos",
-                  "valor": 6.1,
+                  "valor": 7.1,
                   "max": 8
                 },
                 {
                   "rotulo": "Pardos",
-                  "valor": 5.9,
+                  "valor": 6.5,
                   "max": 8
                 },
                 {
                   "rotulo": "Brancos",
-                  "valor": 4.0,
+                  "valor": 4.3,
                   "max": 8
                 }
               ]
@@ -433,31 +433,31 @@
             {
               "id": "idade",
               "dimensao": "Por idade",
-              "titulo": "Desocupação por faixa etária (4º tri 2025, %)",
+              "titulo": "Desocupação por faixa etária (média anual de 2025, %)",
               "valores": [
                 {
                   "rotulo": "14 a 17 anos",
-                  "valor": 18.4,
+                  "valor": 21.6,
                   "max": 22
                 },
                 {
                   "rotulo": "18 a 24 anos",
-                  "valor": 12.6,
+                  "valor": 12.1,
                   "max": 22
                 },
                 {
                   "rotulo": "25 a 39 anos",
-                  "valor": 5.0,
+                  "valor": 5.4,
                   "max": 22
                 },
                 {
                   "rotulo": "40 a 59 anos",
-                  "valor": 3.2,
+                  "valor": 3.6,
                   "max": 22
                 },
                 {
                   "rotulo": "60+ anos",
-                  "valor": 2.1,
+                  "valor": 2.4,
                   "max": 22
                 }
               ]
@@ -467,56 +467,56 @@
             "nome": "PNAD Contínua Trimestral — IBGE",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Trimestral",
-            "ultimaAtualizacao": "Fevereiro/2026 (média anual de 2025)",
-            "url": "https://www.ibge.gov.br/estatisticas/sociais/trabalho/17270-pnad-continua.html"
+            "ultimaAtualizacao": "Outubro/2026 (média anual de 2025; conjuntura até jun-ago/2026)",
+            "url": "https://apisidra.ibge.gov.br/values/t/4562/n1/all/v/4099/p/all"
           },
-          "notaMetodologica": "Desocupado é quem não tem trabalho, busca ativamente e está disponível. Não inclui desalentados (que pararam de procurar). Taxa de informalidade em 2025: 38,1%. Recomenda-se ler em conjunto com taxa de subutilização (14,5% em 2025), que captura precariedade do mercado."
+          "notaMetodologica": "Desocupado é quem não tem trabalho, busca ativamente e está disponível. Não inclui desalentados (que pararam de procurar). Taxa de informalidade em 2025: 38,1%. Recomenda-se ler em conjunto com taxa de subutilização (14,5% em 2025), que captura precariedade do mercado. Série e recortes são médias anuais da PNAD Contínua (tabelas 4562, 10361, 10378 e 10379 do SIDRA), reponderadas pelo IBGE em julho/2025 com a Projeção da População 2024; por isso alguns anos diferem de valores divulgados antes."
         },
         {
           "id": "subutilizacao",
           "titulo": "Taxa de subutilização",
           "indicador": "Subutilização da força de trabalho (desocupados + subocupados + força potencial)",
-          "valor": 14.6,
+          "valor": 14.5,
           "unidade": "% da força de trabalho ampliada (2025)",
           "destaque": "2,6x maior que a desocupação",
-          "totalAbsoluto": "Inclui 5,1mi desalentados e 6,4mi subocupados por horas",
+          "totalAbsoluto": "Em 2025, 2,9 milhões de desalentados e 4,6 milhões de subocupados por horas. Trimestre jun-ago/2026: taxa de 13,1%",
           "tendencia": "queda",
           "serie": [
             {
               "ano": 2017,
-              "valor": 24.6
+              "valor": 24.2
             },
             {
               "ano": 2018,
-              "valor": 24.0
+              "valor": 24.7
             },
             {
               "ano": 2019,
-              "valor": 23.4
+              "valor": 24.4
             },
             {
               "ano": 2020,
-              "valor": 27.7
+              "valor": 28.3
             },
             {
               "ano": 2021,
-              "valor": 26.2
+              "valor": 28.5
             },
             {
               "ano": 2022,
-              "valor": 20.7
+              "valor": 20.9
             },
             {
               "ano": 2023,
-              "valor": 17.6
+              "valor": 18.0
             },
             {
               "ano": 2024,
-              "valor": 15.5
+              "valor": 16.2
             },
             {
               "ano": 2025,
-              "valor": 14.6
+              "valor": 14.5
             }
           ],
           "rotuloSerieY": "% força de trabalho ampliada",
@@ -524,26 +524,26 @@
             {
               "id": "componentes",
               "dimensao": "Componentes",
-              "titulo": "Subutilização decomposta (4º tri 2025, milhões de pessoas)",
+              "titulo": "Subutilização decomposta (média anual de 2025, milhões de pessoas)",
               "valores": [
                 {
                   "rotulo": "Subocupados por horas",
-                  "valor": 6.4,
+                  "valor": 4.6,
                   "max": 8
                 },
                 {
                   "rotulo": "Desocupados",
-                  "valor": 6.0,
+                  "valor": 6.2,
                   "max": 8
                 },
                 {
                   "rotulo": "Desalentados",
-                  "valor": 2.7,
+                  "valor": 2.9,
                   "max": 8
                 },
                 {
                   "rotulo": "Outra força potencial",
-                  "valor": 2.4,
+                  "valor": 2.9,
                   "max": 8
                 }
               ]
@@ -551,21 +551,21 @@
             {
               "id": "sexo",
               "dimensao": "Por sexo",
-              "titulo": "Taxa de subutilização por sexo (2025, %)",
+              "titulo": "Taxa de subutilização por sexo (média anual de 2025, %)",
               "valores": [
                 {
                   "rotulo": "Mulheres",
-                  "valor": 17.4,
+                  "valor": 18.0,
                   "max": 20
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 14.6,
+                  "valor": 14.5,
                   "max": 20
                 },
                 {
                   "rotulo": "Homens",
-                  "valor": 12.4,
+                  "valor": 11.6,
                   "max": 20
                 }
               ]
@@ -575,10 +575,10 @@
             "nome": "PNAD Contínua — Indicadores Mercado de Trabalho (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Trimestral",
-            "ultimaAtualizacao": "Fevereiro/2026 (4º tri 2025)",
-            "url": "https://www.ibge.gov.br/estatisticas/sociais/trabalho.html"
+            "ultimaAtualizacao": "Outubro/2026 (média anual de 2025; conjuntura até jun-ago/2026)",
+            "url": "https://apisidra.ibge.gov.br/values/t/4677/n1/all/v/4118/p/all"
           },
-          "notaMetodologica": "Medida mais ampla que a taxa de desocupação. Inclui: (1) desocupados (procuram trabalho), (2) subocupados por horas (querem trabalhar mais), (3) desalentados (desistiram de procurar), (4) força potencial. A diferença entre desocupação (5,6%) e subutilização (14,6%) mostra a precariedade do trabalho não captada pela métrica clássica. Valores aproximados — números oficiais detalhados no SIDRA/IBGE."
+          "notaMetodologica": "Medida mais ampla que a taxa de desocupação. Inclui: (1) desocupados (procuram trabalho), (2) subocupados por horas (querem trabalhar mais), (3) desalentados (desistiram de procurar), (4) força potencial. A diferença entre desocupação (5,6%) e subutilização (14,5%) em 2025 mostra a precariedade do trabalho não captada pela métrica clássica. Série e recortes são médias anuais da PNAD Contínua (tabelas 4677, 4666 e 10379 do SIDRA), reponderadas pelo IBGE em julho/2025."
         }
       ]
     },
@@ -594,53 +594,53 @@
           "valor": 3560,
           "unidade": "R$ por mês (2025)",
           "destaque": "Alta de 5,7% real frente a 2024",
-          "totalAbsoluto": "Massa salarial recorde: R$ 361,7 bilhões/ano",
+          "totalAbsoluto": "Massa de rendimento recorde em 2025: R$ 361,7 bilhões/mês. Trimestre jun-ago/2026: R$ 3.777/mês, alta real de 3,7% sobre jun-ago/2025",
           "tendencia": "alta",
           "formatoValor": "inteiro",
           "serie": [
             {
               "ano": 2014,
-              "valor": 2920
+              "valor": 3280
             },
             {
               "ano": 2015,
-              "valor": 2900
+              "valor": 3151
             },
             {
               "ano": 2016,
-              "valor": 2840
+              "valor": 3164
             },
             {
               "ano": 2017,
-              "valor": 2870
+              "valor": 3147
             },
             {
               "ano": 2018,
-              "valor": 2920
+              "valor": 3217
             },
             {
               "ano": 2019,
-              "valor": 2980
+              "valor": 3204
             },
             {
               "ano": 2020,
-              "valor": 2960
+              "valor": 3310
             },
             {
               "ano": 2021,
-              "valor": 2770
+              "valor": 3101
             },
             {
               "ano": 2022,
-              "valor": 2920
+              "valor": 3032
             },
             {
               "ano": 2023,
-              "valor": 3210
+              "valor": 3249
             },
             {
               "ano": 2024,
-              "valor": 3370
+              "valor": 3368
             },
             {
               "ano": 2025,
@@ -693,7 +693,7 @@
               "valores": [
                 {
                   "rotulo": "Homens",
-                  "valor": 3950,
+                  "valor": 3921,
                   "max": 4500
                 },
                 {
@@ -703,7 +703,7 @@
                 },
                 {
                   "rotulo": "Mulheres",
-                  "valor": 3080,
+                  "valor": 3085,
                   "max": 4500
                 }
               ]
@@ -715,7 +715,7 @@
               "valores": [
                 {
                   "rotulo": "Brancos",
-                  "valor": 4570,
+                  "valor": 4577,
                   "max": 5000
                 },
                 {
@@ -725,7 +725,7 @@
                 },
                 {
                   "rotulo": "Pretos e pardos",
-                  "valor": 2680,
+                  "valor": 2735,
                   "max": 5000
                 }
               ]
@@ -735,10 +735,10 @@
             "nome": "PNAD Contínua — Rendimento Real Habitual (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Trimestral/anual",
-            "ultimaAtualizacao": "Fevereiro/2026 (média anual de 2025)",
-            "url": "https://www.ibge.gov.br/estatisticas/sociais/trabalho/17270-pnad-continua.html"
+            "ultimaAtualizacao": "Outubro/2026 (média anual de 2025, a preços médios de 2025; conjuntura até jun-ago/2026)",
+            "url": "https://apisidra.ibge.gov.br/values/t/7444/n1/all/v/10774/p/all/c2/6794"
           },
-          "notaMetodologica": "Rendimento médio de todos os trabalhos (principal + outros), considerando todas as pessoas ocupadas — formais e informais. Valores deflacionados pelo IBGE para preços de dezembro/2025. Desigualdade regional é estrutural: DF tem rendimento quase 3× maior que MA."
+          "notaMetodologica": "Rendimento médio de todos os trabalhos (principal + outros), considerando todas as pessoas ocupadas com rendimento, formais e informais. Série anual da PNAD Contínua a preços médios de 2025, deflacionada pelo IBGE (tabelas 7444 e 7441 do SIDRA); toda a série fica na mesma data-base. O valor de pretos e pardos é a média das duas categorias ponderada pelo número de ocupados com rendimento (tabela 7431). Desigualdade regional é estrutural: DF tem rendimento quase 3× maior que MA."
         }
       ]
     },
@@ -751,15 +751,15 @@
           "id": "taxa-informalidade",
           "titulo": "Taxa de informalidade",
           "indicador": "Trabalhadores sem carteira/contribuição previdenciária",
-          "valor": 38.5,
+          "valor": 38.1,
           "unidade": "% dos ocupados (2025)",
-          "destaque": "Estável após queda pós-pandemia",
-          "totalAbsoluto": "~40 milhões de trabalhadores informais",
-          "tendencia": "estavel",
+          "destaque": "Recuo para 38,1% em 2025, ante 39,0% em 2024",
+          "totalAbsoluto": "39,2 milhões de trabalhadores informais em 2025. Trimestre jun-ago/2026: taxa de 37,5%",
+          "tendencia": "queda",
           "serie": [
             {
               "ano": 2016,
-              "valor": 39.4
+              "valor": 39.1
             },
             {
               "ano": 2017,
@@ -767,35 +767,35 @@
             },
             {
               "ano": 2018,
-              "valor": 41.3
+              "valor": 40.9
             },
             {
               "ano": 2019,
-              "valor": 41.1
+              "valor": 41.0
             },
             {
               "ano": 2020,
-              "valor": 38.8
+              "valor": 37.7
             },
             {
               "ano": 2021,
-              "valor": 40.7
+              "valor": 39.6
             },
             {
               "ano": 2022,
-              "valor": 39.2
+              "valor": 39.5
             },
             {
               "ano": 2023,
-              "valor": 39.1
+              "valor": 39.2
             },
             {
               "ano": 2024,
-              "valor": 38.8
+              "valor": 39.0
             },
             {
               "ano": 2025,
-              "valor": 38.5
+              "valor": 38.1
             }
           ],
           "rotuloSerieY": "% dos ocupados",
@@ -807,32 +807,32 @@
               "valores": [
                 {
                   "rotulo": "Norte",
-                  "valor": 56.8,
+                  "valor": 51.9,
                   "max": 60
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 51.4,
+                  "valor": 50.8,
                   "max": 60
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 36.2,
+                  "valor": 33.5,
                   "max": 60
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 38.5,
+                  "valor": 38.1,
                   "max": 60
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 33.1,
+                  "valor": 33.0,
                   "max": 60
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 26.4,
+                  "valor": 30.1,
                   "max": 60
                 }
               ]
@@ -844,17 +844,17 @@
               "valores": [
                 {
                   "rotulo": "Pretos e pardos",
-                  "valor": 44.6,
+                  "valor": 42.5,
                   "max": 50
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 38.5,
+                  "valor": 38.1,
                   "max": 50
                 },
                 {
                   "rotulo": "Brancos",
-                  "valor": 31.5,
+                  "valor": 32.6,
                   "max": 50
                 }
               ]
@@ -864,10 +864,10 @@
             "nome": "PNAD Contínua (IBGE) — Indicadores de Mercado de Trabalho",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Trimestral",
-            "ultimaAtualizacao": "Fevereiro/2026 (4º tri 2025)",
-            "url": "https://www.ibge.gov.br/estatisticas/sociais/trabalho.html"
+            "ultimaAtualizacao": "Outubro/2026 (média anual de 2025; conjuntura até jun-ago/2026)",
+            "url": "https://apisidra.ibge.gov.br/values/t/4708/n1/all/v/12466/p/all"
           },
-          "notaMetodologica": "Informalidade inclui: trabalhadores sem carteira (privado e doméstico), conta-própria sem CNPJ, trabalhadores familiares auxiliares, e empregadores sem CNPJ. Mede acesso a proteção social. Diferenças regionais e raciais persistentes. Valores regionais aproximados."
+          "notaMetodologica": "Informalidade inclui: trabalhadores sem carteira (privado e doméstico), conta-própria sem CNPJ, trabalhadores familiares auxiliares, e empregadores sem CNPJ. Mede acesso a proteção social. Diferenças regionais e raciais persistentes. Série e recortes são médias anuais da PNAD Contínua (tabelas 4708 e 10361 do SIDRA), reponderadas pelo IBGE em julho/2025; a taxa de pretos e pardos soma informais e ocupados dos dois grupos."
         }
       ]
     }

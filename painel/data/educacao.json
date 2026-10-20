@@ -19,44 +19,44 @@
         {
           "id": "ideb",
           "titulo": "Qualidade da Educação Básica",
-          "indicador": "IDEB — Índice de Desenvolvimento da Educação Básica (rede pública, anos iniciais EF)",
-          "valor": 5.7,
-          "unidade": "anos iniciais do EF",
-          "destaque": "Estagnação pós-pandemia",
-          "totalAbsoluto": "Anos finais EF: 5,1 — Ensino Médio: 4,5",
-          "tendencia": "estavel",
+          "indicador": "IDEB: Índice de Desenvolvimento da Educação Básica (rede total, anos iniciais EF)",
+          "valor": 6.3,
+          "unidade": "escala 0-10 (anos iniciais EF, rede total)",
+          "destaque": "Maior valor da série histórica, iniciada em 2005",
+          "totalAbsoluto": "Anos finais EF: 5,3; Ensino Médio: 4,5 (rede total, 2025)",
+          "tendencia": "alta",
           "serie": [
             {
               "ano": 2005,
-              "valor": 3.6
+              "valor": 3.8
             },
             {
               "ano": 2007,
-              "valor": 4.0
+              "valor": 4.2
             },
             {
               "ano": 2009,
-              "valor": 4.4
+              "valor": 4.6
             },
             {
               "ano": 2011,
-              "valor": 4.7
+              "valor": 5.0
             },
             {
               "ano": 2013,
-              "valor": 4.9
+              "valor": 5.2
             },
             {
               "ano": 2015,
-              "valor": 5.3
-            },
-            {
-              "ano": 2017,
               "valor": 5.5
             },
             {
+              "ano": 2017,
+              "valor": 5.8
+            },
+            {
               "ano": 2019,
-              "valor": 5.7
+              "valor": 5.9
             },
             {
               "ano": 2021,
@@ -64,7 +64,11 @@
             },
             {
               "ano": 2023,
-              "valor": 5.7
+              "valor": 6.0
+            },
+            {
+              "ano": 2025,
+              "valor": 6.3
             }
           ],
           "rotuloSerieY": "IDEB (escala 0-10)",
@@ -72,16 +76,16 @@
             {
               "id": "etapa",
               "dimensao": "Por etapa de ensino",
-              "titulo": "IDEB 2023 por etapa (rede pública)",
+              "titulo": "IDEB 2025 por etapa (rede total)",
               "valores": [
                 {
                   "rotulo": "Anos iniciais EF",
-                  "valor": 5.7,
+                  "valor": 6.3,
                   "max": 10
                 },
                 {
                   "rotulo": "Anos finais EF",
-                  "valor": 5.1,
+                  "valor": 5.3,
                   "max": 10
                 },
                 {
@@ -94,26 +98,26 @@
             {
               "id": "uf",
               "dimensao": "Por UF",
-              "titulo": "IDEB anos iniciais do EF por UF — rede pública (2023)",
+              "titulo": "IDEB anos iniciais do EF por UF, rede total (2025)",
               "valores": [
                 {
                   "rotulo": "Paraná",
-                  "valor": 6.7,
+                  "valor": 7.0,
                   "max": 7
                 },
                 {
                   "rotulo": "Ceará",
-                  "valor": 6.6,
+                  "valor": 6.8,
                   "max": 7
                 },
                 {
                   "rotulo": "São Paulo",
-                  "valor": 6.5,
+                  "valor": 6.6,
                   "max": 7
                 },
                 {
                   "rotulo": "Santa Catarina",
-                  "valor": 6.4,
+                  "valor": 6.7,
                   "max": 7
                 },
                 {
@@ -123,117 +127,117 @@
                 },
                 {
                   "rotulo": "Minas Gerais",
-                  "valor": 6.3,
+                  "valor": 6.6,
                   "max": 7
                 },
                 {
                   "rotulo": "Espírito Santo",
-                  "valor": 6.3,
+                  "valor": 6.6,
                   "max": 7
                 },
                 {
                   "rotulo": "Goiás",
-                  "valor": 6.3,
+                  "valor": 6.5,
                   "max": 7
                 },
                 {
                   "rotulo": "Alagoas",
-                  "valor": 6.0,
+                  "valor": 6.4,
                   "max": 7
                 },
                 {
                   "rotulo": "Rio Grande do Sul",
-                  "valor": 6.0,
+                  "valor": 6.3,
                   "max": 7
                 },
                 {
                   "rotulo": "Mato Grosso",
-                  "valor": 6.0,
+                  "valor": 6.3,
                   "max": 7
                 },
                 {
                   "rotulo": "Piauí",
-                  "valor": 5.9,
+                  "valor": 6.3,
                   "max": 7
                 },
                 {
                   "rotulo": "Rio de Janeiro",
-                  "valor": 5.9,
+                  "valor": 6.1,
                   "max": 7
                 },
                 {
                   "rotulo": "Acre",
-                  "valor": 5.8,
+                  "valor": 6.3,
                   "max": 7
                 },
                 {
                   "rotulo": "Amazonas",
-                  "valor": 5.7,
+                  "valor": 6.0,
                   "max": 7
                 },
                 {
                   "rotulo": "Paraíba",
-                  "valor": 5.7,
+                  "valor": 6.1,
                   "max": 7
                 },
                 {
                   "rotulo": "Pernambuco",
-                  "valor": 5.7,
+                  "valor": 6.0,
                   "max": 7
                 },
                 {
                   "rotulo": "Rondônia",
-                  "valor": 5.6,
+                  "valor": 6.1,
                   "max": 7
                 },
                 {
                   "rotulo": "Tocantins",
-                  "valor": 5.6,
+                  "valor": 5.9,
                   "max": 7
                 },
                 {
                   "rotulo": "Mato Grosso do Sul",
-                  "valor": 5.6,
+                  "valor": 5.9,
                   "max": 7
                 },
                 {
                   "rotulo": "Roraima",
-                  "valor": 5.5,
+                  "valor": 5.9,
                   "max": 7
                 },
                 {
                   "rotulo": "Maranhão",
-                  "valor": 5.4,
+                  "valor": 5.7,
                   "max": 7
                 },
                 {
                   "rotulo": "Sergipe",
-                  "valor": 5.4,
+                  "valor": 5.8,
                   "max": 7
                 },
                 {
                   "rotulo": "Rio Grande do Norte",
-                  "valor": 5.3,
+                  "valor": 5.7,
                   "max": 7
                 },
                 {
                   "rotulo": "Bahia",
-                  "valor": 5.3,
+                  "valor": 5.7,
                   "max": 7
                 },
                 {
                   "rotulo": "Pará",
-                  "valor": 5.1,
+                  "valor": 5.6,
                   "max": 7
                 },
                 {
                   "rotulo": "Amapá",
-                  "valor": 5.0,
+                  "valor": 5.5,
                   "max": 7
                 },
                 {
-                  "rotulo": "Brasil (rede pública)",
-                  "valor": 5.7,
+                  "rotulo": "Brasil (rede total)",
+                  "valor": 6.3,
                   "max": 7
                 }
               ]
@@ -243,60 +247,64 @@
             "nome": "INEP — SAEB e Censo Escolar",
             "produtor": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira",
             "periodicidade": "Bienal",
-            "ultimaAtualizacao": "Agosto/2024 (dados de 2023)",
+            "ultimaAtualizacao": "Agosto/2026 (dados de 2025)",
             "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb"
           },
-          "notaMetodologica": "O IDEB combina aprendizagem (proficiência em Português e Matemática no SAEB) e fluxo (taxa de aprovação). Em 2023, as taxas de aprovação melhoraram, mas a proficiência permanece abaixo do nível pré-pandemia. Recorte por UF refere-se aos anos iniciais do EF (rede pública); o INEP disponibiliza dados completos para todas as 27 UFs e todas as etapas. Limitação: agregação em índice único pode esconder movimentos opostos nos dois componentes."
+          "notaMetodologica": "O IDEB combina aprendizagem (proficiência em Português e Matemática no SAEB) e fluxo (taxa de aprovação). Em 2025, a rede total (pública e privada) chegou a 6,3 nos anos iniciais, acima do nível pré-pandemia (5,9 em 2019); só na rede pública, o índice foi 6,1. Valor, série, recorte por etapa e recorte por UF referem-se à rede total, como nas estatísticas de anos finais e ensino médio, conforme as planilhas de resultados do INEP. Limitação: agregação em índice único pode esconder movimentos opostos nos dois componentes."
         },
         {
           "id": "ideb-finais",
           "titulo": "IDEB Anos Finais",
           "indicador": "IDEB — Anos Finais do Ensino Fundamental (6º ao 9º ano, rede total: pública+privada)",
-          "valor": 5.0,
+          "valor": 5.3,
           "unidade": "escala 0-10 (anos finais EF, rede total)",
-          "destaque": "Rede total; Paraná, Ceará e Goiás lideram (5,5)",
+          "destaque": "Rede total; Paraná lidera (5,9), seguido de Ceará e Goiás (5,7)",
           "totalAbsoluto": "Meta era 5,5 — abaixo da projeção do PNE",
           "tendencia": "alta",
           "serie": [
             {
               "ano": 2005,
-              "valor": 3.2
-            },
-            {
-              "ano": 2007,
               "valor": 3.5
             },
             {
+              "ano": 2007,
+              "valor": 3.8
+            },
+            {
               "ano": 2009,
-              "valor": 3.7
-            },
-            {
-              "ano": 2011,
-              "valor": 3.9
-            },
-            {
-              "ano": 2013,
               "valor": 4.0
             },
             {
-              "ano": 2015,
+              "ano": 2011,
+              "valor": 4.1
+            },
+            {
+              "ano": 2013,
               "valor": 4.2
             },
             {
-              "ano": 2017,
-              "valor": 4.4
-            },
-            {
-              "ano": 2019,
-              "valor": 4.6
-            },
-            {
-              "ano": 2021,
+              "ano": 2015,
               "valor": 4.5
             },
             {
-              "ano": 2023,
+              "ano": 2017,
               "valor": 4.7
+            },
+            {
+              "ano": 2019,
+              "valor": 4.9
+            },
+            {
+              "ano": 2021,
+              "valor": 5.1
+            },
+            {
+              "ano": 2023,
+              "valor": 5.0
+            },
+            {
+              "ano": 2025,
+              "valor": 5.3
             }
           ],
           "rotuloSerieY": "IDEB (escala 0-10)",
@@ -304,56 +312,56 @@
             {
               "id": "uf",
               "dimensao": "Por UF",
-              "titulo": "IDEB anos finais do EF por UF — rede total (2023)",
+              "titulo": "IDEB anos finais do EF por UF, rede total (2025)",
               "valores": [
                 {
                   "rotulo": "Ceará",
-                  "valor": 5.5,
+                  "valor": 5.7,
                   "max": 6
                 },
                 {
                   "rotulo": "Paraná",
-                  "valor": 5.5,
+                  "valor": 5.9,
                   "max": 6
                 },
                 {
                   "rotulo": "Goiás",
-                  "valor": 5.5,
+                  "valor": 5.7,
                   "max": 6
                 },
                 {
                   "rotulo": "São Paulo",
-                  "valor": 5.4,
+                  "valor": 5.5,
                   "max": 6
                 },
                 {
                   "rotulo": "Espírito Santo",
-                  "valor": 5.3,
+                  "valor": 5.4,
                   "max": 6
                 },
                 {
                   "rotulo": "Piauí",
-                  "valor": 5.2,
+                  "valor": 5.4,
                   "max": 6
                 },
                 {
                   "rotulo": "Santa Catarina",
-                  "valor": 5.2,
+                  "valor": 5.4,
                   "max": 6
                 },
                 {
                   "rotulo": "Pernambuco",
-                  "valor": 5.0,
+                  "valor": 5.1,
                   "max": 6
                 },
                 {
                   "rotulo": "Alagoas",
-                  "valor": 5.0,
+                  "valor": 5.3,
                   "max": 6
                 },
                 {
                   "rotulo": "Distrito Federal",
-                  "valor": 5.0,
+                  "valor": 5.1,
                   "max": 6
                 },
                 {
@@ -363,22 +371,22 @@
                 },
                 {
                   "rotulo": "Minas Gerais",
-                  "valor": 4.9,
+                  "valor": 5.5,
                   "max": 6
                 },
                 {
                   "rotulo": "Rio de Janeiro",
-                  "valor": 4.9,
+                  "valor": 5.1,
                   "max": 6
                 },
                 {
                   "rotulo": "Rio Grande do Sul",
-                  "valor": 4.9,
+                  "valor": 5.4,
                   "max": 6
                 },
                 {
                   "rotulo": "Mato Grosso",
-                  "valor": 4.9,
+                  "valor": 5.1,
                   "max": 6
                 },
                 {
@@ -388,62 +396,62 @@
                 },
                 {
                   "rotulo": "Acre",
-                  "valor": 4.8,
+                  "valor": 4.9,
                   "max": 6
                 },
                 {
                   "rotulo": "Amazonas",
-                  "valor": 4.8,
+                  "valor": 4.9,
                   "max": 6
                 },
                 {
                   "rotulo": "Mato Grosso do Sul",
-                  "valor": 4.8,
+                  "valor": 5.0,
                   "max": 6
                 },
                 {
                   "rotulo": "Maranhão",
-                  "valor": 4.5,
+                  "valor": 4.7,
                   "max": 6
                 },
                 {
                   "rotulo": "Paraíba",
-                  "valor": 4.5,
+                  "valor": 4.9,
                   "max": 6
                 },
                 {
                   "rotulo": "Pará",
-                  "valor": 4.4,
+                  "valor": 4.8,
                   "max": 6
                 },
                 {
                   "rotulo": "Sergipe",
-                  "valor": 4.4,
+                  "valor": 4.8,
                   "max": 6
                 },
                 {
                   "rotulo": "Roraima",
-                  "valor": 4.3,
+                  "valor": 4.4,
                   "max": 6
                 },
                 {
                   "rotulo": "Amapá",
-                  "valor": 4.3,
+                  "valor": 4.6,
                   "max": 6
                 },
                 {
                   "rotulo": "Bahia",
-                  "valor": 4.2,
+                  "valor": 4.5,
                   "max": 6
                 },
                 {
                   "rotulo": "Rio Grande do Norte",
-                  "valor": 4.1,
+                  "valor": 4.6,
                   "max": 6
                 },
                 {
                   "rotulo": "Brasil (rede total)",
-                  "valor": 5.0,
+                  "valor": 5.3,
                   "max": 6
                 }
               ]
@@ -453,20 +461,20 @@
             "nome": "INEP — Índice de Desenvolvimento da Educação Básica (IDEB)",
             "produtor": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira",
             "periodicidade": "Bienal",
-            "ultimaAtualizacao": "Agosto/2024 (dados de 2023)",
+            "ultimaAtualizacao": "Agosto/2026 (dados de 2025)",
             "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb"
           },
-          "notaMetodologica": "Anos Finais do EF (6º ao 9º ano). Etapa que historicamente apresenta os maiores desafios da educação básica brasileira, com estagnação de proficiência apesar de melhoras no fluxo. Não atingiu meta de 5,5 estabelecida em 2007. Recortes por UF — valores aproximados; números oficiais detalhados estão no portal do INEP."
+          "notaMetodologica": "Anos Finais do EF (6º ao 9º ano), rede total (pública e privada). Etapa que historicamente apresenta os maiores desafios da educação básica brasileira. Em 2025 o índice subiu para 5,3, mas segue abaixo da meta de 5,5 fixada para 2021 no primeiro ciclo do IDEB (definido em 2007). Valor, série e recorte por UF usam a rede total, conforme as planilhas de resultados do INEP."
         },
         {
           "id": "ideb-medio",
           "titulo": "IDEB Ensino Médio",
           "indicador": "IDEB — Ensino Médio (rede total: pública+privada)",
-          "valor": 4.3,
+          "valor": 4.5,
           "unidade": "escala 0-10 (ensino médio, rede total)",
-          "destaque": "Etapa mais crítica; Paraná lidera (4,9), Roraima menor (3,5)",
+          "destaque": "Etapa mais crítica; Paraná lidera (5,1); Amazonas e Roraima têm o menor índice (3,8)",
           "totalAbsoluto": "Meta era 5,2 — diferença persistente",
-          "tendencia": "estavel",
+          "tendencia": "alta",
           "serie": [
             {
               "ano": 2005,
@@ -507,23 +515,27 @@
             {
               "ano": 2023,
               "valor": 4.3
+            },
+            {
+              "ano": 2025,
+              "valor": 4.5
             }
           ],
           "rotuloSerieY": "IDEB (escala 0-10)",
           "recortes": [
             {
               "id": "uf",
-              "dimensao": "Por UF (estaduais)",
-              "titulo": "IDEB ensino médio por UF — rede total (2023)",
+              "dimensao": "Por UF",
+              "titulo": "IDEB ensino médio por UF, rede total (2025)",
               "valores": [
                 {
                   "rotulo": "Paraná",
-                  "valor": 4.9,
+                  "valor": 5.1,
                   "max": 6
                 },
                 {
                   "rotulo": "Espírito Santo",
-                  "valor": 4.8,
+                  "valor": 4.9,
                   "max": 6
                 },
                 {
@@ -533,22 +545,22 @@
                 },
                 {
                   "rotulo": "Piauí",
-                  "valor": 4.5,
+                  "valor": 5.0,
                   "max": 6
                 },
                 {
                   "rotulo": "Pernambuco",
-                  "valor": 4.5,
+                  "valor": 4.7,
                   "max": 6
                 },
                 {
                   "rotulo": "São Paulo",
-                  "valor": 4.5,
+                  "valor": 4.7,
                   "max": 6
                 },
                 {
                   "rotulo": "Pará",
-                  "valor": 4.4,
+                  "valor": 4.6,
                   "max": 6
                 },
                 {
@@ -558,7 +570,7 @@
                 },
                 {
                   "rotulo": "Ceará",
-                  "valor": 4.3,
+                  "valor": 4.5,
                   "max": 6
                 },
                 {
@@ -568,57 +580,57 @@
                 },
                 {
                   "rotulo": "Tocantins",
-                  "valor": 4.2,
+                  "valor": 4.3,
                   "max": 6
                 },
                 {
                   "rotulo": "Minas Gerais",
-                  "valor": 4.2,
+                  "valor": 4.6,
                   "max": 6
                 },
                 {
                   "rotulo": "Santa Catarina",
-                  "valor": 4.2,
+                  "valor": 4.5,
                   "max": 6
                 },
                 {
                   "rotulo": "Rio Grande do Sul",
-                  "valor": 4.2,
+                  "valor": 4.9,
                   "max": 6
                 },
                 {
                   "rotulo": "Distrito Federal",
-                  "valor": 4.2,
-                  "max": 6
-                },
-                {
-                  "rotulo": "Alagoas",
                   "valor": 4.1,
                   "max": 6
                 },
                 {
+                  "rotulo": "Alagoas",
+                  "valor": 4.3,
+                  "max": 6
+                },
+                {
                   "rotulo": "Acre",
-                  "valor": 4.0,
+                  "valor": 4.2,
                   "max": 6
                 },
                 {
                   "rotulo": "Paraíba",
-                  "valor": 4.0,
+                  "valor": 4.4,
                   "max": 6
                 },
                 {
                   "rotulo": "Sergipe",
-                  "valor": 4.0,
+                  "valor": 4.3,
                   "max": 6
                 },
                 {
                   "rotulo": "Mato Grosso do Sul",
-                  "valor": 4.0,
+                  "valor": 4.4,
                   "max": 6
                 },
                 {
                   "rotulo": "Bahia",
-                  "valor": 3.9,
+                  "valor": 4.0,
                   "max": 6
                 },
                 {
@@ -628,32 +640,32 @@
                 },
                 {
                   "rotulo": "Amapá",
-                  "valor": 3.8,
+                  "valor": 4.0,
                   "max": 6
                 },
                 {
                   "rotulo": "Maranhão",
-                  "valor": 3.8,
+                  "valor": 3.9,
                   "max": 6
                 },
                 {
                   "rotulo": "Rio Grande do Norte",
-                  "valor": 3.7,
+                  "valor": 4.2,
                   "max": 6
                 },
                 {
                   "rotulo": "Rio de Janeiro",
-                  "valor": 3.7,
+                  "valor": 4.2,
                   "max": 6
                 },
                 {
                   "rotulo": "Roraima",
-                  "valor": 3.5,
+                  "valor": 3.8,
                   "max": 6
                 },
                 {
                   "rotulo": "Brasil (rede total)",
-                  "valor": 4.3,
+                  "valor": 4.5,
                   "max": 6
                 }
               ]
@@ -663,10 +675,10 @@
             "nome": "INEP — Índice de Desenvolvimento da Educação Básica (IDEB)",
             "produtor": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira",
             "periodicidade": "Bienal",
-            "ultimaAtualizacao": "Agosto/2024 (dados de 2023)",
+            "ultimaAtualizacao": "Agosto/2026 (dados de 2025)",
             "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb"
           },
-          "notaMetodologica": "Ensino Médio na rede pública estadual (responsável por 95,9% dos alunos da rede pública nessa etapa). Etapa com maior abandono e menor aprendizado relativo. 'Museu de velhas novidades': estagnação histórica. A reforma do Novo Ensino Médio (em revisão) tenta reverter o quadro. Recortes por UF aproximados."
+          "notaMetodologica": "Ensino Médio, rede total (pública e privada). Etapa com maior abandono e menor aprendizado relativo. 'Museu de velhas novidades': estagnação histórica. A reforma do Novo Ensino Médio (em revisão) tenta reverter o quadro. Valor, série e recorte por UF usam a rede total, conforme as planilhas de resultados do INEP."
         }
       ]
     },
@@ -679,39 +691,43 @@
           "id": "ensino-medio",
           "titulo": "Conclusão do Ensino Médio",
           "indicador": "Pessoas com 25+ anos que concluíram a educação básica obrigatória",
-          "valor": 56.0,
+          "valor": 57.4,
           "unidade": "% das pessoas de 25+ anos",
           "destaque": "Maior percentual da série histórica",
-          "totalAbsoluto": "20,5% com nível superior completo (recorde)",
+          "totalAbsoluto": "21,4% com nível superior completo (recorde)",
           "tendencia": "alta",
           "serie": [
             {
               "ano": 2016,
-              "valor": 46.2
+              "valor": 46.0
             },
             {
               "ano": 2017,
-              "valor": 47.4
+              "valor": 47.0
             },
             {
               "ano": 2018,
-              "valor": 48.8
+              "valor": 48.3
             },
             {
               "ano": 2019,
-              "valor": 50.5
+              "valor": 49.8
             },
             {
               "ano": 2022,
-              "valor": 53.2
+              "valor": 52.9
             },
             {
               "ano": 2023,
-              "valor": 54.7
+              "valor": 54.1
             },
             {
               "ano": 2024,
-              "valor": 56.0
+              "valor": 55.7
+            },
+            {
+              "ano": 2025,
+              "valor": 57.4
             }
           ],
           "rotuloSerieY": "% concluíram EM",
@@ -719,21 +735,21 @@
             {
               "id": "raca",
               "dimensao": "Por raça/cor",
-              "titulo": "Conclusão do ensino médio (2024, % da pop. 25+)",
+              "titulo": "Conclusão do ensino médio (2025, % da pop. 25+)",
               "valores": [
                 {
                   "rotulo": "Brancos",
-                  "valor": 63.4,
+                  "valor": 64.9,
                   "max": 70
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 56.0,
+                  "valor": 57.4,
                   "max": 70
                 },
                 {
                   "rotulo": "Pretos e pardos",
-                  "valor": 50.0,
+                  "valor": 51.3,
                   "max": 70
                 }
               ]
@@ -741,21 +757,21 @@
             {
               "id": "sexo",
               "dimensao": "Por sexo",
-              "titulo": "Conclusão do ensino médio por sexo (2024, %)",
+              "titulo": "Conclusão do ensino médio por sexo (2025, %)",
               "valores": [
                 {
                   "rotulo": "Mulheres",
-                  "valor": 59.6,
+                  "valor": 59.4,
                   "max": 65
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 56.0,
+                  "valor": 57.4,
                   "max": 65
                 },
                 {
                   "rotulo": "Homens",
-                  "valor": 52.2,
+                  "valor": 55.2,
                   "max": 65
                 }
               ]
@@ -763,36 +779,36 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Conclusão do ensino médio por região (2024, %)",
+              "titulo": "Conclusão do ensino médio por região (2025, %)",
               "valores": [
                 {
                   "rotulo": "Sudeste",
-                  "valor": 60.4,
+                  "valor": 63.1,
                   "max": 65
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 58.2,
+                  "valor": 57.8,
                   "max": 65
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 57.9,
+                  "valor": 61.0,
                   "max": 65
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 56.0,
+                  "valor": 57.4,
                   "max": 65
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 50.5,
+                  "valor": 53.9,
                   "max": 65
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 49.3,
+                  "valor": 47.7,
                   "max": 65
                 }
               ]
@@ -802,18 +818,18 @@
             "nome": "PNAD Contínua — Módulo Educação (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "Junho/2025 (dados de 2024)",
+            "ultimaAtualizacao": "Junho/2026 (dados de 2025)",
             "url": "https://www.ibge.gov.br/estatisticas/sociais/educacao/17270-pnad-continua.html"
           },
-          "notaMetodologica": "Mede o estoque acumulado de adultos com ensino médio concluído. Desigualdades persistem: 63,4% das pessoas brancas vs 50,0% das pretas ou pardas. Cerca de 18,5% dos jovens 15-29 anos não trabalham, estudam nem se qualificam (NEM-NEM). Necessidade de trabalhar, gravidez e desinteresse são os principais motivos de abandono."
+          "notaMetodologica": "Mede o estoque acumulado de adultos com ensino médio concluído (médio completo, superior incompleto ou superior completo). Desigualdades persistem: 64,9% das pessoas brancas vs 51,3% das pretas ou pardas em 2025. Em 2025, 17,5% dos jovens de 15 a 29 anos não estavam ocupados nem estudavam ou se qualificavam (NEM-NEM). Necessidade de trabalhar, falta de interesse e gravidez são os principais motivos de abandono. A série foi reponderada pelo IBGE em 2026 com base no Censo 2022, o que revisou os anos anteriores."
         },
         {
           "id": "abandono-em",
           "titulo": "Abandono no Ensino Médio",
-          "indicador": "Taxa anual de abandono na 3ª série do ensino médio",
-          "valor": 4.6,
-          "unidade": "% dos matriculados (2024)",
-          "destaque": "Cerca de 600 mil jovens fora da escola",
+          "indicador": "Taxa anual de abandono no ensino médio (rede total)",
+          "valor": 2.2,
+          "unidade": "% dos matriculados no ensino médio (2025)",
+          "destaque": "Menor taxa desde 2017",
           "totalAbsoluto": "Maior abandono no 1º ano EM (rede pública)",
           "tendencia": "queda",
           "serie": [
@@ -827,11 +843,11 @@
             },
             {
               "ano": 2019,
-              "valor": 5.8
+              "valor": 4.8
             },
             {
               "ano": 2020,
-              "valor": 4.0
+              "valor": 2.3
             },
             {
               "ano": 2021,
@@ -839,15 +855,19 @@
             },
             {
               "ano": 2022,
-              "valor": 5.4
+              "valor": 5.7
             },
             {
               "ano": 2023,
-              "valor": 4.9
+              "valor": 3.4
             },
             {
               "ano": 2024,
-              "valor": 4.6
+              "valor": 3.2
+            },
+            {
+              "ano": 2025,
+              "valor": 2.2
             }
           ],
           "rotuloSerieY": "% dos matriculados",
@@ -855,21 +875,21 @@
             {
               "id": "serie",
               "dimensao": "Por série",
-              "titulo": "Abandono por série do ensino médio (2024, %)",
+              "titulo": "Abandono por série do ensino médio (2025, %)",
               "valores": [
                 {
                   "rotulo": "1º ano EM",
-                  "valor": 6.8,
+                  "valor": 2.6,
                   "max": 8
                 },
                 {
                   "rotulo": "2º ano EM",
-                  "valor": 4.2,
+                  "valor": 2.2,
                   "max": 8
                 },
                 {
                   "rotulo": "3º ano EM",
-                  "valor": 4.6,
+                  "valor": 1.5,
                   "max": 8
                 }
               ]
@@ -879,10 +899,10 @@
             "nome": "INEP — Censo Escolar / Indicadores Educacionais",
             "produtor": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "2025 (dados de 2024)",
+            "ultimaAtualizacao": "Junho/2026 (dados de 2025)",
             "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais"
           },
-          "notaMetodologica": "Abandono = alunos que deixam de frequentar antes do fim do ano letivo. Não inclui reprovados que permanecem na escola. O ensino médio brasileiro perde anualmente cerca de 600 mil jovens entre abandono e reprovação. Valores aproximados a partir de indicadores educacionais do INEP."
+          "notaMetodologica": "Abandono = alunos que deixam de frequentar antes do fim do ano letivo. Não inclui reprovados que permanecem na escola. Taxa do ensino médio como um todo, Brasil, rede total (pública e privada), conforme as planilhas de Taxas de Rendimento Escolar do INEP. Em 2025, a taxa de reprovação no ensino médio foi de 3,0%."
         },
         {
           "id": "distorcao",
@@ -972,10 +992,10 @@
           "id": "analfabetismo",
           "titulo": "Analfabetismo",
           "indicador": "Pessoas de 15 anos ou mais que não sabem ler e escrever",
-          "valor": 5.3,
+          "valor": 4.9,
           "unidade": "% da população de 15+ anos",
           "destaque": "Menor taxa da série histórica",
-          "totalAbsoluto": "9,1 milhões de analfabetos — meta PNE 2024: erradicação",
+          "totalAbsoluto": "8,4 milhões de analfabetos em 2025; meta do PNE era a erradicação até 2024",
           "tendencia": "queda",
           "serie": [
             {
@@ -988,7 +1008,7 @@
             },
             {
               "ano": 2018,
-              "valor": 6.6
+              "valor": 6.3
             },
             {
               "ano": 2019,
@@ -1005,6 +1025,10 @@
             {
               "ano": 2024,
               "valor": 5.3
+            },
+            {
+              "ano": 2025,
+              "valor": 4.9
             }
           ],
           "rotuloSerieY": "% da população 15+",
@@ -1012,16 +1036,16 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Analfabetismo por região (2024, % da pop. 15+)",
+              "titulo": "Analfabetismo por região (2025, % da pop. 15+)",
               "valores": [
                 {
                   "rotulo": "Nordeste",
-                  "valor": 11.1,
+                  "valor": 10.6,
                   "max": 15
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 6.0,
+                  "valor": 5.7,
                   "max": 15
                 },
                 {
@@ -1031,12 +1055,12 @@
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 2.8,
+                  "valor": 2.3,
                   "max": 15
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 2.7,
+                  "valor": 2.4,
                   "max": 15
                 }
               ]
@@ -1044,21 +1068,21 @@
             {
               "id": "raca",
               "dimensao": "Por raça/cor",
-              "titulo": "Analfabetismo por raça/cor (2024, % da pop. 15+)",
+              "titulo": "Analfabetismo por raça/cor (2025, % da pop. 15+)",
               "valores": [
                 {
                   "rotulo": "Pretos e pardos",
-                  "valor": 6.9,
+                  "valor": 6.5,
                   "max": 10
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 5.3,
+                  "valor": 4.9,
                   "max": 10
                 },
                 {
                   "rotulo": "Brancos",
-                  "valor": 3.1,
+                  "valor": 2.8,
                   "max": 10
                 }
               ]
@@ -1066,26 +1090,26 @@
             {
               "id": "idade",
               "dimensao": "Por faixa etária",
-              "titulo": "Analfabetismo por idade (2024, %)",
+              "titulo": "Analfabetismo por idade (2025, %)",
               "valores": [
                 {
                   "rotulo": "60 anos ou mais",
-                  "valor": 14.9,
+                  "valor": 13.8,
                   "max": 22
                 },
                 {
                   "rotulo": "60+ (pretos e pardos)",
-                  "valor": 21.8,
+                  "valor": 20.6,
                   "max": 22
                 },
                 {
                   "rotulo": "60+ (brancos)",
-                  "valor": 8.1,
+                  "valor": 7.3,
                   "max": 22
                 },
                 {
                   "rotulo": "15 anos ou mais (geral)",
-                  "valor": 5.3,
+                  "valor": 4.9,
                   "max": 22
                 }
               ]
@@ -1093,16 +1117,16 @@
             {
               "id": "sexo",
               "dimensao": "Por sexo",
-              "titulo": "Analfabetismo por sexo (2024, % da pop. 15+)",
+              "titulo": "Analfabetismo por sexo (2025, % da pop. 15+)",
               "valores": [
                 {
                   "rotulo": "Homens",
-                  "valor": 5.6,
+                  "valor": 5.2,
                   "max": 7
                 },
                 {
                   "rotulo": "Mulheres",
-                  "valor": 5.0,
+                  "valor": 4.6,
                   "max": 7
                 }
               ]
@@ -1112,10 +1136,10 @@
             "nome": "PNAD Contínua — Módulo Educação (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "Junho/2025 (dados de 2024)",
+            "ultimaAtualizacao": "Junho/2026 (dados de 2025)",
             "url": "https://www.ibge.gov.br/estatisticas/sociais/educacao/17270-pnad-continua.html"
           },
-          "notaMetodologica": "Considera-se alfabetizado quem sabe ler e escrever um bilhete simples. Pandemia interrompeu série em 2020-2021. Desigualdades raciais persistem: 3,1% entre brancos vs 6,9% entre pretos e pardos. Entre idosos (60+), taxa nacional é 14,9%."
+          "notaMetodologica": "Considera-se alfabetizado quem sabe ler e escrever um bilhete simples. Pandemia interrompeu série em 2020-2021. Desigualdades raciais persistem: 2,8% entre brancos vs 6,5% entre pretos e pardos em 2025. Entre idosos (60+), a taxa nacional é 13,8%. A série foi reponderada pelo IBGE em 2026 com base no Censo 2022, o que revisou os anos anteriores."
         }
       ]
     }

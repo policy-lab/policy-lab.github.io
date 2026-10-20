@@ -20,10 +20,10 @@
           "id": "esgoto",
           "titulo": "Saneamento Básico",
           "indicador": "Atendimento de coleta de esgoto (% da população)",
-          "valor": 59.7,
+          "valor": 62.3,
           "unidade": "% da população",
-          "destaque": "Água: 83,1% — Tratamento do esgoto coletado: 51,2%",
-          "totalAbsoluto": "R$ 28 bi investidos em 2023",
+          "destaque": "Água: 84,1% da população; esgoto tratado: 51,8% do volume gerado",
+          "totalAbsoluto": "R$ 28,3 bi investidos em água e esgoto em 2024",
           "tendencia": "alta",
           "serie": [
             {
@@ -57,6 +57,10 @@
             {
               "ano": 2023,
               "valor": 59.7
+            },
+            {
+              "ano": 2024,
+              "valor": 62.3
             }
           ],
           "rotuloSerieY": "% da população",
@@ -64,26 +68,26 @@
             {
               "id": "componentes",
               "dimensao": "Por componente",
-              "titulo": "Estatísticas SINISA 2023 (% da população)",
+              "titulo": "Estatísticas SINISA 2024 (água e coleta em % da população; tratamento e perdas em % do volume)",
               "valores": [
                 {
                   "rotulo": "Acesso à água",
-                  "valor": 83.1,
+                  "valor": 84.1,
                   "max": 100
                 },
                 {
                   "rotulo": "Coleta de esgoto",
-                  "valor": 59.7,
+                  "valor": 62.3,
                   "max": 100
                 },
                 {
                   "rotulo": "Esgoto tratado",
-                  "valor": 51.2,
+                  "valor": 51.8,
                   "max": 100
                 },
                 {
                   "rotulo": "Perdas na distribuição",
-                  "valor": 39.9,
+                  "valor": 39.5,
                   "max": 100
                 }
               ]
@@ -91,36 +95,36 @@
             {
               "id": "regiao",
               "dimensao": "Por região (esgoto)",
-              "titulo": "Cobertura de coleta de esgoto por região (2023, % da população)",
+              "titulo": "Cobertura de coleta de esgoto por região (2024, % da população)",
               "valores": [
                 {
                   "rotulo": "Sudeste",
-                  "valor": 80.8,
+                  "valor": 81.9,
                   "max": 90
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 67.4,
+                  "valor": 68.3,
                   "max": 90
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 48.2,
+                  "valor": 57.7,
                   "max": 90
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 59.7,
+                  "valor": 62.3,
                   "max": 90
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 32.5,
+                  "valor": 35.9,
                   "max": 90
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 22.8,
+                  "valor": 24.7,
                   "max": 90
                 }
               ]
@@ -130,10 +134,10 @@
             "nome": "SINISA/SNIS — Sistema Nacional de Informações em Saneamento Básico",
             "produtor": "Ministério das Cidades (Secretaria Nacional de Saneamento)",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "Março/2025 (dados de 2023)",
-            "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis"
+            "ultimaAtualizacao": "Dezembro/2025 (dados de 2024)",
+            "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa/resultados-sinisa-2025"
           },
-          "notaMetodologica": "SINISA substituiu SNIS a partir do ciclo 2023. Limitação: cobertura nominal (rede instalada) pode diferir de cobertura efetiva (ligação domiciliar funcional). Marco Legal do Saneamento (2020) estabelece meta de universalização até 2033. Desigualdade regional persistente: Sudeste 80,8% e Norte 22,8% (3,5x menos). Valores regionais 2023 — Sul e Nordeste aproximados a partir do agregado nacional do SINISA."
+          "notaMetodologica": "Até 2022 a série vem do SNIS; a partir do ano de referência 2023, do SINISA (indicador IES0001, população total atendida com rede coletora de esgoto). No recorte por componente, água é o IAG0001, esgoto tratado é o IES2003 (esgoto tratado referido à água consumida) e perdas é o IAG2013 (perdas totais de água na distribuição). O investimento soma o informado ao SINISA em água (R$ 14,59 bi) e em esgoto (R$ 13,68 bi). Limitação: cobertura nominal (rede instalada) pode diferir de cobertura efetiva (ligação domiciliar funcional). Marco Legal do Saneamento (2020) estabelece meta de universalização até 2033. Desigualdade regional persistente: em 2024, Sudeste 81,9% e Norte 24,7% (3,3 vezes menos)."
         }
       ]
     },
@@ -146,39 +150,43 @@
           "id": "lixo",
           "titulo": "Coleta de Lixo",
           "indicador": "Domicílios com coleta direta ou indireta de lixo",
-          "valor": 92.0,
+          "valor": 93.1,
           "unidade": "% dos domicílios",
           "destaque": "Cobertura urbana próxima à universalização",
           "totalAbsoluto": "Desigualdade rural × urbano persiste",
-          "tendencia": "alta",
+          "tendencia": "estavel",
           "serie": [
             {
               "ano": 2016,
-              "valor": 89.8
+              "valor": 90.4
             },
             {
               "ano": 2017,
-              "valor": 90.2
+              "valor": 90.8
             },
             {
               "ano": 2018,
-              "valor": 90.7
-            },
-            {
-              "ano": 2019,
               "valor": 91.1
             },
             {
+              "ano": 2019,
+              "valor": 91.3
+            },
+            {
               "ano": 2022,
-              "valor": 91.5
+              "valor": 92.2
             },
             {
               "ano": 2023,
-              "valor": 91.8
+              "valor": 92.4
             },
             {
               "ano": 2024,
-              "valor": 92.0
+              "valor": 93.1
+            },
+            {
+              "ano": 2025,
+              "valor": 93.1
             }
           ],
           "rotuloSerieY": "% domicílios atendidos",
@@ -186,21 +194,21 @@
             {
               "id": "situacao",
               "dimensao": "Urbano × Rural",
-              "titulo": "Coleta de lixo por situação do domicílio (2024, %)",
+              "titulo": "Coleta de lixo por situação do domicílio (2025, %)",
               "valores": [
                 {
                   "rotulo": "Urbano",
-                  "valor": 97.5,
+                  "valor": 99.4,
                   "max": 100
                 },
                 {
                   "rotulo": "Brasil (total)",
-                  "valor": 92.0,
+                  "valor": 93.1,
                   "max": 100
                 },
                 {
                   "rotulo": "Rural",
-                  "valor": 35.0,
+                  "valor": 45.0,
                   "max": 100
                 }
               ]
@@ -212,142 +220,142 @@
               "valores": [
                 {
                   "rotulo": "Santa Catarina",
-                  "valor": 99.1,
+                  "valor": 96.7,
                   "max": 100
                 },
                 {
                   "rotulo": "Paraná",
-                  "valor": 99.0,
+                  "valor": 94.4,
                   "max": 100
                 },
                 {
                   "rotulo": "São Paulo",
-                  "valor": 98.6,
+                  "valor": 99.0,
                   "max": 100
                 },
                 {
                   "rotulo": "Espírito Santo",
-                  "valor": 98.6,
+                  "valor": 93.0,
                   "max": 100
                 },
                 {
                   "rotulo": "Ceará",
-                  "valor": 98.2,
+                  "valor": 85.5,
                   "max": 100
                 },
                 {
                   "rotulo": "Rio Grande do Norte",
-                  "valor": 98.0,
+                  "valor": 90.8,
                   "max": 100
                 },
                 {
                   "rotulo": "Rio Grande do Sul",
-                  "valor": 97.9,
+                  "valor": 95.5,
                   "max": 100
                 },
                 {
                   "rotulo": "Rondônia",
-                  "valor": 97.7,
+                  "valor": 79.5,
                   "max": 100
                 },
                 {
                   "rotulo": "Sergipe",
-                  "valor": 97.6,
+                  "valor": 91.5,
                   "max": 100
                 },
                 {
                   "rotulo": "Minas Gerais",
-                  "valor": 97.3,
+                  "valor": 92.7,
                   "max": 100
                 },
                 {
                   "rotulo": "Piauí",
-                  "valor": 97.0,
+                  "valor": 73.7,
                   "max": 100
                 },
                 {
                   "rotulo": "Bahia",
-                  "valor": 96.6,
+                  "valor": 83.4,
                   "max": 100
                 },
                 {
                   "rotulo": "Rio de Janeiro",
-                  "valor": 96.5,
+                  "valor": 98.0,
                   "max": 100
                 },
                 {
                   "rotulo": "Distrito Federal",
-                  "valor": 96.5,
+                  "valor": 98.9,
                   "max": 100
                 },
                 {
                   "rotulo": "Pará",
-                  "valor": 96.4,
+                  "valor": 78.1,
                   "max": 100
                 },
                 {
                   "rotulo": "Amazonas",
-                  "valor": 96.1,
+                  "valor": 82.8,
                   "max": 100
                 },
                 {
                   "rotulo": "Mato Grosso",
-                  "valor": 96.0,
+                  "valor": 88.7,
                   "max": 100
                 },
                 {
                   "rotulo": "Acre",
-                  "valor": 95.8,
+                  "valor": 78.4,
                   "max": 100
                 },
                 {
                   "rotulo": "Paraíba",
-                  "valor": 95.1,
+                  "valor": 84.6,
                   "max": 100
                 },
                 {
                   "rotulo": "Tocantins",
-                  "valor": 95.0,
+                  "valor": 85.2,
                   "max": 100
                 },
                 {
                   "rotulo": "Amapá",
-                  "valor": 93.5,
+                  "valor": 90.8,
                   "max": 100
                 },
                 {
                   "rotulo": "Goiás",
-                  "valor": 93.1,
+                  "valor": 94.4,
                   "max": 100
                 },
                 {
                   "rotulo": "Pernambuco",
-                  "valor": 92.9,
+                  "valor": 85.6,
                   "max": 100
                 },
                 {
                   "rotulo": "Mato Grosso do Sul",
-                  "valor": 92.5,
+                  "valor": 90.3,
                   "max": 100
                 },
                 {
                   "rotulo": "Maranhão",
-                  "valor": 92.5,
+                  "valor": 71.4,
                   "max": 100
                 },
                 {
                   "rotulo": "Alagoas",
-                  "valor": 92.1,
+                  "valor": 87.2,
                   "max": 100
                 },
                 {
                   "rotulo": "Roraima",
-                  "valor": 84.3,
+                  "valor": 80.4,
                   "max": 100
                 },
                 {
                   "rotulo": "Brasil (Censo 2022)",
-                  "valor": 96.8,
+                  "valor": 91.7,
                   "max": 100
                 }
               ]
@@ -355,36 +363,36 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Coleta de lixo por região (2024, % dos domicílios)",
+              "titulo": "Coleta de lixo por região (2025, % dos domicílios)",
               "valores": [
                 {
                   "rotulo": "Sul",
-                  "valor": 96.8,
+                  "valor": 96.4,
                   "max": 100
                 },
                 {
                   "rotulo": "Sudeste",
-                  "valor": 96.2,
+                  "valor": 97.6,
                   "max": 100
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 94.1,
+                  "valor": 94.8,
                   "max": 100
                 },
                 {
                   "rotulo": "Brasil (média)",
-                  "valor": 92.0,
+                  "valor": 93.1,
                   "max": 100
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 84.9,
+                  "valor": 85.9,
                   "max": 100
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 80.2,
+                  "valor": 83.9,
                   "max": 100
                 }
               ]
@@ -394,10 +402,10 @@
             "nome": "PNAD Contínua — Características dos Domicílios (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "2025 (dados de 2024, estimativa)",
-            "url": "https://www.ibge.gov.br/estatisticas/sociais/habitacao.html"
+            "ultimaAtualizacao": "Abril/2026 (dados de 2025)",
+            "url": "https://sidra.ibge.gov.br/tabela/6736"
           },
-          "notaMetodologica": "Inclui coleta direta (caminhão) e indireta (caçamba estacionária). Cobertura urbana supera 97%; nas áreas rurais, fica próxima a 35%. Os valores da série são aproximados a partir das tabulações da PNAD; recomenda-se SIDRA/IBGE para análises detalhadas."
+          "notaMetodologica": "Domicílios com lixo coletado diretamente por serviço de limpeza ou em caçamba de serviço de limpeza (PNAD Contínua anual, SIDRA tabela 6736). Cada ano é a soma dos dois percentuais publicados, a mesma conta do informativo do IBGE. A série inteira foi refeita em outubro de 2026 com essa tabela, que já incorpora a reponderação da PNAD pelo Censo 2022; a PNAD não divulgou o tema em 2020 e 2021. Em 2025, a cobertura chega a 99,4% dos domicílios urbanos e a 45,0% dos rurais, onde o principal destino ainda é a queima na propriedade (50,2%). O mapa por UF usa o Censo 2022 (SIDRA tabela 6892, total de domicílios), que é contagem do universo e não se compara diretamente com a PNAD."
         },
         {
           "id": "disposicao-residuos",
@@ -407,7 +415,7 @@
           "unidade": "% do volume coletado (2023)",
           "destaque": "Quase 40% ainda vão para lixões e aterros controlados",
           "totalAbsoluto": "PNRS exigia fim dos lixões em 2014",
-          "tendencia": "alta",
+          "tendencia": "estavel",
           "serie": [
             {
               "ano": 2010,
@@ -489,7 +497,7 @@
             "ultimaAtualizacao": "2024 (dados de 2023)",
             "url": "https://abrelpe.org.br/panorama/"
           },
-          "notaMetodologica": "Diferença entre coleta e disposição: 92% dos domicílios têm coleta, mas só 60% dos resíduos vão para aterros sanitários ambientalmente adequados. O restante vai para 'aterros controlados' (cobertura precária) ou lixões a céu aberto. Política Nacional de Resíduos Sólidos (Lei 12.305/2010) previa erradicação dos lixões até 2014, mas centenas de municípios pequenos ainda mantêm o modelo. Valores regionais aproximados."
+          "notaMetodologica": "Diferença entre coleta e disposição: 93% dos domicílios têm coleta, mas só 60% dos resíduos vão para aterros sanitários ambientalmente adequados. O restante vai para 'aterros controlados' (cobertura precária) ou lixões a céu aberto. Política Nacional de Resíduos Sólidos (Lei 12.305/2010) previa erradicação dos lixões até 2014, mas centenas de municípios pequenos ainda mantêm o modelo. Valores regionais aproximados."
         }
       ]
     },
@@ -505,35 +513,39 @@
           "valor": 99.8,
           "unidade": "% dos domicílios",
           "destaque": "Universalização praticamente atingida",
-          "totalAbsoluto": "Cerca de 200 mil domicílios ainda sem energia",
+          "totalAbsoluto": "Cerca de 135 mil domicílios ainda sem energia elétrica (2025)",
           "tendencia": "estavel",
           "serie": [
             {
               "ano": 2016,
-              "valor": 99.5
+              "valor": 99.8
             },
             {
               "ano": 2017,
-              "valor": 99.6
+              "valor": 99.8
             },
             {
               "ano": 2018,
-              "valor": 99.6
+              "valor": 99.7
             },
             {
               "ano": 2019,
-              "valor": 99.7
+              "valor": 99.8
             },
             {
               "ano": 2022,
-              "valor": 99.7
+              "valor": 99.8
             },
             {
               "ano": 2023,
-              "valor": 99.7
+              "valor": 99.8
             },
             {
               "ano": 2024,
+              "valor": 99.8
+            },
+            {
+              "ano": 2025,
               "valor": 99.8
             }
           ],
@@ -542,11 +554,11 @@
             {
               "id": "situacao",
               "dimensao": "Urbano × Rural",
-              "titulo": "Acesso à energia elétrica (2024, % dos domicílios)",
+              "titulo": "Acesso à energia elétrica (2025, % dos domicílios)",
               "valores": [
                 {
                   "rotulo": "Urbano",
-                  "valor": 99.96,
+                  "valor": 99.9,
                   "max": 100
                 },
                 {
@@ -556,7 +568,7 @@
                 },
                 {
                   "rotulo": "Rural",
-                  "valor": 98.2,
+                  "valor": 99.3,
                   "max": 100
                 }
               ]
@@ -564,26 +576,26 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Acesso à energia elétrica por região (2024, % dos domicílios)",
+              "titulo": "Acesso à energia elétrica por região (2025, % dos domicílios)",
               "valores": [
                 {
                   "rotulo": "Sudeste",
-                  "valor": 99.99,
+                  "valor": 99.9,
                   "max": 100
                 },
                 {
                   "rotulo": "Sul",
-                  "valor": 99.97,
+                  "valor": 99.9,
                   "max": 100
                 },
                 {
                   "rotulo": "Centro-Oeste",
-                  "valor": 99.95,
+                  "valor": 99.9,
                   "max": 100
                 },
                 {
                   "rotulo": "Nordeste",
-                  "valor": 99.85,
+                  "valor": 99.8,
                   "max": 100
                 },
                 {
@@ -593,20 +605,20 @@
                 },
                 {
                   "rotulo": "Norte",
-                  "valor": 98.7,
+                  "valor": 99.4,
                   "max": 100
                 }
               ]
             }
           ],
           "fonte": {
-            "nome": "PNAD Contínua — Características dos Domicílios (IBGE) e Programa Luz para Todos",
-            "produtor": "IBGE / Ministério de Minas e Energia",
+            "nome": "PNAD Contínua, Características dos Domicílios (IBGE)",
+            "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
-            "ultimaAtualizacao": "2025 (dados de 2024, estimativa)",
-            "url": "https://www.gov.br/mme/pt-br/assuntos/secretarias/secretaria-nacional-de-energia-eletrica"
+            "ultimaAtualizacao": "Abril/2026 (dados de 2025)",
+            "url": "https://sidra.ibge.gov.br/tabela/6737"
           },
-          "notaMetodologica": "Cobertura nacional próxima de 100%. Bolsões de exclusão concentram-se em comunidades isoladas da Amazônia. O Programa Luz para Todos (criado em 2003) é responsável pela maior parte dos avanços recentes. Acesso ≠ regularidade: medidas de qualidade do fornecimento (interrupções, tensão) ficam a cargo da ANEEL."
+          "notaMetodologica": "Domicílios com energia elétrica de rede geral ou de fonte alternativa (PNAD Contínua anual, SIDRA tabela 6737). A série inteira foi refeita em outubro de 2026 com essa tabela; a PNAD não divulgou o tema em 2020 e 2021. Cobertura nacional próxima de 100%: os cerca de 135 mil domicílios sem energia em 2025 são a diferença entre o total de domicílios (tabela 6736) e os com energia (tabela 6737). Os menores percentuais estão na área rural (99,3%) e na Região Norte (99,4%), onde comunidades isoladas da Amazônia dependem de fontes alternativas. O Programa Luz para Todos (criado em 2003) é responsável pela maior parte dos avanços recentes. Acesso não é regularidade: medidas de qualidade do fornecimento (interrupções, tensão) ficam a cargo da ANEEL."
         }
       ]
     }
