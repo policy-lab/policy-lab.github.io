@@ -2,13 +2,13 @@
   "id": "financas",
   "area": "Finanças Municipais",
   "ordem": 9,
-  "capituloGuia": "Capítulo 10 — Finanças Públicas",
+  "capituloGuia": "Capítulo 10: Finanças Públicas",
   "fontesRelacionadas": [
-    "FINBRA/Siconfi — Tesouro Nacional",
+    "FINBRA/Siconfi (Tesouro Nacional)",
     "Sistema de Transferências Constitucionais (STN)",
     "Portal da Transparência",
-    "Multi Cidades (FNP) — anuário financeiro municipal",
-    "Receita Federal — arrecadação tributária"
+    "Multi Cidades (FNP): anuário financeiro municipal",
+    "Receita Federal: arrecadação tributária"
   ],
   "temas": [
     {
@@ -117,7 +117,7 @@
             }
           ],
           "fonte": {
-            "nome": "Tesouro Nacional — Sistema de Transferências Constitucionais",
+            "nome": "Tesouro Nacional: Sistema de Transferências Constitucionais",
             "produtor": "Secretaria do Tesouro Nacional (STN)",
             "periodicidade": "Decendial (consolidado anual)",
             "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",
@@ -212,32 +212,32 @@
                 {
                   "rotulo": "Norte",
                   "valor": 2.5,
-                  "max": 15
+                  "max": 5
                 },
                 {
                   "rotulo": "Nordeste",
                   "valor": 4.3,
-                  "max": 15
+                  "max": 5
                 },
                 {
                   "rotulo": "Brasil (média)",
                   "valor": 3.9,
-                  "max": 15
+                  "max": 5
                 },
                 {
                   "rotulo": "Sul",
                   "valor": 4.7,
-                  "max": 15
+                  "max": 5
                 },
                 {
                   "rotulo": "Sudeste",
                   "valor": 3.7,
-                  "max": 15
+                  "max": 5
                 },
                 {
                   "rotulo": "Centro-Oeste",
                   "valor": 4.0,
-                  "max": 15
+                  "max": 5
                 }
               ]
             },
@@ -827,7 +827,7 @@
     {
       "id": "despesa",
       "tema": "Despesa municipal",
-      "descricao": "Como os municípios gastam suas receitas — controle pela Lei de Responsabilidade Fiscal",
+      "descricao": "Como os municípios gastam suas receitas: controle pela Lei de Responsabilidade Fiscal",
       "indicadores": [
         {
           "id": "despesa-pessoal",
@@ -1072,7 +1072,7 @@
             }
           ],
           "fonte": {
-            "nome": "Relatório de Gestão Fiscal (RGF/LRF) — Siconfi",
+            "nome": "Relatório de Gestão Fiscal (RGF/LRF), Siconfi",
             "produtor": "Secretaria do Tesouro Nacional (STN)",
             "periodicidade": "Quadrimestral (consolidado anual)",
             "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",
@@ -1257,7 +1257,7 @@
             }
           ],
           "fonte": {
-            "nome": "SICONFI / Tesouro Nacional — Declaração de Contas Anuais (DCA)",
+            "nome": "SICONFI / Tesouro Nacional: Declaração de Contas Anuais (DCA)",
             "produtor": "Secretaria do Tesouro Nacional (STN)",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",

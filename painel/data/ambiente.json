@@ -2,12 +2,12 @@
   "id": "ambiente",
   "area": "Meio Ambiente",
   "ordem": 7,
-  "capituloGuia": "Capítulo 9 — Infraestrutura e Território",
+  "capituloGuia": "Capítulo 9: Infraestrutura e Território",
   "fontesRelacionadas": [
-    "PRODES — INPE (taxa anual de desmatamento)",
-    "DETER — INPE (alertas em tempo quase real)",
-    "MapBiomas — Cobertura e uso da terra",
-    "SEEG — Sistema de Estimativas de Emissões (Observatório do Clima)",
+    "PRODES (INPE): taxa anual de desmatamento",
+    "DETER (INPE): alertas em tempo quase real",
+    "MapBiomas: Cobertura e uso da terra",
+    "SEEG: Sistema de Estimativas de Emissões (Observatório do Clima)",
     "Cadastro Ambiental Rural (CAR)"
   ],
   "temas": [
@@ -186,7 +186,7 @@
             }
           ],
           "fonte": {
-            "nome": "INPE — PRODES (Programa de Cálculo do Desflorestamento)",
+            "nome": "INPE: PRODES (Programa de Cálculo do Desflorestamento)",
             "produtor": "Instituto Nacional de Pesquisas Espaciais",
             "periodicidade": "Anual (ciclo agosto-julho)",
             "ultimaAtualizacao": "Outubro/2026 (ciclo 2025-2026, estimativa)",
@@ -310,7 +310,7 @@
             }
           ],
           "fonte": {
-            "nome": "INPE — PRODES Cerrado",
+            "nome": "INPE: PRODES Cerrado",
             "produtor": "Instituto Nacional de Pesquisas Espaciais",
             "periodicidade": "Anual (ciclo agosto-julho)",
             "ultimaAtualizacao": "Outubro/2026 (ciclo 2025-2026, mapeamento completo)",
@@ -386,27 +386,27 @@
                 {
                   "rotulo": "Mudança de uso do solo",
                   "valor": 42.2,
-                  "max": 80
+                  "max": 50
                 },
                 {
                   "rotulo": "Agropecuária",
                   "valor": 29.2,
-                  "max": 80
+                  "max": 50
                 },
                 {
                   "rotulo": "Energia",
                   "valor": 19.7,
-                  "max": 80
+                  "max": 50
                 },
                 {
                   "rotulo": "Processos industriais",
                   "valor": 4.4,
-                  "max": 80
+                  "max": 50
                 },
                 {
                   "rotulo": "Resíduos",
                   "valor": 4.5,
-                  "max": 80
+                  "max": 50
                 }
               ]
             },
@@ -416,32 +416,32 @@
               "titulo": "Perfil emissor: Brasil em 2024 (SEEG) vs média global (% por setor)",
               "valores": [
                 {
-                  "rotulo": "Energia — Brasil",
+                  "rotulo": "Energia (Brasil)",
                   "valor": 19.7,
                   "max": 80
                 },
                 {
-                  "rotulo": "Energia — Mundo",
+                  "rotulo": "Energia (Mundo)",
                   "valor": 73.0,
                   "max": 80
                 },
                 {
-                  "rotulo": "Agropecuária — Brasil",
+                  "rotulo": "Agropecuária (Brasil)",
                   "valor": 29.2,
                   "max": 80
                 },
                 {
-                  "rotulo": "Agropecuária — Mundo",
+                  "rotulo": "Agropecuária (Mundo)",
                   "valor": 11.0,
                   "max": 80
                 },
                 {
-                  "rotulo": "Uso do solo — Brasil",
+                  "rotulo": "Uso do solo (Brasil)",
                   "valor": 42.2,
                   "max": 80
                 },
                 {
-                  "rotulo": "Uso do solo — Mundo",
+                  "rotulo": "Uso do solo (Mundo)",
                   "valor": 8.0,
                   "max": 80
                 }
@@ -449,7 +449,7 @@
             }
           ],
           "fonte": {
-            "nome": "SEEG — Sistema de Estimativas de Emissões e Remoções de Gases de Efeito Estufa",
+            "nome": "SEEG: Sistema de Estimativas de Emissões e Remoções de Gases de Efeito Estufa",
             "produtor": "Observatório do Clima (consórcio de organizações da sociedade civil)",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Dezembro/2025 (dados de 2024)",

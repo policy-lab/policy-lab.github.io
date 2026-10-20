@@ -2,11 +2,11 @@
   "id": "seguranca",
   "area": "Segurança Pública",
   "ordem": 1,
-  "capituloGuia": "Capítulo 8 — Segurança Pública",
+  "capituloGuia": "Capítulo 8: Segurança Pública",
   "fontesRelacionadas": [
     "Atlas da Violência (Ipea/FBSP)",
     "Anuário Brasileiro de Segurança Pública (FBSP)",
-    "SIM — Sistema de Informações sobre Mortalidade (MS)",
+    "SIM: Sistema de Informações sobre Mortalidade (MS)",
     "Registros de Ocorrências Estaduais (ISP-RJ, SSP-SP)"
   ],
   "temas": [
@@ -281,9 +281,9 @@
           "id": "mvci",
           "titulo": "Homicídios Ocultos (MVCI)",
           "indicador": "Estimativa de homicídios não contabilizados (Mortes Violentas por Causa Indeterminada)",
-          "valor": 5019,
-          "unidade": "homicídios ocultos por ano (média 2014-2024)",
-          "destaque": "Homicídios ocultos subiram 88,6% em 2024",
+          "valor": 7083,
+          "unidade": "homicídios ocultos estimados (2024)",
+          "destaque": "Média anual de 5.019 entre 2014 e 2024; em 2024, alta de 88,6% sobre 2023",
           "totalAbsoluto": "55.212 homicídios ocultos estimados em 11 anos",
           "tendencia": "alta",
           "formatoValor": "inteiro",
@@ -771,7 +771,7 @@
             }
           ],
           "fonte": {
-            "nome": "SISDEPEN — Sistema de Informações do Departamento Penitenciário Nacional",
+            "nome": "SISDEPEN: Sistema de Informações do Departamento Penitenciário Nacional",
             "produtor": "Senappen / Ministério da Justiça",
             "periodicidade": "Semestral",
             "ultimaAtualizacao": "Maio/2026 (dados de dezembro de 2025)",
@@ -864,7 +864,7 @@
             }
           ],
           "fonte": {
-            "nome": "SISDEPEN — Sistema de Informações Penitenciárias",
+            "nome": "SISDEPEN: Sistema de Informações Penitenciárias",
             "produtor": "Senappen / Ministério da Justiça",
             "periodicidade": "Semestral",
             "ultimaAtualizacao": "Maio/2026 (dados de dezembro de 2025)",

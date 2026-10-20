@@ -2,12 +2,12 @@
   "id": "saude",
   "area": "Saúde",
   "ordem": 3,
-  "capituloGuia": "Capítulo 5 — Saúde",
+  "capituloGuia": "Capítulo 5: Saúde",
   "fontesRelacionadas": [
-    "SIM — Sistema de Informações sobre Mortalidade",
-    "Sinasc — Sistema de Informações sobre Nascidos Vivos",
-    "PNI — Programa Nacional de Imunizações (SI-PNI)",
-    "SIH/SIA — Internações e Atendimento Ambulatorial",
+    "SIM: Sistema de Informações sobre Mortalidade",
+    "Sinasc: Sistema de Informações sobre Nascidos Vivos",
+    "PNI: Programa Nacional de Imunizações (SI-PNI)",
+    "SIH/SIA: Internações e Atendimento Ambulatorial",
     "Pesquisa Nacional de Saúde (PNS/IBGE)"
   ],
   "temas": [
@@ -267,7 +267,7 @@
             }
           ],
           "fonte": {
-            "nome": "IBGE — Projeção da População 2024 (3ª edição), Indicadores Implícitos (TMI a partir de SIM/Sinasc-MS)",
+            "nome": "IBGE: Projeção da População 2024 (3ª edição), Indicadores Implícitos (TMI a partir de SIM/Sinasc-MS)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Projeção 2024, 3ª edição (referência 2023)",
@@ -424,7 +424,7 @@
         {
           "id": "vacinacao",
           "titulo": "Cobertura Vacinal",
-          "indicador": "Cobertura da Tríplice Viral (1ª dose) — sarampo, caxumba e rubéola",
+          "indicador": "Cobertura da Tríplice Viral (1ª dose), contra sarampo, caxumba e rubéola",
           "valor": 93.1,
           "unidade": "% das crianças menores de 1 ano (2025, preliminar)",
           "destaque": "Recuou em 2025 e voltou a ficar abaixo da meta de 95%",
@@ -550,7 +550,7 @@
           ],
           "fonte": {
             "nome": "Ministério da Saúde, painel Cobertura Vacinal Infantil (SI-PNI/RNDS, por residência)",
-            "produtor": "Ministério da Saúde — DATASUS",
+            "produtor": "Ministério da Saúde (DATASUS)",
             "periodicidade": "Mensal/anual",
             "ultimaAtualizacao": "Outubro/2026 (dados de 2025)",
             "url": "https://infoms.saude.gov.br/extensions/SEIDIGI_DEMAS_VACINACAO_CALENDARIO_NACIONAL_COBERTURA_RESIDENCIA/index.html"
@@ -563,7 +563,7 @@
           "indicador": "Cobertura vacinal de BCG em menores de 1 ano",
           "valor": 100.8,
           "unidade": "% das crianças menores de 1 ano (2025, preliminar)",
-          "destaque": "Universal — aplicada na maternidade",
+          "destaque": "Universal: aplicada na maternidade",
           "totalAbsoluto": "Em 2025, só BCG e hepatite B (até 30 dias de vida) passaram de 95%",
           "tendencia": "alta",
           "serie": [
@@ -1129,7 +1129,7 @@
             }
           ],
           "fonte": {
-            "nome": "Sinasc — Sistema de Informações sobre Nascidos Vivos (DataSUS)",
+            "nome": "Sinasc: Sistema de Informações sobre Nascidos Vivos (DataSUS)",
             "produtor": "Ministério da Saúde",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Dezembro/2025 (dados de 2024)",

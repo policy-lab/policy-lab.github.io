@@ -2,12 +2,12 @@
   "id": "habitacao",
   "area": "Habitação",
   "ordem": 8,
-  "capituloGuia": "Capítulo 9 — Infraestrutura e Território",
+  "capituloGuia": "Capítulo 9: Infraestrutura e Território",
   "fontesRelacionadas": [
-    "Fundação João Pinheiro — Déficit Habitacional",
-    "PNAD Contínua (IBGE) — domicílios e renda",
-    "Ministério das Cidades — Minha Casa Minha Vida",
-    "Cadastro Único (MDS) — base do MCMV Faixa 1",
+    "Fundação João Pinheiro: Déficit Habitacional",
+    "PNAD Contínua (IBGE): domicílios e renda",
+    "Ministério das Cidades: Minha Casa Minha Vida",
+    "Cadastro Único (MDS): base do MCMV Faixa 1",
     "Censo Demográfico (IBGE)"
   ],
   "temas": [
@@ -23,7 +23,7 @@
           "valor": 5.77,
           "unidade": "milhões de domicílios (2024)",
           "destaque": "Menor proporção de domicílios da série histórica",
-          "totalAbsoluto": "7,4% dos domicílios — segundo recuo anual seguido",
+          "totalAbsoluto": "7,4% dos domicílios, segundo recuo anual seguido",
           "tendencia": "queda",
           "serie": [
             {
@@ -260,7 +260,7 @@
             }
           ],
           "fonte": {
-            "nome": "Fundação João Pinheiro — Déficit Habitacional (com Min. das Cidades)",
+            "nome": "Fundação João Pinheiro: Déficit Habitacional (com Min. das Cidades)",
             "produtor": "Fundação João Pinheiro / Ministério das Cidades",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Junho/2026 (dados de 2024)",
@@ -709,7 +709,7 @@
             }
           ],
           "fonte": {
-            "nome": "PNAD Contínua — Características dos Domicílios (IBGE)",
+            "nome": "PNAD Contínua: Características dos Domicílios (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Abril/2026 (dados de 2025)",
@@ -948,7 +948,7 @@
             }
           ],
           "fonte": {
-            "nome": "PNAD Contínua — Características dos Domicílios (IBGE)",
+            "nome": "PNAD Contínua: Características dos Domicílios (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Abril/2026 (dados de 2025)",

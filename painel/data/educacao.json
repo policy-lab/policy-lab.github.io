@@ -2,13 +2,13 @@
   "id": "educacao",
   "area": "Educação",
   "ordem": 2,
-  "capituloGuia": "Capítulo 6 — Educação",
+  "capituloGuia": "Capítulo 6: Educação",
   "fontesRelacionadas": [
     "Censo Escolar da Educação Básica (INEP)",
-    "SAEB — Sistema de Avaliação da Educação Básica",
-    "PNAD Contínua — Módulo Educação (IBGE)",
-    "ENEM — Exame Nacional do Ensino Médio",
-    "SIOPE — Orçamentos Públicos em Educação"
+    "SAEB: Sistema de Avaliação da Educação Básica",
+    "PNAD Contínua: Módulo Educação (IBGE)",
+    "ENEM: Exame Nacional do Ensino Médio",
+    "SIOPE: Orçamentos Públicos em Educação"
   ],
   "temas": [
     {
@@ -244,7 +244,7 @@
             }
           ],
           "fonte": {
-            "nome": "INEP — SAEB e Censo Escolar",
+            "nome": "INEP: SAEB e Censo Escolar",
             "produtor": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira",
             "periodicidade": "Bienal",
             "ultimaAtualizacao": "Agosto/2026 (dados de 2025)",
@@ -255,11 +255,11 @@
         {
           "id": "ideb-finais",
           "titulo": "IDEB Anos Finais",
-          "indicador": "IDEB — Anos Finais do Ensino Fundamental (6º ao 9º ano, rede total: pública+privada)",
+          "indicador": "IDEB, Anos Finais do Ensino Fundamental (6º ao 9º ano, rede total: pública+privada)",
           "valor": 5.3,
           "unidade": "escala 0-10 (anos finais EF, rede total)",
           "destaque": "Rede total; Paraná lidera (5,9), seguido de Ceará e Goiás (5,7)",
-          "totalAbsoluto": "Meta era 5,5 — abaixo da projeção do PNE",
+          "totalAbsoluto": "Meta era 5,5, abaixo da projeção do PNE",
           "tendencia": "alta",
           "serie": [
             {
@@ -458,7 +458,7 @@
             }
           ],
           "fonte": {
-            "nome": "INEP — Índice de Desenvolvimento da Educação Básica (IDEB)",
+            "nome": "INEP: Índice de Desenvolvimento da Educação Básica (IDEB)",
             "produtor": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira",
             "periodicidade": "Bienal",
             "ultimaAtualizacao": "Agosto/2026 (dados de 2025)",
@@ -469,11 +469,11 @@
         {
           "id": "ideb-medio",
           "titulo": "IDEB Ensino Médio",
-          "indicador": "IDEB — Ensino Médio (rede total: pública+privada)",
+          "indicador": "IDEB, Ensino Médio (rede total: pública+privada)",
           "valor": 4.5,
           "unidade": "escala 0-10 (ensino médio, rede total)",
           "destaque": "Etapa mais crítica; Paraná lidera (5,1); Amazonas e Roraima têm o menor índice (3,8)",
-          "totalAbsoluto": "Meta era 5,2 — diferença persistente",
+          "totalAbsoluto": "Meta era 5,2, diferença persistente",
           "tendencia": "alta",
           "serie": [
             {
@@ -672,7 +672,7 @@
             }
           ],
           "fonte": {
-            "nome": "INEP — Índice de Desenvolvimento da Educação Básica (IDEB)",
+            "nome": "INEP: Índice de Desenvolvimento da Educação Básica (IDEB)",
             "produtor": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira",
             "periodicidade": "Bienal",
             "ultimaAtualizacao": "Agosto/2026 (dados de 2025)",
@@ -815,7 +815,7 @@
             }
           ],
           "fonte": {
-            "nome": "PNAD Contínua — Módulo Educação (IBGE)",
+            "nome": "PNAD Contínua: Módulo Educação (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Junho/2026 (dados de 2025)",
@@ -880,23 +880,23 @@
                 {
                   "rotulo": "1º ano EM",
                   "valor": 2.6,
-                  "max": 8
+                  "max": 3
                 },
                 {
                   "rotulo": "2º ano EM",
                   "valor": 2.2,
-                  "max": 8
+                  "max": 3
                 },
                 {
                   "rotulo": "3º ano EM",
                   "valor": 1.5,
-                  "max": 8
+                  "max": 3
                 }
               ]
             }
           ],
           "fonte": {
-            "nome": "INEP — Censo Escolar / Indicadores Educacionais",
+            "nome": "INEP: Censo Escolar / Indicadores Educacionais",
             "produtor": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Junho/2026 (dados de 2025)",
@@ -961,23 +961,23 @@
                 {
                   "rotulo": "Ensino Médio",
                   "valor": 16.0,
-                  "max": 30
+                  "max": 20
                 },
                 {
                   "rotulo": "Anos Finais EF",
                   "valor": 14.4,
-                  "max": 30
+                  "max": 20
                 },
                 {
                   "rotulo": "Anos Iniciais EF",
                   "valor": 6.6,
-                  "max": 30
+                  "max": 20
                 }
               ]
             }
           ],
           "fonte": {
-            "nome": "INEP — Censo Escolar / Indicadores Educacionais",
+            "nome": "INEP: Censo Escolar / Indicadores Educacionais",
             "produtor": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Fevereiro/2026 (dados de 2025)",
@@ -1137,7 +1137,7 @@
             }
           ],
           "fonte": {
-            "nome": "PNAD Contínua — Módulo Educação (IBGE)",
+            "nome": "PNAD Contínua: Módulo Educação (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Junho/2026 (dados de 2025)",

@@ -2,12 +2,12 @@
   "id": "trabalho",
   "area": "Mercado de Trabalho",
   "ordem": 6,
-  "capituloGuia": "Capítulo 4 — Mercado de Trabalho",
+  "capituloGuia": "Capítulo 4: Mercado de Trabalho",
   "fontesRelacionadas": [
-    "Novo CAGED — Ministério do Trabalho e Emprego",
-    "RAIS — Relação Anual de Informações Sociais",
+    "Novo CAGED (Ministério do Trabalho e Emprego)",
+    "RAIS: Relação Anual de Informações Sociais",
     "PNAD Contínua (IBGE)",
-    "eSocial — Sistema de Escrituração Digital",
+    "eSocial: Sistema de Escrituração Digital",
     "Pesquisa de Orçamentos Familiares (POF/IBGE)"
   ],
   "temas": [
@@ -162,7 +162,7 @@
             }
           ],
           "fonte": {
-            "nome": "Novo CAGED — Cadastro Geral de Empregados e Desempregados",
+            "nome": "Novo CAGED: Cadastro Geral de Empregados e Desempregados",
             "produtor": "Ministério do Trabalho e Emprego (a partir do eSocial e CAGEDWeb)",
             "periodicidade": "Mensal",
             "ultimaAtualizacao": "Outubro/2026 (dados de 2025 com ajustes; conjuntura até ago/2026)",
@@ -241,7 +241,7 @@
             {
               "id": "uf",
               "dimensao": "Por UF",
-              "titulo": "Taxa de desocupação por UF — média anual de 2025 (%)",
+              "titulo": "Taxa de desocupação por UF (média anual de 2025, %)",
               "formato": "taxa",
               "valores": [
                 {
@@ -464,7 +464,7 @@
             }
           ],
           "fonte": {
-            "nome": "PNAD Contínua Trimestral — IBGE",
+            "nome": "PNAD Contínua Trimestral (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Trimestral",
             "ultimaAtualizacao": "Outubro/2026 (média anual de 2025; conjuntura até jun-ago/2026)",
@@ -572,7 +572,7 @@
             }
           ],
           "fonte": {
-            "nome": "PNAD Contínua — Indicadores Mercado de Trabalho (IBGE)",
+            "nome": "PNAD Contínua: Indicadores Mercado de Trabalho (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Trimestral",
             "ultimaAtualizacao": "Outubro/2026 (média anual de 2025; conjuntura até jun-ago/2026)",
@@ -732,7 +732,7 @@
             }
           ],
           "fonte": {
-            "nome": "PNAD Contínua — Rendimento Real Habitual (IBGE)",
+            "nome": "PNAD Contínua: Rendimento Real Habitual (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Trimestral/anual",
             "ultimaAtualizacao": "Outubro/2026 (média anual de 2025, a preços médios de 2025; conjuntura até jun-ago/2026)",
@@ -861,7 +861,7 @@
             }
           ],
           "fonte": {
-            "nome": "PNAD Contínua (IBGE) — Indicadores de Mercado de Trabalho",
+            "nome": "PNAD Contínua (IBGE): Indicadores de Mercado de Trabalho",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Trimestral",
             "ultimaAtualizacao": "Outubro/2026 (média anual de 2025; conjuntura até jun-ago/2026)",

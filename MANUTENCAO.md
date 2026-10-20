@@ -28,6 +28,7 @@ Esse documento ensina como **atualizar dados**, **trocar textos**, **adicionar e
 16. [Mapas por UF e coleta via API](#16-mapas-por-uf-e-coleta-via-api)
 17. [Finanças municipais: download consolidado do FINBRA (Siconfi)](#17-finanças-municipais-download-consolidado-do-finbra-siconfi)
 18. [Atenção primária: SISAB e CNES](#18-atenção-primária-sisab-e-cnes)
+19. [Mapas e gráficos: como são desenhados](#19-mapas-e-gráficos-como-são-desenhados)
 
 ---
 
@@ -330,6 +331,13 @@ O `max` define a escala da barra. Regra prática:
 - Exemplo: maior valor é 57,4 → `max: 60`. Maior valor é 1.842 → `max: 2000`.
 
 Todos os itens do mesmo recorte devem ter o **mesmo `max`** (senão as barras ficam descalibradas).
+
+Se o maior valor ficar abaixo de 60% do `max`, as barras ficam curtas: use o valor redondo
+logo acima do maior valor (2,6 → 3; 4,7 → 5; 42,2 → 50). Exceção: quando o `max` é o teto
+natural da medida (IDEB vai de 0 a 10; o total de municípios é 5.570), ele pode ficar.
+Valores negativos (variações) aparecem como barras para a esquerda de uma linha de zero;
+o `max` vale para o lado positivo. Nos mapas por UF o `max` não muda nada: a cor vem dos
+quintis (seção 19).
 
 ### Adicionar uma categoria nova
 
@@ -1091,3 +1099,104 @@ O tema "Atenção primária" (área saúde) tem duas estatísticas que se comple
   de 2024, e o Siaps conta cadastros com outra regra desde 2025, que não emenda com ela.
   Os valores calculados (2020 a 2023, Brasil, regiões e UFs) estão em
   `REVISAO-OUTUBRO-2026.md`, e a receita de coleta em `MAPAS-E-APIS.md`, para uso futuro.
+
+---
+
+## 19. Mapas e gráficos: como são desenhados
+
+Revisão visual de outubro de 2026 (duas rodadas). Tudo isto está em `painel/index.html`; os
+dados só mudaram no texto (travessões) e no `mvci` (valor de 2024).
+
+### Malha dos mapas (`UF_PATHS` e `UF_VIEWBOX`)
+
+- Vem da malha oficial do IBGE, por UF, qualidade intermediária:
+  `https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?intrarregiao=UF&qualidade=intermediaria&formato=application/vnd.geo+json`.
+- Foi simplificada com o mapshaper (npm), que preserva a topologia: cada fronteira
+  compartilhada é simplificada uma vez só, então os estados encaixam sem frestas.
+  Comando usado:
+  `mapshaper br_uf.json -filter-islands min-area=1000km2 -proj +proj=poly +lon_0=-54 +lat_0=0 +ellps=GRS80 +units=m -simplify percentage=20% keep-shapes -o format=geojson precision=1 br_20.json`
+  - `-filter-islands min-area=1000km2` tira só ilhas soltas pequenas (Fernando de Noronha,
+    Ilhabela, Ilha Grande e outras com menos de 1.000 km²). Nenhum estado sai: as 27 UFs
+    continuam com um polígono cada; Marajó e a ilha de São Luís ficam, porque fazem parte
+    do polígono principal do estado.
+  - `+proj=poly` é a projeção policônica, padrão do IBGE para o Brasil.
+  - `keep-shapes` impede que estados pequenos (DF, SE, AL, RN, PB) sumam.
+- Depois, o desenho é escalado para 360 de largura, as coordenadas são arredondadas a 0,1
+  (os vértices de fronteira são idênticos nas UFs vizinhas e continuam idênticos) e o
+  **viewBox é a caixa real dos paths com 2% de margem**: `UF_VIEWBOX = '0 0 374.4 374.2'`.
+  Se a malha for refeita, recalcule o viewBox pela caixa dos paths; não reaproveite um
+  viewBox antigo. Resultado: 27 siglas, 2.677 pontos, cerca de 30 KB.
+- Testes que devem passar: 27 paths com sigla e desenho; caixa dos paths dentro do
+  viewBox; cada estado dentro do SVG visível em desktop e em 390 px; nenhum elemento com
+  `overflow` cortando o mapa.
+
+### Cores dos mapas
+
+- Paleta sequencial de 5 classes, um só matiz, do azul claro ao navy da identidade:
+  `#70bee5`, `#359ccb`, `#007ba9`, `#00587d`, `#01354a` (tokens `--seq-1` a `--seq-5`).
+  Validada como paleta ordinal: luminosidade crescente, degraus visíveis, a classe mais
+  clara com 2,06:1 contra o branco (nada de quase branco) e diferença entre classes
+  vizinhas de 10,6 a 13,6 (OKLab ×100) também simulando deuteranopia e protanopia.
+- **Quintis**: 5 classes com número parecido de UFs; com menos de 15 UFs com dado
+  (Amazônia, Cerrado), 3 classes (`#70bee5`, `#007ba9`, `#01354a`), para não sobrar classe
+  de um valor só. Valores iguais ficam na mesma classe; cada corte vai para a fronteira
+  entre valores distintos mais perto do alvo.
+- A legenda mostra o intervalo real de cada classe ("12,2 a 36,3").
+- UF sem valor: cinza neutro com hachura leve. A legenda diz "sem dado" nos mapas
+  nacionais e "fora do bioma" nos mapas parciais (`"mapa": true`).
+- Bordas brancas de 0,9 entre os estados. A dica do mouse mostra "UF: valor".
+- A lista ao lado do mapa tem a mesma altura da coluna do mapa (mapa + legenda) e rola por
+  dentro; cada UF aparece com a cor da sua classe. No celular, a lista vai para baixo do
+  mapa, com até 320 px de altura.
+
+### Gráfico da série
+
+- Mesma família de cores: linha navy, preenchimento `--seq-2`, último ponto `--seq-3`.
+- Eixo X proporcional ao ano. Pelo menos 3 intervalos seguidos iguais formam um "regime"
+  (ex.: quinquenal até 2015, anual a partir de 2018). Só é lacuna o intervalo que quebra o
+  ritmo dos regimes vizinhos; a passagem de um regime para outro não é lacuna.
+  - Lacuna: linha tracejada e preenchimento mais claro (a área é contínua sob a série
+    toda); a nota diz "Linha tracejada: anos sem dado na série (2020 e 2021)."
+  - Mudança de regime: linha cheia; a nota diz, por exemplo, "Pontos quinquenais de 2000
+    a 2015 e anuais a partir de 2018."
+- Anos do eixo X em anos redondos, múltiplos do passo: 1 ano em séries de até 4 anos, 2 anos
+  em séries de até 16 anos e 5 anos acima disso (10, 20, 25 ou 50 se não couber). O primeiro
+  ano entra quando é redondo; o último ponto já tem o rótulo do valor. Exemplo: mortalidade
+  infantil com 2000, 2005, 2010, 2015 e 2020, também no celular.
+- Eixo Y com marcas redondas (1, 2 ou 5 × 10ⁿ), começando em zero quando os valores são
+  positivos; com negativos, aparece a linha do zero.
+- O gráfico é desenhado com a largura real do quadro (e redesenhado se a janela mudar),
+  para o texto sair no tamanho certo também no celular.
+- Série com um ponto só (`renda-media-uf`, `favelas`): sem selo de tendência (nos cards,
+  no modal e no relatório) e sem a seção "Série histórica"; abaixo do valor principal
+  aparece "A fonte é decenal: a série tem um ponto só, de 2022." com o botão do CSV.
+
+### Barras dos recortes
+
+- Barras em `--seq-3`; valores negativos (variações) em laranja `--dado-neg` (`#c06325`),
+  saindo de uma linha de zero para a esquerda.
+- Recortes com linha do Brasil ("Brasil (média)", "Brasil (total)", "Brasil (Censo
+  2022)"): as demais linhas aparecem do maior para o menor e o Brasil no fim, separado por
+  uma linha tracejada, com rótulo em negrito e barra navy. A ordem no JSON não muda.
+- Recorte único: título no mesmo estilo dos outros ("Recortes" + título do recorte).
+- Regra do `max`: seção 6.
+
+### Minigráfico (`sparkSVG`)
+
+- Mesma regra do gráfico grande (eixo a partir de zero quando os valores são positivos,
+  anos proporcionais, lacunas tracejadas). A régua do mínimo ao máximo exagerava variações
+  pequenas. Os cards não mostram o minigráfico: a função existe, mas nenhum card a chama.
+
+### Textos e contraste
+
+- Sem travessão nem meia-risca nos textos visíveis (nomes de fonte compostos pelo painel,
+  capítulos do Guia, títulos de recortes, rótulos, título da página, CSV e relatório): no
+  lugar, dois pontos, vírgula ou parênteses ("SIM: Sistema de Informações sobre
+  Mortalidade", "Capítulo 6: Educação", "Energia (Brasil)"). Ids, chaves e URLs não mudam.
+- Selos de tendência e etiqueta de capítulo com texto mais escuro, 5,5:1 ou mais sobre o
+  fundo colorido (WCAG AA): queda `#3E6B12`, alta `#7A5A0E`, estável `#5A5A60`.
+- Os números aparecem com até 2 casas decimais (5,77 milhões não vira 5,8).
+- URLs longas nas notas quebram linha; no celular, as abas do tema quebram em várias
+  linhas.
+- `mvci`: o valor principal é o último ponto da série (7.083 em 2024); a média anual de
+  5.019 (2014 a 2024) fica no destaque.

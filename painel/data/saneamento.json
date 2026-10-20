@@ -2,13 +2,13 @@
   "id": "saneamento",
   "area": "Saneamento e Território",
   "ordem": 5,
-  "capituloGuia": "Capítulo 9 — Infraestrutura e Território",
+  "capituloGuia": "Capítulo 9: Infraestrutura e Território",
   "fontesRelacionadas": [
-    "SINISA/SNIS — Sistema Nacional de Informações em Saneamento (MCidades)",
+    "SINISA/SNIS: Sistema Nacional de Informações em Saneamento (MCidades)",
     "Atlas Água e Atlas Esgotos (ANA)",
     "PNAD Contínua (IBGE)",
-    "Munic e Estadic — Pesquisas de Capacidade Institucional",
-    "ANEEL — Agência Nacional de Energia Elétrica"
+    "Munic e Estadic: Pesquisas de Capacidade Institucional",
+    "ANEEL: Agência Nacional de Energia Elétrica"
   ],
   "temas": [
     {
@@ -131,7 +131,7 @@
             }
           ],
           "fonte": {
-            "nome": "SINISA/SNIS — Sistema Nacional de Informações em Saneamento Básico",
+            "nome": "SINISA/SNIS: Sistema Nacional de Informações em Saneamento Básico",
             "produtor": "Ministério das Cidades (Secretaria Nacional de Saneamento)",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Dezembro/2025 (dados de 2024)",
@@ -216,7 +216,7 @@
             {
               "id": "uf",
               "dimensao": "Por UF",
-              "titulo": "Coleta de lixo por UF — % dos domicílios (Censo 2022)",
+              "titulo": "Coleta de lixo por UF (% dos domicílios, Censo 2022)",
               "valores": [
                 {
                   "rotulo": "Santa Catarina",
@@ -399,7 +399,7 @@
             }
           ],
           "fonte": {
-            "nome": "PNAD Contínua — Características dos Domicílios (IBGE)",
+            "nome": "PNAD Contínua: Características dos Domicílios (IBGE)",
             "produtor": "Instituto Brasileiro de Geografia e Estatística",
             "periodicidade": "Anual",
             "ultimaAtualizacao": "Abril/2026 (dados de 2025)",

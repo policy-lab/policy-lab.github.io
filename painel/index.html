@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Painel CLEAR — Estatísticas para Avaliação de Políticas Públicas</title>
+<title>Painel CLEAR: Estatísticas para Avaliação de Políticas Públicas</title>
 <meta name="description" content="Painel institucional do FGV CLEAR com estatísticas-chave de políticas públicas brasileiras: segurança, educação, saúde, assistência social, saneamento, trabalho e meio ambiente.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,15 @@
   --navy2: #012030;
   --accent-blue: #08B0EE;
   --accent-green: #98C43B;
+  /* Paleta dos dados (mapas, gráficos e barras): azul em 5 degraus até o navy; laranja nos negativos */
+  --seq-1: #70bee5;
+  --seq-2: #359ccb;
+  --seq-3: #007ba9;
+  --seq-4: #00587d;
+  --seq-5: #01354a;
+  --dado-neg: #c06325;
+  --sem-dado: #e3e3e0;
+  --sem-dado-linha: #b4b4ae;
 
   /* Neutros */
   --paper: #FFFFFF;
@@ -349,9 +358,9 @@ a { color: inherit; }
   border-radius: 999px;
   letter-spacing: 0;
 }
-.card-tendencia.queda { background: var(--clear-light-green); color: var(--clear-green); }
-.card-tendencia.alta { background: var(--clear-light-amber); color: var(--clear-amber); }
-.card-tendencia.estavel { background: var(--paper-warm); color: var(--ink-mute); }
+.card-tendencia.queda { background: var(--clear-light-green); color: #3E6B12; }
+.card-tendencia.alta { background: var(--clear-light-amber); color: #7A5A0E; }
+.card-tendencia.estavel { background: var(--paper-warm); color: #5A5A60; }
 .card-tendencia .arrow { font-size: 13px; line-height: 1; }
 
 .card-footer-link {
@@ -463,6 +472,8 @@ a { color: inherit; }
 }
 
 .modal-body { padding: 32px 40px 40px; }
+/* URLs longas nas notas não podem alargar o modal no celular */
+.nota-metodologica, .hero-context, .source-item dd, .indicator-subheadline { overflow-wrap: anywhere; }
 
 .indicator-headline { display: flex; align-items: center; gap: 14px; margin-bottom: 4px; flex-wrap: wrap; }
 .indicator-headline h3 {
@@ -598,8 +609,9 @@ a { color: inherit; }
 .chart-svg .axis-text { font-size: 11px; fill: var(--ink-soft); }
 .chart-svg .line { fill: none; stroke: var(--navy); stroke-width: 2; }
 .chart-svg .dot { fill: var(--navy); }
-.chart-svg .dot-last { fill: var(--accent-green); stroke: var(--paper); stroke-width: 2; }
-.chart-svg .area { fill: var(--accent-blue); opacity: 0.10; }
+.chart-svg .dot-last { fill: var(--seq-3); stroke: var(--paper); stroke-width: 2; }
+.chart-svg .area { fill: var(--seq-2); opacity: 0.16; }
+.chart-svg .area-lacuna { fill: var(--seq-2); opacity: 0.07; }
 .chart-svg .grid-line { stroke: rgba(127,127,127,0.18); stroke-width: 1; }
 .chart-svg .value-label-last {
   font-size: 12px;
@@ -607,17 +619,31 @@ a { color: inherit; }
   font-weight: 700;
 }
 .chart-svg .zero-line { stroke: rgba(127,127,127,0.4); stroke-width: 1; stroke-dasharray: 3,3; }
+.chart-svg .line-lacuna { fill: none; stroke: var(--navy); stroke-width: 1.5; stroke-dasharray: 4,4; opacity: 0.7; }
+.chart-svg .tick-x { stroke: rgba(127,127,127,0.45); stroke-width: 1; }
+.chart-nota { font-family: var(--sec); font-size: 12px; color: var(--ink-soft); margin-top: 8px; }
+.serie-unica-nota { font-family: var(--sec); font-size: 13px; color: var(--ink-soft); margin-top: 10px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+/* Minigráfico (sparkSVG) */
+.spark-line { fill: none; stroke: var(--navy); stroke-width: 1.5; }
+.spark-lacuna { stroke-dasharray: 3,3; opacity: 0.7; }
+.spark-area { fill: var(--accent-blue); opacity: 0.12; }
+.spark-dot-last { fill: var(--accent-green); }
 
 /* Mapa por UF (recorte com 27 estados) */
-.recorte-mapa{display:grid;grid-template-columns:1.1fr 0.9fr;gap:18px;align-items:start;}
-@media (max-width:640px){.recorte-mapa{grid-template-columns:1fr;}}
+.recorte-mapa{display:grid;grid-template-columns:1.1fr 0.9fr;gap:18px;align-items:stretch;}
+/* A lista ocupa a altura da coluna do mapa (mapa + legenda) e rola por dentro */
+.mapa-lista-wrap{position:relative;min-height:240px;}
+@media (max-width:640px){.recorte-mapa{grid-template-columns:1fr;}.mapa-lista-wrap{position:static;min-height:0;}.mapa-lista{position:static !important;max-height:320px;}}
 .mapa-svg-wrap svg{width:100%;height:auto;display:block;}
-.mapa-svg-wrap svg path{transition:opacity .15s;}
+.mapa-svg-wrap svg path{transition:opacity .15s;stroke-linejoin:round;}
 .mapa-svg-wrap svg path:hover{opacity:.78;cursor:default;}
 .mapa-legenda{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:12px;font-family:var(--sec);font-size:12px;color:var(--ink-soft);font-variant-numeric:tabular-nums;}
 .mapa-legenda span{display:inline-flex;align-items:center;gap:5px;}
 .mapa-legenda .sw{width:12px;height:12px;border-radius:3px;display:inline-block;}
-.mapa-lista{max-height:320px;overflow:auto;font-family:var(--sec);font-size:13px;padding-right:4px;}
+.mapa-legenda .sw-hachura,.mapa-lista .sw-hachura{background:repeating-linear-gradient(45deg,var(--sem-dado) 0 2px,var(--sem-dado-linha) 2px 3px);}
+.mapa-lista{position:absolute;inset:0;overflow:auto;font-family:var(--sec);font-size:13px;padding-right:4px;}
+.mapa-lista-row .uf{display:inline-flex;align-items:center;gap:7px;}
+.mapa-lista-row .sw{width:10px;height:10px;border-radius:2px;display:inline-block;flex:none;}
 .mapa-lista-row{display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-top:1px solid var(--line-soft);}
 .mapa-lista-row:first-child{border-top:none;}
 .mapa-lista-row span:last-child{font-variant-numeric:tabular-nums;color:var(--navy);font-weight:600;}
@@ -673,7 +699,14 @@ a { color: inherit; }
 }
 .recorte-rotulo { color: var(--ink); font-weight: 400; }
 .recorte-bar-wrap { background: rgba(127,127,127,0.12); height: 24px; position: relative; overflow: hidden; border-radius: 2px; }
-.recorte-bar { background: var(--accent-blue); height: 100%; transition: width 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); width: 0; }
+.recorte-bar { background: var(--seq-3); height: 100%; transition: width 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); width: 0; }
+.recorte-bar.neg { background: var(--dado-neg); }
+/* Linha do Brasil (ou média nacional): no fim, com destaque discreto */
+.recorte-row.recorte-brasil { border-top: 1px dashed var(--line); padding-top: 10px; }
+.recorte-row.recorte-brasil .recorte-rotulo { font-weight: 700; color: var(--navy); }
+.recorte-row.recorte-brasil .recorte-bar { background: var(--seq-5); }
+.recorte-bar-wrap.divergente .recorte-bar { position: absolute; top: 0; }
+.recorte-zero { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--ink-mute); z-index: 1; }
 .recorte-valor {
   font-family: var(--sec);
   font-size: 13px;
@@ -742,7 +775,7 @@ a { color: inherit; }
   text-transform: none;
   padding: 4px 10px;
   background: rgba(152, 196, 59, 0.18);
-  color: #5B8A2A;
+  color: #3E6B12;
   border-radius: 3px;
   font-weight: 700;
 }
@@ -941,7 +974,9 @@ a { color: inherit; }
   .hero-valor { font-size: 50px; }
   .modal-body { padding: 24px 24px 32px; }
   .modal-header { padding: 24px 24px 0; }
-  .modal-tabs { overflow-x: auto; flex-wrap: nowrap; }
+  .modal-tabs { flex-wrap: wrap; }
+  .modal-tab { padding: 10px 12px; white-space: normal; text-align: left; }
+  .chart-wrap { padding: 16px 10px 10px; }
   .recorte-row { grid-template-columns: 110px 1fr 70px; gap: 10px; font-size: 12px; }
   .source-grid { grid-template-columns: 1fr; }
   .publications-section { padding: 48px 24px; }
@@ -1096,7 +1131,7 @@ body.modal-open { overflow: hidden; }
 <div class="rel-box" id="rel-box" role="dialog" aria-modal="true" aria-labelledby="rel-title">
   <button class="rel-close" id="rel-close" aria-label="Fechar">×</button>
   <h3 id="rel-title">Gerar relatório</h3>
-  <p class="rel-sub">O painel monta um relatório com as estatísticas, valores, tendências e fontes — pronto para salvar em PDF ou baixar em Markdown.</p>
+  <p class="rel-sub">O painel monta um relatório com as estatísticas, valores, tendências e fontes, pronto para salvar em PDF ou baixar em Markdown.</p>
   <label for="rel-scope">Conteúdo do relatório</label>
   <select id="rel-scope"></select>
   <div class="rel-actions">
@@ -1136,10 +1171,10 @@ body.modal-open { overflow: hidden; }
       <table class="info-cal">
         <thead><tr><th>Trimestre</th><th>O que costuma sair</th></tr></thead>
         <tbody>
-          <tr><td>1º · jan–mar</td><td>Finanças municipais (FINBRA/Siconfi, Anuário FNP), Minha Casa Minha Vida, saneamento (SNIS/SINISA) e PNAD Contínua do 4º trimestre.</td></tr>
-          <tr><td>2º · abr–jun</td><td>Déficit habitacional (Fundação João Pinheiro), homicídios (Atlas da Violência) e educação (conclusão do ensino médio e analfabetismo, PNAD).</td></tr>
-          <tr><td>3º · jul–set</td><td>Feminicídios e Anuário de Segurança Pública (FBSP), saúde (IBGE, SIM, Sinasc), PNAD de domicílios e IDEB/SAEB nos anos de divulgação.</td></tr>
-          <tr><td>4º · out–dez</td><td>Desmatamento (INPE PRODES), emissões de GEE (SEEG) e sistema prisional (SISDEPEN).</td></tr>
+          <tr><td>1º · jan a mar</td><td>Finanças municipais (FINBRA/Siconfi, Anuário FNP), Minha Casa Minha Vida, saneamento (SNIS/SINISA) e PNAD Contínua do 4º trimestre.</td></tr>
+          <tr><td>2º · abr a jun</td><td>Déficit habitacional (Fundação João Pinheiro), homicídios (Atlas da Violência) e educação (conclusão do ensino médio e analfabetismo, PNAD).</td></tr>
+          <tr><td>3º · jul a set</td><td>Feminicídios e Anuário de Segurança Pública (FBSP), saúde (IBGE, SIM, Sinasc), PNAD de domicílios e IDEB/SAEB nos anos de divulgação.</td></tr>
+          <tr><td>4º · out a dez</td><td>Desmatamento (INPE PRODES), emissões de GEE (SEEG) e sistema prisional (SISDEPEN).</td></tr>
           <tr><td>Toda revisão</td><td>Séries mensais e trimestrais: Bolsa Família, BPC e CadÚnico (MDS), emprego formal (CAGED) e a PNAD Contínua de trabalho.</td></tr>
         </tbody>
       </table>
@@ -1166,7 +1201,8 @@ let MANIFESTO = null;
 const fmtNumero = (v, formato) => {
   if (formato === 'inteiro') return new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 0 }).format(v);
   if (Number.isInteger(v) && Math.abs(v) >= 100) return new Intl.NumberFormat('pt-BR').format(v);
-  return new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(v);
+  // Até 2 casas: os valores em milhões com 2 casas (5,77) não podem virar 5,8
+  return new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 2 }).format(v);
 };
 
 /* === Helpers de busca na hierarquia === */
@@ -1206,7 +1242,7 @@ async function carregarDados() {
     MANIFESTO = await manifestoResp.json();
 
     document.getElementById('meta-versao').textContent = MANIFESTO.meta.versao || '4.0';
-    document.getElementById('meta-atualizado').textContent = MANIFESTO.meta.atualizado || '—';
+    document.getElementById('meta-atualizado').textContent = MANIFESTO.meta.atualizado || 'sem data';
 
     const arquivos = MANIFESTO.temas || MANIFESTO.areas || [];
     const promessas = arquivos.map(arq =>
@@ -1236,7 +1272,7 @@ async function carregarDados() {
   } catch (err) {
     console.error(err);
     document.getElementById('grid').innerHTML =
-      '<div class="error-msg"><strong>Erro ao carregar dados.</strong> Este painel precisa ser servido via HTTP — rode <code>python -m http.server</code> na pasta ou use GitHub Pages.</div>';
+      '<div class="error-msg"><strong>Erro ao carregar dados.</strong> Este painel precisa ser servido via HTTP: rode <code>python -m http.server</code> na pasta ou use GitHub Pages.</div>';
   }
 }
 
@@ -1275,24 +1311,115 @@ function renderFilters() {
 }
 
 /* === Sparkline mini para os cards === */
+/* === Escalas comuns ao gráfico da série e ao minigráfico === */
+// Passo "redondo" (1, 2 ou 5 × 10^n) para dividir o eixo em cerca de `alvo` intervalos
+function passoRedondo(bruto) {
+  if (!(bruto > 0)) return 1;
+  const p = Math.pow(10, Math.floor(Math.log10(bruto)));
+  const f = bruto / p;
+  return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p;
+}
+// Eixo Y com marcas redondas; começa em zero quando todos os valores são positivos
+function escalaY(valores, alvo) {
+  let lo = Math.min(0, ...valores), hi = Math.max(0, ...valores);
+  if (hi === lo) hi = lo + 1;
+  const passo = passoRedondo((hi - lo) / alvo);
+  lo = Math.floor(lo / passo + 1e-9) * passo;
+  hi = Math.ceil(hi / passo - 1e-9) * passo;
+  const marcas = [];
+  for (let k = Math.round(lo / passo); k <= Math.round(hi / passo); k++) marcas.push(k * passo);
+  return { lo, hi, passo, marcas };
+}
+function fmtMarca(v, passo, formato) {
+  if (Math.abs(v) < passo / 1e6) v = 0;
+  const casas = passo >= 1 ? 0 : Math.min(3, Math.ceil(-Math.log10(passo) - 1e-9));
+  if (formato === 'inteiro') return new Intl.NumberFormat('pt-BR', { maximumFractionDigits: casas }).format(v);
+  return new Intl.NumberFormat('pt-BR', { minimumFractionDigits: casas, maximumFractionDigits: casas }).format(v);
+}
+// Ritmo da série. Pelo menos 3 intervalos seguidos iguais formam um "regime" (ex.: quinquenal até
+// 2015, anual a partir de 2018). Um intervalo fora de regime é lacuna (anos sem dado) quando é maior
+// que o passo dos regimes vizinhos; a passagem de um regime para outro não é lacuna. Sem regime
+// nenhum, o passo de referência é o menor intervalo da série.
+function trechosDaSerie(serie) {
+  const d = [];
+  for (let i = 1; i < serie.length; i++) d.push(serie[i].ano - serie[i - 1].ano);
+  const reg = d.map(() => null);
+  for (let i = 0; i < d.length;) {
+    let j = i;
+    while (j + 1 < d.length && d[j + 1] === d[i]) j++;
+    if (j - i + 1 >= 3) for (let k = i; k <= j; k++) reg[k] = d[i];
+    i = j + 1;
+  }
+  const menor = d.length ? Math.min(...d) : 1;
+  const referencia = i => {
+    let esq = null, dir = null;
+    for (let k = i - 1; k >= 0 && esq === null; k--) esq = reg[k];
+    for (let k = i + 1; k < d.length && dir === null; k++) dir = reg[k];
+    const viz = [esq, dir].filter(v => v !== null);
+    return viz.length ? Math.max(...viz) : menor;
+  };
+  const cheios = [[serie[0]]], lacunas = [];
+  for (let i = 0; i < d.length; i++) {
+    const passo = reg[i] !== null ? reg[i] : referencia(i);
+    if (reg[i] === null && d[i] > passo) {
+      lacunas.push(Object.assign([serie[i], serie[i + 1]], { passo }));
+      cheios.push([serie[i + 1]]);
+    } else cheios[cheios.length - 1].push(serie[i + 1]);
+  }
+  const regimes = [];
+  for (let i = 0; i < d.length; i++) {
+    if (reg[i] === null) continue;
+    const ult = regimes[regimes.length - 1];
+    if (ult && ult.passo === reg[i] && ult.ate === serie[i].ano) ult.ate = serie[i + 1].ano;
+    else regimes.push({ passo: reg[i], de: serie[i].ano, ate: serie[i + 1].ano });
+  }
+  return { cheios, lacunas, regimes };
+}
+function juntaLista(xs) { return xs.length <= 1 ? (xs[0] || '') : xs.slice(0, -1).join(', ') + ' e ' + xs[xs.length - 1]; }
+const NOME_PASSO = { 1: 'anuais', 2: 'bienais', 3: 'trienais', 4: 'quadrienais', 5: 'quinquenais', 10: 'decenais' };
+// Nota abaixo do gráfico: regimes (quando a série muda de ritmo) e anos sem dado nas lacunas
+function notaSerie(serie) {
+  const { lacunas, regimes } = trechosDaSerie(serie);
+  const partes = [];
+  if (new Set(regimes.map(r => r.passo)).size > 1) {
+    const ultimoAno = serie[serie.length - 1].ano;
+    partes.push('Pontos ' + juntaLista(regimes.map(r => (NOME_PASSO[r.passo] || `a cada ${r.passo} anos`) + ' ' +
+      (r.ate === ultimoAno ? `a partir de ${r.de}` : `de ${r.de} a ${r.ate}`))) + '.');
+  }
+  if (lacunas.length) {
+    const anos = lacunas.map(l => {
+      const a = [];
+      for (let y = l[0].ano + l.passo; y < l[1].ano; y += l.passo) a.push(y);
+      return (l.passo === 1 && a.length > 2) ? `${a[0]} a ${a[a.length - 1]}` : juntaLista(a.map(String));
+    });
+    partes.push(`Linha tracejada: anos sem dado na série (${anos.join('; ')}).`);
+  }
+  return partes.join(' ');
+}
+
+// Minigráfico: mesma regra do gráfico da série (eixo a partir de zero quando os valores são
+// positivos), para não exagerar variações pequenas; anos proporcionais e lacunas tracejadas.
 function sparkSVG(serie) {
   if (!serie || serie.length < 2) return '';
-  const W = 200, H = 36;
+  const W = 200, H = 36, pad = 3;
   const valores = serie.map(d => d.valor);
-  const minV = Math.min(...valores);
-  const maxV = Math.max(...valores);
-  const range = maxV - minV || 1;
-  const xScale = i => (i / (serie.length - 1)) * W;
-  const yScale = v => H - 4 - ((v - minV) / range) * (H - 8);
-  const linePath = serie.map((d, i) => `${i === 0 ? 'M' : 'L'} ${xScale(i).toFixed(1)} ${yScale(d.valor).toFixed(1)}`).join(' ');
-  const areaPath = linePath + ` L ${W} ${H} L 0 ${H} Z`;
-  const lastX = xScale(serie.length - 1);
-  const lastY = yScale(serie[serie.length - 1].valor);
+  const lo = Math.min(0, ...valores), hi = Math.max(0, ...valores);
+  const a0 = serie[0].ano, a1 = serie[serie.length - 1].ano;
+  const x = a => (a - a0) / ((a1 - a0) || 1) * W;
+  const y = v => H - pad - (v - lo) / ((hi - lo) || 1) * (H - 2 * pad);
+  const { cheios, lacunas } = trechosDaSerie(serie);
+  const linha = pts => pts.map((d, i) => `${i ? 'L' : 'M'}${x(d.ano).toFixed(1)} ${y(d.valor).toFixed(1)}`).join(' ');
+  const base = y(0).toFixed(1);
+  const area = cheios.filter(t => t.length > 1).map(t => `${linha(t)} L${x(t[t.length - 1].ano).toFixed(1)} ${base} L${x(t[0].ano).toFixed(1)} ${base} Z`).join(' ');
+  const cheia = cheios.filter(t => t.length > 1).map(linha).join(' ');
+  const trac = lacunas.map(linha).join(' ');
+  const u = serie[serie.length - 1];
   return `
-    <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
-      <path class="spark-area" d="${areaPath}"/>
-      <path class="spark-line" d="${linePath}" vector-effect="non-scaling-stroke"/>
-      <circle class="spark-dot-last" cx="${lastX.toFixed(1)}" cy="${lastY.toFixed(1)}" r="2.2"/>
+    <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
+      ${area ? `<path class="spark-area" d="${area}"/>` : ''}
+      ${cheia ? `<path class="spark-line" d="${cheia}" vector-effect="non-scaling-stroke"/>` : ''}
+      ${trac ? `<path class="spark-line spark-lacuna" d="${trac}" vector-effect="non-scaling-stroke"/>` : ''}
+      <circle class="spark-dot-last" cx="${x(u.ano).toFixed(1)}" cy="${y(u.valor).toFixed(1)}" r="2.2"/>
     </svg>
   `;
 }
@@ -1343,7 +1470,7 @@ function indRowHTML(ind, fonteTag) {
           <span class="ind-val">${fmtNumero(ind.valor, ind.formatoValor)}</span>
           ${uni ? `<span class="ind-unidade" title="${uniFull}">${uni}</span>` : ''}
         </div>
-        ${tendenciaBadge(ind.tendencia)}
+        ${mostraTendencia(ind) ? tendenciaBadge(ind.tendencia) : ''}
       </div>
     </div>`;
 }
@@ -1425,56 +1552,103 @@ function renderGrid(opts) {
 }
 
 /* === Chart SVG === */
-function gerarChartSVG(serie, formato, rotuloY) {
-  const W = 720, H = 280;
-  const margin = { top: 24, right: 60, bottom: 36, left: 60 };
-  const w = W - margin.left - margin.right;
-  const h = H - margin.top - margin.bottom;
-  const valores = serie.map(d => d.valor);
-  const minV = Math.min(...valores, 0);
-  const maxV = Math.max(...valores);
-  const range = maxV - minV || 1;
-  const padY = range * 0.15;
-  const yMin = minV < 0 ? minV - padY : Math.max(0, minV - padY);
-  const yMax = maxV + padY;
-  const xScale = i => margin.left + (w * i / (serie.length - 1));
-  const yScale = v => margin.top + h - ((v - yMin) / (yMax - yMin)) * h;
-  const linePath = serie.map((d, i) => `${i === 0 ? 'M' : 'L'} ${xScale(i)} ${yScale(d.valor)}`).join(' ');
-  const baseY = yScale(Math.max(yMin, 0));
-  const areaPath = linePath + ` L ${xScale(serie.length - 1)} ${baseY} L ${xScale(0)} ${baseY} Z`;
-  const yTicks = 4;
-  const yTickValues = Array.from({ length: yTicks + 1 }, (_, i) => yMin + (yMax - yMin) * i / yTicks);
-  const xLabelIdx = serie.length <= 6 ? serie.map((_, i) => i) : [0, Math.floor(serie.length / 2), serie.length - 1];
-  const zeroY = (yMin < 0 && yMax > 0) ? yScale(0) : null;
+// Gráfico da série: eixo X proporcional ao ano, lacunas tracejadas com preenchimento mais claro, eixo
+// Y com marcas redondas a partir de zero, anos do eixo em passo regular terminando no último ano.
+// `largura` é a largura disponível em px; o viewBox usa essa largura, para o texto sair no tamanho
+// real também no celular.
+function gerarChartSVG(serie, formato, rotuloY, largura) {
+  const W = Math.round(Math.max(280, Math.min(760, largura || 720)));
+  const H = Math.round(Math.max(210, Math.min(290, W * 0.4)));
+  const { lo, hi, passo, marcas } = escalaY(serie.map(d => d.valor), H >= 260 ? 5 : 4);
+  const larguraTexto = s => String(s).length * 6.4;
+  const rotMarcas = marcas.map(v => fmtMarca(v, passo, formato));
+  const ultimo = serie[serie.length - 1];
+  const rotUltimo = fmtNumero(ultimo.valor, formato);
+  const margin = { top: 28, right: Math.round(larguraTexto(rotUltimo) * 1.1 + 18), bottom: 34,
+                   left: Math.round(Math.max(30, ...rotMarcas.map(larguraTexto)) + 14) };
+  const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
+  const a0 = serie[0].ano, a1 = ultimo.ano;
+  const x = a => margin.left + (a1 === a0 ? w / 2 : (a - a0) / (a1 - a0) * w);
+  const y = v => margin.top + h - (v - lo) / (hi - lo) * h;
+  const f1 = v => v.toFixed(1);
+  const { cheios, lacunas } = trechosDaSerie(serie);
+  const linha = pts => pts.map((d, i) => `${i ? 'L' : 'M'}${f1(x(d.ano))} ${f1(y(d.valor))}`).join(' ');
+  const base = f1(y(0));
+  const area = pts => `${linha(pts)} L${f1(x(pts[pts.length - 1].ano))} ${base} L${f1(x(pts[0].ano))} ${base} Z`;
+  const areasCheias = cheios.filter(t => t.length > 1).map(area).join(' ');
+  const areasLacuna = lacunas.map(l => area([l[0], l[1]])).join(' ');
+  const cheia = cheios.filter(t => t.length > 1).map(linha).join(' ');
+  const trac = lacunas.map(l => linha([l[0], l[1]])).join(' ');
+  // Anos no eixo X em anos redondos (múltiplos do passo): 1 ano em séries de até 4 anos, 2 anos em
+  // séries de até 16 anos e 5 anos acima disso; se não couber, 10, 20, 25 ou 50. O primeiro ano
+  // entra quando é redondo; o último ponto já tem o rótulo do valor.
+  const maxRot = Math.max(2, Math.floor(w / 30));
+  const span = a1 - a0;
+  const redondos = p => { const r = []; for (let a = Math.ceil(a0 / p) * p; a <= a1; a += p) r.push(a); return r; };
+  const passos = [1, 2, 5, 10, 20, 25, 50];
+  let ip = passos.indexOf(span <= 4 ? 1 : span <= 16 ? 2 : 5);
+  while (ip < passos.length - 1 && redondos(passos[ip]).length > maxRot) ip++;
+  const anos = redondos(passos[ip]);
+  if (!anos.length) anos.push(a0);
+  const baseEixo = margin.top + h;
   return `
-    <svg class="chart-svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Série histórica">
-      ${yTickValues.map(v => `
-        <line class="grid-line" x1="${margin.left}" y1="${yScale(v)}" x2="${W - margin.right}" y2="${yScale(v)}"/>
-        <text class="axis-text" x="${margin.left - 8}" y="${yScale(v) + 3}" text-anchor="end">${fmtNumero(v, formato)}</text>
+    <svg class="chart-svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Série histórica de ${a0} a ${a1}">
+      ${marcas.map((v, i) => `
+        <line class="grid-line" x1="${margin.left}" y1="${f1(y(v))}" x2="${W - margin.right}" y2="${f1(y(v))}"/>
+        <text class="axis-text" x="${margin.left - 8}" y="${f1(y(v) + 4)}" text-anchor="end">${rotMarcas[i]}</text>
       `).join('')}
-      ${zeroY !== null ? `<line class="zero-line" x1="${margin.left}" y1="${zeroY}" x2="${W - margin.right}" y2="${zeroY}"/>` : ''}
-      <path class="area" d="${areaPath}"/>
-      <path class="line" d="${linePath}"/>
+      ${lo < 0 ? `<line class="zero-line" x1="${margin.left}" y1="${base}" x2="${W - margin.right}" y2="${base}"/>` : ''}
+      ${areasLacuna ? `<path class="area-lacuna" d="${areasLacuna}"/>` : ''}
+      ${areasCheias ? `<path class="area" d="${areasCheias}"/>` : ''}
+      ${cheia ? `<path class="line" d="${cheia}"/>` : ''}
+      ${trac ? `<path class="line-lacuna" d="${trac}"/>` : ''}
       ${serie.map((d, i) => {
         const isLast = i === serie.length - 1;
-        return `<circle class="${isLast ? 'dot-last' : 'dot'}" cx="${xScale(i)}" cy="${yScale(d.valor)}" r="${isLast ? 5 : 3}"/>`;
+        return `<circle class="${isLast ? 'dot-last' : 'dot'}" cx="${f1(x(d.ano))}" cy="${f1(y(d.valor))}" r="${isLast ? 5 : 3}"><title>${d.ano}: ${fmtNumero(d.valor, formato)}</title></circle>`;
       }).join('')}
-      ${(() => {
-        const last = serie.length - 1;
-        return `<text class="value-label-last" x="${xScale(last) + 10}" y="${yScale(serie[last].valor) + 4}">${fmtNumero(serie[last].valor, formato)}</text>`;
-      })()}
-      ${xLabelIdx.map(i => `<text class="axis-text" x="${xScale(i)}" y="${H - margin.bottom + 18}" text-anchor="middle">${serie[i].ano}</text>`).join('')}
-      <text class="axis-text" x="${margin.left}" y="${margin.top - 8}" font-weight="500">${rotuloY || ''}</text>
+      <text class="value-label-last" x="${f1(x(a1) + 10)}" y="${f1(y(ultimo.valor) + 4)}">${rotUltimo}</text>
+      ${anos.map(a => `
+        <line class="tick-x" x1="${f1(x(a))}" y1="${baseEixo}" x2="${f1(x(a))}" y2="${baseEixo + 4}"/>
+        <text class="axis-text" x="${f1(x(a))}" y="${baseEixo + 18}" text-anchor="middle">${a}</text>
+      `).join('')}
+      <text class="axis-text" x="${margin.left}" y="${margin.top - 12}" font-weight="500">${rotuloY || ''}</text>
     </svg>
   `;
+}
+// Série com um ponto só: sem gráfico de linha nem selo de tendência
+function mostraTendencia(ind) { return !!(ind.serie && ind.serie.length > 1); }
+function fraseSerieUnica(ind) {
+  const p = ind.serie[0];
+  return /decenal/i.test(ind.fonte?.periodicidade || '')
+    ? `A fonte é decenal: a série tem um ponto só, de ${p.ano}.`
+    : `A série tem um ponto só, de ${p.ano}.`;
+}
+// Bloco da série no modal (só para séries com mais de um ponto)
+function gerarSerieHTML(ind, largura) {
+  const nota = notaSerie(ind.serie);
+  return `
+    <div class="chart-wrap" data-grafico="1">${gerarChartSVG(ind.serie, ind.formatoValor, ind.rotuloSerieY || '', largura)}</div>
+    ${nota ? `<div class="chart-nota">${nota}</div>` : ''}`;
+}
+// Redesenha o gráfico do modal com a largura real do quadro
+function ajustarGraficoModal(ind) {
+  const cw = document.querySelector('#modal-body .chart-wrap[data-grafico]');
+  if (!cw || !ind) return;
+  const cs = getComputedStyle(cw);
+  const largura = cw.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  if (largura > 0) cw.innerHTML = gerarChartSVG(ind.serie, ind.formatoValor, ind.rotuloSerieY || '', largura);
 }
 
 /* === Recortes === */
 /* === Mapa por UF === */
-const UF_PATHS = {"AC":"M3.5 113.9 L64.3 141.1 L59.9 143.6 L54.2 145.6 L48.1 149.5 L44.0 148.3 L38.5 148.0 L33.0 149.2 L31.7 134.9 L28.2 136.9 L15.8 135.9 L8.0 132.9 L5.8 125.5 L2.1 118.8 L2.3 113.4 L3.5 113.9Z","AL":"M351.9 128.8 L353.6 131.6 L351.4 134.4 L349.1 136.7 L345.4 141.1 L341.8 142.8 L337.4 139.4 L328.2 134.6 L329.8 130.7 L331.8 130.4 L336.4 132.9 L341.4 133.4 L344.7 132.0 L347.8 129.1 L351.6 128.7 L351.9 128.8Z","AM":"M60.9 29.6 L80.7 38.9 L92.9 30.0 L106.3 54.3 L121.1 56.0 L144.4 59.2 L143.4 107.5 L103.4 123.0 L75.3 135.4 L7.7 106.0 L14.9 92.0 L29.0 86.5 L40.7 56.1 L44.2 40.7 L60.7 28.3 L60.9 29.6Z","AP":"M208.4 11.5 L210.9 23.0 L216.3 30.1 L218.3 41.7 L197.0 56.5 L190.0 41.1 L183.2 35.0 L177.1 31.8 L183.2 27.2 L186.5 27.4 L189.7 28.1 L194.9 26.3 L197.7 20.4 L201.2 14.1 L208.2 10.7 L208.4 11.5Z","BA":"M317.0 126.4 L326.6 147.3 L328.2 163.6 L319.7 178.9 L317.7 205.0 L307.8 202.6 L306.0 192.2 L281.3 182.0 L269.7 178.9 L255.9 186.8 L254.6 169.5 L252.5 153.6 L274.5 143.4 L295.8 130.1 L316.2 126.1 L317.0 126.4Z","CE":"M310.3 74.1 L318.2 78.6 L325.1 83.1 L333.0 90.6 L328.2 100.5 L323.5 106.6 L321.9 111.5 L322.3 117.4 L317.0 117.7 L306.7 110.8 L302.0 97.6 L299.2 91.5 L298.6 83.1 L299.2 74.5 L309.8 74.0 L310.3 74.1Z","ES":"M303.9 238.5 L300.5 242.0 L296.5 241.6 L294.4 238.2 L293.7 233.9 L299.8 228.7 L302.0 224.0 L299.6 220.5 L300.0 216.0 L302.6 212.5 L308.2 212.3 L312.6 226.8 L308.8 232.3 L306.5 236.6 L304.4 238.3 L303.9 238.5Z M306.2 236.9 L306.2 236.8 L306.2 236.8 L306.2 236.8 L306.2 236.9 L306.2 236.9 L306.2 236.9Z","GO":"M217.7 161.5 L230.9 166.9 L240.4 171.1 L254.2 166.3 L255.7 180.6 L245.3 193.7 L243.4 195.8 L244.1 204.5 L242.1 214.3 L223.8 217.4 L204.3 223.0 L190.7 214.6 L192.4 201.8 L205.9 185.5 L217.7 161.5Z","MA":"M246.3 130.2 L246.1 121.5 L237.0 96.2 L247.3 78.9 L253.1 64.6 L257.2 59.8 L261.2 61.4 L265.1 62.0 L267.6 64.3 L273.1 70.1 L293.6 73.5 L282.3 102.4 L262.0 117.3 L257.5 134.2 L246.1 130.5 L246.3 130.2Z M265.1 60.4 L265.2 60.3 L265.1 60.1 L265.3 59.9 L265.5 60.0 L266.1 60.0 L266.0 60.5 L265.8 60.3 L265.7 60.4 L265.5 60.7 L265.2 61.0 L264.7 60.8 L264.8 60.4 L264.8 60.2 L265.1 60.4 L265.1 60.4Z M258.6 60.0 L258.9 59.8 L258.8 59.9 L258.9 59.7 L259.1 58.7 L259.1 58.4 L259.3 58.4 L259.2 58.9 L259.0 59.3 L259.1 59.5 L259.0 59.9 L259.0 60.3 L258.6 60.6 L258.7 60.4 L258.6 60.2 L258.6 60.0Z M266.6 62.1 L266.7 62.1 L266.7 62.1 L266.8 62.2 L266.8 62.3 L266.7 62.4 L266.6 62.4 L266.5 62.4 L266.4 62.2 L266.4 62.2 L266.6 62.1 L266.7 62.0 L266.7 61.8 L266.9 61.7 L266.9 61.7 L267.0 61.7 L266.8 61.9 L266.7 62.1 L266.7 62.1 L266.6 62.1Z M266.9 62.1 L266.8 62.1 L266.8 62.1 L266.8 62.1 L266.8 62.1 L266.8 62.0 L267.0 61.7 L267.0 61.7 L267.0 61.6 L266.9 61.5 L266.9 61.5 L267.0 61.5 L267.1 61.5 L267.2 61.6 L267.2 62.0 L267.2 62.0 L267.2 62.0 L266.9 62.1 L266.9 62.1Z M258.6 59.1 L258.6 59.0 L258.7 59.1 L258.7 59.2 L258.8 59.3 L258.8 59.3 L258.8 59.3 L258.8 59.3 L258.8 59.4 L258.8 59.5 L258.7 59.6 L258.6 59.6 L258.6 59.7 L258.6 59.6 L258.5 59.6 L258.4 59.5 L258.5 59.5 L258.4 59.4 L258.4 59.3 L258.4 59.3 L258.5 59.3 L258.5 59.2 L258.5 59.1 L258.6 59.3 L258.7 59.3 L258.6 59.2 L258.6 59.1Z M259.9 59.1 L260.0 59.1 L260.0 59.2 L260.0 59.3 L260.0 59.4 L259.9 59.4 L259.6 59.4 L259.4 59.5 L259.6 59.3 L259.6 59.2 L259.7 59.2 L259.6 59.1 L259.6 59.0 L259.7 59.0 L259.8 59.0 L259.9 59.1Z M268.3 64.5 L268.4 64.4 L268.4 64.4 L268.5 64.4 L268.5 64.3 L268.5 64.3 L268.5 64.3 L268.7 64.4 L268.7 64.4 L268.7 64.4 L268.4 64.6 L268.5 64.6 L268.5 64.7 L268.5 64.7 L268.5 64.7 L268.4 64.7 L268.4 64.8 L268.4 64.8 L268.3 64.8 L268.3 64.7 L268.3 64.6 L268.3 64.5Z M267.3 62.4 L267.1 62.6 L267.0 62.6 L267.1 62.4 L267.1 62.3 L267.2 62.2 L267.2 62.2 L267.3 62.3 L267.4 62.3 L267.4 62.3 L267.4 62.3 L267.3 62.4Z M257.5 58.4 L257.6 58.5 L257.5 58.7 L257.4 58.6 L257.4 58.7 L257.4 58.7 L257.4 58.6 L257.3 58.5 L257.4 58.4 L257.5 58.3 L257.5 58.3 L257.5 58.3 L257.6 58.4 L257.6 58.4 L257.5 58.4Z M257.6 59.0 L257.6 59.0 L257.7 59.0 L257.7 59.1 L257.7 59.1 L257.7 59.1 L257.7 59.2 L257.6 59.4 L257.6 59.3 L257.6 59.3 L257.5 59.2 L257.5 59.1 L257.6 59.0Z M259.7 60.3 L259.8 60.2 L259.8 60.1 L259.9 60.1 L259.9 60.0 L260.0 60.1 L260.0 60.1 L260.0 60.2 L260.0 60.2 L259.9 60.3 L259.9 60.3 L259.8 60.3 L259.7 60.3Z M264.0 61.1 L264.0 61.2 L264.0 61.2 L263.9 61.1 L264.0 61.0 L264.0 60.9 L264.1 60.7 L264.1 60.7 L264.2 60.6 L264.2 60.7 L264.2 60.7 L264.2 60.8 L264.1 60.8 L264.1 60.8 L264.1 60.9 L264.1 60.9 L264.0 61.1Z M263.9 61.6 L264.0 61.4 L264.2 61.5 L264.2 61.5 L264.1 61.6 L263.9 61.6 L263.9 61.6Z M264.5 60.8 L264.4 60.8 L264.4 60.6 L264.4 60.5 L264.4 60.4 L264.4 60.4 L264.4 60.4 L264.4 60.5 L264.5 60.6 L264.5 60.8 L264.5 60.8Z M267.1 63.6 L267.2 63.5 L267.3 63.6 L267.3 63.6 L267.2 63.7 L267.1 63.6 L267.1 63.6Z M258.6 60.0 L258.6 60.0 L258.6 60.1 L258.6 60.2 L258.6 60.1 L258.6 60.1 L258.5 60.1 L258.5 60.1 L258.5 60.1 L258.5 59.9 L258.5 59.9 L258.5 59.9 L258.6 60.0Z M269.7 67.1 L269.6 67.1 L269.5 67.1 L269.9 66.9 L269.8 67.1 L269.7 67.1Z M269.6 67.4 L269.6 67.4 L269.6 67.3 L269.7 67.3 L269.7 67.3 L269.7 67.4 L269.7 67.5 L269.7 67.5 L269.7 67.5 L269.6 67.6 L269.6 67.5 L269.6 67.5 L269.5 67.5 L269.6 67.4 L269.6 67.4Z M261.2 60.9 L261.2 61.0 L261.2 61.0 L261.1 61.1 L261.1 61.1 L261.1 61.1 L261.0 61.0 L261.1 60.9 L261.1 60.9 L261.2 60.9Z M264.2 61.4 L264.2 61.4 L264.1 61.3 L264.2 61.2 L264.2 61.2 L264.3 61.3 L264.2 61.3 L264.2 61.3 L264.2 61.3 L264.2 61.4 L264.2 61.4Z M267.4 63.3 L267.4 63.4 L267.4 63.4 L267.4 63.4 L267.4 63.5 L267.2 63.4 L267.2 63.4 L267.2 63.4 L267.4 63.3Z M269.9 66.6 L269.8 66.7 L269.8 66.6 L269.8 66.6 L269.8 66.6 L269.9 66.5 L269.9 66.5 L269.9 66.6 L269.9 66.6Z M268.3 64.7 L268.3 64.8 L268.2 64.7 L268.2 64.6 L268.2 64.6 L268.2 64.6 L268.2 64.5 L268.2 64.5 L268.3 64.6 L268.3 64.7Z M264.0 61.2 L264.0 61.1 L264.1 61.1 L264.1 61.1 L264.1 61.3 L264.0 61.3 L264.0 61.3 L264.0 61.2Z M260.1 61.0 L260.0 61.0 L260.0 60.9 L260.1 60.8 L260.1 60.8 L260.1 60.8 L260.2 60.8 L260.2 60.9 L260.2 60.9 L260.1 60.9 L260.1 61.0Z M264.4 60.3 L264.4 60.3 L264.4 60.4 L264.4 60.4 L264.3 60.3 L264.4 60.3Z M257.6 59.5 L257.5 59.5 L257.5 59.5 L257.5 59.5 L257.6 59.4 L257.6 59.4 L257.6 59.5Z M264.8 60.9 L264.8 61.0 L264.8 61.0 L264.8 61.0 L264.8 61.0 L264.8 61.0 L264.7 60.9 L264.7 60.9 L264.8 60.9Z M268.3 64.9 L268.3 64.9 L268.3 64.8 L268.4 64.8 L268.4 64.8 L268.4 64.8 L268.5 64.9 L268.4 64.9 L268.4 64.9 L268.3 64.9Z M259.1 60.2 L259.1 60.2 L259.1 60.2 L259.1 60.3 L259.1 60.4 L259.1 60.3 L259.1 60.2 L259.1 60.2 L259.1 60.2Z M266.4 62.4 L266.5 62.4 L266.5 62.4 L266.5 62.5 L266.4 62.5 L266.4 62.4 L266.4 62.4Z M259.7 59.7 L259.7 59.7 L259.7 59.7 L259.7 59.7 L259.7 59.8 L259.7 59.8 L259.6 59.8 L259.6 59.7 L259.7 59.7 L259.7 59.7Z M285.4 71.4 L285.4 71.5 L285.4 71.4 L285.3 71.4 L285.3 71.5 L285.3 71.5 L285.3 71.5 L285.3 71.4 L285.3 71.4 L285.4 71.4Z M273.9 70.1 L273.9 70.0 L274.0 70.0 L274.0 70.1 L273.9 70.1 L273.9 70.1Z M268.4 64.4 L268.3 64.5 L268.3 64.4 L268.4 64.4 L268.4 64.4 L268.4 64.4 L268.4 64.4Z M259.0 60.1 L259.0 60.1 L259.0 60.1 L259.0 60.0 L259.0 60.1 L259.0 60.1 L259.0 60.2 L259.0 60.1Z M258.8 60.6 L258.9 60.6 L259.0 60.6 L258.9 60.6 L258.8 60.6Z M259.0 59.5 L258.9 59.6 L258.9 59.5 L258.9 59.5 L258.9 59.5 L259.0 59.5 L259.0 59.5 L259.0 59.5 L259.0 59.5Z M273.8 70.1 L273.9 70.1 L273.9 70.1 L273.9 70.1 L273.8 70.1 L273.8 70.1 L273.8 70.1 L273.8 70.1Z M263.5 61.6 L263.6 61.5 L263.6 61.6 L263.6 61.6 L263.6 61.6 L263.6 61.6 L263.5 61.6Z M266.9 62.5 L266.8 62.5 L266.8 62.5 L266.9 62.4 L266.9 62.5Z M266.0 60.4 L265.9 60.4 L265.9 60.4 L265.9 60.4 L266.0 60.4 L266.0 60.4Z M264.4 60.9 L264.5 60.8 L264.5 60.9 L264.5 60.9 L264.4 60.9Z M263.6 61.7 L263.6 61.7 L263.6 61.8 L263.6 61.8 L263.6 61.7Z M269.8 67.6 L269.8 67.6 L269.8 67.6 L269.8 67.6 L269.8 67.6Z M257.4 59.6 L257.4 59.6 L257.4 59.6 L257.4 59.7 L257.4 59.7 L257.4 59.6Z M246.3 130.2 L246.3 130.2 L246.2 130.2 L246.2 130.2 L246.2 130.2 L246.3 130.2 L246.3 130.2Z","MG":"M272.0 178.3 L288.6 185.9 L311.3 196.3 L304.2 212.7 L300.5 227.2 L288.9 245.7 L268.7 252.1 L251.4 255.3 L246.5 243.6 L226.3 233.6 L228.5 215.8 L241.7 207.5 L243.5 196.6 L255.3 187.3 L271.8 178.3 L272.0 178.3Z","MS":"M183.8 211.9 L197.4 219.7 L208.4 224.3 L190.8 254.7 L173.1 267.2 L168.4 259.6 L162.8 251.7 L156.3 251.4 L148.5 250.2 L147.6 239.4 L150.3 214.8 L156.0 208.4 L165.8 206.2 L174.8 209.0 L183.5 211.7 L183.8 211.9Z","MT":"M124.5 169.6 L126.8 154.4 L114.2 143.1 L143.5 122.0 L213.8 145.8 L211.2 173.5 L194.7 197.8 L189.9 207.0 L183.6 210.5 L172.2 209.3 L162.5 205.3 L150.3 211.2 L141.8 202.3 L123.4 177.0 L124.5 169.6Z","PA":"M247.0 54.9 L251.4 56.3 L254.5 60.9 L247.2 79.0 L233.4 104.7 L149.1 122.8 L146.3 60.6 L141.5 35.3 L150.6 31.8 L161.5 30.6 L166.1 25.7 L184.4 35.1 L209.1 49.0 L239.5 53.4 L246.7 54.6 L247.0 54.9Z M252.0 56.8 L252.0 56.9 L252.0 56.9 L251.9 57.0 L251.9 57.0 L251.7 57.2 L251.7 57.1 L251.7 57.0 L251.8 56.9 L251.8 56.9 L251.9 56.8 L251.9 56.8 L251.9 56.7 L251.9 56.7 L252.0 56.6 L252.0 56.7 L252.0 56.7 L252.1 56.8 L252.0 56.8 L252.0 56.8Z M255.0 57.9 L255.0 57.9 L255.1 58.1 L255.1 58.2 L255.1 58.2 L255.1 58.2 L255.1 58.2 L255.0 58.2 L255.0 58.1 L254.9 58.0 L254.9 58.0 L254.9 57.9 L254.9 57.8 L254.9 57.8 L254.9 57.8 L255.0 57.8 L255.0 57.9Z M246.2 54.5 L246.2 54.5 L246.3 54.5 L246.3 54.5 L246.3 54.5 L246.4 54.5 L246.5 54.5 L246.5 54.6 L246.4 54.6 L246.3 54.6 L246.3 54.6 L246.2 54.6 L246.2 54.5 L246.2 54.5Z M252.3 57.2 L252.3 57.3 L252.3 57.4 L252.2 57.4 L252.2 57.3 L252.2 57.3 L252.2 57.2 L252.3 57.2 L252.3 57.2 L252.3 57.2Z M238.8 54.2 L238.9 54.2 L238.9 54.1 L239.0 54.2 L238.9 54.2 L238.9 54.2 L238.9 54.2 L238.9 54.3 L238.8 54.2Z M251.6 57.4 L251.6 57.4 L251.6 57.4 L251.7 57.3 L251.7 57.3 L251.7 57.4 L251.7 57.4 L251.6 57.4Z M252.7 56.8 L252.7 56.8 L252.8 56.8 L252.8 56.8 L252.8 56.8 L252.7 56.8 L252.8 56.9 L252.7 56.9 L252.7 56.8Z M250.1 55.7 L250.1 55.7 L250.2 55.7 L250.2 55.7 L250.2 55.8 L250.1 55.7Z M250.1 56.0 L250.1 55.9 L250.2 56.0 L250.2 56.0 L250.2 56.0 L250.1 56.0Z M246.2 54.7 L246.2 54.7 L246.1 54.7 L246.2 54.7 L246.2 54.7 L246.3 54.7 L246.2 54.7Z M251.4 57.0 L251.3 57.0 L251.4 56.9 L251.4 56.9 L251.4 57.0Z","PB":"M335.8 103.3 L338.2 109.7 L345.2 106.9 L355.5 107.7 L358.0 114.4 L352.8 116.1 L344.7 119.6 L336.4 122.7 L337.4 116.7 L330.8 118.0 L323.9 119.0 L322.8 113.8 L323.0 108.3 L327.6 107.7 L334.7 103.7 L335.8 103.3Z M357.4 111.9 L357.5 111.9 L357.5 111.9 L357.6 111.9 L357.6 111.9 L357.6 112.0 L357.5 112.1 L357.5 112.2 L357.5 112.2 L357.4 112.2 L357.4 112.2 L357.4 112.1 L357.4 112.1 L357.4 112.0 L357.4 112.0 L357.4 112.0 L357.4 111.9 L357.4 111.9Z","PE":"M336.3 114.9 L336.5 121.8 L346.4 119.3 L356.2 116.5 L356.3 125.4 L349.0 129.3 L341.5 133.5 L331.5 129.8 L322.3 129.1 L306.0 134.1 L300.3 127.7 L305.0 122.3 L318.8 119.5 L326.0 119.1 L335.0 114.7 L336.3 114.9Z M379.9 83.2 L379.9 83.2 L380.0 83.3 L380.0 83.3 L379.9 83.4 L379.8 83.4 L379.8 83.4 L379.8 83.4 L379.7 83.5 L379.7 83.5 L379.7 83.6 L379.6 83.5 L379.5 83.5 L379.5 83.5 L379.4 83.6 L379.4 83.6 L379.3 83.6 L379.4 83.4 L379.5 83.4 L379.6 83.3 L379.9 83.2Z M379.9 83.2 L379.9 83.2 L379.9 83.1 L379.9 83.2 L379.9 83.2Z","PI":"M294.6 73.8 L298.8 83.1 L301.1 94.8 L307.1 110.3 L301.7 125.0 L287.1 134.9 L277.1 138.1 L263.4 147.2 L257.2 135.9 L257.9 126.2 L261.0 118.1 L272.9 110.3 L282.5 102.8 L284.8 84.6 L294.5 73.7 L294.6 73.8Z","PR":"M200.3 254.0 L220.1 258.8 L223.0 266.3 L226.4 273.8 L232.2 276.1 L234.1 281.9 L224.5 287.0 L217.7 286.0 L207.7 288.8 L198.7 289.9 L185.7 287.4 L184.0 282.9 L179.0 282.3 L180.0 271.1 L199.6 253.9 L200.3 254.0Z","RJ":"M269.3 260.9 L268.5 257.2 L268.4 254.7 L273.0 250.8 L282.8 249.7 L290.4 242.0 L294.7 241.0 L301.3 243.8 L292.5 255.8 L284.0 258.0 L280.6 256.6 L276.1 257.7 L271.1 258.3 L268.1 258.7 L269.3 260.9Z M271.8 259.1 L272.1 259.3 L272.5 259.5 L272.7 259.6 L273.1 259.8 L272.6 259.8 L272.2 260.0 L271.8 260.1 L271.5 260.0 L270.9 260.3 L270.7 259.9 L270.7 259.7 L271.1 259.5 L271.5 259.4 L271.8 259.0 L271.8 259.1Z M275.5 258.8 L275.8 258.8 L275.2 258.9 L274.1 259.2 L273.9 259.1 L273.8 259.0 L274.0 258.8 L274.1 258.7 L274.3 258.6 L274.6 258.8 L274.9 258.9 L275.0 258.9 L275.1 258.7 L274.8 258.5 L275.2 258.7 L275.5 258.8Z M281.4 256.2 L281.5 256.3 L281.7 256.3 L281.5 256.4 L281.5 256.6 L281.6 256.7 L281.5 256.6 L281.4 256.6 L281.1 256.6 L281.0 256.6 L280.8 256.7 L280.7 256.5 L280.8 256.5 L280.9 256.4 L281.1 256.3 L281.4 256.4 L281.4 256.2Z M274.7 257.7 L274.8 257.6 L274.8 257.6 L274.9 257.6 L274.9 257.6 L275.0 257.6 L275.1 257.6 L275.2 257.6 L275.1 257.7 L275.1 257.8 L275.0 257.8 L274.9 257.8 L274.8 257.9 L274.8 257.8 L274.8 257.7 L274.7 257.7Z M280.9 257.0 L280.9 256.9 L280.9 256.8 L280.9 256.8 L281.0 256.8 L281.0 256.8 L281.0 256.8 L281.0 256.9 L281.0 256.9 L281.1 257.0 L281.1 257.0 L281.1 257.1 L281.1 257.0 L281.0 257.0 L280.9 257.0Z M274.6 258.3 L274.6 258.4 L274.5 258.3 L274.5 258.2 L274.6 258.2 L274.6 258.1 L274.7 258.1 L274.7 258.2 L274.6 258.2 L274.6 258.3Z M268.6 260.1 L268.6 260.1 L268.6 260.2 L268.6 260.2 L268.5 260.2 L268.4 260.3 L268.4 260.3 L268.3 260.3 L268.3 260.3 L268.3 260.3 L268.4 260.2 L268.5 260.1 L268.6 260.1Z M273.5 258.2 L273.6 258.2 L273.6 258.2 L273.7 258.3 L273.7 258.3 L273.6 258.3 L273.6 258.3 L273.5 258.3 L273.5 258.3 L273.5 258.3 L273.5 258.3 L273.5 258.2Z M267.7 259.7 L267.6 259.8 L267.6 259.7 L267.6 259.7 L267.7 259.7 L267.7 259.6 L267.7 259.7 L267.7 259.7Z M295.0 252.9 L295.0 252.9 L294.9 252.9 L294.9 252.9 L294.9 252.8 L295.0 252.8 L295.0 252.8 L295.0 252.9Z M269.3 260.9 L269.3 260.9 L269.4 261.0 L269.3 261.0 L269.3 260.9Z M282.1 256.1 L282.1 256.0 L282.1 256.1 L282.1 256.1 L282.1 256.1 L282.1 256.1 L282.1 256.1Z M282.1 256.0 L282.1 256.0 L282.1 255.9 L282.1 256.0 L282.1 256.0 L282.1 256.0 L282.1 256.0Z M281.5 257.3 L281.5 257.3 L281.6 257.3 L281.5 257.3 L281.5 257.3Z M268.1 258.9 L268.1 258.9 L268.1 258.9 L268.1 258.9 L268.1 258.9 L268.1 258.9Z M275.2 257.8 L275.2 257.8 L275.3 257.8 L275.3 257.8 L275.2 257.8 L275.2 257.8Z M295.1 252.8 L295.1 252.8 L295.0 252.8 L295.1 252.7 L295.1 252.8Z M268.6 260.1 L268.6 260.1 L268.7 260.1 L268.7 260.1 L268.6 260.1Z M268.7 259.9 L268.7 259.9 L268.7 260.0 L268.7 260.0 L268.7 259.9Z M274.8 258.1 L274.7 258.1 L274.7 258.1 L274.8 258.1 L274.8 258.1Z M293.3 256.2 L293.3 256.2 L293.3 256.3 L293.3 256.3 L293.3 256.3 L293.3 256.3 L293.3 256.2Z M274.7 257.7 L274.7 257.7 L274.7 257.7 L274.7 257.7 L274.7 257.7Z","RN":"M336.5 93.2 L342.0 94.6 L348.2 94.4 L353.5 97.8 L354.9 102.6 L355.6 107.7 L349.7 107.3 L342.9 108.7 L337.5 109.7 L335.6 105.0 L331.0 104.8 L327.3 107.5 L323.9 104.9 L328.3 100.5 L335.9 92.8 L336.5 93.2Z","RO":"M68.8 138.4 L80.8 134.4 L103.3 122.3 L113.4 133.7 L124.3 149.5 L127.5 156.8 L122.4 172.1 L114.0 171.9 L107.5 167.9 L100.3 165.4 L91.2 162.5 L83.0 158.0 L78.9 146.9 L76.2 137.6 L68.9 138.3 L68.8 138.4Z","RR":"M128.6 19.4 L130.2 29.8 L135.8 35.8 L120.6 54.9 L104.9 55.0 L97.1 28.1 L86.5 13.1 L94.1 11.6 L102.8 14.0 L108.8 10.4 L115.9 6.7 L121.2 0.7 L126.8 6.1 L131.5 11.6 L128.6 19.1 L128.6 19.4Z","RS":"M200.5 336.6 L187.7 351.3 L192.0 345.0 L177.7 335.9 L166.8 331.1 L158.1 324.0 L157.1 317.2 L171.9 302.6 L184.0 296.1 L205.8 300.3 L220.2 310.7 L218.2 321.8 L211.6 330.0 L207.6 322.5 L200.5 337.2 L200.5 336.6Z M207.3 329.0 L207.4 329.5 L207.4 329.5 L207.4 329.6 L207.4 329.6 L207.4 329.7 L207.3 329.6 L207.4 329.6 L207.4 329.5 L207.4 329.5 L207.2 329.4 L207.1 329.3 L207.1 329.3 L207.1 329.3 L207.1 329.3 L207.2 329.4 L207.3 329.2 L207.3 329.2 L207.3 329.2 L207.3 329.0Z M218.2 315.2 L218.3 315.1 L218.4 315.0 L218.3 315.1 L218.4 315.1 L218.3 315.2 L218.2 315.2Z M208.7 326.5 L208.7 326.5 L208.6 326.8 L208.6 326.7 L208.7 326.5Z M219.5 313.7 L219.5 313.6 L219.6 313.6 L219.7 313.6 L219.7 313.6 L219.6 313.6 L219.6 313.7 L219.5 313.7Z M207.3 322.7 L207.4 322.7 L207.6 322.7 L207.3 322.8 L207.3 322.7Z M199.9 338.6 L199.9 338.6 L199.9 338.6 L200.0 338.6 L199.9 338.6Z M187.9 350.8 L187.9 350.8 L187.9 350.7 L187.9 350.7 L188.0 350.6 L188.0 350.6 L188.0 350.6 L188.0 350.6 L188.0 350.7 L187.9 350.7 L187.9 350.8Z M219.4 314.2 L219.4 314.1 L219.5 314.1 L219.5 314.1 L219.4 314.2Z M205.8 336.3 L205.8 336.3 L205.8 336.3 L205.8 336.4 L205.8 336.4 L205.8 336.4 L205.8 336.3Z","SC":"M185.2 290.8 L193.9 288.8 L207.8 290.6 L216.2 286.4 L223.8 287.3 L232.0 289.7 L232.1 296.7 L231.8 304.1 L219.5 314.9 L219.7 312.9 L219.6 308.2 L207.2 301.1 L194.6 297.4 L184.4 295.2 L185.2 290.8Z M233.7 298.3 L234.1 298.9 L233.5 299.9 L233.4 300.4 L232.8 301.4 L232.9 302.0 L232.2 302.4 L232.3 301.6 L232.2 301.0 L232.5 300.4 L232.7 300.0 L232.7 299.5 L232.7 299.0 L233.1 298.7 L233.7 298.3Z","SE":"M329.1 135.2 L335.7 138.5 L339.9 141.6 L343.4 144.1 L339.0 146.5 L335.5 151.3 L332.3 153.5 L330.0 152.8 L329.0 152.0 L328.6 150.3 L326.9 147.9 L328.4 146.1 L330.5 142.8 L329.1 137.8 L328.9 135.2 L329.1 135.2Z","SP":"M254.4 266.1 L238.6 276.7 L232.7 274.5 L225.5 269.9 L222.5 261.5 L201.9 254.7 L209.6 232.7 L236.6 232.2 L246.0 241.9 L249.7 249.7 L254.2 257.0 L264.6 253.4 L269.1 257.0 L263.7 262.8 L255.2 265.7 L254.4 266.1Z M261.9 266.6 L261.5 266.7 L260.7 266.7 L260.8 266.2 L261.3 265.8 L261.6 265.3 L262.0 264.9 L262.5 265.1 L262.7 265.5 L262.6 265.8 L262.4 265.9 L262.3 266.3 L262.8 266.5 L262.7 267.0 L262.2 266.8 L261.9 266.6Z M264.1 263.1 L264.2 263.2 L264.2 263.2 L264.3 263.1 L264.3 263.1 L264.4 263.1 L264.5 263.1 L264.4 263.2 L264.4 263.2 L264.3 263.2 L264.2 263.3 L264.1 263.4 L264.1 263.4 L264.1 263.3 L264.1 263.3 L264.1 263.2 L264.1 263.2 L264.1 263.2 L264.1 263.1 L264.1 263.1 L264.1 263.0 L264.1 263.1 L264.1 263.1Z M263.5 265.6 L263.8 265.6 L263.7 265.7 L263.7 265.7 L263.6 265.7 L263.5 265.7 L263.4 265.7 L263.4 265.6 L263.5 265.5 L263.6 265.5 L263.5 265.5 L263.5 265.6Z M263.3 263.4 L263.4 263.4 L263.4 263.4 L263.5 263.4 L263.5 263.5 L263.4 263.5 L263.4 263.4 L263.4 263.5 L263.3 263.4 L263.3 263.4Z M264.6 265.2 L264.6 265.1 L264.7 265.1 L264.7 265.2 L264.7 265.2 L264.7 265.2 L264.6 265.2 L264.6 265.2Z M257.7 266.2 L257.7 266.2 L257.6 266.2 L257.6 266.1 L257.7 266.1 L257.7 266.1 L257.7 266.1 L257.7 266.2Z M262.1 263.7 L262.1 263.7 L262.2 263.7 L262.3 263.7 L262.2 263.7 L262.2 263.7 L262.1 263.7 L262.1 263.7Z M264.6 265.1 L264.6 265.1 L264.6 265.0 L264.7 265.0 L264.7 265.1 L264.7 265.1 L264.6 265.1Z M258.2 265.6 L258.2 265.5 L258.3 265.6 L258.3 265.6 L258.2 265.6 L258.2 265.6Z M260.0 266.0 L260.0 266.0 L260.1 266.0 L260.0 266.1 L260.0 266.0 L260.0 266.0Z M247.4 270.9 L247.4 270.9 L247.4 271.0 L247.4 271.0 L247.4 271.0 L247.4 270.9Z M247.4 270.8 L247.4 270.8 L247.4 270.8 L247.4 270.9 L247.4 270.8 L247.4 270.8Z M264.5 263.3 L264.6 263.2 L264.6 263.2 L264.6 263.3 L264.5 263.3Z M266.2 261.9 L266.2 261.9 L266.1 261.9 L266.2 261.9 L266.2 261.9Z M265.3 261.8 L265.3 261.8 L265.4 261.8 L265.3 261.8 L265.3 261.8Z M246.7 270.8 L246.7 270.7 L246.8 270.8 L246.8 270.8 L246.7 270.8Z M261.8 266.6 L261.9 266.6 L261.9 266.6 L261.9 266.6 L261.9 266.6 L261.8 266.6Z M262.3 266.0 L262.3 266.1 L262.3 266.0 L262.3 266.0 L262.3 266.0 L262.3 266.0Z","TO":"M246.2 130.2 L255.5 141.7 L252.5 156.2 L252.4 166.1 L240.6 168.3 L233.9 169.3 L227.6 165.6 L217.4 162.0 L213.1 158.4 L218.2 135.7 L234.0 106.0 L242.2 100.8 L244.3 119.4 L251.2 121.2 L246.4 130.2 L246.2 130.2Z","DF":"M243.7 194.6 L237.2 194.8 L235.1 194.0 L234.9 193.3 L235.4 192.2 L235.6 189.9 L242.9 190.2 L243.6 190.6 L243.7 191.8 L243.5 192.3 L243.2 192.9 L243.2 193.5 L243.1 194.0 L243.4 194.4 L243.7 194.6Z"};
+const UF_PATHS = {"AC":"M73.7 148.6L68.9 146.7 67.2 146.4 56.6 142 43.3 131 20 129.2 8.6 125.4 9.5 126.5 9.5 127.5 7.2 127.8 7.7 128.9 7.5 130.2 10 132.5 9.5 133.5 10.9 134.9 11.6 137.3 13.5 138.4 13.5 139.7 15.4 140.7 17.4 144 15.1 147.5 19.6 147.2 22.8 147.8 24.9 150.7 24.8 152.6 32.1 152.2 33.6 151.8 34 150.9 35.5 150.3 39.2 146.4 39 148.1 39.7 149.2 38.9 150.3 39.5 161.5 40.3 160.8 41.4 161.7 43.4 161.8 45.6 160.4 47.7 160.8 50.4 160.2 56 160.5 56.9 161.9 60.8 160.3 63.2 156.9 65.9 157.3 66.7 155.7 69.3 154.1 72 152.8 73.2 151.1 75.4 149.3Z","AL":"M363.1 142.5L359.6 141.4 357.7 142.2 356.2 141.6 354.2 142.4 352.8 144.4 351.3 144.8 349.5 145.8 348.3 145.2 346 145.9 345.3 144.8 344 144.5 342.4 142.4 340.2 142.1 339.4 140.7 337.2 143.5 336.1 143.7 334.7 145.1 335.4 146.2 336.8 147 339.4 148.2 340.6 149.3 342.7 149.9 343.5 150.9 346.1 152 346.4 153.3 348.1 154.7 349 154.7 349.7 156.4 351 157.1 352.3 155 354.4 153.2 356.7 150 357.7 149.5 360 146.6 361.7 144.9Z","AM":"M152.6 123.9L152.2 122.3 149.9 119.8 149.4 118.6 149.9 117.1 151.4 115.8 157.5 102.1 162.9 90.7 168.4 78.6 168.5 77 170.2 76.1 170.4 74.8 168.3 76.1 167.2 75.7 166.5 76.4 165.1 76 165.4 75 162.6 73.7 162.1 72.6 160.2 71.8 159.6 72 157.8 70.9 156.5 70.6 156.2 69.9 153.6 68.3 153.9 66.7 153 66.2 152.1 67.4 150.7 66.6 149.6 65.5 149.6 64.2 147 62.3 146.9 60.1 145.5 59.2 145.6 56.7 145.3 53.6 134.7 53.6 132.2 58.4 131.3 60.8 132.2 62.2 128.9 64.2 128 63.9 126.5 61.6 125.1 60.7 121.5 62.1 120.8 63 120.4 65.1 120.8 65.9 120 68 120.2 69.5 118.4 68.8 117.5 69 116.4 66.6 111.9 63.3 113.9 61.9 113.9 60.2 114.8 59 113.5 56 112.3 54.1 112.4 52.5 111.6 51.3 111.5 49.7 112.2 48.8 112.4 47.1 111.7 45.9 110.6 42.6 109.1 41.2 109.8 40.2 109.8 37.8 108.8 37.2 107.1 37.2 106 35.8 103.9 35.4 102.1 36.1 99.6 37.6 98.3 37.4 97.5 38 97.4 40.3 96.7 41.2 94.3 43 93.1 42.6 91.3 44.4 90 44.1 88.5 45.6 87.3 45.5 87.2 47.1 85.7 47.3 84.5 49.6 83.2 49.2 84.1 48 83.3 46.5 81.9 46.6 80 47.7 79.7 48.4 78.1 49 76.5 48.9 71.5 44.4 69.4 45 69.5 42.4 69.3 39.6 68.8 38.5 67.7 38.3 66.7 34.8 65.2 35.7 64.5 36.9 63 36.8 61.5 38.7 58.7 37.7 58.5 38.7 59.5 39.6 48.1 39.5 46.8 39.1 43.9 39.7 43.8 45.7 48.7 45.6 49.8 46.5 50.4 47.7 49.7 50.2 48.4 50.2 47.2 49 45.3 49.7 44.2 50.5 42 50.6 42 57.2 41.9 57.8 43.1 59.2 43.8 59.3 46 60.9 46.3 62.2 45.9 63 47.4 65.2 48 66.9 47.7 69.2 43.4 96.4 42.1 97 40.4 97.3 40.1 95.9 38 95.7 37.1 96.2 35.8 95.9 34.1 98.1 31.6 98.1 31 98.7 29.2 98.7 27.9 99.7 26.1 99.4 22.4 102.2 21.1 102.5 20.8 103.3 18.5 104.9 16.3 106.2 16.6 107.4 15.8 109.1 15.6 111.4 13.4 114.7 13.3 115.8 14.7 118.3 13.8 120 12.5 120.2 9.9 121.9 9 123.7 8.6 125.4 20 129.2 43.3 131 56.6 142 67.2 146.4 68.9 146.7 73.7 148.6 74 148 76.5 146.8 77.5 144.8 81.2 144.5 83.5 145.9 83.9 144.8 85.5 144.9 86 143.4 87.8 142.9 88.8 144.6 89.6 144.2 90.8 142.4 90.6 141.5 91.7 140.2 93.5 140.4 96.1 139.5 97.8 139.6 97.8 137.7 99.7 136.1 99.5 133.8 100.9 133.8 101.5 133 102.4 130.5 109.3 130.3 110.9 131.4 111.3 132.6 114 134.1 114 135 115.7 136 116.2 137.8 117.6 138.5 118.7 138.3 118.8 137.2 120 136.7 121.2 137.7 131.9 137.5 140.4 137.4 150 137.2 151.3 131.1 150.5 128.9 152 126.4 151.9 124.9Z","AP":"M225.6 49.6L226.8 48.9 227.8 47.3 228.7 46.7 228.6 44.1 228.8 42.2 228.4 40.4 226.2 39.3 223.8 39.4 221.4 36.2 220.5 33.4 219.5 30.7 218.8 29.9 218.1 26.4 217.4 24.2 217.6 23.2 217.6 20.2 216.7 19.9 216.4 17.8 213.9 15.1 212.5 14.5 212.1 16.1 212.6 17.1 212.3 18.7 211.1 19.5 209.8 21.3 207.4 25.6 206.4 26.3 206.1 27.7 204.7 30.4 204.3 32.2 203 34.2 200 36 197.9 35.8 196.9 34.4 195.5 35.2 193.8 35 193 34.2 190.6 35.5 188.9 36 186.6 35.7 184.2 34.3 183.8 33.3 182.6 33.6 183.6 35.7 183.2 37.4 183.7 39.7 187.4 39.9 189.3 40.9 190.5 42.1 192.7 43.1 194.4 43.5 195.7 45.6 196.1 47.5 198.9 49.8 198.3 52.5 200.1 55.7 200.5 57.3 201.3 57.4 202.8 58.9 202.7 60.6 204.2 61.3 204.4 63.9 205.4 64 205.3 65.5 206.1 66.3 208.7 66.9 211.2 66.5 212 65.8 212.1 63.3 214.2 60.7 215.2 58.8 216.5 57.1 217.8 56.7 218.7 55.6 221.5 54.3 222.6 53.1 223.7 50.5Z","BA":"M334.7 145.1L334.1 143.3 332.5 141.7 331.5 141.4 329.8 139.7 328.4 139.8 327.7 139.2 325.8 138.6 324.6 137.1 322.4 138.2 321.8 139.4 319.8 139.7 319.9 140.8 319.2 141.8 317.5 142.3 316.2 142 315.4 144.7 312.9 145.7 311.6 145.3 312.6 142.8 311.2 141.8 310.4 139.4 308.7 138.9 308.5 138.1 306.4 138.1 304.7 140.2 302.9 141 301.9 143 297.5 143.5 296.2 144.9 292.8 146.2 291.7 145.3 291.6 144.4 290.1 143.8 288.5 144 287.2 142.7 284 144.4 283.4 145.4 283.9 147.3 285 147.9 285 149.5 284.1 150.2 283.3 152.3 281.5 153.9 280.4 155.4 278.6 154.5 277.2 155.4 276.5 155.1 275.6 156.3 273.2 157.9 271.8 157 270.3 156.8 268.6 154.8 269 153.4 267.2 150 266.1 150.5 266.3 151.4 265.4 152 265.2 153.2 263 154.5 261.1 156.4 258.3 160.6 258.5 162.4 261 163.8 259.8 165.3 260.4 166.7 259.6 167.9 259.7 170.7 260.6 171.5 260.5 174.1 260.1 176.2 261.9 176 260.4 176.9 260.1 179.7 260.7 180.6 260.6 187 262.8 188.8 263.1 189.9 262.6 191.1 261.9 194.2 262.6 195.1 261.8 196.5 263.3 196.9 264.5 196.6 266.4 195 266.8 195.2 269.8 193.2 272.5 192 273.1 191.2 275.3 189.8 277.4 189 278.6 189 282 189.8 281.4 192.1 281.7 193.1 284.8 194.4 285.4 193.8 287.7 193.2 289.6 193.8 294 197.4 297.1 198.7 298.4 198.7 299.7 198.1 303.5 202 303.6 204.3 305.3 204.7 306.5 204.2 309.3 204 310.4 205.3 313.3 205.5 313.9 206.6 315.7 207.5 316.5 208.7 314.4 211.8 313.4 212.9 312.5 212.8 311.9 214.9 310.5 215.5 309.8 216.5 309.1 220.6 310.5 222.4 311.2 222.6 312.5 224.9 312 226.1 316.6 229.8 318.4 226.7 320.5 225.6 321.8 224 321.4 223.3 321.5 219 322.5 216.5 322.8 214.7 323.9 210.5 325.6 206.8 325 205 324.7 201.4 324.9 198.5 324.5 195.1 326.1 188.3 325.6 187 326.7 184.1 326.1 182.7 326.6 181.8 329.2 180 330.8 180.1 331.9 179.6 335.3 176.2 337.6 173.1 341.9 165.7 340.2 166.6 337.7 166.2 336 164.4 335.2 161.3 334 159.9 334.4 158.3 336.5 158.8 338.1 157.9 337.9 155.3 338.8 155 338.6 152.1 336.6 150.7 336.2 147.6 336.8 147 335.4 146.2Z","CE":"M345.3 102.4L344.5 101 342.1 100.3 340.6 98.2 339.3 97.5 337.5 95.7 336 93.7 335.2 93.1 334.3 91.4 332.6 91.1 329.6 88.5 328.8 88.4 327 86.6 325.9 86.3 323.7 84.7 320.5 83 318.5 82.7 316 82.5 308 83.6 308.6 85.1 307.1 87.6 307.9 87.9 307.8 90.8 309.5 94.9 309.4 97.2 308.6 99.5 309 100.1 308.4 101.9 309.9 104 311.3 104.9 311.4 107.1 311.1 109.6 311.6 112.4 311.8 114.8 312.3 115.6 312.3 117.7 313 119.1 315.1 119.7 315.5 120.5 315.5 122.6 314.9 123.4 314.5 125.2 316 125.6 316.9 125.1 318.1 125.9 321.7 125.5 324.2 127 324.1 127.9 327 129.4 328.2 130.4 331 128.7 332.8 125.6 331.8 124.5 331.6 123.2 330.8 121.9 331.8 121 331.7 119.9 332.8 116.6 334.1 114 335.2 114.1 336.6 112.8 337.7 110.8 337.4 110.2 339.1 108.6 340.9 104.6 341.7 103.2Z","ES":"M312 226.1L309.5 225.1 307.7 226.2 306 225.7 305.9 226.9 304.6 227.3 303.6 228.6 303.6 229.5 304.7 230 304.3 231.7 305.2 232.3 304.9 233.7 303.6 233.6 304.7 236.3 304.9 238.1 304.6 239.5 302.5 241.4 302.2 243.4 301.2 243.8 300.3 246.1 297.1 246 296.1 247.5 296.5 248 296.3 250.2 295.7 251.2 296.8 251.7 296.6 254.4 299.1 255.7 301.2 256.2 302.1 256 303.1 256.8 304.2 255.3 305.2 252.9 306.8 252.4 308.9 249.9 310.6 247.2 311.1 245.5 312.1 243.5 314.4 242.1 315.7 238.9 315.5 235.4 316 231.5 316.6 229.8Z","GO":"M243.9 204.5L241.6 204.5 241.6 202.5 242.3 201.7 242.4 199.4 249.4 199.6 250.3 200.6 249.7 204.3 250.2 204.6 251.8 203.7 254.6 203.4 254.4 200.9 253.6 200.3 253.8 199.2 254.7 198.2 253.8 197 254.6 195.2 256.6 196 257.5 195.3 257.3 193.5 258.1 192.5 259.4 193.6 259.7 194.6 261.5 194.8 261.9 194.2 262.6 191.1 263.1 189.9 262.8 188.8 260.6 187 260.7 180.6 260.1 179.7 260.4 176.9 261.9 176 259.5 176.6 256.1 176.3 253.7 177.9 250 179 248 177.5 248.1 179.9 244.5 178.9 243.3 179.1 243.2 177.7 241.3 178.7 237 174.3 236 175.7 233.7 175 232.8 176.7 232.4 178.6 227 175.4 225.1 175 224 174 225 170.8 224.1 171.2 222.5 173.3 222.2 174.6 221.4 176.8 221.5 177.9 220.7 179.9 219.9 180.7 219 182.9 219.1 185.9 218.5 186.1 217.6 188.9 217.9 189.9 216.7 192.8 216.7 193.6 214.8 194.1 214.5 194 214.5 194.1 214.3 194.2 212.7 194.8 212.1 195.7 210.7 199.4 209.5 201.8 208.4 202.4 206.2 202.4 205.5 204 203.6 204.9 202.3 206.7 203 207.8 201 210.5 199.4 211.3 197.6 215.5 197.3 218.3 198.1 219.7 198.8 222.1 198.2 222.5 198.6 224.7 201.4 224.8 201.2 225.6 199.8 226.8 200.2 227.7 201.6 228.2 204.3 228.2 205.5 229.6 206.5 229.6 207.5 230.6 209.1 231 211.1 232.3 213.2 232.7 216.1 234 217.4 235.5 219.8 232.5 220.5 232.5 221.2 230.8 223 228.5 225.1 228.3 225.5 227.7 227.6 228.1 228.9 227.3 230.3 227.1 231 228.2 235.4 225.2 236.1 225.6 238.5 225.4 238.9 225.9 241 225.6 243 226.5 243.8 227.2 246.1 226.2 247.3 224.7 248.5 224.3 249.8 223.2 249.3 221.1 250.1 219.2 249.6 218.4 248.4 218.4 247.8 217.7 249.5 215.2 251.4 213.9 250.6 210.5 249 209.3 249.1 207.9 250.1 206.4 250.2 204.7Z","MA":"M263.8 67.2L263.1 69.7 263.3 71.6 262 72 262.8 73 262.1 76 260.7 77.4 260.7 79.6 258.9 80.6 259.1 82 258.7 83.6 257.1 86.7 255.8 87.8 255 89.1 254.6 91.8 252.1 94.1 249.9 97.9 249 98.7 247.8 98.7 239 105.5 240.4 105.4 241.2 104 242.7 103.8 244.3 104.7 247.1 104.7 250.6 107.2 251.1 110 251.2 113.1 251.6 113.9 250.5 117.8 250 121 248.2 122.8 249.6 124.7 251.7 126.6 252 127.4 254.5 130.7 256 129.9 258.5 129.3 259.8 131 259 133.2 256.9 133.7 256.2 135.2 255.5 138.2 254.8 138.3 254.2 140 256 140.9 256.3 142.3 258.5 144 257.8 146.4 259 147 259.6 149.6 260.6 150.6 263.5 151.3 264.7 150 265.3 146.9 265.2 144.9 265.6 143.6 264.7 142.4 264.8 141.4 263.9 139 264.3 138 265.4 137 266.4 135.1 267.1 132.8 267.8 131.9 268.3 129.2 269.1 127.4 270.2 126.6 274 125.6 275 124.6 276.2 125 277.4 123.5 279.7 122.5 281.6 119.6 284.6 118.7 286 118.9 287.7 120.1 289.6 119.4 291.9 119.3 292.9 117.7 293.3 114.6 291.3 112.6 291.3 108.5 293.7 106.2 294 104.7 293.2 101.4 292.7 100.7 293.6 98.2 292.8 97.1 292.4 95.6 293.3 95 294.7 92.9 295.4 90.5 297.1 88.4 298.9 88.5 300.3 87.9 300.5 86.7 301.5 86.6 303.6 83.9 302.9 83 303.3 82 301.1 81.3 299.3 81.9 296.3 81.1 295.3 80.2 294.1 79.9 290.3 78.1 288.7 77.9 288.2 79.3 286 79.5 285.8 78.3 283.9 80 282.5 81.6 281.9 81.1 283 79.5 282.9 78.5 280.4 79.2 279.4 82.1 279.3 83.5 278.1 84.4 277.1 84.1 277.4 81.2 278.2 79.8 279.9 77.8 279 76 278.8 74.6 278 72.8 276.3 72 276.3 70.9 274.3 70 272.2 69.9 269.6 68.3 267.6 67.9 267.2 66.6 264.6 66.1Z","MG":"M250.2 204.7L250.1 206.4 249.1 207.9 249 209.3 250.6 210.5 251.4 213.9 249.5 215.2 247.8 217.7 248.4 218.4 249.6 218.4 250.1 219.2 249.3 221.1 249.8 223.2 248.5 224.3 247.3 224.7 246.1 226.2 243.8 227.2 243 226.5 241 225.6 238.9 225.9 238.5 225.4 236.1 225.6 235.4 225.2 231 228.2 230.3 227.1 228.9 227.3 227.6 228.1 225.5 227.7 225.1 228.3 223 228.5 221.2 230.8 220.5 232.5 219.8 232.5 217.4 235.5 216.5 237.6 216.8 241.2 218.7 239.9 219.8 239.6 221.4 238.5 222.6 239.3 224.6 239.4 226.8 240.1 229.7 239.9 230.2 240.5 231.6 240.4 231.5 242.3 232.2 243.6 235.7 242.4 240.1 242.1 240.9 241.3 241.9 242.4 243.7 242.3 244.2 241.1 246 241.7 247.8 241.7 249.3 242.8 248.9 245.5 250.1 246.2 250.5 247.4 249.2 249.6 250 250.5 250.1 252.4 251.6 254.7 252.9 254.2 255.2 255.1 255.2 256.2 253.5 258.6 254.1 260.1 254.1 261.5 253 262.9 253.5 264 255.2 265 255.7 266.4 255.2 267 256 268.7 258.9 268.7 260.9 268.3 261.3 266.6 263.5 266.1 264.2 266.8 267.2 265.2 269.4 264.8 271.7 264.2 272.7 263.5 274.2 263.8 275.6 263 278.4 262.2 280.2 262.5 282.1 261.8 284.4 262.8 286.2 261.7 291.6 259.8 291 258.6 291.9 257.6 292.5 254.8 295.7 251.2 296.3 250.2 296.5 248 296.1 247.5 297.1 246 300.3 246.1 301.2 243.8 302.2 243.4 302.5 241.4 304.6 239.5 304.9 238.1 304.7 236.3 303.6 233.6 304.9 233.7 305.2 232.3 304.3 231.7 304.7 230 303.6 229.5 303.6 228.6 304.6 227.3 305.9 226.9 306 225.7 307.7 226.2 309.5 225.1 312 226.1 312.5 224.9 311.2 222.6 310.5 222.4 309.1 220.6 309.8 216.5 310.5 215.5 311.9 214.9 312.5 212.8 313.4 212.9 314.4 211.8 316.5 208.7 315.7 207.5 313.9 206.6 313.3 205.5 310.4 205.3 309.3 204 306.5 204.2 305.3 204.7 303.6 204.3 303.5 202 299.7 198.1 298.4 198.7 297.1 198.7 294 197.4 289.6 193.8 287.7 193.2 285.4 193.8 284.8 194.4 281.7 193.1 281.4 192.1 282 189.8 278.6 189 277.4 189 275.3 189.8 273.1 191.2 272.5 192 269.8 193.2 266.8 195.2 266.4 195 264.5 196.6 263.3 196.9 261.8 196.5 262.6 195.1 261.9 194.2 261.5 194.8 259.7 194.6 259.4 193.6 258.1 192.5 257.3 193.5 257.5 195.3 256.6 196 254.6 195.2 253.8 197 254.7 198.2 253.8 199.2 253.6 200.3 254.4 200.9 254.6 203.4 251.8 203.7 250.2 204.6Z","MS":"M198.8 222.1L196.9 221.7 195.3 222.1 192.6 221.8 191.2 220.3 191.9 219 193.3 218.6 193.5 214.9 192.7 214.8 189.9 218.2 188 218.6 186.2 217 184 217.3 183 218.3 180.6 218.5 177.5 217 176.6 216.1 172.8 214.8 172.5 214.2 170.7 214.7 169 215.7 166.2 215.7 165.2 217.6 163.3 219.9 159.9 220.8 158.8 220.2 157.5 218.1 157.8 220.5 158.9 222.4 159.3 224.3 157.6 230.4 157.5 231.6 154.6 238.4 157 240.3 154.5 242 155.3 244.2 155.9 244.8 155.8 246.2 156.7 246.8 157.4 252.7 156.5 254.5 157.2 256.2 156.6 257.7 156.4 259.9 158 260.4 158.9 259.8 159.9 260.6 162.1 261.1 164.9 260.9 166.3 261.6 168.7 260.6 170.1 259.5 171.7 261.3 174.8 261.4 175.7 262.2 175.9 263.8 176.7 264.5 176.4 266.5 177 269 177.7 269.7 177.4 272.4 177.6 273.7 178.5 275.2 178.4 276.3 179.2 277 181.6 277 184.8 275.5 186.9 276.2 188.2 277.7 189.8 276.6 190.8 272.1 192.7 271.1 193.7 269 193.8 267.9 194.5 266.8 197.6 265.3 198.3 264.4 199.2 263.2 203.6 260.7 205.1 258.4 207.4 255.7 207 254.7 208.5 253.7 209.2 252 209 250.9 210.4 249.3 211.2 249 211.1 247.3 213.7 243.6 216.1 242.7 216.8 241.2 216.5 237.6 217.4 235.5 216.1 234 213.2 232.7 211.1 232.3 209.1 231 207.5 230.6 206.5 229.6 205.5 229.6 204.3 228.2 201.6 228.2 200.2 227.7 199.8 226.8 201.2 225.6 201.4 224.8 198.6 224.7 198.2 222.5Z","MT":"M225.1 146.8L215.3 146.1 166.2 142.3 165.3 142.6 164.9 141.2 163.2 141.1 162.8 139.9 161.3 138.3 159.4 137.7 157.7 136.8 156.8 133.6 157.2 131.8 155.5 129.5 154.9 126.8 153.3 124.3 152.6 123.9 151.9 124.9 152 126.4 150.5 128.9 151.3 131.1 150 137.2 140.4 137.4 131.9 137.5 121.2 137.7 122.3 138.8 121.5 140.4 121.8 141.8 120.9 142.9 122 144.6 122.1 147.6 121.3 150.3 122.6 152.7 122.6 156.2 122.1 157.9 131.9 157.8 132.5 158.8 135.4 158.8 136.1 159.2 136.7 161.7 135.3 163 135.1 164.2 135.6 166.1 136.4 166.3 137.3 169.3 138.3 170.2 136.9 172.6 136.1 172.8 135.7 175.2 133.9 177.2 133.1 180.6 130.4 182.3 130.2 182.9 131.9 183.6 133.2 185.6 132.4 186.6 132.7 188.6 134.4 191.4 134.8 195.8 131.8 195.9 134.9 199.3 135.7 206.6 142 206.5 151.2 206.7 152.3 207.1 152 208.5 151 209.8 151 212.4 151.7 213.3 151.7 214.7 155.3 217.7 156.3 217 157.5 218.1 158.8 220.2 159.9 220.8 163.3 219.9 165.2 217.6 166.2 215.7 169 215.7 170.7 214.7 172.5 214.2 172.8 214.8 176.6 216.1 177.5 217 180.6 218.5 183 218.3 184 217.3 186.2 217 188 218.6 189.9 218.2 192.7 214.8 193.5 214.9 193.3 218.6 191.9 219 191.2 220.3 192.6 221.8 195.3 222.1 196.9 221.7 198.8 222.1 198.1 219.7 197.3 218.3 197.6 215.5 199.4 211.3 201 210.5 203 207.8 202.3 206.7 203.6 204.9 205.5 204 206.2 202.4 208.4 202.4 209.5 201.8 210.7 199.4 212.1 195.7 212.7 194.8 214.3 194.2 214.5 194.1 214.5 194 214.8 194.1 216.7 193.6 216.7 192.8 217.9 189.9 217.6 188.9 218.5 186.1 219.1 185.9 219 182.9 219.9 180.7 220.7 179.9 221.5 177.9 221.4 176.8 222.2 174.6 221.1 174 220.5 172.1 221.2 170.9 220.7 168.7 220.7 165.4 220.4 164.3 221 162.9 220.3 162.5 220.4 161 221.5 158.1 221.3 156.8 221.9 155.2 221.6 154.3 222.7 152.8Z","PA":"M239 105.5L247.8 98.7 249 98.7 249.9 97.9 252.1 94.1 254.6 91.8 255 89.1 255.8 87.8 257.1 86.7 258.7 83.6 259.1 82 258.9 80.6 260.7 79.6 260.7 77.4 262.1 76 262.8 73 262 72 263.3 71.6 263.1 69.7 263.8 67.2 264.2 66.3 262.1 65.3 260.4 65.5 258.6 63.4 258.1 63.8 254.9 63.4 252.6 61.5 250.1 61.9 249 61 246.5 62.4 245.8 62.1 243.8 64.4 242.8 64.5 241.6 63.5 242.3 58.1 239.4 58.3 237.7 58.1 236.8 57.5 233.1 57.6 233.7 56.3 233.3 55.4 230.5 54.6 232 53.3 231.6 52.1 229.5 52.9 226.2 52.9 227.4 51.1 225.6 49.6 223.7 50.5 222.6 53.1 221.5 54.3 218.7 55.6 217.8 56.7 216.5 57.1 215.2 58.8 214.2 60.7 212.1 63.3 212 65.8 211.2 66.5 208.7 66.9 206.1 66.3 205.3 65.5 205.4 64 204.4 63.9 204.2 61.3 202.7 60.6 202.8 58.9 201.3 57.4 200.5 57.3 200.1 55.7 198.3 52.5 198.9 49.8 196.1 47.5 195.7 45.6 194.4 43.5 192.7 43.1 190.5 42.1 189.3 40.9 187.4 39.9 183.7 39.7 183.2 37.4 183.6 35.7 182.6 33.6 181.4 32.2 180.4 32.8 178.4 32.9 177.8 33.7 176.8 33.5 174.5 33.8 172.7 32.7 170.9 35.2 171.7 35.5 173 37.3 173 38.6 172.1 39.1 168.1 38 166.4 38.1 164.7 38.7 162.9 38.4 162.1 37.3 158.8 38.4 157.9 40.3 156.2 40.1 153.8 40.7 153.5 42 152.4 42.2 150.5 41.3 149.2 43.3 149 44.3 147 44.1 146 45.2 145.3 44.7 145.3 53.6 145.6 56.7 145.5 59.2 146.9 60.1 147 62.3 149.6 64.2 149.6 65.5 150.7 66.6 152.1 67.4 153 66.2 153.9 66.7 153.6 68.3 156.2 69.9 156.5 70.6 157.8 70.9 159.6 72 160.2 71.8 162.1 72.6 162.6 73.7 165.4 75 165.1 76 166.5 76.4 167.2 75.7 168.3 76.1 170.4 74.8 170.2 76.1 168.5 77 168.4 78.6 162.9 90.7 157.5 102.1 151.4 115.8 149.9 117.1 149.4 118.6 149.9 119.8 152.2 122.3 152.6 123.9 153.3 124.3 154.9 126.8 155.5 129.5 157.2 131.8 156.8 133.6 157.7 136.8 159.4 137.7 161.3 138.3 162.8 139.9 163.2 141.1 164.9 141.2 165.3 142.6 166.2 142.3 215.3 146.1 225.1 146.8 226.4 144.1 226.9 141.7 228.1 140.6 228.7 139.3 230.2 137.8 231 137.6 233.9 133.4 234.5 131.8 235.1 128 233.4 126.7 233.1 125.2 234.9 122.8 234.7 120 236.5 118.7 238.8 118.2 239.9 117.4 240.3 115.6 242.1 114.3 241.9 113.4 243.3 112.4 242.9 111.6 243.8 110.8 243.4 109 244.7 107.9 243.4 107.3 242.4 105.9 240.5 106.1Z","PB":"M331 128.7L332.1 130 334.6 129.5 335 130.8 336 130.3 337.9 130.3 338.9 129.2 342 127.6 342.4 126.8 344.7 125.8 346.7 127.1 344.9 129.3 345.4 130.4 343.9 132.4 345.1 132.8 345.4 134.8 346.6 135.8 350 134.1 350.2 132.5 351.4 132.3 352.2 131.3 353.9 130.9 355.8 131.5 359.7 130 360.6 128.5 362.9 127.5 364.6 127.8 365.5 129.2 366.7 129.4 367.2 125.6 366.6 123.8 365.9 120.8 365.8 119 364.2 119.6 359.5 118.4 358.4 118.7 356.3 118.6 355.7 117.9 354.3 118.1 353.7 116.7 351.8 117.3 351.6 119.5 351.1 120.6 351.5 121.7 350.6 122.7 348.6 120.7 347 120.5 345.3 121.5 344.2 120.2 342.6 120.3 342.9 118.6 343.5 118.4 343.9 116.7 345.4 115.6 345.7 114.1 344.9 113.9 343 114.9 340.4 115.3 339.3 117 336.6 118.1 335.3 118.1 334.3 117.2 332.8 116.6 331.7 119.9 331.8 121 330.8 121.9 331.6 123.2 331.8 124.5 332.8 125.6Z","PE":"M306.4 138.1L308.5 138.1 308.7 138.9 310.4 139.4 311.2 141.8 312.6 142.8 311.6 145.3 312.9 145.7 315.4 144.7 316.2 142 317.5 142.3 319.2 141.8 319.9 140.8 319.8 139.7 321.8 139.4 322.4 138.2 324.6 137.1 325.8 138.6 327.7 139.2 328.4 139.8 329.8 139.7 331.5 141.4 332.5 141.7 334.1 143.3 334.7 145.1 336.1 143.7 337.2 143.5 339.4 140.7 340.2 142.1 342.4 142.4 344 144.5 345.3 144.8 346 145.9 348.3 145.2 349.5 145.8 351.3 144.8 352.8 144.4 354.2 142.4 356.2 141.6 357.7 142.2 359.6 141.4 363.1 142.5 363.8 140.3 365.1 137.5 365.7 135.2 366.5 133.4 366.7 129.4 365.5 129.2 364.6 127.8 362.9 127.5 360.6 128.5 359.7 130 355.8 131.5 353.9 130.9 352.2 131.3 351.4 132.3 350.2 132.5 350 134.1 346.6 135.8 345.4 134.8 345.1 132.8 343.9 132.4 345.4 130.4 344.9 129.3 346.7 127.1 344.7 125.8 342.4 126.8 342 127.6 338.9 129.2 337.9 130.3 336 130.3 335 130.8 334.6 129.5 332.1 130 331 128.7 328.2 130.4 327 129.4 324.1 127.9 324.2 127 321.7 125.5 318.1 125.9 316.9 125.1 316 125.6 314.5 125.2 314.2 125.9 312.7 126.7 313.5 128.4 313 129.4 314.1 130 314.1 131.3 313.5 132.6 311.8 134.1 311.5 135 310 135.3 307.8 137.5Z","PI":"M306.4 138.1L307.8 137.5 310 135.3 311.5 135 311.8 134.1 313.5 132.6 314.1 131.3 314.1 130 313 129.4 313.5 128.4 312.7 126.7 314.2 125.9 314.5 125.2 314.9 123.4 315.5 122.6 315.5 120.5 315.1 119.7 313 119.1 312.3 117.7 312.3 115.6 311.8 114.8 311.6 112.4 311.1 109.6 311.4 107.1 311.3 104.9 309.9 104 308.4 101.9 309 100.1 308.6 99.5 309.4 97.2 309.5 94.9 307.8 90.8 307.9 87.9 307.1 87.6 308.6 85.1 308 83.6 305.3 83.3 303.3 82 302.9 83 303.6 83.9 301.5 86.6 300.5 86.7 300.3 87.9 298.9 88.5 297.1 88.4 295.4 90.5 294.7 92.9 293.3 95 292.4 95.6 292.8 97.1 293.6 98.2 292.7 100.7 293.2 101.4 294 104.7 293.7 106.2 291.3 108.5 291.3 112.6 293.3 114.6 292.9 117.7 291.9 119.3 289.6 119.4 287.7 120.1 286 118.9 284.6 118.7 281.6 119.6 279.7 122.5 277.4 123.5 276.2 125 275 124.6 274 125.6 270.2 126.6 269.1 127.4 268.3 129.2 267.8 131.9 267.1 132.8 266.4 135.1 265.4 137 264.3 138 263.9 139 264.8 141.4 264.7 142.4 265.6 143.6 265.2 144.9 265.3 146.9 264.7 150 263.5 151.3 265.9 151.2 266.1 150.5 267.2 150 269 153.4 268.6 154.8 270.3 156.8 271.8 157 273.2 157.9 275.6 156.3 276.5 155.1 277.2 155.4 278.6 154.5 280.4 155.4 281.5 153.9 283.3 152.3 284.1 150.2 285 149.5 285 147.9 283.9 147.3 283.4 145.4 284 144.4 287.2 142.7 288.5 144 290.1 143.8 291.6 144.4 291.7 145.3 292.8 146.2 296.2 144.9 297.5 143.5 301.9 143 302.9 141 304.7 140.2Z","PR":"M240.1 290.2L239.2 288 237.6 287.1 236.3 286.9 236.5 285.4 236 284.1 234.6 284.3 232.7 283.8 231 284.2 230.1 282.8 231.2 280.9 230 279.7 227.9 276.1 228.4 274.9 227.8 274 228.2 272.4 227.1 269.4 225.5 268.8 224.9 267.3 223.7 267.7 221.2 267.7 218 267.2 217.2 266.2 215.2 265.9 214 265 211.5 265.2 209 264.6 206.8 263.5 205.9 264.9 202.7 263.9 201.8 264.4 199.9 263.9 198.3 264.4 197.6 265.3 194.5 266.8 193.8 267.9 193.7 269 192.7 271.1 190.8 272.1 189.8 276.6 188.2 277.7 187.7 278.5 188.4 280.5 187.9 281.3 187.8 283.5 187.4 284.2 186.8 287.2 187.1 287.7 185.5 290.4 185.7 291.7 187.4 291.8 189 291.2 191.8 292.3 192 294.9 193.6 297.8 195.4 298.1 196.4 297.9 198.2 299.1 199 298.7 201.6 298.8 205.3 299.9 207.2 300.8 211.4 301.1 212.3 301.8 213.5 301.5 213.1 299.7 213.9 298.5 215.7 297.9 216.4 298.5 217.9 297.7 218.7 296.4 220.1 296.1 220.9 296.9 224 296.1 225.1 296.3 227.2 298.2 229.8 297.2 230.9 296.2 235.7 296.2 236.8 293.8 238.1 292.7Z","RJ":"M269.4 264.8L270.7 266.7 271.8 267.1 272.9 266.5 274.6 267.3 273.7 269 271.8 269 269.2 270.1 268.2 272.3 269.5 273.7 270.1 271 272.2 270.5 274.9 270.9 275.3 270.2 277.7 270.1 279.7 271.6 281.8 271.3 283.2 270.8 282.2 269.1 284 268.3 284.4 268.9 283.4 270.2 283.5 270.8 285.1 271.2 288.1 271 292.3 271.5 293.3 270.4 293.3 268.3 296.1 265.7 300.3 264.5 302.2 263.5 302.5 262.5 302 258.8 303.1 256.8 302.1 256 301.2 256.2 299.1 255.7 296.6 254.4 296.8 251.7 295.7 251.2 292.5 254.8 291.9 257.6 291 258.6 291.6 259.8 286.2 261.7 284.4 262.8 282.1 261.8 280.2 262.5 278.4 262.2 275.6 263 274.2 263.8 272.7 263.5 271.7 264.2Z","RN":"M332.8 116.6L334.3 117.2 335.3 118.1 336.6 118.1 339.3 117 340.4 115.3 343 114.9 344.9 113.9 345.7 114.1 345.4 115.6 343.9 116.7 343.5 118.4 342.9 118.6 342.6 120.3 344.2 120.2 345.3 121.5 347 120.5 348.6 120.7 350.6 122.7 351.5 121.7 351.1 120.6 351.6 119.5 351.8 117.3 353.7 116.7 354.3 118.1 355.7 117.9 356.3 118.6 358.4 118.7 359.5 118.4 364.2 119.6 365.8 119 365.3 116.5 364.1 112.9 363.7 110.1 362.5 107.2 361.5 106 357 104.7 355.3 105.2 350.2 104.9 348 103.3 346.1 103.5 345.3 102.4 341.7 103.2 340.9 104.6 339.1 108.6 337.4 110.2 337.7 110.8 336.6 112.8 335.2 114.1 334.1 114Z","RO":"M75.4 149.3L77.8 148.9 79.7 148.1 83.9 147.6 84.5 148.4 86.6 146.9 87.6 148.6 87.3 150.2 87.7 151.9 86.5 154.4 87.4 157.1 88.3 159 87.4 160.4 87.4 161.6 88 163.9 88.7 164 89.2 165.9 90 165.8 90.7 168.5 92.4 168.5 93.6 170 95.7 171 96.5 172.4 100.5 173.1 102.1 172.1 103.6 172.4 106.6 174.3 108.5 173.8 109.3 175.6 110.3 175.8 111.8 177.2 114.4 177.7 115.3 178.3 116.5 177.9 117.4 179.3 119.6 180.9 119.8 181.7 122.3 181.4 123.4 181.8 125.3 181.2 127.2 181.3 130.2 182.9 130.4 182.3 133.1 180.6 133.9 177.2 135.7 175.2 136.1 172.8 136.9 172.6 138.3 170.2 137.3 169.3 136.4 166.3 135.6 166.1 135.1 164.2 135.3 163 136.7 161.7 136.1 159.2 135.4 158.8 132.5 158.8 131.9 157.8 122.1 157.9 122.6 156.2 122.6 152.7 121.3 150.3 122.1 147.6 122 144.6 120.9 142.9 121.8 141.8 121.5 140.4 122.3 138.8 121.2 137.7 120 136.7 118.8 137.2 118.7 138.3 117.6 138.5 116.2 137.8 115.7 136 114 135 114 134.1 111.3 132.6 110.9 131.4 109.3 130.3 102.4 130.5 101.5 133 100.9 133.8 99.5 133.8 99.7 136.1 97.8 137.7 97.8 139.6 96.1 139.5 93.5 140.4 91.7 140.2 90.6 141.5 90.8 142.4 89.6 144.2 88.8 144.6 87.8 142.9 86 143.4 85.5 144.9 83.9 144.8 83.5 145.9 81.2 144.5 77.5 144.8 76.5 146.8 74 148 73.7 148.6Z","RR":"M145.3 44.7L145.1 43.8 142 43.2 139.4 40.1 137.9 39.8 137.3 38.4 137.7 35.3 136 34.1 136 33 135.2 31.2 135.3 28.9 135.9 26.4 136.9 25 136.6 24.3 137.1 22.5 138.2 21.8 139.7 19.5 137.7 17.3 137.7 15.1 133.7 14.2 135 12.5 135.5 9 133.3 7.2 132.2 7.8 128.8 7.6 129.9 10.1 128.6 11.7 126.9 12.3 126 14.1 123.5 13.9 122.7 15 121.2 15.3 120.8 16.5 119 16.5 118.4 17.3 116.8 17.2 115.3 18.1 112.7 17.1 111.8 18.3 109.9 18.4 109.2 21.2 107.5 22.4 105.5 19.2 103.8 18.9 102.7 20.1 101 19.2 99.6 19.1 98.5 19.8 96.6 17.4 94.2 17.3 93 17.6 91.9 16.3 90.7 16.9 93.8 20.6 95.5 21.4 96.3 22.5 97 25.4 96.1 27.1 98 29.7 98 32.8 99.6 32.7 103.9 33.4 103.9 35.4 106 35.8 107.1 37.2 108.8 37.2 109.8 37.8 109.8 40.2 109.1 41.2 110.6 42.6 111.7 45.9 112.4 47.1 112.2 48.8 111.5 49.7 111.6 51.3 112.4 52.5 112.3 54.1 113.5 56 114.8 59 113.9 60.2 113.9 61.9 111.9 63.3 116.4 66.6 117.5 69 118.4 68.8 120.2 69.5 120 68 120.8 65.9 120.4 65.1 120.8 63 121.5 62.1 125.1 60.7 126.5 61.6 128 63.9 128.9 64.2 132.2 62.2 131.3 60.8 132.2 58.4 134.7 53.6 145.3 53.6Z","RS":"M192 306.3L191.1 306.1 190 307.5 187.7 309 183.2 310.6 182.2 312.5 180.8 312.7 179.3 313.9 177.9 315.5 176.2 316.3 175.4 317.3 175.3 318.5 172.8 321.3 172 321.6 170.9 324.1 169.7 324.5 169.1 326.1 167.9 328 165.4 330.6 164.6 330.7 163.9 332.5 162.1 335.2 163.3 335.6 165 335.4 165.9 333.6 167.8 333.5 171.6 337.2 173.2 338.1 173.5 339.1 174.8 340.5 174.6 342.2 175.8 342.4 178.1 340.2 179.7 341.9 180.7 343.6 182.1 344.7 184 345.7 186 345.8 187.1 347.6 190 350.2 190.9 350.1 192.6 351.6 193.9 355 196.2 356.6 197.8 356.9 198.6 355.5 200 355 199.9 354 200.6 352.7 201.6 355.2 201.4 356.8 200.5 358.7 199.7 359.3 198.4 358.2 197.3 358.4 197.1 360.1 196.3 361.1 195.1 361.6 194.8 362.4 195.1 364.1 194.4 365.1 194.3 366.4 195.5 367 200.1 362.7 201.3 361.1 202.4 358.9 203.3 355.8 204 354.1 205.4 352.5 205.5 350.8 204.7 349.8 204.6 348.7 206.2 348.1 206.5 345.6 207.1 344.6 209.4 344.3 209.7 343 210.9 342.7 210.6 341.1 211.4 340.8 211.5 338.6 212.2 337.8 213 335.8 212.9 334.3 215.3 335.7 216.3 335.9 218.3 335.1 218 337.2 217.1 338.4 216.5 340.3 215.2 341.1 214.5 342.4 213.1 342.6 213.2 344.5 212.5 346.1 211 346.4 209.1 348.9 208 349.1 207.7 350.3 210.9 348.3 212.2 347.2 216.3 343 220.2 337 221.8 332.7 223.5 329.3 225.3 326.8 222.9 325.2 223.4 324.4 223.5 321.6 225.6 319.9 225.3 319.1 223.5 318.5 222.5 318.9 221.3 318.4 218.9 318.1 217.9 317.4 215.8 314 214.1 312.4 211.8 311 211.3 310.1 209.6 309.3 208.4 309.7 207.3 308.3 202 307.2 200.1 306.3 199.1 306.8 197.3 306.5 195.8 305.6 193.9 306.5Z","SC":"M235.7 296.2L230.9 296.2 229.8 297.2 227.2 298.2 225.1 296.3 224 296.1 220.9 296.9 220.1 296.1 218.7 296.4 217.9 297.7 216.4 298.5 215.7 297.9 213.9 298.5 213.1 299.7 213.5 301.5 212.3 301.8 211.4 301.1 207.2 300.8 205.3 299.9 201.6 298.8 199 298.7 198.2 299.1 196.4 297.9 195.4 298.1 193.6 297.8 193.1 299.1 192.8 302.3 193.4 304.2 192.3 305.1 192 306.3 193.9 306.5 195.8 305.6 197.3 306.5 199.1 306.8 200.1 306.3 202 307.2 207.3 308.3 208.4 309.7 209.6 309.3 211.3 310.1 211.8 311 214.1 312.4 215.8 314 217.9 317.4 218.9 318.1 221.3 318.4 222.5 318.9 223.5 318.5 225.3 319.1 225.6 319.9 223.5 321.6 223.4 324.4 222.9 325.2 225.3 326.8 228.2 323.5 229.7 322.1 232.7 320.4 234.1 317.3 234.9 313.5 235.7 312.6 236.9 310.1 236.6 309.3 235.2 308.6 234.9 304.8 235.2 303.7 234.6 302.6 236.3 298.6 235.6 297.6Z","SE":"M351 157.1L349.7 156.4 349 154.7 348.1 154.7 346.4 153.3 346.1 152 343.5 150.9 342.7 149.9 340.6 149.3 339.4 148.2 336.8 147 336.2 147.6 336.6 150.7 338.6 152.1 338.8 155 337.9 155.3 338.1 157.9 336.5 158.8 334.4 158.3 334 159.9 335.2 161.3 336 164.4 337.7 166.2 340.2 166.6 341.9 165.7 342.7 164.3 345.7 160.3 347.3 158.8Z","SP":"M269.4 264.8L267.2 265.2 264.2 266.8 263.5 266.1 261.3 266.6 260.9 268.3 258.9 268.7 256 268.7 255.2 267 255.7 266.4 255.2 265 253.5 264 253 262.9 254.1 261.5 254.1 260.1 253.5 258.6 255.2 256.2 255.2 255.1 252.9 254.2 251.6 254.7 250.1 252.4 250 250.5 249.2 249.6 250.5 247.4 250.1 246.2 248.9 245.5 249.3 242.8 247.8 241.7 246 241.7 244.2 241.1 243.7 242.3 241.9 242.4 240.9 241.3 240.1 242.1 235.7 242.4 232.2 243.6 231.5 242.3 231.6 240.4 230.2 240.5 229.7 239.9 226.8 240.1 224.6 239.4 222.6 239.3 221.4 238.5 219.8 239.6 218.7 239.9 216.8 241.2 216.1 242.7 213.7 243.6 211.1 247.3 211.2 249 210.4 249.3 209 250.9 209.2 252 208.5 253.7 207 254.7 207.4 255.7 205.1 258.4 203.6 260.7 199.2 263.2 198.3 264.4 199.9 263.9 201.8 264.4 202.7 263.9 205.9 264.9 206.8 263.5 209 264.6 211.5 265.2 214 265 215.2 265.9 217.2 266.2 218 267.2 221.2 267.7 223.7 267.7 224.9 267.3 225.5 268.8 227.1 269.4 228.2 272.4 227.8 274 228.4 274.9 227.9 276.1 230 279.7 231.2 280.9 230.1 282.8 231 284.2 232.7 283.8 234.6 284.3 236 284.1 236.5 285.4 236.3 286.9 237.6 287.1 239.2 288 240.1 290.2 241.6 288.9 241.8 287.9 244.8 285.3 249.7 282.3 249.8 281.5 251.1 280.6 255.4 278.5 256.7 278.8 257.7 277.3 259.8 276.8 263.6 277.5 263.6 275.8 265 275.6 265.6 274.7 268 273.3 269.5 273.7 268.2 272.3 269.2 270.1 271.8 269 273.7 269 274.6 267.3 272.9 266.5 271.8 267.1 270.7 266.7Z","TO":"M263.5 151.3L260.6 150.6 259.6 149.6 259 147 257.8 146.4 258.5 144 256.3 142.3 256 140.9 254.2 140 254.8 138.3 255.5 138.2 256.2 135.2 256.9 133.7 259 133.2 259.8 131 258.5 129.3 256 129.9 254.5 130.7 252 127.4 251.7 126.6 249.6 124.7 248.2 122.8 250 121 250.5 117.8 251.6 113.9 251.2 113.1 251.1 110 250.6 107.2 247.1 104.7 244.3 104.7 242.7 103.8 241.2 104 240.4 105.4 239 105.5 240.5 106.1 242.4 105.9 243.4 107.3 244.7 107.9 243.4 109 243.8 110.8 242.9 111.6 243.3 112.4 241.9 113.4 242.1 114.3 240.3 115.6 239.9 117.4 238.8 118.2 236.5 118.7 234.7 120 234.9 122.8 233.1 125.2 233.4 126.7 235.1 128 234.5 131.8 233.9 133.4 231 137.6 230.2 137.8 228.7 139.3 228.1 140.6 226.9 141.7 226.4 144.1 225.1 146.8 222.7 152.8 221.6 154.3 221.9 155.2 221.3 156.8 221.5 158.1 220.4 161 220.3 162.5 221 162.9 220.4 164.3 220.7 165.4 220.7 168.7 221.2 170.9 220.5 172.1 221.1 174 222.2 174.6 222.5 173.3 224.1 171.2 225 170.8 224 174 225.1 175 227 175.4 232.4 178.6 232.8 176.7 233.7 175 236 175.7 237 174.3 241.3 178.7 243.2 177.7 243.3 179.1 244.5 178.9 248.1 179.9 248 177.5 250 179 253.7 177.9 256.1 176.3 259.5 176.6 261.9 176 260.1 176.2 260.5 174.1 260.6 171.5 259.7 170.7 259.6 167.9 260.4 166.7 259.8 165.3 261 163.8 258.5 162.4 258.3 160.6 261.1 156.4 263 154.5 265.2 153.2 265.4 152 266.3 151.4 266.1 150.5 265.9 151.2Z","DF":"M243.9 204.5L250.2 204.7 250.2 204.6 249.7 204.3 250.3 200.6 249.4 199.6 242.4 199.4 242.3 201.7 241.6 202.5 241.6 204.5Z"};
+// viewBox = caixa real dos paths com 2% de margem (malha do IBGE, ver MANUTENCAO.md, seção 19)
+const UF_VIEWBOX = '0 0 374.4 374.2';
 const UF_SIGLA2NOME = {"AC": "Acre", "AL": "Alagoas", "AP": "Amapá", "AM": "Amazonas", "BA": "Bahia", "CE": "Ceará", "DF": "Distrito Federal", "ES": "Espírito Santo", "GO": "Goiás", "MA": "Maranhão", "MT": "Mato Grosso", "MS": "Mato Grosso do Sul", "MG": "Minas Gerais", "PA": "Pará", "PB": "Paraíba", "PR": "Paraná", "PE": "Pernambuco", "PI": "Piauí", "RJ": "Rio de Janeiro", "RN": "Rio Grande do Norte", "RS": "Rio Grande do Sul", "RO": "Rondônia", "RR": "Roraima", "SC": "Santa Catarina", "SP": "São Paulo", "SE": "Sergipe", "TO": "Tocantins"};
 const UF_NOME2SIGLA = {"Acre": "AC", "Alagoas": "AL", "Amapá": "AP", "Amazonas": "AM", "Bahia": "BA", "Ceará": "CE", "Distrito Federal": "DF", "Espírito Santo": "ES", "Goiás": "GO", "Maranhão": "MA", "Mato Grosso": "MT", "Mato Grosso do Sul": "MS", "Minas Gerais": "MG", "Pará": "PA", "Paraíba": "PB", "Paraná": "PR", "Pernambuco": "PE", "Piauí": "PI", "Rio de Janeiro": "RJ", "Rio Grande do Norte": "RN", "Rio Grande do Sul": "RS", "Rondônia": "RO", "Roraima": "RR", "Santa Catarina": "SC", "São Paulo": "SP", "Sergipe": "SE", "Tocantins": "TO"};
-const UF_RAMP = ['#eaf2f8','#bcd9ec','#7fb8db','#3f8cbf','#0a2d42'];
+// Mesma paleta dos tokens --seq-1 a --seq-5 (validada: ordinal, contraste da classe mais clara >= 2:1,
+// classes vizinhas distintas também sob deuteranopia e protanopia)
+const UF_RAMP = ['#70bee5','#359ccb','#007ba9','#00587d','#01354a'];
 function siglaDeRotulo(rot){ return UF_NOME2SIGLA[rot] || null; }
 function isMapaUF(r){
   if(!r || !Array.isArray(r.valores)) return false;
@@ -1483,41 +1657,98 @@ function isMapaUF(r){
   if(r.id!=='uf') return false;
   return n>=20;
 }
+// Classes por quintis: até 5 classes com número parecido de UFs (3 classes quando há menos de 15 UFs
+// com dado, para não sobrar classe de um valor só). Valores iguais ficam na mesma classe: cada corte
+// vai para a fronteira entre valores distintos mais perto do alvo, e o alvo das classes seguintes é
+// recalculado com o que sobrou; sem fronteira livre, as classes se juntam. Só entram as UFs com dado
+// (vale para os mapas parciais).
+function classesQuintis(valores, kMax) {
+  const v = [...valores].sort((a, b) => a - b);
+  const n = v.length, k = Math.min(kMax || 5, new Set(v).size);
+  const fronteiras = [];
+  for (let i = 1; i < n; i++) if (v[i] !== v[i - 1]) fronteiras.push(i);
+  const cortes = [];
+  let prev = 0;
+  for (let c = 1; c < k; c++) {
+    const alvo = prev + (n - prev) / (k - c + 1);
+    const livres = fronteiras.filter(b => b > prev);
+    if (!livres.length) break;
+    prev = livres.reduce((m, b) => Math.abs(b - alvo) < Math.abs(m - alvo) ? b : m);
+    cortes.push(v[prev]);
+  }
+  const classe = x => cortes.filter(t => x >= t).length;
+  const faixas = Array.from({ length: cortes.length + 1 }, () => []);
+  v.forEach(x => faixas[classe(x)].push(x));
+  return { classe, faixas: faixas.filter(f => f.length).map(f => [f[0], f[f.length - 1]]) };
+}
+let MAPA_SEQ = 0;
 function gerarMapaUF(r, formato){
-  const ufVals={}; let min=Infinity, max=-Infinity;
-  r.valores.forEach(v=>{ const s=siglaDeRotulo(v.rotulo); if(s){ ufVals[s]=v.valor; if(v.valor<min)min=v.valor; if(v.valor>max)max=v.valor; }});
-  const span=(max-min)||1;
-  const bucket=v=>Math.min(4, Math.max(0, Math.floor((v-min)/span*5)));
-  let paths='';
-  for(const sig in UF_PATHS){
-    const v=ufVals[sig];
-    const fill = (v==null) ? 'rgba(127,127,127,0.14)' : UF_RAMP[bucket(v)];
+  const ufVals = {};
+  r.valores.forEach(v => { const s = siglaDeRotulo(v.rotulo); if (s) ufVals[s] = v.valor; });
+  const nUF = Object.keys(ufVals).length;
+  const { classe, faixas } = classesQuintis(Object.values(ufVals), nUF < 15 ? 3 : 5);
+  const m = faixas.length;
+  const cor = i => UF_RAMP[m === 1 ? 2 : Math.round(i * 4 / (m - 1))];
+  // UF sem valor: cinza neutro com hachura; nos mapas parciais (biomas) a legenda diz "fora do bioma"
+  const rotuloFalta = r.mapa === true ? 'fora do bioma' : 'sem dado';
+  const pid = 'uf-hachura-' + (++MAPA_SEQ);
+  const defs = '<defs><pattern id="' + pid + '" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">' +
+    '<rect width="4" height="4" fill="#e3e3e0"/><line x1="0" y1="0" x2="0" y2="4" stroke="#b4b4ae" stroke-width="1.2"/></pattern></defs>';
+  let paths = '', faltam = 0;
+  for (const sig in UF_PATHS) {
+    const v = ufVals[sig];
+    if (v == null) faltam++;
+    const fill = (v == null) ? 'url(#' + pid + ')' : cor(classe(v));
     const nome = UF_SIGLA2NOME[sig] || sig;
-    const tip = (v==null) ? (nome+' \u2014 sem dado') : (nome+' \u2014 '+fmtNumero(v, formato));
-    paths += '<path d="'+UF_PATHS[sig]+'" fill="'+fill+'" stroke="#fff" stroke-width="0.6"><title>'+tip+'</title></path>';
+    const tip = nome + ': ' + ((v == null) ? rotuloFalta : fmtNumero(v, formato));
+    paths += '<path data-uf="' + sig + '" d="' + UF_PATHS[sig] + '" fill="' + fill + '" stroke="#fff" stroke-width="0.9"><title>' + tip + '</title></path>';
   }
-  const step=span/5; let leg='';
-  for(let i=0;i<5;i++){
-    const a=Math.round((min+step*i)*10)/10, b=Math.round((min+step*(i+1))*10)/10;
-    leg += '<span><i class="sw" style="background:'+UF_RAMP[i]+'"></i>'+fmtNumero(a,formato)+'\u2013'+fmtNumero(b,formato)+'</span>';
-  }
-  leg += '<span><i class="sw" style="background:rgba(127,127,127,0.14)"></i>sem dado</span>';
-  const ord=[...r.valores].sort((x,y)=> (siglaDeRotulo(y.rotulo)?1:0)-(siglaDeRotulo(x.rotulo)?1:0) || y.valor-x.valor );
-  const lista=ord.map(v=>'<div class="mapa-lista-row"><span>'+v.rotulo+'</span><span>'+fmtNumero(v.valor,formato)+'</span></div>').join('');
-  return '<div class="recorte-mapa"><div class="mapa-svg-wrap"><svg viewBox="0 0 380 356.5" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa por UF">'+paths+'</svg><div class="mapa-legenda">'+leg+'</div></div><div class="mapa-lista">'+lista+'</div></div>';
+  let leg = faixas.map(([a, b], i) => '<span><i class="sw" style="background:' + cor(i) + '"></i>' +
+    (a === b ? fmtNumero(a, formato) : fmtNumero(a, formato) + ' a ' + fmtNumero(b, formato)) + '</span>').join('');
+  if (faltam) leg += '<span><i class="sw sw-hachura"></i>' + rotuloFalta + '</span>';
+  const ord = [...r.valores].sort((x, y) => (siglaDeRotulo(y.rotulo) ? 1 : 0) - (siglaDeRotulo(x.rotulo) ? 1 : 0) || y.valor - x.valor);
+  const lista = ord.map(v => {
+    const s = siglaDeRotulo(v.rotulo);
+    const sw = s ? '<i class="sw" style="background:' + cor(classe(v.valor)) + '"></i>' : '';
+    return '<div class="mapa-lista-row"><span class="uf">' + sw + v.rotulo + '</span><span>' + fmtNumero(v.valor, formato) + '</span></div>';
+  }).join('');
+  return '<div class="recorte-mapa"><div class="mapa-svg-wrap"><svg viewBox="' + UF_VIEWBOX + '" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa por UF">' + defs + paths + '</svg><div class="mapa-legenda">' + leg + '</div></div><div class="mapa-lista-wrap"><div class="mapa-lista">' + lista + '</div></div></div>';
 }
 
 function gerarRecorteHTML(recorte, formato) {
   if (isMapaUF(recorte)) return gerarMapaUF(recorte, formato);
+  // Recortes com linha do Brasil: as demais do maior para o menor e o Brasil no fim
+  const ehBrasil = v => /^Brasil \(/.test(v.rotulo);
+  let valores = recorte.valores;
+  if (valores.some(ehBrasil)) valores = [...valores.filter(v => !ehBrasil(v)).sort((a, b) => b.valor - a.valor), ...valores.filter(ehBrasil)];
   const max = Math.max(...recorte.valores.map(v => v.max || v.valor));
+  // Com valores negativos (variações), as barras saem de uma linha de zero: negativas para a
+  // esquerda, positivas para a direita, na mesma escala
+  const temNeg = recorte.valores.some(v => v.valor < 0);
+  const neg = temNeg ? Math.max(...recorte.valores.map(v => v.valor < 0 ? -v.valor : 0)) : 0;
+  const pos = Math.max(0, ...recorte.valores.map(v => Math.max(v.valor, v.max || 0)));
+  const total = (neg + pos) || 1;
+  const zero = neg / total * 100;
   return `
     <div class="recortes">
-      ${recorte.valores.map(item => {
-        const pct = Math.min(100, (item.valor / (item.max || max)) * 100);
-        return `
-          <div class="recorte-row">
+      ${valores.map(item => {
+        const cls = ehBrasil(item) ? ' recorte-brasil' : '';
+        if (!temNeg) {
+          const pct = Math.min(100, (item.valor / (item.max || max)) * 100);
+          return `
+          <div class="recorte-row${cls}">
             <div class="recorte-rotulo">${item.rotulo}</div>
             <div class="recorte-bar-wrap"><div class="recorte-bar" data-width="${pct}"></div></div>
+            <div class="recorte-valor">${fmtNumero(item.valor, formato)}</div>
+          </div>
+        `;
+        }
+        const larg = Math.abs(item.valor) / total * 100;
+        const esq = item.valor < 0 ? zero - larg : zero;
+        return `
+          <div class="recorte-row${cls}">
+            <div class="recorte-rotulo">${item.rotulo}</div>
+            <div class="recorte-bar-wrap divergente"><div class="recorte-zero" style="left:${zero.toFixed(2)}%"></div><div class="recorte-bar${item.valor < 0 ? ' neg' : ''}" style="left:${esq.toFixed(2)}%" data-width="${larg.toFixed(2)}"></div></div>
             <div class="recorte-valor">${fmtNumero(item.valor, formato)}</div>
           </div>
         `;
@@ -1534,7 +1765,7 @@ function renderRecortesSection(ind, indSlug) {
 
   if (lista.length === 1) {
     const r = lista[0];
-    return `<div class="section-block"><h3>${r.titulo}</h3>${gerarRecorteHTML(r, r.formato || ind.formatoValor)}</div>`;
+    return `<div class="section-block"><h3>Recortes</h3><div class="subpane-title">${r.titulo}</div>${gerarRecorteHTML(r, r.formato || ind.formatoValor)}</div>`;
   }
 
   const subtabsId = `subtabs-${indSlug}`;
@@ -1579,7 +1810,7 @@ function renderTabs(area, tema, activeIdx) {
 /* === CSV === */
 function gerarCSV(area, tema, ind) {
   const linhas = [];
-  linhas.push('# Painel CLEAR — ' + area.area + ' / ' + tema.tema + ' / ' + ind.titulo);
+  linhas.push('# Painel CLEAR: ' + area.area + ' / ' + tema.tema + ' / ' + ind.titulo);
   linhas.push('# Fonte: ' + (ind.fonte?.nome || ''));
   linhas.push('# URL fonte: ' + (ind.fonte?.url || ''));
   linhas.push('# Periodicidade: ' + (ind.fonte?.periodicidade || ''));
@@ -1646,7 +1877,7 @@ function renderIndicadorBody(area, tema, ind) {
   let html = `
     <div class="indicator-headline">
       <h3>${ind.titulo}</h3>
-      ${tendenciaBadge(ind.tendencia)}
+      ${mostraTendencia(ind) ? tendenciaBadge(ind.tendencia) : ''}
     </div>
     <div class="indicator-subheadline">${ind.indicador}</div>
 
@@ -1656,11 +1887,13 @@ function renderIndicadorBody(area, tema, ind) {
         <div class="unidade">${ind.unidade}</div>
         <div class="destaque">${ind.destaque}</div>
         ${ind.totalAbsoluto ? `<div class="total-absoluto">${ind.totalAbsoluto}</div>` : ''}
+        ${ind.serie && ind.serie.length === 1 ? `<div class="serie-unica-nota"><span>${fraseSerieUnica(ind)}</span>
+          <button class="download-btn" data-action="download" data-area="${area.id}" data-tema="${tema.id}" data-ind="${ind.id}"><span class="icon">↓</span> Baixar CSV</button></div>` : ''}
       </div>
     </div>
   `;
 
-  if (ind.serie && ind.serie.length) {
+  if (mostraTendencia(ind)) {
     html += `
       <div class="section-block">
         <div class="section-header">
@@ -1669,7 +1902,7 @@ function renderIndicadorBody(area, tema, ind) {
             <span class="icon">↓</span> Baixar CSV
           </button>
         </div>
-        <div class="chart-wrap">${gerarChartSVG(ind.serie, ind.formatoValor, ind.rotuloSerieY || '')}</div>
+        ${gerarSerieHTML(ind)}
       </div>
     `;
   }
@@ -1747,6 +1980,8 @@ function abrirModal(areaId, temaId, idxIndicador = 0) {
   }
   renderTabs(area, tema, idxIndicador);
   document.getElementById('modal-body').innerHTML = renderIndicadorBody(area, tema, ind);
+  INDICADOR_ABERTO = ind;
+  ajustarGraficoModal(ind);
   document.getElementById('modal-overlay').classList.add('open');
   document.getElementById('modal').classList.add('open');
   document.body.classList.add('modal-open');
@@ -1761,6 +1996,15 @@ function abrirModal(areaId, temaId, idxIndicador = 0) {
   });
   document.getElementById('modal').scrollTop = 0;
 }
+
+let INDICADOR_ABERTO = null;
+let redimTimer = null;
+window.addEventListener('resize', () => {
+  clearTimeout(redimTimer);
+  redimTimer = setTimeout(() => {
+    if (document.getElementById('modal').classList.contains('open')) ajustarGraficoModal(INDICADOR_ABERTO);
+  }, 150);
+});
 
 function fecharModal() {
   document.getElementById('modal-overlay').classList.remove('open');
@@ -1863,11 +2107,11 @@ function relTopBottomUF(ind) {
 
 function gerarRelatorioMD(scope) {
   const L = [];
-  L.push('# Painel CLEAR — Relatório de estatísticas');
+  L.push('# Painel CLEAR: relatório de estatísticas');
   L.push('');
   L.push(`_Gerado em ${relDataHoje()} · ${relTituloEscopo(scope)}_`);
   L.push('');
-  L.push('FGV CLEAR — Estatísticas para monitoramento de políticas públicas.  ');
+  L.push('FGV CLEAR: estatísticas para monitoramento de políticas públicas.  ');
   L.push('Fonte: https://policy-lab.github.io/painel/');
   L.push('');
   relAreasDoEscopo(scope).forEach(area => {
@@ -1876,14 +2120,14 @@ function gerarRelatorioMD(scope) {
       L.push('');
       L.push(`### ${t.tema}`);
       (t.indicadores || []).forEach(ind => {
-        const trend = relTrend(ind.tendencia);
+        const trend = mostraTendencia(ind) ? relTrend(ind.tendencia) : '';
         L.push('');
-        L.push(`**${ind.titulo}** — ${fmtNumero(ind.valor, ind.formatoValor)} ${ind.unidade}${trend ? ' (' + trend + ')' : ''}`);
+        L.push(`**${ind.titulo}**: ${fmtNumero(ind.valor, ind.formatoValor)} ${ind.unidade}${trend ? ' (' + trend + ')' : ''}`);
         if (ind.destaque) L.push(`- ${ind.destaque}`);
         const tb = relTopBottomUF(ind);
         if (tb) { L.push(`- Maiores: ${tb.maiores}`); L.push(`- Menores: ${tb.menores}`); }
         const f = ind.fonte || {};
-        L.push(`- Fonte: ${f.nome || '—'}${f.ultimaAtualizacao ? ' · atualização: ' + f.ultimaAtualizacao : ''}${f.url ? ' · ' + f.url : ''}`);
+        L.push(`- Fonte: ${f.nome || 'não informada'}${f.ultimaAtualizacao ? ' · atualização: ' + f.ultimaAtualizacao : ''}${f.url ? ' · ' + f.url : ''}`);
       });
     });
     L.push('');
@@ -1895,21 +2139,21 @@ function gerarRelatorioMD(scope) {
 
 function gerarRelatorioHTML(scope) {
   const esc = s => String(s == null ? '' : s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
-  let h = `<div class="pr-head"><h1>Painel CLEAR — Relatório de estatísticas</h1>`;
+  let h = `<div class="pr-head"><h1>Painel CLEAR: relatório de estatísticas</h1>`;
   h += `<div class="pr-meta">Gerado em ${esc(relDataHoje())} · ${esc(relTituloEscopo(scope))} · FGV CLEAR · https://policy-lab.github.io/painel/</div></div>`;
   relAreasDoEscopo(scope).forEach(area => {
     h += `<h2>${esc(area.area)}</h2>`;
     (area.temas || []).forEach(t => {
       h += `<h3>${esc(t.tema)}</h3>`;
       (t.indicadores || []).forEach(ind => {
-        const trend = relTrend(ind.tendencia);
+        const trend = mostraTendencia(ind) ? relTrend(ind.tendencia) : '';
         const f = ind.fonte || {};
-        h += `<div class="pr-ind"><span class="pr-titulo">${esc(ind.titulo)}</span> — <span class="pr-valor">${esc(fmtNumero(ind.valor, ind.formatoValor))} ${esc(ind.unidade)}</span>`;
+        h += `<div class="pr-ind"><span class="pr-titulo">${esc(ind.titulo)}</span>: <span class="pr-valor">${esc(fmtNumero(ind.valor, ind.formatoValor))} ${esc(ind.unidade)}</span>`;
         if (trend) h += ` <span class="pr-trend">(${esc(trend)})</span>`;
         if (ind.destaque) h += `<div class="pr-destaque">${esc(ind.destaque)}</div>`;
         const tb = relTopBottomUF(ind);
         if (tb) h += `<div class="pr-uf">Maiores: ${esc(tb.maiores)} &nbsp;·&nbsp; Menores: ${esc(tb.menores)}</div>`;
-        h += `<div class="pr-fonte">Fonte: ${esc(f.nome || '—')}${f.ultimaAtualizacao ? ' · atualização: ' + esc(f.ultimaAtualizacao) : ''}</div>`;
+        h += `<div class="pr-fonte">Fonte: ${esc(f.nome || 'não informada')}${f.ultimaAtualizacao ? ' · atualização: ' + esc(f.ultimaAtualizacao) : ''}</div>`;
         h += `</div>`;
       });
     });

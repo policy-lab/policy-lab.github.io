@@ -2,13 +2,13 @@
   "id": "assistencia",
   "area": "Assistência Social",
   "ordem": 4,
-  "capituloGuia": "Capítulo 7 — Assistência Social",
+  "capituloGuia": "Capítulo 7: Assistência Social",
   "fontesRelacionadas": [
-    "Cadastro Único (CadÚnico) — MDS",
+    "Cadastro Único (CadÚnico, MDS)",
     "Folha de Pagamento do Bolsa Família",
-    "INSS — Benefício de Prestação Continuada (BPC)",
-    "Censo SUAS — Sistema Único de Assistência Social",
-    "RMA — Registro Mensal de Atendimentos"
+    "INSS: Benefício de Prestação Continuada (BPC)",
+    "Censo SUAS: Sistema Único de Assistência Social",
+    "RMA: Registro Mensal de Atendimentos"
   ],
   "temas": [
     {
@@ -188,7 +188,7 @@
             }
           ],
           "fonte": {
-            "nome": "MDS — Folha de Pagamento mensal do Bolsa Família",
+            "nome": "MDS: Folha de Pagamento mensal do Bolsa Família",
             "produtor": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
             "periodicidade": "Mensal",
             "ultimaAtualizacao": "Outubro/2026 (dados de outubro de 2026)",
@@ -199,7 +199,7 @@
         {
           "id": "bpc",
           "titulo": "Benefício de Prestação Continuada (BPC)",
-          "indicador": "Beneficiários — idosos e pessoas com deficiência",
+          "indicador": "Beneficiários: idosos e pessoas com deficiência",
           "valor": 6.5,
           "unidade": "milhões de beneficiários (ago/2026)",
           "destaque": "Crescimento de 27% desde dez/2022",
@@ -296,7 +296,7 @@
             }
           ],
           "fonte": {
-            "nome": "INSS / MDS — Benefício de Prestação Continuada (LOAS)",
+            "nome": "INSS / MDS: Benefício de Prestação Continuada (LOAS)",
             "produtor": "Instituto Nacional do Seguro Social e Ministério do Desenvolvimento Social",
             "periodicidade": "Mensal",
             "ultimaAtualizacao": "Outubro/2026 (dados de agosto de 2026)",
@@ -436,7 +436,7 @@
             }
           ],
           "fonte": {
-            "nome": "Cadastro Único — MDS",
+            "nome": "Cadastro Único (MDS)",
             "produtor": "Ministério do Desenvolvimento Social (Senarc)",
             "periodicidade": "Mensal",
             "ultimaAtualizacao": "Outubro/2026 (dados de outubro de 2026)",
@@ -471,7 +471,7 @@
             {
               "id": "uf",
               "dimensao": "Por UF",
-              "titulo": "Rendimento médio mensal (pessoas 14+) por UF — R$, Censo 2022",
+              "titulo": "Rendimento médio mensal (pessoas 14+) por UF (R$, Censo 2022)",
               "valores": [
                 {
                   "rotulo": "Distrito Federal",
@@ -617,7 +617,7 @@
             }
           ],
           "fonte": {
-            "nome": "Censo Demográfico 2022 — Rendimento (IBGE)",
+            "nome": "Censo Demográfico 2022: Rendimento (IBGE)",
             "produtor": "IBGE",
             "periodicidade": "Decenal",
             "ultimaAtualizacao": "Censo 2022",
