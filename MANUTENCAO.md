@@ -965,7 +965,7 @@ Use este modelo quando for adicionar uma estatística nova. Substitua os valores
 
 ## 16. Mapas por UF e coleta via API
 
-A partir da v4.3, **8 das 9 áreas têm mapa por UF**. Como funciona, de onde vem
+Desde outubro de 2026, **as 9 áreas têm mapa por UF**. Como funciona, de onde vem
 cada número e como reproduzir a coleta está documentado em **[MAPAS-E-APIS.md](MAPAS-E-APIS.md)**.
 
 Resumo prático:
@@ -974,31 +974,36 @@ Resumo prático:
   **20+ estados**. Não há nada a "ligar" — basta ter o recorte.
 - Vários mapas são coletados **direto de API** (sem digitar à mão): desocupação e
   renda (IBGE/SIDRA), coleta de lixo (Censo 2022, SIDRA tabela 6892), mortalidade
-  infantil (arquivo da Projeção IBGE) e receita estadual per capita (SICONFI/Tesouro).
+  infantil (arquivo da Projeção IBGE), receita estadual per capita (SICONFI/Tesouro),
+  casa própria e aluguel (PNAD Contínua, SIDRA 6821) e favelas (Censo 2022, SIDRA
+  9890 e 9929).
   Os endpoints exatos estão em `MAPAS-E-APIS.md`.
-- IDEB e PRODES vêm de arquivos para download (planilhas do INEP; notas técnicas e
-  arquivos de taxas do INPE/TerraBrasilis). O Atlas da Violência (homicídios e
-  homicídios de mulheres) depende de conferência manual em PDF; use os prompts de
-  `PROMPTS-IA.md`.
-- Desde outubro de 2026 há **16 mapas**. Os novos: ISS per capita, dependência de
-  transferências e despesa com pessoal (FINBRA, seção 17) e equipes de Saúde da
-  Família (CNES, pelo TabNet). Os mapas de dependência e de despesa com pessoal ficam
-  com o DF sem cor, porque o DF não tem municípios.
+- IDEB, PRODES e déficit habitacional vêm de arquivos para download (planilhas do
+  INEP; notas técnicas e arquivos de taxas do INPE/TerraBrasilis; planilha da FJP).
+  O Atlas da Violência (homicídios e homicídios de mulheres) depende de conferência
+  manual em PDF; use os prompts de `PROMPTS-IA.md`.
+- Desde outubro de 2026 há **20 mapas**. Os novos: ISS per capita, dependência de
+  transferências e despesa com pessoal (FINBRA, seção 17), equipes de Saúde da
+  Família (CNES, pelo TabNet) e os quatro de habitação (abaixo). Os mapas de
+  dependência e de despesa com pessoal ficam com o DF sem cor, porque o DF não tem
+  municípios.
 
-### Pendência aberta: mapa de habitação
+### Mapas de habitação
 
-Habitação é a **única área sem mapa**. O dado por UF **já existe**: na revisão de
-outubro de 2026 confirmou-se que o IBGE publicou no SIDRA, para o Censo 2022:
+Desde outubro de 2026 a habitação tem quatro mapas:
 
-- **Condição de ocupação** (próprio, alugado, cedido): tabela 9929, com o percentual
-  pronto (variável 1000381).
-- **Favelas e comunidades urbanas**: tabela 9890 (domicílios), a dividir pelo total
-  de domicílios da UF na tabela 9929.
+- **`domicilios-proprios`** e **`aluguel`**: PNAD Contínua anual, tabela 6821 do SIDRA
+  no nível UF (variável 9784). Casa própria = soma de "já pago" e "ainda pagando".
+  Atualize o recorte por UF junto com o valor nacional, a cada ano novo da PNAD.
+- **`deficit-habitacional`**: déficit relativo da Fundação João Pinheiro (% dos
+  domicílios), da planilha da edição mais recente. Não use o absoluto: ele deixa São
+  Paulo sozinho no topo do mapa.
+- **`favelas`** (criada em outubro de 2026, tema "Posse e ocupação"): domicílios em
+  favelas e comunidades urbanas ÷ total de domicílios, Censo 2022 (tabelas 9890 e
+  9929). Só muda com o próximo Censo.
 
-O que falta é decidir qual estatística criar e adicioná-la com recorte `uf`; o mapa
-aparece sozinho. Consultas testadas e valores de conferência em `MAPAS-E-APIS.md`.
-Não use a tabela 10345 como denominador: ela cobre só setores selecionados de
-municípios com favelas.
+Consultas e valores de conferência em `MAPAS-E-APIS.md`. Não use a tabela 10345 como
+denominador: ela cobre só setores selecionados de municípios com favelas.
 
 ---
 

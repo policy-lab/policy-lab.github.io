@@ -12,9 +12,8 @@ e a seção *Automação* no fim).
 > (é o caso dos biomas, Amazônia e Cerrado).
 > Entradas que não são UF (ex.: `"Brasil (média)"`) ficam na lista lateral, sem cor.
 
-Estado atual: **16 mapas em 8 das 9 áreas.** Só **habitação** ainda não tem: o dado do
-Censo 2022 por UF já está no SIDRA, mas a estatística nova ainda não foi criada
-(detalhes no fim).
+Estado atual: **20 mapas nas 9 áreas.** Os quatro de habitação entraram em outubro de
+2026 (receitas no fim).
 
 Última conferência dos mapas: revisão de outubro de 2026 (ver `REVISAO-OUTUBRO-2026.md`).
 
@@ -40,7 +39,10 @@ Censo 2022 por UF já está no SIDRA, mas a estatística nova ainda não foi cri
 | Finanças | `despesa-pessoal` | Média dos municípios da UF da despesa com pessoal do Executivo, % da RCL ajustada (2025; 26 UFs) | Siconfi, FINBRA RGF (Anexo 01) | Download consolidado |
 | Saúde | `equipes-esf` | Equipes de Saúde da Família por 100 mil hab. (dez/2025) | CNES/DATASUS (TabNet); IBGE, SIDRA 6579 | Consulta TabNet |
 | Assistência | `renda-media-uf` | Rendimento médio mensal 14+ R$ (Censo 2022) | IBGE, Censo 2022, SIDRA 10299 | **API** |
-| Habitação | (sem estatística) | *(dado disponível, estatística não criada; ver abaixo)* | IBGE, Censo 2022 | **API** |
+| Habitação | `domicilios-proprios` | Domicílios próprios (já pagos e ainda pagando), % (2025) | IBGE/PNAD Contínua, SIDRA 6821 | **API** |
+| Habitação | `aluguel` | Domicílios alugados, % (2025) | IBGE/PNAD Contínua, SIDRA 6821 | **API** |
+| Habitação | `deficit-habitacional` | Déficit habitacional relativo, % dos domicílios (2024) | Fundação João Pinheiro, planilha do Déficit Habitacional 2024 | Planilha |
+| Habitação | `favelas` | Domicílios em favelas e comunidades urbanas, % (Censo 2022) | IBGE, Censo 2022, SIDRA 9890 e 9929 | **API** |
 
 "**API**" = dá para coletar 100% por requisição automática. "Planilha" = a fonte
 publica um arquivo para download (XLSX, ZIP ou JSON) com o dado por UF; dá para
@@ -182,43 +184,68 @@ https://relatorioaps-prd.saude.gov.br/cobertura/pns?unidadeGeografica=UF&nuCompI
 
 ---
 
-## Habitação: o dado existe, falta criar a estatística
+## Habitação: casa própria, aluguel, déficit e favelas por UF
 
-A habitação é a única área sem mapa. Desde a revisão de outubro de 2026 isso **não é
-mais limitação de dado**: o IBGE já publicou no SIDRA, para o Censo 2022 e por UF, os
-dois temas que faltavam. Falta decidir qual estatística criar (com recorte `uf`); o
-mapa aparece sozinho quando ela existir.
+Os quatro mapas de habitação entraram em outubro de 2026.
 
-**Condição de ocupação (próprio, alugado, cedido):** tabela 9929, com o percentual pronto.
+### Casa própria e aluguel por UF (PNAD Contínua, SIDRA 6821)
 ```
-https://apisidra.ibge.gov.br/values/t/9929/n3/all/v/1000381/p/2022/c63/73554,1055/c1986/73103/c1988/73108
+https://apisidra.ibge.gov.br/values/t/6821/n3/all/v/9784/p/2025/c63/all
 ```
-- Variável 1000381 = percentual do total de domicílios particulares permanentes ocupados.
-- Classe `c63`: 73554 = próprio de algum morador (já pago ou ainda pagando);
-  1055 = alugado; 73553 = cedido; 95826 = total.
-- Fixar as outras classificações no total: `c1986/73103` e `c1988/73108`.
-- Valores de conferência: Brasil próprio 71,25% e alugado 22,23%; São Paulo próprio 67,41%.
+- Variável 9784 = distribuição percentual dos domicílios (PNAD Contínua anual, 1ª visita).
+- Classe `c63`: 4342 = próprio, já pago; 4343 = próprio, ainda pagando; 1055 = alugado;
+  2519 = cedido; 1058 = outra condição; 95826 = total. No SIDRA, "-" quer dizer zero.
+- `domicilios-proprios`: soma de 4342 e 4343 em cada UF. `aluguel`: categoria 1055.
+- Conferência com a variável 162 (domicílios, em mil):
+  `https://apisidra.ibge.gov.br/values/t/6821/n1/all/n3/all/v/162/p/2025/c63/all`.
+  A soma das 27 UFs dá 67,02% de próprios e 23,81% de alugados, os mesmos do Brasil.
+  No mapa, use os percentuais da variável 9784: os absolutos vêm arredondados em mil e,
+  nas UFs pequenas, mudam o percentual em até 0,4 ponto.
+- Valores de 2025: próprios de Maranhão (80,5) a Distrito Federal (55,3); alugados de
+  Distrito Federal (34,5) a Piauí (11,7).
+- Alternativa não usada: a condição de ocupação do Censo 2022 (tabela 9929, variável
+  1000381; Brasil com 71,25% de próprios e 22,23% de alugados). O painel usa a PNAD
+  Contínua, que é anual e é a mesma fonte do valor nacional.
 
-**Favelas e comunidades urbanas:** domicílios na tabela 9890, divididos pelo total de
-domicílios da tabela 9929.
-```
-https://apisidra.ibge.gov.br/values/t/9890/n3/all/v/9913/p/2022/c125/2932
-https://apisidra.ibge.gov.br/values/t/9929/n3/all/v/381/p/2022/c63/95826/c1986/73103/c1988/73108
-```
-- Valores de conferência: Amazonas 36,3%; Rio de Janeiro 12,9%; Brasil 7,7%.
-- **Não use a tabela 10345 como denominador**: ela cobre só setores selecionados de
-  municípios com favelas.
+### Déficit habitacional relativo por UF (Fundação João Pinheiro)
+- Planilha "Estimativas Déficit Habitacional no Brasil 2024", aba `Deficit_habitacional`,
+  coluna "Déficit Habitacional Relativo" (déficit ÷ total de domicílios particulares
+  ocupados da aba `Total_domicilios_ocupados`):
+  https://docs.google.com/spreadsheets/d/1AwlL17JBmASv8Jurnkb6zhfXc0fzGQwp/export?format=xlsx
+  (link na página https://fjp.mg.gov.br/deficit-habitacional-no-brasil/).
+- A aba mistura regiões, UFs e regiões metropolitanas (linhas "RM ..." e "RIDE ...");
+  use só as 27 UFs.
+- Use o relativo, não o absoluto: com o absoluto, São Paulo (1,25 milhão) fica sozinho
+  na faixa mais alta do mapa e 21 UFs na mais baixa.
+- Valores de 2024: Amapá (16,0) a Rio Grande do Sul (5,0); Brasil 7,4.
 
-Outra opção é o **déficit habitacional** por UF da Fundação João Pinheiro, que vem na
-planilha da edição com dados de 2024 (27 UFs, valores absolutos e relativos).
+### Domicílios em favelas e comunidades urbanas por UF (Censo 2022)
+```
+https://apisidra.ibge.gov.br/values/t/9890/n1/all/n2/all/n3/all/v/9913/p/2022/c125/2932
+https://apisidra.ibge.gov.br/values/t/9929/n1/all/n2/all/n3/all/v/381/p/2022/c63/95826/c1986/73103/c1988/73108
+```
+- Numerador: domicílios particulares permanentes ocupados em favelas e comunidades
+  urbanas (9890, variável 9913, tipo de domicílio Total). Denominador: domicílios
+  particulares permanentes ocupados (9929, variável 381, condição de ocupação Total e as
+  outras duas classificações no total).
+- Não use a variável 1009913 da 9890: o percentual dela é sobre o total da própria
+  tabela, só com domicílios em favelas. **Não use a tabela 10345 como denominador**:
+  ela cobre só setores selecionados de municípios com favelas.
+- Na 9929, a soma das 27 UFs fica 2 domicílios abaixo do Brasil (72.461.369 contra
+  72.461.371); o percentual não muda.
+- Valores: Amazonas 36,3; Amapá 23,3; Rio de Janeiro 12,9; Mato Grosso do Sul 0,5;
+  Brasil 7,7 (5.557.379 de 72.461.371 domicílios).
+- Totais do card: 12.348 favelas e comunidades urbanas (tabela 9883, variável 9910) e
+  16.390.790 moradores (tabela 9888, variável 9612).
 
 ---
 
 ## Automação (relatório trimestral)
 
 A revisão recomendada é **trimestral** (ver `CALENDARIO.md`). Dos mapas acima, os
-marcados "**API**" (desocupação, mortalidade infantil, lixo, renda, receita estadual)
-podem ser **re-coletados automaticamente**. Os de "Planilha" (IDEB e PRODES) também,
+marcados "**API**" (desocupação, mortalidade infantil, lixo, renda, receita estadual,
+casa própria, aluguel e favelas) podem ser **re-coletados automaticamente**. Os de
+"Planilha" (IDEB, PRODES e déficit habitacional) também,
 desde que o script confira o layout do arquivo a cada edição. O Atlas da Violência
 (homicídios e homicídios de mulheres) segue dependendo de conferência humana, porque
 a fonte publica em PDF. Os mapas de finanças municipais (ISS, dependência e despesa com

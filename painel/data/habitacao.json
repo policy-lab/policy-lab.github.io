@@ -87,42 +87,147 @@
             {
               "id": "uf",
               "dimensao": "Por UF",
-              "titulo": "Déficit em estados selecionados (2024, em milhões)",
+              "titulo": "Déficit habitacional relativo por UF (2024, % dos domicílios)",
               "valores": [
                 {
-                  "rotulo": "São Paulo",
-                  "valor": 1.253,
-                  "max": 1.3
-                },
-                {
-                  "rotulo": "Minas Gerais",
-                  "valor": 0.506,
-                  "max": 1.3
-                },
-                {
-                  "rotulo": "Bahia",
-                  "valor": 0.318,
-                  "max": 1.3
-                },
-                {
-                  "rotulo": "Rio de Janeiro",
-                  "valor": 0.514,
-                  "max": 1.3
-                },
-                {
-                  "rotulo": "Pernambuco",
-                  "valor": 0.221,
-                  "max": 1.3
+                  "rotulo": "Amapá",
+                  "valor": 16.0,
+                  "max": 20
                 },
                 {
                   "rotulo": "Roraima",
-                  "valor": 0.028,
-                  "max": 1.3
+                  "valor": 14.5,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Amazonas",
+                  "valor": 13.6,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Rondônia",
+                  "valor": 11.5,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Maranhão",
+                  "valor": 11.4,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Pará",
+                  "valor": 10.1,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Mato Grosso",
+                  "valor": 9.9,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Distrito Federal",
+                  "valor": 9.8,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Santa Catarina",
+                  "valor": 9.0,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Tocantins",
+                  "valor": 8.2,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Alagoas",
+                  "valor": 8.1,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Goiás",
+                  "valor": 8.1,
+                  "max": 20
                 },
                 {
                   "rotulo": "Acre",
-                  "valor": 0.023,
-                  "max": 1.3
+                  "valor": 8.0,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Paraíba",
+                  "valor": 7.9,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Piauí",
+                  "valor": 7.6,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Rio de Janeiro",
+                  "valor": 7.6,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Mato Grosso do Sul",
+                  "valor": 7.6,
+                  "max": 20
+                },
+                {
+                  "rotulo": "São Paulo",
+                  "valor": 7.3,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Rio Grande do Norte",
+                  "valor": 6.9,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Sergipe",
+                  "valor": 6.9,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Ceará",
+                  "valor": 6.6,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Minas Gerais",
+                  "valor": 6.3,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Pernambuco",
+                  "valor": 6.2,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Paraná",
+                  "valor": 5.9,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Bahia",
+                  "valor": 5.7,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Espírito Santo",
+                  "valor": 5.7,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Rio Grande do Sul",
+                  "valor": 5.0,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Brasil (média)",
+                  "valor": 7.4,
+                  "max": 20
                 }
               ]
             },
@@ -161,7 +266,7 @@
             "ultimaAtualizacao": "Junho/2026 (dados de 2024)",
             "url": "https://fjp.mg.gov.br/deficit-habitacional-no-brasil/"
           },
-          "notaMetodologica": "A FJP soma três componentes: ônus excessivo com aluguel urbano (domicílios urbanos alugados, com renda de até 3 SM, que gastam mais de 30% da renda com aluguel), coabitação (cômodos e famílias conviventes em domicílio com mais de 2 moradores por dormitório) e habitação precária (domicílios improvisados e rústicos). Base: PNAD Contínua/IBGE e CadÚnico/MDS. O ônus excessivo é o componente dominante (62,1% do déficit em 2024). Os valores de 2016 a 2019 são as estimativas reponderadas da FJP; não há estimativa para 2020 e 2021."
+          "notaMetodologica": "A FJP soma três componentes: ônus excessivo com aluguel urbano (domicílios urbanos alugados, com renda de até 3 SM, que gastam mais de 30% da renda com aluguel), coabitação (cômodos e famílias conviventes em domicílio com mais de 2 moradores por dormitório) e habitação precária (domicílios improvisados e rústicos). Base: PNAD Contínua/IBGE e CadÚnico/MDS. O ônus excessivo é o componente dominante (62,1% do déficit em 2024). Os valores de 2016 a 2019 são as estimativas reponderadas da FJP; não há estimativa para 2020 e 2021. O mapa por UF usa o déficit relativo que a FJP publica (déficit ÷ total de domicílios particulares ocupados da UF, aba Deficit_habitacional da planilha de 2024), e não o absoluto: em números absolutos, São Paulo (1,25 milhão) ficaria sozinho na faixa mais alta do mapa e 21 UFs na mais baixa."
         }
       ]
     },
@@ -454,6 +559,153 @@
                   "max": 80
                 }
               ]
+            },
+            {
+              "id": "uf",
+              "dimensao": "Por UF",
+              "titulo": "Domicílios próprios por UF (2025, %)",
+              "valores": [
+                {
+                  "rotulo": "Maranhão",
+                  "valor": 80.5,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Piauí",
+                  "valor": 78.9,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Pará",
+                  "valor": 76.4,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Amapá",
+                  "valor": 76.1,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Acre",
+                  "valor": 74.3,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Bahia",
+                  "valor": 74.1,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Rio Grande do Sul",
+                  "valor": 73.0,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Amazonas",
+                  "valor": 70.0,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Ceará",
+                  "valor": 70.0,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Alagoas",
+                  "valor": 67.1,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Santa Catarina",
+                  "valor": 67.0,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Sergipe",
+                  "valor": 66.8,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Rio de Janeiro",
+                  "valor": 66.8,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Rio Grande do Norte",
+                  "valor": 66.2,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Minas Gerais",
+                  "valor": 65.8,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Rondônia",
+                  "valor": 65.7,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Paraná",
+                  "valor": 65.4,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Tocantins",
+                  "valor": 65.2,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Paraíba",
+                  "valor": 65.2,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Pernambuco",
+                  "valor": 65.0,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Espírito Santo",
+                  "valor": 64.3,
+                  "max": 90
+                },
+                {
+                  "rotulo": "São Paulo",
+                  "valor": 62.8,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Roraima",
+                  "valor": 62.5,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Mato Grosso do Sul",
+                  "valor": 61.3,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Mato Grosso",
+                  "valor": 61.3,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Goiás",
+                  "valor": 60.5,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Distrito Federal",
+                  "valor": 55.3,
+                  "max": 90
+                },
+                {
+                  "rotulo": "Brasil (média)",
+                  "valor": 67.0,
+                  "max": 90
+                }
+              ]
             }
           ],
           "fonte": {
@@ -463,7 +715,7 @@
             "ultimaAtualizacao": "Abril/2026 (dados de 2025)",
             "url": "https://sidra.ibge.gov.br/tabela/6821"
           },
-          "notaMetodologica": "Soma dos domicílios próprios já pagos e dos próprios ainda pagando (tabela 6821 do SIDRA, PNAD Contínua anual, 1ª visita), em % dos domicílios particulares permanentes. A casa própria caiu de 73,0% (2016) para 67,0% (2025), enquanto o aluguel subiu de 18,4% para 23,8%. A série não tem 2020 e 2021. O recorte urbano/rural de 2025 foi calculado com os microdados da PNAD Contínua (1ª visita de 2025), que reproduzem os totais publicados pelo IBGE. Limitação: não captura qualidade da moradia nem segurança da posse."
+          "notaMetodologica": "Soma dos domicílios próprios já pagos e dos próprios ainda pagando (tabela 6821 do SIDRA, PNAD Contínua anual, 1ª visita), em % dos domicílios particulares permanentes. A casa própria caiu de 73,0% (2016) para 67,0% (2025), enquanto o aluguel subiu de 18,4% para 23,8%. A série não tem 2020 e 2021. O recorte urbano/rural de 2025 foi calculado com os microdados da PNAD Contínua (1ª visita de 2025), que reproduzem os totais publicados pelo IBGE. O recorte por UF soma as mesmas duas categorias na tabela 6821 em cada UF; a soma das 27 UFs reproduz os 67,0% do Brasil. Limitação: não captura qualidade da moradia nem segurança da posse."
         },
         {
           "id": "aluguel",
@@ -546,6 +798,153 @@
                   "max": 30
                 }
               ]
+            },
+            {
+              "id": "uf",
+              "dimensao": "Por UF",
+              "titulo": "Domicílios alugados por UF (2025, %)",
+              "valores": [
+                {
+                  "rotulo": "Distrito Federal",
+                  "valor": 34.5,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Goiás",
+                  "valor": 28.8,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Mato Grosso",
+                  "valor": 28.7,
+                  "max": 40
+                },
+                {
+                  "rotulo": "São Paulo",
+                  "valor": 28.5,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Santa Catarina",
+                  "valor": 27.7,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Mato Grosso do Sul",
+                  "valor": 27.2,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Roraima",
+                  "valor": 26.8,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Pernambuco",
+                  "valor": 25.1,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Paraná",
+                  "valor": 25.1,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Rio Grande do Norte",
+                  "valor": 24.8,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Tocantins",
+                  "valor": 24.6,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Minas Gerais",
+                  "valor": 24.2,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Paraíba",
+                  "valor": 23.8,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Rio de Janeiro",
+                  "valor": 23.8,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Espírito Santo",
+                  "valor": 23.7,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Rondônia",
+                  "valor": 22.7,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Sergipe",
+                  "valor": 22.4,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Alagoas",
+                  "valor": 22.3,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Ceará",
+                  "valor": 20.9,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Rio Grande do Sul",
+                  "valor": 19.4,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Amazonas",
+                  "valor": 18.5,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Bahia",
+                  "valor": 16.8,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Amapá",
+                  "valor": 16.4,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Acre",
+                  "valor": 16.1,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Pará",
+                  "valor": 15.3,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Maranhão",
+                  "valor": 12.8,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Piauí",
+                  "valor": 11.7,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Brasil (média)",
+                  "valor": 23.8,
+                  "max": 40
+                }
+              ]
             }
           ],
           "fonte": {
@@ -555,7 +954,218 @@
             "ultimaAtualizacao": "Abril/2026 (dados de 2025)",
             "url": "https://sidra.ibge.gov.br/tabela/6821"
           },
-          "notaMetodologica": "Avanço do aluguel reflete três tendências: (1) queda do poder de compra para aquisição em metrópoles, (2) preferência por mobilidade de jovens trabalhadores, (3) financeirização do mercado imobiliário (multipropriedade, BTS, Airbnb). É um dos componentes do déficit habitacional (ônus excessivo). Valores da tabela 6821 do SIDRA (PNAD Contínua anual, 1ª visita); a série não tem 2020 e 2021."
+          "notaMetodologica": "Avanço do aluguel reflete três tendências: (1) queda do poder de compra para aquisição em metrópoles, (2) preferência por mobilidade de jovens trabalhadores, (3) financeirização do mercado imobiliário (multipropriedade, BTS, Airbnb). É um dos componentes do déficit habitacional (ônus excessivo). Valores da tabela 6821 do SIDRA (PNAD Contínua anual, 1ª visita); a série não tem 2020 e 2021. O recorte por UF usa a mesma tabela (categoria Alugado); a soma das 27 UFs reproduz os 23,8% do Brasil."
+        },
+        {
+          "id": "favelas",
+          "titulo": "Favelas e Comunidades Urbanas",
+          "indicador": "% dos domicílios particulares permanentes ocupados que ficam em favelas e comunidades urbanas",
+          "valor": 7.7,
+          "unidade": "% dos domicílios (Censo 2022)",
+          "destaque": "No Norte, 18,7% dos domicílios ficam em favelas e comunidades urbanas; no Amazonas, 36,3%",
+          "totalAbsoluto": "5,56 milhões de domicílios e 16,4 milhões de moradores em 12.348 favelas e comunidades urbanas (Censo 2022)",
+          "tendencia": "estavel",
+          "serie": [
+            {
+              "ano": 2022,
+              "valor": 7.7
+            }
+          ],
+          "rotuloSerieY": "% dos domicílios",
+          "recortes": [
+            {
+              "id": "uf",
+              "dimensao": "Por UF",
+              "titulo": "Domicílios em favelas e comunidades urbanas por UF (Censo 2022, %)",
+              "valores": [
+                {
+                  "rotulo": "Amazonas",
+                  "valor": 36.3,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Amapá",
+                  "valor": 23.3,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Pará",
+                  "valor": 19.4,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Espírito Santo",
+                  "valor": 15.1,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Rio de Janeiro",
+                  "valor": 12.9,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Pernambuco",
+                  "valor": 12.2,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Bahia",
+                  "valor": 10.3,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Acre",
+                  "valor": 8.6,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Ceará",
+                  "valor": 8.4,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Maranhão",
+                  "valor": 7.8,
+                  "max": 40
+                },
+                {
+                  "rotulo": "São Paulo",
+                  "valor": 7.5,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Sergipe",
+                  "valor": 7.1,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Distrito Federal",
+                  "valor": 6.3,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Alagoas",
+                  "valor": 5.8,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Piauí",
+                  "valor": 5.7,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Rio Grande do Norte",
+                  "valor": 5.3,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Paraíba",
+                  "valor": 5.2,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Rondônia",
+                  "valor": 4.7,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Paraná",
+                  "valor": 3.5,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Minas Gerais",
+                  "valor": 3.4,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Rio Grande do Sul",
+                  "valor": 3.4,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Tocantins",
+                  "valor": 2.6,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Roraima",
+                  "valor": 2.5,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Mato Grosso",
+                  "valor": 2.1,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Santa Catarina",
+                  "valor": 1.3,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Goiás",
+                  "valor": 1.2,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Mato Grosso do Sul",
+                  "valor": 0.5,
+                  "max": 40
+                },
+                {
+                  "rotulo": "Brasil (Censo 2022)",
+                  "valor": 7.7,
+                  "max": 40
+                }
+              ]
+            },
+            {
+              "id": "regiao",
+              "dimensao": "Por região",
+              "titulo": "Domicílios em favelas e comunidades urbanas por região (Censo 2022, %)",
+              "valores": [
+                {
+                  "rotulo": "Norte",
+                  "valor": 18.7,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Nordeste",
+                  "valor": 8.7,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Sudeste",
+                  "valor": 7.9,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Brasil (Censo 2022)",
+                  "valor": 7.7,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Sul",
+                  "valor": 2.9,
+                  "max": 20
+                },
+                {
+                  "rotulo": "Centro-Oeste",
+                  "valor": 2.2,
+                  "max": 20
+                }
+              ]
+            }
+          ],
+          "fonte": {
+            "nome": "Censo Demográfico 2022, Favelas e Comunidades Urbanas (IBGE), tabelas 9890 e 9929 do SIDRA",
+            "produtor": "Instituto Brasileiro de Geografia e Estatística",
+            "periodicidade": "Decenal",
+            "ultimaAtualizacao": "Abril/2025 (dados de 2022)",
+            "url": "https://sidra.ibge.gov.br/tabela/9890"
+          },
+          "notaMetodologica": "Domicílios particulares permanentes ocupados em favelas e comunidades urbanas (tabela 9890 do SIDRA, variável 9913) divididos pelo total de domicílios particulares permanentes ocupados da mesma área (tabela 9929, variável 381, https://sidra.ibge.gov.br/tabela/9929), no Censo 2022: 5.557.379 de 72.461.371 no Brasil. Conceito do IBGE: favelas e comunidades urbanas são territórios populares originados das estratégias da população para atender, em geral de forma autônoma e coletiva, às suas necessidades de moradia, diante da insuficiência das políticas públicas e dos investimentos privados. O IBGE as identifica pela predominância de domicílios com insegurança jurídica da posse e por pelo menos um destes critérios: serviços públicos ausentes, incompletos ou precários; edificações, ruas e infraestrutura autoproduzidas ou fora dos parâmetros urbanísticos oficiais; localização em áreas com restrição à ocupação ou de risco ambiental. O nome substituiu \"aglomerados subnormais\" em janeiro de 2024, sem mudar o conteúdo dos critérios. Os dados cobrem as 12.348 favelas e comunidades urbanas delimitadas como setores censitários próprios (em geral com 51 domicílios ou mais), em 656 municípios; as áreas de 21 a 50 domicílios dentro de setores comuns não têm dados divulgados. O IBGE adverte que a comparação com o Censo 2010 (11,4 milhões de pessoas em 6.329 aglomerados subnormais) é limitada, porque a identificação e o mapeamento dessas áreas foram aperfeiçoados em 2022; por isso a série tem um ponto só e não há tendência medida. Publicação: https://biblioteca.ibge.gov.br/visualizacao/livros/liv102134.pdf."
         }
       ]
     }
