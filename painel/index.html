@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Painel CLEAR: Estatísticas para Avaliação de Políticas Públicas</title>
-<meta name="description" content="Painel institucional do FGV CLEAR com estatísticas-chave de políticas públicas brasileiras: segurança, educação, saúde, assistência social, saneamento, trabalho e meio ambiente.">
+<meta name="description" content="Painel que reúne uma seleção de estatísticas de diferentes áreas de políticas públicas, a partir de fontes oficiais brasileiras. Acompanha o Guia de Fontes de Dados do FGV CLEAR.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1050,11 +1050,9 @@ body.modal-open { overflow: hidden; }
         <a href="https://fgvclear.org/" class="top-link" target="_blank" rel="noopener">FGV CLEAR &rarr;</a>
       </div>
     </div>
-    <div class="tagline">Série · Avaliação na Prática</div>
     <h1 class="title">Estatísticas para monitoramento<br>de <em>políticas públicas</em></h1>
-    <p class="subtitle">Painel institucional que reúne as principais estatísticas de diversos temas, a partir de fontes oficiais brasileiras. Acompanha o <a href="https://repositorio.fgv.br/items/7a64b050-b7b3-460f-86da-704bfd53a824" target="_blank" rel="noopener"><em>Guia de Fontes de Dados</em></a> do FGV CLEAR.</p>
+    <p class="subtitle">Painel que reúne uma seleção de estatísticas de diferentes áreas de políticas públicas, a partir de fontes oficiais brasileiras. Acompanha o <a href="https://repositorio.fgv.br/items/7a64b050-b7b3-460f-86da-704bfd53a824" target="_blank" rel="noopener"><em>Guia de Fontes de Dados</em></a> do FGV CLEAR.</p>
     <div class="header-meta">
-      <div class="header-meta-item">Versão<strong id="meta-versao">4.3</strong></div>
       <div class="header-meta-item">Última atualização<strong id="meta-atualizado">Outubro de 2026</strong></div>
       <div class="header-meta-item">Áreas<strong id="meta-areas">9</strong></div>
       <div class="header-meta-item">Temas<strong id="meta-temas">30</strong></div>
@@ -1076,7 +1074,7 @@ body.modal-open { overflow: hidden; }
   <div class="publications-inner">
     <div class="pub-eyebrow">Iniciativa</div>
     <h2 class="pub-heading">FGV CLEAR · <em>Policy Lab</em></h2>
-    <p class="pub-lede" id="pl-lede">Painel institucional produzido no âmbito do FGV Policy Lab.</p>
+    <p class="pub-lede" id="pl-lede">Painel produzido no âmbito do FGV Policy Lab.</p>
     <div id="pl-cta"></div>
   </div>
 </section>
@@ -1088,7 +1086,7 @@ body.modal-open { overflow: hidden; }
         <a href="/" class="footer-logo" aria-label="FGV CLEAR e FGV Policy Lab">
           <img src="../assets/img/clear-policy-lab-branco.png" alt="FGV CLEAR · FGV Policy Lab" />
         </a>
-        <p class="footer-tag">Painel institucional do FGV CLEAR com estatísticas-chave de políticas públicas brasileiras. Acompanha o <em>Guia de Fontes de Dados</em> da série <em>Avaliação na Prática</em>.</p>
+        <p class="footer-tag">Painel que reúne uma seleção de estatísticas de diferentes áreas de políticas públicas, a partir de fontes oficiais brasileiras. Acompanha o <em>Guia de Fontes de Dados</em> do FGV CLEAR.</p>
       </div>
       <div class="footer-col">
         <div class="footer-col-label">FGV Policy Lab</div>
@@ -1106,8 +1104,7 @@ body.modal-open { overflow: hidden; }
       <strong>Sobre os dados.</strong> As estatísticas vêm de fontes oficiais brasileiras e refletem a última divulgação de cada uma, com a fonte e a data sempre na ficha da estatística. O painel é de monitoramento, não de tempo real, e não substitui a leitura da metodologia original. Os meses do calendário são indicativos; reconfirme sempre na fonte. <button type="button" id="info-disc-link">Ver detalhes e calendário</button>
     </p>
     <div class="footer-bottom">
-      <span>© 2026 FGV CLEAR · FGV EESP</span>
-      <span>v4.3 · Junho · 2026</span>
+      <span>© 2026 FGV CLEAR</span>
     </div>
   </div>
 </footer>
@@ -1162,7 +1159,7 @@ body.modal-open { overflow: hidden; }
       <h4>O que ele é, e o que não é</h4>
       <p>O painel não pretende ser exaustivo. Não reproduz todas as estatísticas de cada tema nem substitui os sistemas oficiais (DATASUS, INEP, Siconfi, SNIS, entre outros). A proposta é funcionar como porta de entrada: mostra a estatística, a tendência e a fonte, e leva direto ao sistema de origem quando você precisa aprofundar.</p>
       <h4>Como se encaixa</h4>
-      <p>Acompanha o <em>Guia de Fontes de Dados</em> da série <em>Avaliação na Prática</em>. Para cada estatística, o link da fonte oficial está sempre na ficha.</p>
+      <p>Acompanha o <em>Guia de Fontes de Dados</em> do FGV CLEAR. Para cada estatística, o link da fonte oficial está sempre na ficha.</p>
       <p class="info-note">Para navegar: clique em qualquer card para abrir a ficha completa, com a série histórica, os recortes por UF e região e a fonte. Use os filtros de área no topo para focar num tema.</p>
     </div>
 
@@ -1241,7 +1238,6 @@ async function carregarDados() {
     if (!manifestoResp.ok) throw new Error('manifesto.json não encontrado');
     MANIFESTO = await manifestoResp.json();
 
-    document.getElementById('meta-versao').textContent = MANIFESTO.meta.versao || '4.0';
     document.getElementById('meta-atualizado').textContent = MANIFESTO.meta.atualizado || 'sem data';
 
     const arquivos = MANIFESTO.temas || MANIFESTO.areas || [];
