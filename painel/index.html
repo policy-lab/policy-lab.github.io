@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Painel CLEAR: Estatísticas para Avaliação de Políticas Públicas</title>
+<title>Painel Policy Lab: Estatísticas para Avaliação de Políticas Públicas</title>
 <meta name="description" content="Painel que reúne uma seleção de estatísticas de diferentes áreas de políticas públicas, a partir de fontes oficiais brasileiras. Acompanha o Guia de Fontes de Dados do FGV CLEAR.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1143,7 +1143,7 @@ body.modal-open { overflow: hidden; }
 <div class="info-box" id="info-box" role="dialog" aria-modal="true" aria-labelledby="info-title">
   <div class="info-head">
     <button class="info-close" id="info-close" aria-label="Fechar">×</button>
-    <div class="info-eyebrow">Painel CLEAR</div>
+    <div class="info-eyebrow">Painel Policy Lab</div>
     <h2 class="info-title" id="info-title">Como usar este painel</h2>
     <div class="info-tabs" role="tablist">
       <button class="info-tab active" data-tab="usar" role="tab">Como usar</button>
@@ -1806,7 +1806,7 @@ function renderTabs(area, tema, activeIdx) {
 /* === CSV === */
 function gerarCSV(area, tema, ind) {
   const linhas = [];
-  linhas.push('# Painel CLEAR: ' + area.area + ' / ' + tema.tema + ' / ' + ind.titulo);
+  linhas.push('# Painel Policy Lab: ' + area.area + ' / ' + tema.tema + ' / ' + ind.titulo);
   linhas.push('# Fonte: ' + (ind.fonte?.nome || ''));
   linhas.push('# URL fonte: ' + (ind.fonte?.url || ''));
   linhas.push('# Periodicidade: ' + (ind.fonte?.periodicidade || ''));
@@ -2103,7 +2103,7 @@ function relTopBottomUF(ind) {
 
 function gerarRelatorioMD(scope) {
   const L = [];
-  L.push('# Painel CLEAR: relatório de estatísticas');
+  L.push('# Painel Policy Lab: relatório de estatísticas');
   L.push('');
   L.push(`_Gerado em ${relDataHoje()} · ${relTituloEscopo(scope)}_`);
   L.push('');
@@ -2135,7 +2135,7 @@ function gerarRelatorioMD(scope) {
 
 function gerarRelatorioHTML(scope) {
   const esc = s => String(s == null ? '' : s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
-  let h = `<div class="pr-head"><h1>Painel CLEAR: relatório de estatísticas</h1>`;
+  let h = `<div class="pr-head"><h1>Painel Policy Lab: relatório de estatísticas</h1>`;
   h += `<div class="pr-meta">Gerado em ${esc(relDataHoje())} · ${esc(relTituloEscopo(scope))} · FGV CLEAR · https://policy-lab.github.io/painel/</div></div>`;
   relAreasDoEscopo(scope).forEach(area => {
     h += `<h2>${esc(area.area)}</h2>`;
