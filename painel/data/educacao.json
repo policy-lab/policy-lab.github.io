@@ -13,12 +13,12 @@
   "temas": [
     {
       "id": "aprendizagem",
-      "tema": "Qualidade e aprendizagem",
+      "tema": "Qualidade da educação básica",
       "descricao": "IDEB nas diferentes etapas e desempenho dos estudantes",
       "indicadores": [
         {
           "id": "ideb",
-          "titulo": "Qualidade da Educação Básica",
+          "titulo": "IDEB Anos Iniciais",
           "indicador": "IDEB: Índice de Desenvolvimento da Educação Básica (rede total, anos iniciais EF)",
           "valor": 6.3,
           "unidade": "escala 0-10 (anos iniciais EF, rede total)",
@@ -685,12 +685,12 @@
     {
       "id": "fluxo-conclusao",
       "tema": "Acesso e conclusão",
-      "descricao": "Conclusão do ensino médio e estatísticas de fluxo",
+      "descricao": "Escolaridade da população adulta e estatísticas de fluxo",
       "indicadores": [
         {
           "id": "ensino-medio",
-          "titulo": "Conclusão do Ensino Médio",
-          "indicador": "Pessoas com 25+ anos que concluíram a educação básica obrigatória",
+          "titulo": "Adultos com Ensino Médio completo",
+          "indicador": "Pessoas de 25 anos ou mais com pelo menos o ensino médio completo (estoque da população adulta)",
           "valor": 57.4,
           "unidade": "% das pessoas de 25+ anos",
           "destaque": "Maior percentual da série histórica",
@@ -730,12 +730,12 @@
               "valor": 57.4
             }
           ],
-          "rotuloSerieY": "% concluíram EM",
+          "rotuloSerieY": "% da pop. 25+ com EM completo",
           "recortes": [
             {
               "id": "raca",
               "dimensao": "Por raça/cor",
-              "titulo": "Conclusão do ensino médio (2025, % da pop. 25+)",
+              "titulo": "Adultos com ensino médio completo por raça/cor (2025, % da pop. 25+)",
               "valores": [
                 {
                   "rotulo": "Brancos",
@@ -757,7 +757,7 @@
             {
               "id": "sexo",
               "dimensao": "Por sexo",
-              "titulo": "Conclusão do ensino médio por sexo (2025, %)",
+              "titulo": "Adultos com ensino médio completo por sexo (2025, % da pop. 25+)",
               "valores": [
                 {
                   "rotulo": "Mulheres",
@@ -779,7 +779,7 @@
             {
               "id": "regiao",
               "dimensao": "Por região",
-              "titulo": "Conclusão do ensino médio por região (2025, %)",
+              "titulo": "Adultos com ensino médio completo por região (2025, % da pop. 25+)",
               "valores": [
                 {
                   "rotulo": "Sudeste",
@@ -821,7 +821,7 @@
             "ultimaAtualizacao": "Junho/2026 (dados de 2025)",
             "url": "https://www.ibge.gov.br/estatisticas/sociais/educacao/17270-pnad-continua.html"
           },
-          "notaMetodologica": "Mede o estoque acumulado de adultos com ensino médio concluído (médio completo, superior incompleto ou superior completo). Desigualdades persistem: 64,9% das pessoas brancas vs 51,3% das pretas ou pardas em 2025. Em 2025, 17,5% dos jovens de 15 a 29 anos não estavam ocupados nem estudavam ou se qualificavam (NEM-NEM). Necessidade de trabalhar, falta de interesse e gravidez são os principais motivos de abandono. A série foi reponderada pelo IBGE em 2026 com base no Censo 2022, o que revisou os anos anteriores."
+          "notaMetodologica": "Mede o estoque acumulado de adultos de 25 anos ou mais com ensino médio concluído (médio completo, superior incompleto ou superior completo). Não é a taxa de conclusão do ensino médio usada no debate educacional (por exemplo, pelo Todos Pela Educação), que olha para os jovens e mede a parcela que concluiu a etapa até os 19 anos. Desigualdades persistem: 64,9% das pessoas brancas vs 51,3% das pretas ou pardas em 2025. Em 2025, 17,5% dos jovens de 15 a 29 anos não estavam ocupados nem estudavam ou se qualificavam (NEM-NEM). Necessidade de trabalhar, falta de interesse e gravidez são os principais motivos de abandono. A série foi reponderada pelo IBGE em 2026 com base no Censo 2022, o que revisou os anos anteriores."
         },
         {
           "id": "abandono-em",
