@@ -184,7 +184,7 @@ Suponha que saiu o IDEB 2025 e você quer atualizar o valor.
 ```json
 {
   "id": "ideb",
-  "titulo": "Qualidade da Educação Básica",
+  "titulo": "IDEB Anos Iniciais",
   "indicador": "IDEB — Índice de Desenvolvimento da Educação Básica (rede pública, anos iniciais EF)",
   "valor": 5.7,
   "unidade": "anos iniciais do EF",
