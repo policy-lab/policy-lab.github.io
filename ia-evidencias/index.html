@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>IA para quem trabalha com evidências · FGV CLEAR LAB</title>
-<meta name="description" content="Página dos participantes: antes da oficina, grupo de WhatsApp, cadernos, diapositivos e respostas comentadas dos dois módulos.">
+<meta name="description" content="Página dos participantes: antes da oficina, grupo de WhatsApp, cadernos, pedidos para copiar, diapositivos e respostas comentadas dos dois módulos.">
 <link rel="stylesheet" href="/assets/css/pl-chrome.css">
 <style>
 :root{--wa:#0F7B45;--wa-escuro:#0B5E34;--claro:#F1F5F4;--realce:#E9F3D2}
@@ -22,9 +22,11 @@ a{color:#0A6E99;text-underline-offset:2px}
 .pagina{max-width:860px;margin:0 auto;padding:8px 24px 32px}
 section{padding:4px 0 8px;scroll-margin-top:60px}
 h2{font-family:var(--pl-font);color:var(--pl-navy);font-size:1.55rem;line-height:1.2;margin:34px 0 12px}
+h3{font-family:var(--pl-font);color:var(--pl-navy);font-size:1.15rem;line-height:1.3;margin:26px 0 8px}
+h4{font-size:1rem;color:var(--pl-navy);margin:18px 0 4px}
 ul.lista{padding-left:1.2em}
 ul.lista li{margin:4px 0}
-ul.fich{list-style:none;padding:0}
+ul.fich{list-style:none;padding:0;margin:8px 0}
 ul.fich li{background:var(--claro);border-radius:10px;padding:12px 14px;margin:10px 0}
 a.fich{font-weight:700}
 a.alt{display:inline-block;margin-top:6px;font-weight:700}
@@ -32,6 +34,25 @@ a.alt{display:inline-block;margin-top:6px;font-weight:700}
 .nota{display:block;color:var(--pl-mute);font-size:.92rem}
 .falta{color:var(--pl-mute)}
 .caixa{background:var(--realce);border-radius:10px;padding:12px 14px}
+.conferir{background:var(--realce);border-radius:12px;padding:6px 18px 10px;margin-top:24px}
+.conferir h3{margin-top:12px}
+.conferir ol{padding-left:1.3em;margin:6px 0}
+.conferir li{margin:6px 0}
+.instr{margin:0 0 6px}
+.copia{border:1px solid var(--pl-line);border-radius:10px;margin:10px 0 14px;background:#fff;overflow:hidden}
+.copia-topo{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 10px 8px 14px;background:var(--claro)}
+.copia-nome{margin:0;font-weight:700;color:var(--pl-navy);line-height:1.35;min-width:0}
+button.copiar{font:700 .95rem/1.2 var(--pl-sec);background:var(--pl-navy);color:#fff;border:0;border-radius:999px;
+  padding:9px 16px;min-width:96px;cursor:pointer;flex:none}
+button.copiar:hover{background:#0A4C69}
+button.copiar:focus-visible{outline:3px solid var(--wa);outline-offset:2px}
+button.copiar.feito{background:var(--wa)}
+pre.copia-texto{margin:0;padding:12px 14px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.55 var(--pl-sec);color:var(--pl-ink)}
+.copia details summary{padding:10px 14px;cursor:pointer;color:#0A6E99;font-weight:700}
+.copia details[open] summary{padding-bottom:0}
+.copia-nota{margin:0;padding:0 14px 10px;font-size:.88rem;color:var(--pl-mute)}
+.copia-estado{margin:0;padding:0 14px 10px;font-size:.92rem;font-weight:700;color:var(--pl-navy)}
+.copia-estado:empty{display:none}
 .wa{display:flex;gap:28px;align-items:center;background:var(--claro);border-radius:12px;padding:20px}
 .wa-texto{flex:1;min-width:0}
 .wa-nome{font-family:var(--pl-font);font-weight:700;color:var(--pl-navy);font-size:1.15rem;margin:0 0 8px}
@@ -58,8 +79,9 @@ a.alt{display:inline-block;margin-top:6px;font-weight:700}
   .wa-botao{display:block}
   .wa-qr svg{width:150px;height:150px;margin:0 auto}
   .pl-header .afrea img{height:38px}
+  pre.copia-texto{font-size:15px;padding:10px 12px}
 }
-@media print{.wa-fixo,.pl-subnav{display:none}body{padding-bottom:0}}
+@media print{.wa-fixo,.pl-subnav,button.copiar{display:none}body{padding-bottom:0}}
 </style>
 </head>
 <body>
@@ -80,7 +102,7 @@ a.alt{display:inline-block;margin-top:6px;font-weight:700}
   </div>
 </header>
 <nav class="pl-subnav" aria-label="Secções da página"><div class="pl-subnav-inner">
-<a href="#antes">Antes da oficina</a><a href="#whatsapp">Grupo de WhatsApp</a><a href="#cadernos">Cadernos</a><a href="#depois">Depois de cada módulo</a><a href="#desafio">Desafio de 5 dias</a>
+<a href="#antes">Antes da oficina</a><a href="#whatsapp">Grupo de WhatsApp</a><a href="#cadernos">Cadernos</a><a href="#pedidos">Pedidos para copiar</a><a href="#depois">Depois de cada módulo</a><a href="#desafio">Desafio de 5 dias</a>
 </div></nav>
 <main class="pagina">
 <section id="antes">
@@ -107,13 +129,112 @@ a.alt{display:inline-block;margin-top:6px;font-weight:700}
 </section>
 <section id="cadernos">
 <h2>Cadernos</h2>
-<p>Um caderno por módulo, com os exercícios e os textos de trabalho. No telemóvel, acompanhe pelo ecrã: copiar um texto longo de um PDF no telemóvel é difícil, sobretudo no Módulo 2.</p>
+<p>Um caderno por módulo, com os exercícios e os textos de trabalho. No telemóvel, acompanhe pelo ecrã: copiar um texto longo de um PDF no telemóvel é difícil, sobretudo no Módulo 2. Os pedidos e os textos estão também em <a href="#pedidos">Pedidos para copiar</a>.</p>
 <ul class="fich"><li><a class='fich' href='downloads/caderno-modulo1.pdf'>Caderno do Módulo 1 · Básico</a> <span class='tam'>PDF A4, 37 KB</span><span class='nota'>Para imprimir ou abrir no computador. Quadro de usos, protecção de dados e exercícios.</span><a class='alt' href='downloads/caderno-modulo1-telemovel.pdf'>Versão para telemóvel</a> <span class='tam'>PDF, 41 KB</span></li><li><a class='fich' href='downloads/caderno-modulo2.pdf'>Caderno do Módulo 2 · Intermediário</a> <span class='tam'>PDF A4, 46 KB</span><span class='nota'>Para imprimir ou abrir no computador. Indicadores, relatório de progresso e teoria da mudança, com os textos.</span><a class='alt' href='downloads/caderno-modulo2-telemovel.pdf'>Versão para telemóvel</a> <span class='tam'>PDF, 51 KB</span></li></ul>
+</section>
+<section id="pedidos">
+<h2>Pedidos para copiar</h2>
+<p>Os pedidos e os textos de trabalho dos cadernos, tal como estão. Carregue em «Copiar» e cole numa conversa nova do ChatGPT. Antes de colar um texto seu, tire os nomes, os telefones e os dados de beneficiários.</p>
+<h3>Pedidos-modelo</h3>
+<div class='copia tipo-modelo' data-tipo='modelo'><div class='copia-topo'><p class='copia-nome'>O pedido em cinco partes</p><button type='button' class='copiar' data-alvo='copia-1' aria-label='Copiar: O pedido em cinco partes'>Copiar</button></div><pre class='copia-texto' id='copia-1'>Tarefa: [O que a IA deve fazer, num verbo: rever, traduzir, resumir]
+Para quem: [Quem vai ler o resultado]
+Formato: [Tamanho, estrutura, o que devolver por baixo (por exemplo, a lista de alterações)]
+Limites: [O que a IA não pode fazer: mudar números, nomes ou o sentido; acrescentar informação. A norma do português do seu país]
+Texto: [O texto, colado no fim, sem dados pessoais]</pre><p class='copia-nota'>Preencha as cinco partes.</p><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<div class='copia tipo-modelo' data-tipo='modelo'><div class='copia-topo'><p class='copia-nome'>Modelo para rever</p><button type='button' class='copiar' data-alvo='copia-2' aria-label='Copiar: Modelo para rever'>Copiar</button></div><pre class='copia-texto' id='copia-2'>Tarefa: revê o português deste [parágrafo / ofício / secção] de [tipo de documento].
+Para quem: [quem vai ler].
+Formato: devolve o texto revisto e, por baixo, a lista das alterações que fizeste.
+Limites: não mudes números, nomes nem o sentido; não acrescentes informação; não troques palavras que estão certas; usa a norma do [português do seu país].
+Texto: [colar aqui, sem dados pessoais]</pre><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<div class='copia tipo-modelo' data-tipo='modelo'><div class='copia-topo'><p class='copia-nome'>Modelo para traduzir</p><button type='button' class='copiar' data-alvo='copia-3' aria-label='Copiar: Modelo para traduzir'>Copiar</button></div><pre class='copia-texto' id='copia-3'>Tarefa: traduz para [língua] este [ofício / resumo / relatório].
+Para quem: [organização ou pessoa], que vai ler em [língua].
+Formato: devolve só a tradução, com os mesmos parágrafos; por baixo, a lista dos termos que não traduziste à letra.
+Limites: não mudes números, datas nem nomes de instituições; mantém as siglas em português e põe a tradução entre parêntesis na primeira vez; não acrescentes nada.
+Texto: [colar aqui, sem dados pessoais]</pre><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<div class='copia tipo-modelo' data-tipo='modelo'><div class='copia-topo'><p class='copia-nome'>Três limites que servem em quase todos os pedidos</p><button type='button' class='copiar' data-alvo='copia-4' aria-label='Copiar: Três limites que servem em quase todos os pedidos'>Copiar</button></div><pre class='copia-texto' id='copia-4'>Usa só o texto que colei.
+Mantém os números como estão.
+Marca com [inferência] o que o texto não diz.</pre><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<h3>Módulo 1 · Básico</h3>
+<h4>Exercício 2 · O pedido em rondas</h4>
+<p class='instr'>Abra uma conversa nova no ChatGPT para cada pedido. Cole o pedido e, por baixo, o relatório.</p>
+<div class='copia tipo-pedido' data-tipo='pedido'><div class='copia-topo'><p class='copia-nome'>Pedido 1, solto</p><button type='button' class='copiar' data-alvo='copia-5' aria-label='Copiar: Pedido 1, solto'>Copiar</button></div><pre class='copia-texto' id='copia-5'>Resume isto.</pre><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<div class='copia tipo-pedido' data-tipo='pedido'><div class='copia-topo'><p class='copia-nome'>Pedido 2, com tarefa, destinatário, tamanho e formato</p><button type='button' class='copiar' data-alvo='copia-6' aria-label='Copiar: Pedido 2, com tarefa, destinatário, tamanho e formato'>Copiar</button></div><pre class='copia-texto' id='copia-6'>Escreve um resumo deste relatório para o director distrital de saúde, que o vai ler antes da reunião mensal de coordenação. Cinco frases, em texto corrido, sem títulos nem listas.</pre><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<div class='copia tipo-pedido' data-tipo='pedido'><div class='copia-topo'><p class='copia-nome'>Pedido 3, o pedido 2 com limites</p><button type='button' class='copiar' data-alvo='copia-7' aria-label='Copiar: Pedido 3, o pedido 2 com limites'>Copiar</button></div><pre class='copia-texto' id='copia-7'>Escreve um resumo deste relatório para o director distrital de saúde, que o vai ler antes da reunião mensal de coordenação. Cinco frases, em texto corrido, sem títulos nem listas. Usa só o texto do relatório. Mantém os números como estão. Se escreveres alguma coisa que o texto não diz, marca-a com [inferência].</pre><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<div class='copia tipo-texto' data-tipo='texto'><div class='copia-topo'><p class='copia-nome'>O relatório (sintético)</p><button type='button' class='copiar' data-alvo='copia-8' aria-label='Copiar: O relatório (sintético)'>Copiar</button></div><details><summary>Ver o texto</summary><pre class='copia-texto' id='copia-8'>Relatório trimestral de progresso, Julho a Setembro de 2026
+Projecto de Apoio à Nutrição Infantil, distritos A e B
+
+No terceiro trimestre, o projecto registou 940 agregados com crianças menores de 2 anos. A meta do trimestre era de 1.200 agregados.
+
+Os três pagamentos mensais de 750 meticais por agregado foram feitos. O pagamento de Agosto saiu a 29 de Agosto, três semanas depois da data prevista. No distrito B, 62% das beneficiárias receberam o pagamento de Julho na data prevista.
+
+As activistas realizaram 86 sessões comunitárias de nutrição, com 2.150 participantes. A meta era de 80 sessões.
+
+Foram rastreadas 1.430 crianças. Destas, 9% tinham desnutrição aguda e foram encaminhadas para a unidade sanitária mais próxima.
+
+A equipa fez 14 visitas de monitoria. Em Setembro, a estrada para a sede do distrito B esteve cortada por obras durante duas semanas, e duas visitas passaram para Outubro.
+
+No quarto trimestre, o projecto vai concluir o registo dos agregados.</pre></details><p class='copia-nota'>Escrevemos o relatório para este curso: o projecto, os distritos e os números não existem.</p><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<h4>O seu pedido-modelo</h4>
+<div class='copia tipo-pedido' data-tipo='pedido'><div class='copia-topo'><p class='copia-nome'>Exemplo para rever, como o da resposta gravada</p><button type='button' class='copiar' data-alvo='copia-9' aria-label='Copiar: Exemplo para rever, como o da resposta gravada'>Copiar</button></div><pre class='copia-texto' id='copia-9'>Tarefa: revê o português deste parágrafo de um relatório trimestral.
+Para quem: o relatório vai para o director distrital de saúde.
+Formato: devolve o parágrafo revisto e, por baixo, a lista das alterações que fizeste.
+Limites: não mudes números, nomes nem o sentido; não acrescentes informação; usa a norma do [português do seu país].
+Texto: No trimestre foi registado 940 agregados, o que corresponde a 78 porcento da meta. As activistas realizou 86 sessões comunitárias de nutrição, com 2.150 participantes, e a meta era de 80 sessões. O pagamento de Agosto saiu com três semanas de atrazo.</pre><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<h3>Módulo 2 · Intermediário</h3>
+<h4>Exercício 1 · Indicadores</h4>
+<p class='instr'>Abra uma conversa nova e cole:</p>
+<div class='copia tipo-pedido' data-tipo='pedido'><div class='copia-topo'><p class='copia-nome'>Pedido</p><button type='button' class='copiar' data-alvo='copia-10' aria-label='Copiar: Pedido'>Copiar</button></div><pre class='copia-texto' id='copia-10'>Um programa de transferências monetárias para agregados com crianças menores de 2 anos vai começar num distrito rural de Moçambique. Propõe 8 indicadores de resultado para o acompanhar. Para cada indicador, dá: o nome, a definição, a fonte de dados, a linha de base (valor, ano e fonte) e a frequência de recolha. Usa como linha de base os dados mais recentes que existem. Responde numa tabela.</pre><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<h4>Exercício 2 · Relatório de progresso</h4>
+<p class='instr'>Cole cada pedido numa conversa nova, com a tabela por baixo.</p>
+<div class='copia tipo-pedido' data-tipo='pedido'><div class='copia-topo'><p class='copia-nome'>Pedido 1</p><button type='button' class='copiar' data-alvo='copia-11' aria-label='Copiar: Pedido 1'>Copiar</button></div><pre class='copia-texto' id='copia-11'>Escreve a secção «Progresso do trimestre» do relatório para o financiador, em dois parágrafos, a partir desta tabela. O financiador quer saber porque é que algumas metas não foram cumpridas.</pre><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<div class='copia tipo-pedido' data-tipo='pedido'><div class='copia-topo'><p class='copia-nome'>Pedido 2</p><button type='button' class='copiar' data-alvo='copia-12' aria-label='Copiar: Pedido 2'>Copiar</button></div><pre class='copia-texto' id='copia-12'>Escreve a secção «Progresso do trimestre» do relatório para o financiador, em dois parágrafos, a partir desta tabela. O financiador quer saber porque é que algumas metas não foram cumpridas. Usa só a tabela. Não escrevas causas que a tabela não diz: onde uma meta não foi cumprida e a tabela não dá a causa, escreve [causa a confirmar]. Mantém os números como estão.</pre><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<div class='copia tipo-texto' data-tipo='texto'><div class='copia-topo'><p class='copia-nome'>Tabela de metas e realizado (sintética)</p><button type='button' class='copiar' data-alvo='copia-13' aria-label='Copiar: Tabela de metas e realizado (sintética)'>Copiar</button></div><details><summary>Ver o texto</summary><pre class='copia-texto' id='copia-13'>Tabela de metas e realizado, 3.º trimestre de 2026 (Julho a Setembro)
+Projecto de Apoio à Nutrição Infantil, distritos A e B
+
+Indicador | Meta do trimestre | Realizado | Observações da equipa
+Agregados registados | 1.200 | 940 |
+Pagamentos mensais feitos na data prevista | 3 | 2 | Em Julho, o pagamento passou de numerário para carteira móvel.
+Sessões comunitárias de nutrição | 80 | 86 |
+Crianças rastreadas | 1.400 | 1.430 |
+Visitas de monitoria | 18 | 14 | Em Setembro, a estrada para a sede do distrito B esteve cortada por obras durante duas semanas.
+Activistas formadas | 20 | 12 | A formadora esteve de licença em Agosto e Setembro.</pre></details><p class='copia-nota'>Escrevemos a tabela para este curso: o projecto, os distritos e os números não existem.</p><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<h4>Exercício 3 · Teoria da mudança</h4>
+<p class='instr'>Copie o pedido e o texto e cole tudo de uma vez numa conversa nova: primeiro o pedido, por baixo o texto.</p>
+<div class='copia tipo-pedido' data-tipo='pedido'><div class='copia-topo'><p class='copia-nome'>Pedido</p><button type='button' class='copiar' data-alvo='copia-14' aria-label='Copiar: Pedido'>Copiar</button></div><pre class='copia-texto' id='copia-14'>A partir só do texto abaixo, rascunha a teoria da mudança do programa Valor Criança: actividades, produtos, resultados intermédios e impacto. Para cada passagem de um nível para o seguinte, escreve o pressuposto que tem de ser verdade. Indica a página de cada elemento.</pre><p class='copia-estado' role='status' aria-live='polite'></p></div>
+<div class='copia tipo-texto' data-tipo='texto'><div class='copia-topo'><p class='copia-nome'>Texto (excertos das pp. 12 a 16)</p><button type='button' class='copiar' data-alvo='copia-15' aria-label='Copiar: Texto (excertos das pp. 12 a 16)'>Copiar</button></div><details><summary>Ver o texto</summary><pre class='copia-texto' id='copia-15'>[p. 12] A protecção social, incluindo as transferências sociais monetárias, tem o potencial de reduzir a pobreza, bem como de proteger as famílias contra choques e vulnerabilidade (ver Handa et al. 2018). No entanto, a cobertura de famílias pobres e vulneráveis pelo actual sistema de protecção social de Angola ainda é fraca. Os programas de protecção social existentes são, em grande parte, pensões contributivas e seguros sociais que beneficiam principalmente os que trabalham no sector formal, que é a minoria da população (Banco Mundial 2020). Em 2014, o Governo de Angola e os seus Parceiros de Desenvolvimento criaram o Apoio à Protecção Social – APROSOC (&quot;Apoio à Protecção Social em Angola&quot;) como um primeiro passo para um sistema nacional de protecção social. Esse projecto, implementado pelo Ministério da Acção Social, Família e Promoção da Mulher (MASFAMU), com assistência técnica do UNICEF, e financiado pela União Europeia, tinha como uma das principais intervenções o programa Valor Criança, um programa de transferência social monetária (PTSM) incondicional sensível às crianças, destinado a agregados familiares com crianças dos zero aos cinco anos de idade em municípios propensos à insegurança alimentar seleccionados. Este foi o primeiro programa de transferência social monetária em Angola, e foi pilotado em seis municípios nas províncias do Bié, Moxico e Uíge. Embora a fase piloto tenha terminado, o programa “cash-plus” ofereceu, para além das transferências sociais monetárias, a ligação a outros serviços, tais como apoio ao registo de nascimento, desenvolvimento da primeira infância, aconselhamento nutricional, actividades de geração de rendimentos, capacitação de adolescentes, e Saneamento Total Liderado pela Comunidade (STLC). A intervenção proporcionou uma transferência social monetária mensal de AOA 3.000 – aumentada para AOA 5.000 em resposta à COVID-19 – por cada criança com [p. 13] menos de cinco anos de idade. O montante da transferência era pago directamente ao cuidador (predominantemente mulheres) da criança, com um limite máximo de três crianças elegíveis por agregado familiar.
+
+[p. 14] O programa, por meio da provisão de transferências sociais monetárias para os agregados familiares, pagas diretamente ao cuidador principal da criança ou das crianças, além de oferecer apoio ao registo de nascimento, desenvolvimento na primeira infância, aconselhamento nutricional, atividades de geração de renda, empoderamento de adolescentes e STLC, visou melhorar a segurança alimentar dos agregados familiares beneficiários. O programa também definiu como objetivo melhorar os resultados de igualdade de gênero e o empoderamento das mulheres por meio do pagamento direto de transferências de dinheiro para os cuidadores principais, que são em sua maioria mulheres. [...]
+
+Questão de Investigação 1: Impacto nos cuidadores e nas crianças
+O programa incentivou investimentos no desenvolvimento humano das famílias, como demonstrado pelos impactos positivos no bem-estar material das crianças, nas práticas de alimentação infantil, na imunização e nos cuidados de saúde preventivos. A posse de um par de sandálias/sapatos, de roupas e de um cobertor melhorou em 47 pontos percentuais, 25 pontos percentuais e 49 pontos percentuais, respectivamente, para as crianças dos agregados familiares beneficiários. O controlo do crescimento pós-natal melhorou em 18 pontos percentuais, enquanto a realização de todas as vacinas básicas necessárias aumentou em cerca de 18 pontos percentuais. Os dados relativos à dinâmica de tomada de decisões dos agregados familiares são mistos, tendo sido observadas alterações positivas em alguns aspectos da tomada de decisões e da segurança do rendimento das mulheres. Os resultados
+
+[p. 15] quantitativos revelaram que as transferências sociais monetárias aumentaram o apoio social aos cuidadores, ao mesmo tempo em quem [sic] melhoraram a tomada de decisões financeiras em conjunto. As entrevistas qualitativas revelaram que os cuidadores recebiam os pagamentos em numerário e sentiam melhorias na tomada de decisões e na elaboração de orçamentos em conjunto com o cônjuge e, nalguns casos, autonomia na tomada de decisões da esposa. No entanto, outros cuidadores notaram o controlo que os homens ainda têm sobre a tomada de decisões, em resultado de normas de género enraizadas. As conclusões qualitativas também documentaram a melhoria do empoderamento das mulheres através da melhoria da geração de rendimentos, da melhoria do bem-estar e da melhoria das relações comunitárias nas zonas de intervenção. Por último, as conclusões qualitativas indicaram que as famílias beneficiárias registaram melhorias em vários indicadores relacionados com o consumo de alimentos e a segurança alimentar.
+
+Por outro lado, os impactos nas práticas de prestação de cuidados foram menos consistentes. O programa não teve um impacto significativo nos indicadores de parentalidade e disciplina, uma conclusão que é consistente nos resultados qualitativos e quantitativos. As entrevistas qualitativas sugeriram que os estilos parentais estavam profundamente enraizados nas normas culturais locais e que o PTSM e os serviços associados não tinham produzido comportamentos diferentes nem marcado uma mudança nos modelos parentais dos beneficiários.
+
+Questão de Investigação 2: Impactos nos agregados familiares
+A análise focou no acúmulo de bens, actividades económicas, segurança alimentar e diversidade, quantidade e qualidade da dieta do agregado familiar. O PTSM teve impactos positivos na segurança alimentar, nos bens das famílias e nas actividades económicas. Os impactos notáveis incluem a redução da escala de experiência de insegurança alimentar em 1,14 pontos, a redução da escala de fome no agregado familiar em 0,38 pontos, o aumento do número de refeições em 24 pontos percentuais. Além disso, o PTSM aumentou a acumulação de bens duradouros (por exemplo, telefone, rádio e motociclo), a posse de gado em 14 pontos percentuais, o acesso à terra para cultivo em 5 pontos percentuais, a produção agrícola em 18 pontos percentuais, bem como os processos e o comércio de subprodutos agrícolas em 6 pontos percentuais. As entrevistas qualitativas revelaram que as famílias beneficiárias tinham aumentado e diversificado as suas actividades agrícolas para incluir uma variedade de culturas cultiváveis que contribuíram para o consumo e diversidade alimentar das famílias. Em termos de bens do agregado familiar, as entrevistas revelaram que os beneficiários puderam comprar roupa, roupa de cama e camas, bem como produtos de higiene para os seus agregados familiares.
+
+Questão de Investigação 3: Influência das características de desenho e de implementação nos resultados do programa
+Resultados-chave da avaliação do processo destacaram aspectos do desenho da intervenção que podem ser aprimorados para maximizar a eficácia do PTSM. A começar pelo registo, os resultados sugerem que houve possíveis erros de exclusão devido à ausência de cuidadores elegíveis do agregado familiar no momento do registo em campo. Os pontos de pagamento para coleta dos benefícios infantis foram considerados de alto custo de criação e manutenção, enquanto as beneficiárias afirmaram que a distância para ter acesso aos mesmos acarretava custos de tempo e possíveis riscos de segurança. Em relação à regularidade dos pagamentos, a avaliação do processo constatou que eles eram irregulares ao longo da intervenção do programa, devido a questões decorrentes da pandemia de COVID-19. Os valores dos pagamentos também
+
+[p. 16] foram considerados insuficientes para atender às necessidades dos beneficiários. Embora tenham sido implementados mecanismos de reclamação, a eficácia das medidas de resolução não foi clara devido a inconsistências na documentação e na transmissão de informações dos activistas sociais para os níveis superiores do governo. Por fim, a avaliação do processo também destacou a falta de ligações dos cuidadores a outros serviços do APROSOC, o que explicou a ausência de impactos nas práticas parentais e de prestação de cuidados.
+
+Questão de Investigação 4: Papel moderador das características do agregado familiar e do cuidador e dos factores contextuais
+Uma análise mais aprofundada mostrou que os impactos não são, em grande medida, moderados pela dimensão do agregado familiar nem pela idade do cuidador. A educação do cuidador influencia efectivamente os impactos do programa. Nos agregados familiares com cuidadores com alguma educação formal, registaram-se impactos positivos na diversidade alimentar mínima das crianças e nas actividades agrícolas, em comparação com os agregados familiares sem educação formal. Por último, uma média de 66 por cento dos agregados familiares beneficiários e de comparação referiram que consideravam que a COVID-19 tinha um impacto negativo nos seus níveis de rendimento e nas actividades geradoras de rendimento. A partir do uso de dados de linha de base colectados em 2019 e de dados finais colectados em 2022, de um modo geral, o programa de Transferência Social Monetária teve fortes impactos positivos numa grande variedade de indicadores, com impactos fracos ou nulos noutros indicadores (ver Tabela 1). O programa gerou impactos positivos nas crianças e nas necessidades básicas do agregado familiar. A dinâmica de decisão do agregado familiar também se alterou, com aumentos registados na tomada de decisões conjuntas pelos cônjuges, em vez de um único decisor para o agregado familiar, o que normalmente é feito pelos homens. Os beneficiários também comunicaram melhorias na participação económica das mulheres (por exemplo, emprego por conta própria e criação de empresas). A eficácia do programa poderia ter sido maximizada através do reforço dos mecanismos de responsabilização, da previsibilidade e da regularidade das transferências, bem como da acessibilidade e da segurança.</pre></details><p class='copia-nota'>Fonte: Damoah, K. A., Uytterhaegen, T., Tirivayi, N. e Daminelli, J. (2023). O Impacto do Valor Criança: Programa Piloto de Transferências Sociais Monetárias em Angola. Relatório Final. UNICEF Innocenti. A publicação autoriza a reprodução de extractos com citação (p. 2 do PDF). Os parêntesis rectos [...] marcam cortes. O texto é citação literal; [sic] marca um erro do original.</p><p class='copia-estado' role='status' aria-live='polite'></p></div>
 </section>
 <section id="depois">
 <h2>Depois de cada módulo</h2>
-<p>Os diapositivos, com as respostas que gravámos no ChatGPT, e as respostas comentadas de cada exercício, com a fonte e a página.</p>
-<ul class="fich"><li class='falta'>Módulo 1 · Básico: diapositivos e respostas comentadas. <em>Disponível depois do Módulo 1, a 18 de Novembro.</em></li><li class='falta'>Módulo 2 · Intermediário: diapositivos e respostas comentadas. <em>Disponível depois do Módulo 2, a 19 de Novembro.</em></li></ul>
+<p>Os diapositivos, em PDF e em PowerPoint, trazem as respostas que gravámos no ChatGPT e as correcções. As respostas comentadas explicam cada exercício, com a fonte e a página. As do Módulo 2 ficam disponíveis depois do módulo, a 19 de Novembro.</p>
+<h3>Módulo 1 · Básico</h3>
+<ul class='fich'><li><a class='fich' href='downloads/modulo1-diapositivos.pdf'>Diapositivos do Módulo 1 (PDF)</a> <span class='tam'>PDF, 401 KB</span></li><li><a class='fich' href='downloads/modulo1-diapositivos.pptx'>Diapositivos do Módulo 1 (PowerPoint)</a> <span class='tam'>PPTX, 977 KB</span></li><li><a class='fich' href='downloads/respostas-modulo1.pdf'>Respostas comentadas do Módulo 1 (PDF)</a> <span class='tam'>PDF A4, 34 KB</span></li></ul>
+<h3>Módulo 2 · Intermediário</h3>
+<ul class='fich'><li><a class='fich' href='downloads/modulo2-diapositivos.pdf'>Diapositivos do Módulo 2 (PDF)</a> <span class='tam'>PDF, 384 KB</span></li><li><a class='fich' href='downloads/modulo2-diapositivos.pptx'>Diapositivos do Módulo 2 (PowerPoint)</a> <span class='tam'>PPTX, 982 KB</span></li><li class='falta'>Respostas comentadas do Módulo 2: <em>Disponível depois do Módulo 2, a 19 de Novembro.</em></li></ul>
+<div class="conferir">
+<h3>Lista para conferir</h3>
+<p>Antes de usar o que a IA escreveu, confira:</p>
+<ol><li>Cada número: fonte, ano, lugar e grupo. Os 62% eram só do distrito B e só do pagamento de Julho.</li><li>Os números que o texto não tem. A IA faz contas e junta-as: 78% e 260 não estavam no relatório.</li><li>As causas. Escreva «devido a» só quando a equipa do projecto confirmou a causa.</li><li>Os anos e os lugares. «67 a 72» juntava três anos sem os dizer; o Valor Criança foi no Uíge, e a IA escreveu Cuanza Sul.</li><li>Os termos de outro país. «Ganyu» é palavra do Malawi; em Moçambique diz-se «ganho-ganho».</li><li>Numa revisão, a lista de alterações. A IA também troca palavras que estavam certas.</li><li>Perguntas de questionário. Reveja o vocabulário, a moeda e as línguas locais, e faça o pré-teste.</li></ol>
+</div>
 </section>
 <section id="desafio">
 <h2>Desafio de 5 dias</h2>
@@ -131,6 +252,7 @@ a.alt{display:inline-block;margin-top:6px;font-weight:700}
         <div class="pl-footer-label">Esta página</div>
         <a href="#antes">Antes da oficina</a>
         <a href="#cadernos">Cadernos</a>
+        <a href="#pedidos">Pedidos para copiar</a>
         <a href="#depois">Depois de cada módulo</a>
       </div>
       <div class="pl-footer-col">
@@ -145,5 +267,30 @@ a.alt{display:inline-block;margin-top:6px;font-weight:700}
   </div>
 </footer>
 <a class="wa-fixo" href="https://chat.whatsapp.com/KsX9Ow5lt9aF1qjDN1uJj2?mode=gi_t" target="_blank" rel="noopener">Entrar no grupo de WhatsApp</a>
+<script>
+(function(){
+  function feito(b){
+    b.textContent = "Copiado"; b.classList.add("feito");
+    clearTimeout(b._t);
+    b._t = setTimeout(function(){ b.textContent = "Copiar"; b.classList.remove("feito"); }, 2000);
+  }
+  function selecciona(alvo, estado){
+    var det = alvo.closest("details"); if (det) det.open = true;
+    var r = document.createRange(); r.selectNodeContents(alvo);
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    estado.textContent = "O texto ficou seleccionado: copie-o com Ctrl+C ou, no telemóvel, com «Copiar».";
+  }
+  document.addEventListener("click", function(ev){
+    var b = ev.target.closest("button.copiar"); if (!b) return;
+    var alvo = document.getElementById(b.dataset.alvo);
+    var estado = b.closest(".copia").querySelector(".copia-estado");
+    estado.textContent = "";
+    var texto = alvo.textContent;
+    try {
+      navigator.clipboard.writeText(texto).then(function(){ feito(b); }, function(){ selecciona(alvo, estado); });
+    } catch (e) { selecciona(alvo, estado); }
+  });
+})();
+</script>
 </body>
 </html>
