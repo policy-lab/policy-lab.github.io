@@ -1,5 +1,5 @@
 {
-"atualizado": "2026-10-16",
+"atualizado": "2026-11-23",
 "itens": [
 {
 "id": "PP-001",
@@ -3204,6 +3204,133 @@
 "citacao": "FUNDAÇÃO JOÃO PINHEIRO. Diretoria de Políticas Públicas. Avaliação de políticas públicas: por onde começar?: um guia prático para elaboração do Mapa de Processos e Resultados e Mapa de Indicadores. Belo Horizonte: FJP, 2022.",
 "url": "https://fjp.mg.gov.br/wp-content/uploads/2022/03/09.06_Guia-MaPR.pdf",
 "arquivo": "ME-039.pdf",
+"capa": true
+},
+{
+"id": "HC-001",
+"trilha": "Hub FGV Cidades",
+"clear": false,
+"titulo": "Os efeitos da paridade racial na educação",
+"autores": "Pedro Lopes",
+"instituicao": "Hub FGV Policy Lab/FGV Cidades",
+"ano": "2026",
+"idioma": "Português (BR)",
+"paginas": "13",
+"tipo": "Síntese de evidências",
+"colecoes": [
+"Hub FGV Policy Lab/FGV Cidades"
+],
+"temas": [
+"Educação"
+],
+"foco": "Brasil",
+"resumo": "A síntese organiza as evidências empíricas sobre os efeitos da correspondência racial entre professores e alunos, com foco nos estudantes negros. Os resultados aparecem por tipo de desfecho: desempenho acadêmico, progressão escolar e comportamento; matrícula, persistência, conclusão e escolha de área no ensino superior; e emprego formal e rendimentos no mercado de trabalho",
+"quando": "Desenho e avaliação de políticas de equidade racial na educação, como a composição do corpo docente, e estudos sobre desigualdade racial nas trajetórias escolares",
+"citacao": "Lopes, P. (2026, janeiro). Os efeitos da paridade racial na educação (Síntese de evidências). FGV Cidades, Equidade. (Hub FGV Policy Lab/FGV Cidades, Síntese de Evidências nº 1)",
+"url": "",
+"arquivo": "HC-001.pdf",
+"capa": true
+},
+{
+"id": "HC-002",
+"trilha": "Hub FGV Cidades",
+"clear": false,
+"titulo": "Exposição à violência e resultados escolares",
+"autores": "Marcos Paulo Cambrainha da Costa; Caio de Souza Castro; Gabriel Weber Costa",
+"instituicao": "Hub FGV Policy Lab/FGV Cidades",
+"ano": "2026",
+"idioma": "Português (BR)",
+"paginas": "11",
+"tipo": "Síntese de evidências",
+"colecoes": [
+"Hub FGV Policy Lab/FGV Cidades"
+],
+"temas": [
+"Educação",
+"Segurança pública"
+],
+"foco": "Brasil",
+"resumo": "A síntese documenta as evidências empíricas sobre o impacto da exposição à violência em indicadores educacionais, em dois eixos: os efeitos sobre a proficiência escolar e os efeitos sobre outros indicadores, como conclusão do ensino médio e acesso ao ensino superior. Apresenta também o estado da evidência sobre programas de prevenção, com ênfase no policiamento escolar",
+"quando": "Diagnósticos e políticas que articulam segurança pública e educação, como a prevenção da violência no entorno das escolas e o policiamento escolar",
+"citacao": "Costa, M. P. C. da, Castro, C. S., & Costa, G. W. (2026, março). Exposição à violência e resultados escolares (Síntese de evidências). FGV Cidades, Segurança Pública. (Hub FGV Policy Lab/FGV Cidades, Síntese de Evidências nº 2)",
+"url": "",
+"arquivo": "HC-002.pdf",
+"capa": true
+},
+{
+"id": "HC-003",
+"trilha": "Hub FGV Cidades",
+"clear": false,
+"titulo": "Desigualdade de raça e gênero na educação e no mercado brasileiro",
+"autores": "FGV CLEAR",
+"instituicao": "Hub FGV Policy Lab/FGV Cidades",
+"ano": "2026",
+"idioma": "Português (BR)",
+"paginas": "12",
+"tipo": "Síntese de evidências",
+"colecoes": [
+"Hub FGV Policy Lab/FGV Cidades"
+],
+"temas": [
+"Educação",
+"Trabalho e empreendedorismo"
+],
+"foco": "Brasil",
+"resumo": "A síntese reúne evidências empíricas sobre as desigualdades de raça e gênero no Brasil na educação e no mercado de trabalho. Sistematiza os principais resultados da literatura acadêmica e técnica sobre como esses marcadores sociais moldam as trajetórias escolares e profissionais de forma persistente e interseccional",
+"quando": "Diagnósticos de desigualdade racial e de gênero, desenho de políticas de equidade na educação e no trabalho e estudos sobre trajetórias escolares e profissionais",
+"citacao": "FGV CLEAR. (2026). Desigualdade de raça e gênero na educação e no mercado brasileiro (Síntese de evidências). FGV Cidades, Equidade. (Hub FGV Policy Lab/FGV Cidades, Síntese de Evidências nº 3)",
+"url": "",
+"arquivo": "HC-003.pdf",
+"capa": true
+},
+{
+"id": "HC-004",
+"trilha": "Hub FGV Cidades",
+"clear": false,
+"titulo": "Urban Lighting, Public Safety, and Street Crime: Evidence from São Paulo’s LED Modernization PPP",
+"autores": "Hugo Villarinho Pereira de Carvalho; Caio de Souza Castro; Marcos Paulo Rodrigues Correia",
+"instituicao": "Hub FGV Policy Lab/FGV Cidades",
+"ano": "2026",
+"idioma": "Inglês",
+"paginas": "107",
+"tipo": "Working paper",
+"colecoes": [
+"Hub FGV Policy Lab/FGV Cidades"
+],
+"temas": [
+"Segurança pública"
+],
+"foco": "Brasil",
+"resumo": "O estudo avalia se a modernização da iluminação pública de São Paulo, com a troca para LED feita por uma PPP, reduziu crimes de rua. Combina os registros de conversão de cada poste com boletins de ocorrência georreferenciados e compara as áreas tratadas na grande onda do terceiro trimestre de 2018 com áreas ainda não tratadas. As estimativas indicam queda do furto de celular nas horas escuras: à noite, a redução equivale a 36,9% da média anterior das áreas tratadas. Os autores leem o resultado como evidência cautelosa, consistente com menos furtos registrados nessas áreas",
+"quando": "Avaliação de políticas de iluminação pública e de prevenção situacional do crime, desenho de PPPs de infraestrutura urbana e estudos com dados georreferenciados de criminalidade",
+"citacao": "Carvalho, H. V. P. de, Castro, C. S., & Correia, M. P. R. (2026). Urban lighting, public safety, and street crime: evidence from São Paulo’s LED modernization PPP (Working Paper nº 01). FGV Cidades / CLEAR. (Hub FGV Policy Lab/FGV Cidades, Working Paper nº 1)",
+"url": "",
+"arquivo": "HC-004.pdf",
+"capa": true
+},
+{
+"id": "HC-005",
+"trilha": "Hub FGV Cidades",
+"clear": false,
+"titulo": "Health Costs of Electricity Reliability Failures: Evidence from a Large-Scale Blackout in Brazil",
+"autores": "Caio de Souza Castro; Hugo Villarinho Pereira de Carvalho; Marcos Paulo Rodrigues Correia",
+"instituicao": "Hub FGV Policy Lab/FGV Cidades",
+"ano": "2026",
+"idioma": "Inglês",
+"paginas": "48",
+"tipo": "Working paper",
+"colecoes": [
+"Hub FGV Policy Lab/FGV Cidades"
+],
+"temas": [
+"Saúde"
+],
+"foco": "Brasil",
+"resumo": "O estudo mede os custos para a saúde do apagão de novembro de 2020 no Amapá, uma falha de transmissão que cortou a maior parte da energia do estado por 22 dias. Com um desenho de diferenças em diferenças sobre as internações mensais do SIH-SUS nos municípios brasileiros, estima que as internações no Amapá subiram cerca de 15% depois do apagão. O aumento se concentra em diagnósticos que dependem de eletricidade, no atendimento de urgência e nos gastos hospitalares e de UTI; os registros de nascimento mostram piores desfechos no parto e no período neonatal",
+"quando": "Planejamento da confiabilidade do sistema elétrico, preparo da rede de saúde para falhas de infraestrutura e estudos sobre os efeitos de choques de infraestrutura na saúde",
+"citacao": "Castro, C. S., Carvalho, H. V. P. de, & Correia, M. P. R. (2026). Health costs of electricity reliability failures: evidence from a large-scale blackout in Brazil (Working Paper nº 02). FGV Cidades / CLEAR. (Hub FGV Policy Lab/FGV Cidades, Working Paper nº 2)",
+"url": "",
+"arquivo": "HC-005.pdf",
 "capa": true
 }
 ]
