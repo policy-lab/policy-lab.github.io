@@ -1020,33 +1020,6 @@
 "capa": true
 },
 {
-"id": "AP-002",
-"trilha": "Aprofundar",
-"clear": true,
-"titulo": "Exposição à violência e resultados escolares",
-"autores": "FGV CLEAR",
-"instituicao": "FGV CLEAR – Centro de Aprendizagem em Avaliação e Resultados para a África Lusófona e o Brasil",
-"ano": "2026",
-"idioma": "Português (BR)",
-"paginas": "9",
-"tipo": "Síntese de evidências",
-"colecoes": [
-"Sínteses de evidências (CLEAR)",
-"Produção FGV CLEAR"
-],
-"temas": [
-"Educação",
-"Segurança pública"
-],
-"foco": "Brasil",
-"resumo": "A publicação sistematiza evidências empíricas sobre os efeitos da exposição à violência nos resultados educacionais. A análise está organizada em dois eixos principais: os efeitos sobre a proficiência escolar e os efeitos sobre outros indicadores educacionais, como conclusão do ensino médio e acesso ao ensino superior. A síntese também examina evidências sobre políticas de prevenção, especialmente programas de policiamento escolar. A literatura revisada aponta efeitos negativos da exposição à violência sobre o desempenho acadêmico, além de impactos sobre trajetórias educacionais e possíveis efeitos sobre colegas de turma",
-"quando": "Formação de novos membros, desenvolvimento de projetos, elaboração de diagnósticos educacionais, avaliação de políticas de educação e segurança, planejamento de avaliações de impacto, revisão metodológica, estudos sobre violência e educação e desenvolvimento de pesquisas sobre resultados escolares",
-"citacao": "FGV CLEAR. Exposição à violência e resultados escolares. São Paulo: FGV CLEAR, 2026.",
-"url": "https://fgvclear.org/website/wp-content/uploads/sintese-violencia-e-resultados-escolares.pdf",
-"arquivo": "AP-002.pdf",
-"capa": true
-},
-{
 "id": "AP-003",
 "trilha": "Aprofundar",
 "clear": true,
@@ -1071,32 +1044,6 @@
 "citacao": "FGV CLEAR. Fundos de financiamento federais e estaduais: em busca de evidências sobre emprego, renda e pobreza. São Paulo: FGV CLEAR, 2026.",
 "url": "https://fgvclear.org/website/wp-content/uploads/sintese-fundos-de-financiamento-federais-e-estaduais.pdf",
 "arquivo": "AP-003.pdf",
-"capa": true
-},
-{
-"id": "AP-004",
-"trilha": "Aprofundar",
-"clear": true,
-"titulo": "Os efeitos da paridade racial na educação",
-"autores": "FGV CLEAR",
-"instituicao": "FGV CLEAR – Centro de Aprendizagem em Avaliação e Resultados para a África Lusófona e o Brasil",
-"ano": "2026",
-"idioma": "Português (BR)",
-"paginas": "10",
-"tipo": "Síntese de evidências",
-"colecoes": [
-"Sínteses de evidências (CLEAR)",
-"Produção FGV CLEAR"
-],
-"temas": [
-"Educação"
-],
-"foco": "Brasil",
-"resumo": "A publicação sistematiza evidências empíricas sobre os efeitos da correspondência racial entre professores e estudantes, com foco especial nos resultados de alunos negros. A síntese reúne estudos experimentais e quase-experimentais realizados em diferentes países e organiza os resultados ao longo da trajetória educacional, abrangendo desempenho acadêmico, progressão escolar, comportamento, acesso e permanência no ensino superior, escolha de área de estudo e resultados no mercado de trabalho. A publicação também apresenta evidências brasileiras sobre os efeitos de uma maior presença de professores negros nas trajetórias educacionais dos estudantes",
-"quando": "Formação de novos membros, desenvolvimento de projetos, estudos sobre desigualdade racial e educação, planejamento de avaliações de impacto, revisão metodológica, desenvolvimento de pesquisas com dados administrativos, elaboração de diagnósticos educacionais e análise de políticas de promoção da equidade racial",
-"citacao": "FGV CLEAR. Os efeitos da paridade racial na educação. São Paulo: FGV CLEAR, 2026.",
-"url": "https://fgvclear.org/website/wp-content/uploads/sintese-de-evidencias-efeitos-da-paridade-racial-educacao.pdf",
-"arquivo": "AP-004.pdf",
 "capa": true
 },
 {
@@ -3331,6 +3278,159 @@
 "citacao": "Castro, C. S., Carvalho, H. V. P. de, & Correia, M. P. R. (2026). Health costs of electricity reliability failures: evidence from a large-scale blackout in Brazil (Working Paper nº 02). FGV Cidades / CLEAR. (Hub FGV Policy Lab/FGV Cidades, Working Paper nº 2)",
 "url": "",
 "arquivo": "HC-005.pdf",
+"capa": true
+},
+{
+"id": "HC-006",
+"trilha": "Hub FGV Cidades",
+"clear": false,
+"titulo": "PPPs em educação no mundo: importância, evidências e desenho de políticas",
+"autores": "Marcos Paulo Rodrigues Correia; Caio de Souza Castro; Hugo Villarinho Pereira de Carvalho",
+"instituicao": "Hub FGV Policy Lab/FGV Cidades",
+"ano": "2026",
+"idioma": "Português (BR)",
+"paginas": "32",
+"tipo": "Policy brief",
+"colecoes": [
+"Hub FGV Policy Lab/FGV Cidades"
+],
+"temas": [
+"Educação",
+"Gestão e orçamento"
+],
+"foco": "Brasil",
+"resumo": "O policy brief sistematiza evidências e experiências de Parcerias Público-Privadas (PPPs) na educação e propõe um roteiro de decisão orientado a resultados. A mensagem central é que não há solução universal: PPPs podem ajudar a oferecer educação de qualidade quando há padrões de serviço claros e mensuráveis, capacidade estatal ativa para contratar e fiscalizar e proteção explícita à equidade, mas não substituem a responsabilidade do Estado pelo sistema educacional",
+"quando": "Avaliação e desenho de parcerias com o setor privado na oferta educacional, preparação de contratos e de sistemas de fiscalização e estudos sobre experiências internacionais de PPPs em educação",
+"citacao": "Correia, M. P. R., Castro, C. de S., & Carvalho, H. V. P. de. (2026, janeiro). PPPs em educação no mundo: importância, evidências e desenho de políticas (Policy brief). FGV Cidades, Infraestrutura Social. (Hub FGV Policy Lab/FGV Cidades, Policy Brief nº 1)",
+"url": "",
+"arquivo": "HC-006.pdf",
+"capa": true
+},
+{
+"id": "HC-007",
+"trilha": "Hub FGV Cidades",
+"clear": false,
+"titulo": "Infraestrutura escolar e resultados de aprendizagem: importância, evidências e desenho de políticas",
+"autores": "Marcos Paulo Rodrigues Correia; Caio de Souza Castro; Hugo Villarinho Pereira de Carvalho",
+"instituicao": "Hub FGV Policy Lab/FGV Cidades",
+"ano": "2026",
+"idioma": "Português (BR)",
+"paginas": "24",
+"tipo": "Policy brief",
+"colecoes": [
+"Hub FGV Policy Lab/FGV Cidades"
+],
+"temas": [
+"Educação"
+],
+"foco": "Brasil",
+"resumo": "O policy brief reúne evidências sobre o impacto da infraestrutura escolar nos resultados de aprendizagem e propõe orientações de política pública. A mensagem central é que o ambiente físico da escola é um insumo com efeitos mensuráveis sobre desempenho, frequência, permanência e bem-estar. No Brasil, persistem déficits em ventilação, temperatura, iluminação e saneamento, que atingem mais os estudantes vulneráveis",
+"quando": "Priorização de investimentos em infraestrutura escolar, diagnósticos de condições físicas das redes de ensino e desenho de programas de reforma e manutenção de escolas",
+"citacao": "Correia, M. P. R., Castro, C. de S., & Carvalho, H. V. P. de. (2026, janeiro). Infraestrutura escolar e resultados de aprendizagem: importância, evidências e desenho de políticas (Policy Brief). FGV Cidades, Infraestrutura Social. (Hub FGV Policy Lab/FGV Cidades, Policy Brief nº 2)",
+"url": "",
+"arquivo": "HC-007.pdf",
+"capa": true
+},
+{
+"id": "HC-008",
+"trilha": "Hub FGV Cidades",
+"clear": false,
+"titulo": "Iluminação pública, segurança urbana e uso do espaço noturno: evidências e desenho de políticas",
+"autores": "Marcos Paulo Rodrigues Correia; Caio de Souza Castro; Hugo Villarinho Pereira de Carvalho",
+"instituicao": "Hub FGV Policy Lab/FGV Cidades",
+"ano": "2026",
+"idioma": "Português (BR)",
+"paginas": "24",
+"tipo": "Policy brief",
+"colecoes": [
+"Hub FGV Policy Lab/FGV Cidades"
+],
+"temas": [
+"Segurança pública"
+],
+"foco": "Brasil",
+"resumo": "O policy brief reúne evidências sobre o efeito da iluminação pública na redução da criminalidade urbana e propõe um roteiro de decisão para gestores municipais. O efeito depende da priorização de áreas com concentração de crime noturno, da qualidade técnica da instalação, da integração com o ambiente construído e da manutenção. O documento traz quatro recomendações de desenho e quatro precauções contra efeitos colaterais",
+"quando": "Planejamento e contratação de programas de iluminação pública, inclusive por PPPs, e políticas municipais de prevenção situacional do crime",
+"citacao": "Correia, M. P. R., Castro, C. S., & Carvalho, H. V. P. de. (2026, fevereiro). Iluminação pública, segurança urbana e uso do espaço noturno: evidências e desenho de políticas (Policy brief). FGV Cidades, Infraestrutura Social. (Hub FGV Policy Lab/FGV Cidades, Policy Brief nº 3)",
+"url": "",
+"arquivo": "HC-008.pdf",
+"capa": true
+},
+{
+"id": "HC-009",
+"trilha": "Hub FGV Cidades",
+"clear": false,
+"titulo": "Grandes eventos e crime: planejamento de segurança e uso do espaço público",
+"autores": "Marcos Paulo Rodrigues Correia; Caio de Souza Castro; Hugo Villarinho Pereira de Carvalho",
+"instituicao": "Hub FGV Policy Lab/FGV Cidades",
+"ano": "2026",
+"idioma": "Português (BR)",
+"paginas": "26",
+"tipo": "Policy brief",
+"colecoes": [
+"Hub FGV Policy Lab/FGV Cidades"
+],
+"temas": [
+"Segurança pública"
+],
+"foco": "Brasil",
+"resumo": "O policy brief sistematiza evidências internacionais e brasileiras sobre como grandes eventos, como megaeventos esportivos, festivais, Carnaval e shows, alteram temporariamente a geografia e a composição do crime urbano. Apresenta um roteiro de planejamento para prefeituras em quatro eixos (antecipação, operação, coordenação entre atores e legado institucional) e discute salvaguardas para o uso de tecnologias biométricas em espaços públicos",
+"quando": "Planejamento da segurança de eventos de grande público, organização do espaço público e do transporte nesses eventos e políticas municipais de prevenção do crime",
+"citacao": "Correia, M. P. R., Castro, C. S., & Carvalho, H. V. P. de. (2026, março). Grandes eventos e crime: planejamento de segurança e uso do espaço público (Policy brief). FGV Cidades, Infraestrutura Social. (Hub FGV Policy Lab/FGV Cidades, Policy Brief nº 4)",
+"url": "",
+"arquivo": "HC-009.pdf",
+"capa": true
+},
+{
+"id": "HC-010",
+"trilha": "Hub FGV Cidades",
+"clear": false,
+"titulo": "Expansão da educação infantil e creches: importância, evidências e desenho de políticas",
+"autores": "Marcos Paulo Rodrigues Correia; Caio de Souza Castro; Hugo Villarinho Pereira de Carvalho",
+"instituicao": "Hub FGV Policy Lab/FGV Cidades",
+"ano": "2026",
+"idioma": "Português (BR)",
+"paginas": "21",
+"tipo": "Policy brief",
+"colecoes": [
+"Hub FGV Policy Lab/FGV Cidades"
+],
+"temas": [
+"Primeira infância",
+"Educação"
+],
+"foco": "Brasil",
+"resumo": "O policy brief examina a expansão da educação infantil e das creches como política pública prioritária, com ênfase nas desigualdades de acesso no Brasil e nas lições da experiência internacional. No Brasil, o acesso à creche segue desigual por renda, raça e território, com déficit estimado em mais de três milhões de vagas. A recomendação central combina expansão de vagas públicas para populações vulneráveis com regulação e financiamento de provedores privados sem fins lucrativos, com padrões de qualidade e monitoramento",
+"quando": "Planejamento da expansão de vagas em creches e pré-escolas, desenho de convênios com provedores privados e políticas para a primeira infância",
+"citacao": "Correia, M. P. R., Castro, C. S., & Carvalho, H. V. P. de. (2026, abril). Expansão da educação infantil e creches: importância, evidências e desenho de políticas (Policy brief). FGV Cidades, Infraestrutura Social. (Hub FGV Policy Lab/FGV Cidades, Policy Brief nº 5)",
+"url": "",
+"arquivo": "HC-010.pdf",
+"capa": true
+},
+{
+"id": "HC-011",
+"trilha": "Hub FGV Cidades",
+"clear": false,
+"titulo": "Planejamento de rede escolar: importância, evidências e desenho de políticas",
+"autores": "Marcos Paulo Rodrigues Correia; Caio de Souza Castro; Hugo Villarinho Pereira de Carvalho",
+"instituicao": "Hub FGV Policy Lab/FGV Cidades",
+"ano": "2026",
+"idioma": "Português (BR)",
+"paginas": "22",
+"tipo": "Policy brief",
+"colecoes": [
+"Hub FGV Policy Lab/FGV Cidades"
+],
+"temas": [
+"Educação",
+"Gestão e orçamento"
+],
+"foco": "Brasil",
+"resumo": "O policy brief examina o planejamento da rede escolar como componente estratégico da política educacional. A organização espacial da rede, com decisões sobre tamanho, localização e consolidação de escolas, afeta a eficiência do gasto, a qualidade da oferta e a equidade de acesso. O Brasil tem mais de 85 mil escolas municipais, e mais de um terço delas atende menos de 50 estudantes; a consolidação, por outro lado, impõe custos de transporte e distância às famílias vulneráveis",
+"quando": "Planejamento e reorganização de redes municipais de ensino, decisões sobre consolidação de escolas e desenho do transporte escolar",
+"citacao": "Correia, M. P. R., Castro, C. S., & Carvalho, H. V. P. de. (2026, setembro). Planejamento de rede escolar: Importância, Evidências e Desenho de Políticas (Policy brief). FGV Cidades, Infraestrutura Social. (Hub FGV Policy Lab/FGV Cidades, Policy Brief nº 6)",
+"url": "",
+"arquivo": "HC-011.pdf",
 "capa": true
 }
 ]
