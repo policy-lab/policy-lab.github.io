@@ -36,6 +36,18 @@ body{margin:0;font-family:var(--sans);color:var(--ink);background:#fff;line-heig
 .colrow{padding-top:16px}
 .chip-shelf[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
 .chip-shelf:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+/* destaque do Hub FGV Policy Lab/FGV Cidades */
+.hub{background:#fff;border-bottom:1px solid var(--line)}
+.hub-inner{border-left:4px solid var(--t2);padding:4px 0 4px 24px;margin:28px 0}
+.hub-topo{display:flex;justify-content:space-between;align-items:flex-end;gap:16px 32px;flex-wrap:wrap;margin-bottom:20px}
+.hub-rot{font-family:var(--sec);font-size:13px;font-weight:700;color:var(--t2)}
+.hub h2{font-family:var(--sans);font-weight:600;font-size:22px;line-height:1.25;margin:4px 0 6px;color:var(--navy)}
+.hub p{margin:0;font-size:15px;color:var(--mute);max-width:640px}
+.hub-capas{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(84px,1fr);gap:14px;overflow-x:auto;padding:4px 2px 10px}
+.hub-capa{all:unset;cursor:pointer;display:block}
+.hub-capa .capa{box-shadow:0 1px 2px rgba(1,32,48,.08),0 4px 12px rgba(1,32,48,.08)}
+.hub-capa:hover .capa{transform:translateY(-3px);box-shadow:0 2px 4px rgba(1,32,48,.1),0 10px 22px rgba(1,32,48,.14)}
+.hub-capa:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
 /* filtros */
 .tools{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;padding:28px 0 8px}#f-clear{grid-column:span 2}
 .busca{grid-column:1/-1;position:relative}
@@ -95,7 +107,7 @@ dialog::backdrop{background:rgba(1,32,48,.55)}
 .fechar:focus-visible{outline:2px solid var(--blue)}
 .nota{font-family:var(--sec);font-size:12px;color:var(--soft);margin-top:10px}
 @media (max-width:900px){.trilha-grid{grid-template-columns:1fr 1fr}.passo:nth-child(2){border-right:1px solid var(--line)}.passo:nth-child(3){border-left:1px solid var(--line)}}
-@media (max-width:768px){.wrap{padding:0 20px}.d{grid-template-columns:1fr;padding:24px}.d .capa{max-width:180px}.grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:24px 16px}.tools{grid-template-columns:1fr 1fr}
+@media (max-width:768px){.hub-inner{padding-left:16px;margin:20px 0}.hub-capas{grid-auto-columns:96px}.wrap{padding:0 20px}.d{grid-template-columns:1fr;padding:24px}.d .capa{max-width:180px}.grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:24px 16px}.tools{grid-template-columns:1fr 1fr}
 .gen{padding:14px 12px}.gen .g-tit{font-size:13px;-webkit-line-clamp:5}.c-btn{flex:1 1 100%;text-align:center}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -117,6 +129,22 @@ dialog::backdrop{background:rgba(1,32,48,.55)}
     <div class="pl-meta"><div class="pl-meta-item">Publicações<strong><span id="n-total">84</span></strong></div><div class="pl-meta-item">Produção CLEAR<strong><span id="n-clear">34</span></strong></div><div class="pl-meta-item">Coleções<strong><span id="n-col">6</span></strong></div><div class="pl-meta-item">Acesso<strong>Aberto</strong></div></div>
   </div>
 </div>
+
+<section class="hub" aria-labelledby="hub-tit">
+  <div class="wrap">
+    <div class="hub-inner">
+      <div class="hub-topo">
+        <div>
+          <span class="hub-rot">Coleção em destaque</span>
+          <h2 id="hub-tit">Hub FGV Policy Lab/FGV Cidades</h2>
+          <p>Evidências para políticas urbanas, produzidas pelo FGV Policy Lab e pelo FGV Cidades.</p>
+        </div>
+        <button class="btn" type="button" id="hub-ver"><span>Ver as <span id="n-hub">11</span> publicações</span></button>
+      </div>
+      <div class="hub-capas" id="hub-capas" aria-label="Publicações do Hub FGV Policy Lab/FGV Cidades"></div>
+    </div>
+  </div>
+</section>
 
 <section class="trilha" aria-label="Trilha de aprendizagem">
   <div class="wrap">
@@ -200,9 +228,12 @@ function filtrar(){
   return DADOS.filter(it=>(!trilhaSel||it.trilha===trilhaSel)&&(!colSel||it.colecoes.includes(colSel))&&(!te||it.temas.includes(te))&&(!ti||it.tipo===ti)&&(!id||it.idioma===id)&&(!fo||it.foco===fo)&&(!cl||it.clear)
     &&(!q||it._b.includes(q)));
 }
+const HUB='Hub FGV Policy Lab/FGV Cidades';
+const ehHub=it=>it.colecoes.includes(HUB);
 function render(){
-  const r=filtrar();
   const ativos=trilhaSel||colSel||$('#q').value||$('#f-tema').value||$('#f-tipo').value||$('#f-idioma').value||$('#f-foco').value||$('#f-clear').value;
+  // Sem filtro, as peças do Hub vêm primeiro; com filtro, a ordem é a do catálogo.
+  const r0=filtrar(), r=ativos?r0:[...r0.filter(ehHub),...r0.filter(x=>!ehHub(x))];
   $('#limpar').hidden=!ativos;
   $('#contagem').textContent=`${r.length} ${r.length===1?'publicação':'publicações'}`;
   const t=[...TRILHAS,...EXTRAS].find(x=>x.k===trilhaSel)||(colSel?{l:colSel,q:'Coleção temática que atravessa as trilhas.',c:'var(--navy)'}:null);
@@ -239,6 +270,11 @@ async function init(){
   ['#q','#f-tema','#f-tipo','#f-idioma','#f-foco','#f-clear'].forEach(s=>$(s).addEventListener('input',render));
   $('#limpar').onclick=()=>{trilhaSel='';colSel='';['#q','#f-tema','#f-tipo','#f-idioma','#f-foco'].forEach(s=>$(s).value='');$('#f-clear').value='';render()};
   $('#grade').onclick=e=>{const b=e.target.closest('.card-abrir'); if(b) abrir(b.dataset.id,b)};
+  const hub=DADOS.filter(ehHub);
+  $('#n-hub').textContent=hub.length;
+  $('#hub-capas').innerHTML=hub.map(it=>`<button class="hub-capa" type="button" data-id="${it.id}" aria-label="${esc(it.titulo)}" title="${esc(it.titulo)}">${capa(it)}</button>`).join('');
+  $('#hub-capas').onclick=e=>{const b=e.target.closest('.hub-capa'); if(b) abrir(b.dataset.id,b)};
+  $('#hub-ver').onclick=()=>{trilhaSel='';colSel=HUB;render();$('#conteudo').scrollIntoView({behavior:'smooth',block:'start'})};
   $('#fechar').onclick=()=>$('#dlg').close();
   $('#dlg').addEventListener('click',e=>{if(e.target===$('#dlg'))$('#dlg').close()});
   $('#dlg').addEventListener('close',()=>dlgTrigger?.focus());
